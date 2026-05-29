@@ -11592,7 +11592,8 @@ body{
     @media (max-width:680px){
       .hero__content-wrap{
         width:min(100% - 32px, 390px);
-        padding:clamp(286px, 40svh, 330px) 0 138px;
+        /* Match the original mobile hero rhythm: text starts after ~40vh image area. */
+        padding:40vh 0 138px;
       }
       .hero__content{
         max-width:390px;
@@ -11670,7 +11671,7 @@ body{
     @media (max-width:420px){
       .hero__content-wrap{
         width:min(100% - 30px, 370px);
-        padding-top:clamp(272px, 39svh, 312px);
+        padding-top:40vh;
         padding-bottom:130px;
       }
       .hero__ornament{width:120px}
