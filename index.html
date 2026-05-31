@@ -11701,7 +11701,1179 @@ body{
       body.dta-intro-started .hero__cta{animation-delay:1.76s}
     }
 
-  </style>
+  
+
+    /* === DTA Bon Su hero override - generated for asset-based hero === */
+    .site-header{
+      top:0;
+      height:clamp(74px, 6.4vw, 104px);
+      border-bottom:0;
+      background:linear-gradient(180deg, rgba(2,1,0,.72), rgba(5,3,1,.38) 66%, rgba(5,3,1,0));
+      backdrop-filter:none;
+    }
+    .header-inner{
+      width:min(100% - clamp(38px, 5.4vw, 92px), 1460px);
+      grid-template-columns:auto 1fr auto;
+      gap:clamp(24px, 3.2vw, 58px);
+    }
+    .brand-logo{width:clamp(112px, 9.2vw, 148px)}
+    .brand-slogan{display:none}
+    .main-nav{gap:clamp(30px, 4.5vw, 74px);justify-content:center}
+    .main-nav a{
+      padding:24px 0 20px;
+      color:rgba(255,255,255,.86);
+      font-family:var(--serif);
+      font-size:clamp(13px, .88vw, 15px);
+      font-weight:700;
+      letter-spacing:.075em;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+    .main-nav a::before{display:none}
+    .main-nav a::after{
+      bottom:8px;
+      width:50px;
+      height:10px;
+      background:url("assets/images/decor/hero/nav-active-underline-gold.png") center / contain no-repeat;
+      opacity:0;
+    }
+    .main-nav a:hover::after,
+    .main-nav a.is-active::after{opacity:1}
+    .main-nav a:hover{color:#fff2b8;text-shadow:0 0 16px rgba(246,211,122,.32)}
+    .header-cta{
+      min-width:clamp(184px, 14vw, 252px);
+      min-height:clamp(46px, 3.7vw, 60px);
+      padding:0 clamp(20px, 2.2vw, 38px) 0 clamp(42px, 3.5vw, 64px);
+      border:0;
+      border-radius:0;
+      background:url("assets/ui/buttons/btn-gold-small-lotus.png") center / 100% 100% no-repeat;
+      box-shadow:none;
+      color:#2e1a06;
+      font-family:var(--serif);
+      font-size:clamp(12px, .9vw, 15px);
+      font-weight:700;
+      letter-spacing:.08em;
+      text-shadow:0 1px 0 rgba(255,238,169,.34);
+    }
+    .header-cta .cta-lotus-icon{display:none}
+    .header-cta:hover{box-shadow:none;filter:brightness(1.07) drop-shadow(0 0 20px rgba(224,168,55,.25))}
+
+    .hero-section{
+      min-height:clamp(760px, 55.7vw, 980px);
+      padding-top:0;
+      padding-bottom:0;
+      background:#080503 url("assets/images/bg/bg-hero-dark-wood.webp") center / cover no-repeat;
+      overflow:hidden;
+    }
+    .hero-section::before{
+      z-index:2;
+      background:
+        radial-gradient(circle at 67% 28%, rgba(255,211,106,.14) 0 15%, transparent 36%),
+        linear-gradient(90deg, rgba(2,1,0,.92) 0%, rgba(3,2,1,.82) 23%, rgba(7,3,1,.18) 49%, rgba(5,2,1,.1) 100%),
+        linear-gradient(180deg, rgba(0,0,0,.12) 0%, rgba(0,0,0,.08) 58%, rgba(5,2,1,.52) 100%);
+      pointer-events:none;
+    }
+    .hero-section::after{display:none}
+    .hero-media{
+      position:absolute;
+      z-index:1;
+      inset:0;
+      width:100%;
+      height:100%;
+      bottom:auto;
+      top:auto;
+      right:auto;
+      overflow:hidden;
+      mask-image:none;
+      -webkit-mask-image:none;
+    }
+    .hero-media img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center center;
+      filter:saturate(1.08) contrast(1.06) brightness(.86);
+      transform:none;
+    }
+    .hero-media::after{
+      z-index:3;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.70) 0%, rgba(0,0,0,.60) 22%, rgba(0,0,0,.22) 48%, rgba(0,0,0,.04) 100%),
+        linear-gradient(180deg, rgba(0,0,0,.16) 0%, rgba(0,0,0,.02) 45%, rgba(0,0,0,.48) 100%);
+    }
+    .hero-media:hover img{transform:none;filter:saturate(1.08) contrast(1.06) brightness(.88)}
+    .hero-sacred-halo,.hero-sacred-rays,.hero-sacred-mist,.hero-sacred-sun,.hero-sacred-dust,.hero-sacred-sparkles{display:none!important}
+
+    .hero__content-wrap{
+      position:relative;
+      z-index:11;
+      width:min(100% - clamp(42px, 6vw, 110px), 1460px);
+      min-height:clamp(650px, 52vw, 910px);
+      display:flex;
+      align-items:center;
+      justify-content:flex-start;
+      padding:clamp(92px, 7.4vw, 132px) 0 clamp(128px, 10vw, 185px);
+    }
+    .hero__content{
+      width:clamp(570px, 39vw, 715px);
+      margin-left:clamp(2px, 2.4vw, 40px);
+      transform:translateY(clamp(16px, 2vw, 38px));
+      text-align:center;
+    }
+    .hero__content::before{
+      inset:-78px -70px -62px;
+      background:radial-gradient(ellipse at center, rgba(0,0,0,.42) 0%, rgba(0,0,0,.24) 47%, transparent 76%);
+      filter:blur(2px);
+    }
+    .hero__ornament{display:none}
+    .hero__eyebrow{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      font-family:var(--serif);
+      color: #f4d098 !important;
+      font-size:clamp(20px, 1.6vw, 30px);
+      letter-spacing:.13em;
+      line-height:1;
+      text-shadow:0 0 18px rgba(255,224,137,.22), 0 4px 16px rgba(0,0,0,.58);
+    }
+    .hero__eyebrow::before,
+    .hero__eyebrow::after{
+      content:"";
+      display:block;
+      width:clamp(66px, 6.5vw, 102px);
+      height:28px;
+      background-size:contain;
+      background-position:center;
+      background-repeat:no-repeat;
+      filter:drop-shadow(0 0 10px rgba(226,174,65,.3));
+    }
+    .hero__eyebrow::before{background-image:url("assets/images/decor/hero/decor-title-flourish-left-gold.png")}
+    .hero__eyebrow::after{background-image:url("assets/images/decor/hero/decor-title-flourish-right-gold.png")}
+    .hero__title{
+      margin:clamp(14px, 1vw, 19px) 0 0;
+      padding:.04em .04em .06em;
+      font-family:var(--serif);
+      font-size:clamp(70px, 5.8vw, 112px);
+      line-height:1.02;
+      letter-spacing:.038em;
+      background:linear-gradient(180deg, #fff8d8 0%, #f7df95 24%, #d8a047 52%, #9c641d 82%, #5d370c 100%);
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-stroke:.009em rgba(255,220,130,.62);
+      filter:drop-shadow(0 1px 0 rgba(255,255,229,.56)) drop-shadow(0 12px 24px rgba(0,0,0,.66));
+    }
+    .hero__title::before{-webkit-text-stroke:.032em rgba(255,220,129,.12)}
+    .hero__title::after{-webkit-text-stroke:.004em rgba(255,255,234,.42)}
+    .hero__title-line{display:none}
+    .hero__subtitle{
+      margin:clamp(10px, .8vw, 16px) auto clamp(42px, 3.2vw, 56px);
+      padding:0 0 clamp(34px, 2.3vw, 44px);
+      font-family:var(--script);
+      font-size:clamp(34px, 2.35vw, 48px);
+      line-height:1.08;
+      letter-spacing:.035em;
+      text-transform:none;
+      color:#ffeccd !important;
+      text-shadow:0 0 12px rgba(255,235,169,.18), 0 6px 19px rgba(0,0,0,.55);
+    }
+    .hero__subtitle::before{display:none}
+    .hero__subtitle::after{
+      content:"";
+      left:50%;
+      right:auto;
+      bottom:0;
+      width:min(440px, 76%);
+      height:32px;
+      transform:translateX(-50%);
+      opacity:.96;
+      background:url("assets/images/decor/hero/divider-lotus-line.png") center / contain no-repeat;
+      filter:drop-shadow(0 0 9px rgba(226,174,65,.32));
+    }
+    .hero__virtues{
+      margin:0 0 clamp(26px, 2.2vw, 42px);
+      gap:10px;
+      font-size:clamp(17px, 1.15vw, 23px);
+      letter-spacing:.115em;
+      color:#e5c368;
+    }
+    .hero__virtues::before,
+    .hero__virtues::after{
+      width:clamp(36px, 4.1vw, 66px);
+      background:linear-gradient(90deg, transparent, rgba(226,181,78,.9), transparent);
+    }
+    .hero__virtues span::before,
+    .hero__virtues span::after{content:"";margin:0}
+    .hero__content .btn--hero{
+      position:relative;
+      width:clamp(305px, 23vw, 410px);
+      min-width:0;
+      min-height:clamp(68px, 4.8vw, 84px);
+      padding:0 clamp(28px, 3.2vw, 52px) 0 clamp(58px, 5.2vw, 88px);
+      border:0;
+      border-radius:0;
+      background:url("assets/ui/buttons/btn-gold-hero-lotus.png") center / 100% 100% no-repeat;
+      box-shadow:none;
+      color:#2d1805;
+      font-family:var(--serif);
+      font-size:clamp(16px, 1.08vw, 21px);
+      font-weight:700;
+      letter-spacing:.085em;
+      text-shadow:0 1px 0 rgba(255,239,178,.38);
+    }
+    .hero__content .btn--hero img{display:none}
+    .hero__content .btn--hero:hover{box-shadow:none;filter:brightness(1.07) drop-shadow(0 0 22px rgba(224,168,55,.28));transform:translateY(-2px)}
+    .benefits{
+      max-width:clamp(520px, 38vw, 660px);
+      margin:clamp(26px, 2.1vw, 40px) auto 0;
+      align-items:start;
+    }
+    .benefit{
+      padding:0 clamp(12px, 1.4vw, 22px);
+      color:rgba(255,246,222,.92);
+      font-size:clamp(13px, .95vw, 16px);
+      line-height:1.32;
+    }
+    .benefit + .benefit::before{display:none}
+    .benefit__icon{
+      width:clamp(76px, 5.4vw, 106px);
+      margin-bottom:clamp(5px, .7vw, 10px);
+      filter:drop-shadow(0 0 14px rgba(226,174,65,.34));
+    }
+    .benefit strong{
+      display:block;
+      color:#f4dc97;
+      font-family:var(--serif);
+      font-size:clamp(13px, .94vw, 16px);
+      text-transform:uppercase;
+      letter-spacing:.055em;
+      margin-bottom:4px;
+    }
+    .benefit span{
+      display:block;
+      color:rgba(255,255,255,.78);
+      font-size:clamp(12px, .82vw, 15px);
+      letter-spacing:.025em;
+    }
+    .section-divider{
+      height:clamp(126px, 10vw, 176px);
+      z-index:18;
+    }
+    .divider-cream{fill:#ecd28f}
+    .divider-shadow{fill:rgba(20,11,3,.45)}
+    .divider-medallion{
+      bottom:clamp(2px, .55vw, 10px);
+      width:clamp(100px, 7.6vw, 138px);
+      height:clamp(100px, 7.6vw, 138px);
+    }
+
+    @media (max-width:1180px){
+      .main-nav{gap:26px}.main-nav a{font-size:12px;letter-spacing:.055em}.hero__content{margin-left:0;width:clamp(520px, 47vw, 660px)}
+      .hero__title{font-size:clamp(62px, 5.4vw, 88px)}
+    }
+    @media (max-width:940px){
+      .site-header{height:82px}.main-nav{display:none}.header-inner{display:flex;justify-content:space-between}.brand-logo{width:116px}
+      .header-cta{min-width:188px;min-height:48px;font-size:12px;padding-left:46px;padding-right:24px}
+      .hero-section{min-height:920px}
+      .hero-media img{object-position:62% center;filter:brightness(.78) saturate(1.08) contrast(1.06)}
+      .hero-media::after{background:linear-gradient(180deg, rgba(0,0,0,.12) 0%, rgba(0,0,0,.20) 35%, rgba(0,0,0,.82) 76%, rgba(0,0,0,.9) 100%)}
+      .hero__content-wrap{width:min(100% - 42px, 760px);justify-content:center;align-items:flex-end;min-height:920px;padding:0 0 118px}
+      .hero__content{width:100%;max-width:690px;margin:0;transform:none}
+    }
+    @media (max-width:680px){
+      .site-header{height:72px}.brand-logo{width:104px}.header-cta{min-width:152px;min-height:40px;font-size:10px;padding-left:36px;padding-right:16px;letter-spacing:.045em}.mobile-nav-toggle{display:inline-flex!important}
+      .hero-section{min-height:890px}
+      .hero-media img{object-position:64% top;filter:brightness(.76) saturate(1.08) contrast(1.06)}
+      .hero__content-wrap{width:min(100% - 30px, 390px);min-height:890px;padding:0 0 112px;align-items:flex-end}
+      .hero__content::before{inset:-30px -12px -22px;background:radial-gradient(ellipse at center, rgba(0,0,0,.48) 0%, rgba(0,0,0,.28) 55%, transparent 78%)}
+      .hero__eyebrow{font-size:clamp(18px, 5.4vw, 25px);gap:10px}.hero__eyebrow::before,.hero__eyebrow::after{width:52px;height:20px}
+      .hero__title{font-size:clamp(37px, 11vw, 48px);letter-spacing:.025em;white-space:nowrap}
+      .hero__subtitle{font-size:clamp(24px, 7.2vw, 32px);margin-bottom:32px;padding-bottom:28px}
+      .hero__subtitle::after{height:24px;width:78%}
+      .hero__virtues{font-size:clamp(12px, 3.4vw, 15px);letter-spacing:.075em;white-space:nowrap;margin-bottom:18px}.hero__virtues::before,.hero__virtues::after{display:none}
+      .hero__content .btn--hero{width:min(100%, 318px);min-height:58px;font-size:13px;padding-left:58px;padding-right:20px}
+      .benefits{max-width:360px;margin-top:18px;padding:0;grid-template-columns:repeat(3,1fr)}
+      .benefit{padding:0 3px}.benefit__icon{width:54px;margin-bottom:3px}.benefit strong{font-size:10px;letter-spacing:.035em}.benefit span{font-size:10px;line-height:1.25}
+      .section-divider{height:92px}.divider-medallion{width:82px;height:82px;bottom:2px}
+    }
+
+
+    /* === DTA Bon Su title typography polish - v45 ===
+       Mục tiêu: chữ hero sắc nét hơn, bỏ hiệu ứng bóng kép gây nhòe ở tiêu đề. */
+    .hero__content{
+      text-rendering:geometricPrecision !important;
+      -webkit-font-smoothing:antialiased !important;
+    }
+
+    .hero__eyebrow{
+      font-family:var(--serif) !important;
+      font-weight:700 !important;
+      color:#f2d990 !important;
+      font-size:clamp(19px, 1.45vw, 27px) !important;
+      letter-spacing:.17em !important;
+      text-shadow:
+        0 1px 0 rgba(255,248,210,.28),
+        0 0 14px rgba(230,178,72,.22),
+        0 5px 18px rgba(0,0,0,.62) !important;
+    }
+
+    .hero__eyebrow::before,
+    .hero__eyebrow::after{
+      opacity:.92 !important;
+      filter:drop-shadow(0 0 7px rgba(232,184,78,.34)) !important;
+    }
+
+    .hero__title{
+      font-family:var(--display) !important;
+      margin:clamp(12px, .9vw, 17px) 0 0 !important;
+      padding:.12em .04em .09em !important;
+      font-size:clamp(68px, 5.65vw, 108px) !important;
+      line-height:.98 !important;
+      font-weight:400 !important;
+      letter-spacing:.028em !important;
+      white-space:nowrap !important;
+      text-transform:uppercase !important;
+      background:
+        linear-gradient(180deg,
+          #fff9d9 0%,
+          #ffeaa8 19%,
+          #e8bd62 43%,
+          #c8892d 63%,
+          #7b4a12 88%,
+          #4a2b07 100%) !important;
+      -webkit-background-clip:text !important;
+      background-clip:text !important;
+      color:transparent !important;
+      -webkit-text-stroke:.0045em rgba(255,237,166,.58) !important;
+      paint-order:stroke fill !important;
+      text-shadow:
+        0 1px 0 rgba(255,255,231,.55),
+        0 2px 0 rgba(127,81,18,.32),
+        0 10px 22px rgba(0,0,0,.62),
+        0 0 20px rgba(229,174,61,.20) !important;
+      filter:none !important;
+    }
+
+    .hero__title::before,
+    .hero__title::after{
+      content:none !important;
+      display:none !important;
+    }
+
+    .hero__subtitle{
+      font-family:var(--script) !important;
+      margin:clamp(8px, .65vw, 13px) auto clamp(40px, 3vw, 52px) !important;
+      padding:0 0 clamp(30px, 2.15vw, 40px) !important;
+      font-size:clamp(38px, 2.58vw, 52px) !important;
+      line-height:1.05 !important;
+      letter-spacing:.018em !important;
+      color:#fff3c1 !important;
+      text-transform:none !important;
+      text-shadow:
+        0 1px 0 rgba(255,255,238,.22),
+        0 0 12px rgba(255,230,155,.20),
+        0 6px 16px rgba(0,0,0,.58) !important;
+      filter:none !important;
+    }
+
+    .hero__subtitle::after{
+      opacity:.88 !important;
+      filter:drop-shadow(0 0 6px rgba(226,174,65,.26)) !important;
+    }
+
+    @media (max-width:1180px){
+      .hero__title{font-size:clamp(60px, 5.25vw, 88px) !important;}
+      .hero__subtitle{font-size:clamp(34px, 2.45vw, 44px) !important;}
+    }
+
+    @media (max-width:940px){
+      .hero__title{
+        font-size:clamp(52px, 8.15vw, 76px) !important;
+        letter-spacing:.022em !important;
+        line-height:1 !important;
+      }
+      .hero__subtitle{
+        font-size:clamp(30px, 5.4vw, 42px) !important;
+        margin-bottom:34px !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero__eyebrow{
+        font-size:clamp(17px, 5vw, 23px) !important;
+        letter-spacing:.14em !important;
+        gap:9px !important;
+      }
+      .hero__eyebrow::before,
+      .hero__eyebrow::after{width:46px !important;height:18px !important;}
+      .hero__title{
+        font-size:clamp(35px, 10.2vw, 45px) !important;
+        letter-spacing:.018em !important;
+        line-height:1.02 !important;
+        -webkit-text-stroke:.0035em rgba(255,237,166,.50) !important;
+        text-shadow:
+          0 1px 0 rgba(255,255,231,.45),
+          0 7px 16px rgba(0,0,0,.62),
+          0 0 14px rgba(229,174,61,.18) !important;
+      }
+      .hero__subtitle{
+        font-size:clamp(24px, 7vw, 30px) !important;
+        letter-spacing:.012em !important;
+        margin-top:4px !important;
+        margin-bottom:28px !important;
+        padding-bottom:25px !important;
+      }
+    }
+
+    @media (max-width:380px){
+      .hero__title{font-size:clamp(32px, 9.8vw, 39px) !important;}
+      .hero__subtitle{font-size:clamp(22px, 6.6vw, 27px) !important;}
+    }
+
+
+    /* === DTA Bon Su subtitle typography polish - v46 ===
+       Đổi "Lan tỏa năng lượng an lành" từ font script sang serif nghiêm trang,
+       giảm nét bay bổng, tăng độ rõ và cảm giác trang nghiêm. */
+    .hero__subtitle{
+      font-family:var(--serif) !important;
+      font-style:italic !important;
+      font-weight:400 !important;
+      margin:clamp(12px, .9vw, 18px) auto clamp(42px, 3.1vw, 56px) !important;
+      padding:0 0 clamp(30px, 2.15vw, 40px) !important;
+      font-size:clamp(24px, 1.55vw, 32px) !important;
+      line-height:1.28 !important;
+      letter-spacing:.105em !important;
+      color:#ffeccd !important;
+      text-transform:none !important;
+      text-rendering:geometricPrecision !important;
+      -webkit-font-smoothing:antialiased !important;
+      text-shadow:
+        0 1px 0 rgba(255,255,232,.28),
+        0 4px 14px rgba(0,0,0,.62),
+        0 0 16px rgba(226,174,65,.20) !important;
+      filter:none !important;
+    }
+    .hero__subtitle::after{
+      bottom:-2px !important;
+      opacity:.82 !important;
+      filter:drop-shadow(0 0 5px rgba(226,174,65,.22)) !important;
+    }
+
+    @media (max-width:1180px){
+      .hero__subtitle{
+        font-size:clamp(22px, 1.75vw, 28px) !important;
+        letter-spacing:.095em !important;
+      }
+    }
+
+    @media (max-width:940px){
+      .hero__subtitle{
+        font-size:clamp(21px, 3.25vw, 28px) !important;
+        letter-spacing:.085em !important;
+        line-height:1.32 !important;
+        margin-top:10px !important;
+        margin-bottom:34px !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero__subtitle{
+        font-size:clamp(16.5px, 4.25vw, 20px) !important;
+        letter-spacing:.065em !important;
+        line-height:1.36 !important;
+        margin-top:8px !important;
+        margin-bottom:28px !important;
+        padding-bottom:25px !important;
+        white-space:nowrap !important;
+      }
+      .hero__subtitle::after{
+        height:22px !important;
+        width:76% !important;
+      }
+    }
+
+    @media (max-width:380px){
+      .hero__subtitle{
+        font-size:clamp(15.5px, 4.15vw, 18px) !important;
+        letter-spacing:.045em !important;
+      }
+    }
+
+
+
+    /* === DTA Bon Su title color premium polish - v47 ===
+       Làm màu chữ "Phật Bổn Sư" ấn tượng hơn: vàng kim sâu, sáng ở đỉnh,
+       có viền kim quang và bóng đồng trầm phía dưới nhưng vẫn giữ chữ sắc nét. */
+    .hero__title{
+      position:relative !important;
+      display:inline-block !important;
+      isolation:isolate !important;
+      margin:clamp(12px, .9vw, 17px) auto 0 !important;
+      padding:.13em .055em .1em !important;
+      background-image:
+        linear-gradient(180deg,
+          #fffdf0 0%,
+          #fff1b9 12%,
+          #ffd66a 27%,
+          #f2a92f 46%,
+          #b86b16 64%,
+          #6f3a08 83%,
+          #2d1603 100%) !important;
+      -webkit-background-clip:text !important;
+      background-clip:text !important;
+      color:transparent !important;
+      -webkit-text-fill-color:transparent !important;
+      -webkit-text-stroke:.006em rgba(255,236,152,.84) !important;
+      paint-order:stroke fill !important;
+      text-shadow:
+        0 1px 0 rgba(255,255,238,.78),
+        0 2px 0 rgba(255,211,105,.32),
+        0 4px 0 rgba(102,56,8,.36),
+        0 12px 22px rgba(0,0,0,.72),
+        0 0 20px rgba(255,203,84,.28),
+        0 0 46px rgba(196,116,18,.18) !important;
+      filter:drop-shadow(0 0 8px rgba(255,222,120,.16)) !important;
+    }
+
+    .hero__title::before{
+      content:attr(data-text) !important;
+      display:block !important;
+      position:absolute !important;
+      inset:.13em .055em .1em !important;
+      z-index:-1 !important;
+      color:transparent !important;
+      -webkit-text-fill-color:transparent !important;
+      -webkit-text-stroke:.034em rgba(104,58,10,.72) !important;
+      text-shadow:
+        0 0 18px rgba(255,203,84,.26),
+        0 10px 26px rgba(0,0,0,.62) !important;
+      pointer-events:none !important;
+    }
+
+    .hero__title::after{
+      content:attr(data-text) !important;
+      display:block !important;
+      position:absolute !important;
+      inset:.13em .055em .1em !important;
+      z-index:1 !important;
+      color:transparent !important;
+      -webkit-text-fill-color:transparent !important;
+      background-image:
+        linear-gradient(105deg,
+          transparent 0%,
+          transparent 32%,
+          rgba(255,255,236,.02) 39%,
+          rgba(255,255,236,.82) 47%,
+          rgba(255,230,141,.28) 53%,
+          transparent 62%,
+          transparent 100%),
+        linear-gradient(180deg,
+          rgba(255,255,245,.70) 0%,
+          rgba(255,238,171,.38) 18%,
+          rgba(255,211,102,.10) 40%,
+          transparent 66%);
+      -webkit-background-clip:text !important;
+      background-clip:text !important;
+      opacity:.54 !important;
+      text-shadow:none !important;
+      mix-blend-mode:screen !important;
+      pointer-events:none !important;
+    }
+
+    @media (prefers-reduced-motion:no-preference){
+      body.dta-intro-started .hero__title::after{
+        animation:dtaTitleGoldSweep 5.8s ease-in-out 2.2s infinite;
+      }
+      @keyframes dtaTitleGoldSweep{
+        0%, 54%, 100%{opacity:.38; transform:translateX(-1.1%)}
+        66%{opacity:.76; transform:translateX(1.15%)}
+        78%{opacity:.42; transform:translateX(0)}
+      }
+    }
+
+    @media (max-width:940px){
+      .hero__title{
+        -webkit-text-stroke:.0055em rgba(255,236,152,.78) !important;
+        text-shadow:
+          0 1px 0 rgba(255,255,238,.72),
+          0 2px 0 rgba(255,211,105,.25),
+          0 10px 20px rgba(0,0,0,.70),
+          0 0 24px rgba(255,203,84,.20) !important;
+      }
+      .hero__title::before{-webkit-text-stroke:.028em rgba(104,58,10,.66) !important;}
+    }
+
+    @media (max-width:680px){
+      .hero__title{
+        background-image:
+          linear-gradient(180deg,
+            #fffdf0 0%,
+            #fff0ad 17%,
+            #ffd061 38%,
+            #ce7c1b 62%,
+            #653508 100%) !important;
+        -webkit-text-stroke:.004em rgba(255,236,152,.68) !important;
+        text-shadow:
+          0 1px 0 rgba(255,255,238,.62),
+          0 7px 16px rgba(0,0,0,.68),
+          0 0 16px rgba(255,203,84,.18) !important;
+      }
+      .hero__title::before{-webkit-text-stroke:.023em rgba(104,58,10,.58) !important;}
+      .hero__title::after{opacity:.42 !important;}
+    }
+
+
+
+    /* === DTA Bon Su virtues decor icons - v48 === */
+    .hero__virtues{
+      display:flex !important;
+      align-items:center !important;
+      justify-content:center !important;
+      gap:clamp(8px, 1.1vw, 16px) !important;
+    }
+    .hero__virtues::before,
+    .hero__virtues::after{
+      content:none !important;
+      display:none !important;
+    }
+    .hero__virtues span{
+      display:inline-block !important;
+      white-space:nowrap !important;
+    }
+    .hero__virtues span::before,
+    .hero__virtues span::after{
+      content:none !important;
+      display:none !important;
+      margin:0 !important;
+    }
+    .hero__virtue-decor{
+      display:block !important;
+      width:clamp(38px, 4.4vw, 72px) !important;
+      height:auto !important;
+      flex:0 0 auto !important;
+      object-fit:contain !important;
+      opacity:.96 !important;
+      filter:drop-shadow(0 0 8px rgba(226,181,78,.34)) drop-shadow(0 3px 8px rgba(0,0,0,.45));
+      pointer-events:none !important;
+      user-select:none !important;
+    }
+    .hero__virtue-decor--left{
+      transform:translateY(1px) !important;
+    }
+    .hero__virtue-decor--right{
+      transform:translateY(1px) !important;
+    }
+
+    @media (max-width:680px){
+      .hero__virtues{
+        gap:6px !important;
+      }
+      .hero__virtue-decor{
+        width:clamp(24px, 8.6vw, 42px) !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero__virtues{
+        gap:5px !important;
+        letter-spacing:.045em !important;
+      }
+      .hero__virtue-decor{
+        width:clamp(22px, 7.6vw, 34px) !important;
+      }
+    }
+
+
+    /* === DTA Bon Su compact hero text/decor spacing - v49 ===
+       Kéo icon hai bên sát text hơn và gom cụm subtitle/value/decor gần tiêu đề hơn. */
+    .hero__eyebrow{
+      gap:clamp(7px, .62vw, 10px) !important;
+      margin-bottom:0 !important;
+      line-height:1 !important;
+    }
+    .hero__eyebrow::before,
+    .hero__eyebrow::after{
+      width:clamp(54px, 5.25vw, 84px) !important;
+      height:24px !important;
+    }
+
+    .hero__title{
+      margin:clamp(8px, .55vw, 12px) auto 0 !important;
+      padding:.11em .055em .075em !important;
+    }
+
+    .hero__subtitle{
+      margin:clamp(0px, .22vw, 5px) auto clamp(14px, 1.08vw, 22px) !important;
+      padding:0 0 clamp(18px, 1.22vw, 25px) !important;
+      line-height:1.12 !important;
+    }
+    .hero__subtitle::after{
+      bottom:-3px !important;
+      height:clamp(22px, 1.75vw, 28px) !important;
+      width:min(390px, 68%) !important;
+    }
+
+    .hero__virtues{
+      gap:clamp(4px, .42vw, 7px) !important;
+      margin:clamp(-3px, -.18vw, 0px) 0 clamp(22px, 1.8vw, 34px) !important;
+      line-height:1.12 !important;
+    }
+    .hero__virtue-decor{
+      width:clamp(32px, 3.35vw, 56px) !important;
+    }
+    .hero__virtue-decor--left{
+      transform:translate(4px, 1px) !important;
+    }
+    .hero__virtue-decor--right{
+      transform:translate(-4px, 1px) !important;
+    }
+
+    @media (max-width:940px){
+      .hero__eyebrow{gap:8px !important;}
+      .hero__subtitle{
+        margin-top:3px !important;
+        margin-bottom:18px !important;
+        padding-bottom:22px !important;
+        line-height:1.18 !important;
+      }
+      .hero__subtitle::after{width:70% !important;height:23px !important;}
+      .hero__virtues{margin-bottom:18px !important;gap:5px !important;}
+    }
+
+    @media (max-width:680px){
+      .hero__eyebrow{
+        gap:6px !important;
+        margin-bottom:0 !important;
+      }
+      .hero__eyebrow::before,
+      .hero__eyebrow::after{
+        width:38px !important;
+        height:16px !important;
+      }
+      .hero__title{
+        margin-top:6px !important;
+        padding-bottom:.065em !important;
+      }
+      .hero__subtitle{
+        margin-top:2px !important;
+        margin-bottom:15px !important;
+        padding-bottom:20px !important;
+        line-height:1.18 !important;
+      }
+      .hero__subtitle::after{
+        width:68% !important;
+        height:20px !important;
+        bottom:-2px !important;
+      }
+      .hero__virtues{
+        gap:3px !important;
+        margin-top:-2px !important;
+        margin-bottom:16px !important;
+        line-height:1.08 !important;
+      }
+      .hero__virtue-decor{
+        width:clamp(20px, 6.7vw, 32px) !important;
+      }
+      .hero__virtue-decor--left{transform:translate(3px, 1px) !important;}
+      .hero__virtue-decor--right{transform:translate(-3px, 1px) !important;}
+    }
+
+    @media (max-width:420px){
+      .hero__eyebrow{gap:5px !important;}
+      .hero__eyebrow::before,
+      .hero__eyebrow::after{width:34px !important;height:14px !important;}
+      .hero__subtitle{margin-bottom:13px !important;padding-bottom:18px !important;}
+      .hero__virtues{gap:2px !important;margin-bottom:15px !important;}
+      .hero__virtue-decor{width:clamp(18px, 6vw, 28px) !important;}
+    }
+
+
+
+    /* === DTA Bon Su title reference polish - v50 ===
+       Chỉnh chữ "PHẬT BỔN SƯ" gần mẫu tham chiếu: serif cổ điển, chữ in hoa,
+       vàng kim sáng phía trên - đồng trầm phía dưới, nét thanh lịch và trang nghiêm. */
+    .hero__title{
+      font-family:"Times New Roman", "Philosopher", Georgia, serif !important;
+      text-transform:uppercase !important;
+      font-weight:400 !important;
+      font-size:clamp(58px, 5.55vw, 94px) !important;
+      line-height:.94 !important;
+      letter-spacing:clamp(.035em, -0.58vw, .095em) !important;
+      margin:clamp(9px, .62vw, 13px) auto 0 !important;
+      padding:.08em .035em .12em !important;
+      color:transparent !important;
+      -webkit-text-fill-color:transparent !important;
+      -webkit-text-stroke:.0038em rgba(255,238,178,.52) !important;
+      background-image:
+        linear-gradient(180deg,
+          #fff9d9 0%,
+          #fff2bd 10%,
+          #f7d97c 24%,
+          #dfad47 42%,
+          #b87920 62%,
+          #7c4610 78%,
+          #3a1b04 100%) !important;
+      -webkit-background-clip:text !important;
+      background-clip:text !important;
+      paint-order:stroke fill !important;
+      text-shadow:
+        0 .5px 0 rgb(255 192 57 / 82%), 
+		-2px 2px 0 rgba(255, 223, 139, .34), 
+		0 5px 8px rgba(55, 27, 2, .72), 
+		0 13px 26px rgba(0, 0, 0, .68), 
+		0 0 18px rgba(236, 190, 82, .22) !important;
+      filter:drop-shadow(0 0 7px rgba(255,217,126,.14)) !important;
+    }
+
+    .hero__title::before{
+      content:attr(data-text) !important;
+      position:absolute !important;
+      display:block !important;
+      inset:.08em .035em .12em !important;
+      z-index:-1 !important;
+      font-family:inherit !important;
+      font-weight:inherit !important;
+      letter-spacing:inherit !important;
+      text-transform:uppercase !important;
+      color:transparent !important;
+      -webkit-text-fill-color:transparent !important;
+      -webkit-text-stroke:.020em rgba(58,27,4,.74) !important;
+      text-shadow:
+        0 2px 0 rgba(255,222,132,.10),
+        0 8px 18px rgba(0,0,0,.74),
+        0 0 18px rgba(214,151,45,.18) !important;
+      pointer-events:none !important;
+    }
+
+    .hero__title::after{
+      content:attr(data-text) !important;
+      position:absolute !important;
+      display:block !important;
+      inset:.08em .035em .12em !important;
+      z-index:1 !important;
+      font-family:inherit !important;
+      font-weight:inherit !important;
+      letter-spacing:inherit !important;
+      text-transform:uppercase !important;
+      color:transparent !important;
+      -webkit-text-fill-color:transparent !important;
+      background-image:
+        linear-gradient(180deg,
+          rgba(255,255,240,.82) 0%,
+          rgba(255,244,190,.46) 16%,
+          rgba(255,216,105,.12) 36%,
+          transparent 56%),
+        linear-gradient(105deg,
+          transparent 0%,
+          transparent 38%,
+          rgba(255,255,235,.76) 48%,
+          rgba(255,229,139,.18) 55%,
+          transparent 66%,
+          transparent 100%) !important;
+      -webkit-background-clip:text !important;
+      background-clip:text !important;
+      opacity:.58 !important;
+      mix-blend-mode:screen !important;
+      text-shadow:none !important;
+      pointer-events:none !important;
+    }
+
+    @media (max-width:940px){
+      .hero__title{
+        font-size:clamp(54px, 8.4vw, 82px) !important;
+        letter-spacing:clamp(.03em, .38vw, .08em) !important;
+        line-height:.98 !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero__title{
+        font-size:clamp(39px, 11.2vw, 54px) !important;
+        letter-spacing:.038em !important;
+        line-height:1.02 !important;
+        padding:.08em .025em .1em !important;
+        -webkit-text-stroke:.0032em rgba(255,238,178,.46) !important;
+        text-shadow:
+          0 .5px 0 rgba(255,255,236,.62),
+          0 6px 15px rgba(0,0,0,.70),
+          0 0 14px rgba(236,190,82,.18) !important;
+      }
+      .hero__title::before,
+      .hero__title::after{
+        inset:.08em .025em .1em !important;
+      }
+      .hero__title::before{
+        -webkit-text-stroke:.017em rgba(58,27,4,.64) !important;
+      }
+      .hero__title::after{opacity:.48 !important;}
+    }
+
+    @media (max-width:420px){
+      .hero__title{
+        font-size:clamp(34px, 10.7vw, 44px) !important;
+        letter-spacing:.03em !important;
+      }
+    }
+
+
+
+    /* === DTA Bon Su hero subtitle divider line polish - v51 ===
+       Kéo dài divider-lotus-line gần bằng chiều dài "Lan tỏa năng lượng an lành"
+       và hạ đường line xuống thấp hơn một chút để thoáng mắt. */
+    .hero__subtitle{
+      padding-bottom:clamp(26px, 1.65vw, 34px) !important;
+    }
+
+    .hero__subtitle::after{
+      width:min(520px, 92%) !important;
+      height:clamp(24px, 1.9vw, 30px) !important;
+      bottom:-8px !important;
+      background-size:contain !important;
+    }
+
+    @media (max-width:940px){
+      .hero__subtitle{
+        padding-bottom:26px !important;
+      }
+      .hero__subtitle::after{
+        width:86% !important;
+        height:24px !important;
+        bottom:-7px !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero__subtitle{
+        padding-bottom:24px !important;
+      }
+      .hero__subtitle::after{
+        width:88% !important;
+        height:22px !important;
+        bottom:-6px !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero__subtitle{
+        padding-bottom:22px !important;
+      }
+      .hero__subtitle::after{
+        width:90% !important;
+        height:20px !important;
+        bottom:-5px !important;
+      }
+    }
+
+
+    /* === DTA Bon Su title gold-white angled highlight - v52 ===
+       Chỉnh PHẬT BỔN SƯ: nhỏ hơn nhẹ, letter-spacing gọn hơn,
+       3/4 thân chữ vàng kim và nửa trên có ánh trắng xéo khoảng 75 độ. */
+    .hero__title{
+      font-size:clamp(54px, 5.12vw, 86px) !important;
+      letter-spacing:clamp(.018em, .13vw, .052em) !important;
+      line-height:.95 !important;
+      padding:.08em .028em .12em !important;
+      background-image:
+        linear-gradient(180deg,
+          #fffef0 0%,
+          #fff8d6 13%,
+          #ffe89c 26%,
+          #f3c85b 38%,
+          #daa33a 58%,
+          #bd7921 76%,
+          #8d4d10 90%,
+          #3b1b05 100%) !important;
+      -webkit-text-stroke:.0034em rgba(255,239,187,.48) !important;
+      text-shadow:
+        0 .5px 0 rgb(245 208 93 / 72%), 
+		-1.5px 1.5px 0 rgba(255, 223, 139, .25),
+        0 5px 8px rgba(55,27,2,.70),
+        0 12px 24px rgba(0,0,0,.66),
+        0 0 16px rgba(236,190,82,.20) !important;
+      filter:drop-shadow(0 0 6px rgba(255,217,126,.12)) !important;
+    }
+
+    .hero__title::before,
+    .hero__title::after{
+      inset:.08em .028em .12em !important;
+      letter-spacing:inherit !important;
+    }
+
+    .hero__title::before{
+      -webkit-text-stroke:.018em rgba(48,21,3,.72) !important;
+      text-shadow:
+        0 2px 0 rgba(255,222,132,.08),
+        0 7px 16px rgba(0,0,0,.72),
+        0 0 16px rgba(214,151,45,.16) !important;
+    }
+
+    .hero__title::after{
+      background-image:
+        linear-gradient(75deg,
+          transparent 0%,
+          transparent 20%,
+          rgba(255,255,255,.10) 30%,
+          rgba(255,255,248,.92) 43%,
+          rgba(255,244,199,.62) 52%,
+          rgba(255,226,133,.18) 62%,
+          transparent 76%,
+          transparent 100%),
+        linear-gradient(180deg,
+          rgba(255,255,246,.82) 0%,
+          rgba(255,250,218,.62) 20%,
+          rgba(255,235,160,.26) 42%,
+          rgba(255,220,110,.06) 56%,
+          transparent 70%) !important;
+      -webkit-background-clip:text !important;
+      background-clip:text !important;
+      -webkit-mask-image:linear-gradient(180deg, #000 0%, #000 54%, rgba(0,0,0,.18) 66%, transparent 78%) !important;
+      mask-image:linear-gradient(180deg, #000 0%, #000 54%, rgba(0,0,0,.18) 66%, transparent 78%) !important;
+      opacity:.74 !important;
+      mix-blend-mode:screen !important;
+    }
+
+    @media (max-width:940px){
+      .hero__title{
+        font-size:clamp(50px, 7.9vw, 76px) !important;
+        letter-spacing:clamp(.016em, .26vw, .048em) !important;
+        line-height:.99 !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero__title{
+        font-size:clamp(37px, 10.55vw, 50px) !important;
+        letter-spacing:.026em !important;
+        line-height:1.03 !important;
+        padding:.08em .022em .1em !important;
+        -webkit-text-stroke:.003em rgba(255,238,178,.44) !important;
+      }
+      .hero__title::before,
+      .hero__title::after{
+        inset:.08em .022em .1em !important;
+      }
+      .hero__title::before{
+        -webkit-text-stroke:.015em rgba(48,21,3,.64) !important;
+      }
+      .hero__title::after{
+        opacity:.62 !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero__title{
+        font-size:clamp(32px, 10.15vw, 41px) !important;
+        letter-spacing:.02em !important;
+      }
+    }
+
+
+
+    /* === DTA fix: keep hero-altar-room.jpg clear and detailed at image center === */
+    .hero-media{
+      isolation:isolate !important;
+      filter:none !important;
+    }
+
+    .hero-media img{
+      object-position:center center !important;
+      transform:scale(1.006) !important;
+      filter:saturate(1.13) contrast(1.08) brightness(.94) !important;
+      image-rendering:auto !important;
+      backface-visibility:hidden !important;
+      will-change:auto !important;
+    }
+
+    .hero-media:hover img,
+    .hero-media.is-sacred-active img,
+    .hero-section.is-sacred-title-active .hero-media img,
+    body.dta-intro-started .hero-media img{
+      transform:scale(1.01) !important;
+      filter:saturate(1.15) contrast(1.09) brightness(.98) !important;
+    }
+
+    .hero-media::before{
+      opacity:.08 !important;
+      filter:none !important;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(255,226,140,.08), transparent 22%),
+        radial-gradient(circle at 50% 35%, rgba(215,168,63,.05), transparent 42%) !important;
+    }
+
+    .hero-media:hover::before,
+    .hero-media.is-sacred-active::before{
+      opacity:.14 !important;
+      animation:none !important;
+    }
+
+    .hero-sacred-mist{
+      opacity:.16 !important;
+      filter:blur(2px) !important;
+      background:
+        radial-gradient(ellipse at 36% 82%, rgba(255,236,174,.08) 0 8%, transparent 30%),
+        radial-gradient(ellipse at 78% 78%, rgba(241,200,102,.07) 0 10%, transparent 34%),
+        linear-gradient(100deg, transparent 16%, rgba(255,246,215,.035) 45%, rgba(241,200,102,.035) 56%, transparent 78%) !important;
+    }
+
+    .hero-media.is-sacred-active .hero-sacred-mist,
+    .hero-section.is-sacred-title-active .hero-sacred-mist{
+      opacity:.18 !important;
+      filter:blur(2px) !important;
+    }
+
+    .hero-sacred-halo{
+      filter:blur(1px) saturate(1.04) !important;
+      opacity:.46 !important;
+    }
+
+    .hero-media.is-sacred-active .hero-sacred-halo,
+    .hero-section.is-sacred-title-active .hero-sacred-halo{
+      opacity:.52 !important;
+    }
+
+    .hero-sacred-sun{
+      filter:blur(.35px) !important;
+      opacity:.24 !important;
+    }
+
+    .hero-media.is-sacred-active .hero-sacred-sun,
+    .hero-section.is-sacred-title-active .hero-sacred-sun{
+      opacity:.28 !important;
+    }
+
+    @media (prefers-reduced-motion:no-preference){
+      body.dta-intro-started .hero-media img{
+        animation:none !important;
+      }
+    }
+
+    @media (max-width:940px){
+      .hero-media img{
+        object-position:center center !important;
+        transform:scale(1.01) !important;
+        filter:saturate(1.12) contrast(1.08) brightness(.90) !important;
+      }
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      body.dta-intro-started .hero-media img{
+        transform:scale(1.012) !important;
+        filter:saturate(1.14) contrast(1.09) brightness(.94) !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-media img{
+        object-position:center top !important;
+        transform:scale(1.01) !important;
+        filter:saturate(1.12) contrast(1.08) brightness(.88) !important;
+      }
+      .hero-sacred-mist{
+        opacity:.10 !important;
+        filter:blur(1.5px) !important;
+      }
+    }
+</style>
   <script>
     window.dtaTurnstileReady = function(){
       window.dtaTurnstileLoaded = true;
@@ -11712,22 +12884,23 @@ body{
 </head>
 <body>
   <main class="dta-page">
-    <section class="hero-section" aria-label="Kiến tạo không gian an trú tại gia">
+    <section class="hero-section" aria-label="Tôn tượng Phật Bổn Sư">
       <header class="site-header">
         <div class="header-inner">
           <a class="brand" href="#" aria-label="Diệu Tướng Am">
             <img class="brand-logo" src="assets/logo/logo-dieu-tuong-am-gold.png" alt="Diệu Tướng Am" />
           </a>
-          <div class="brand-slogan">Không gian văn hoá<br/>Nghệ thuật tâm linh</div>
+          <div class="brand-slogan">Nơi tôn trí đức tướng<br/>vi diệu của chư Phật</div>
           <nav class="main-nav" aria-label="Điều hướng chính">
-            <a href="#gioi-thieu">Giới thiệu</a>
-            <a href="#dich-vu">Dịch vụ</a>
-            <a href="#quy-trinh">Quy trình</a>
-            <a href="#du-an">Dự án</a>
+            <a href="#" class="is-active">Trang chủ</a>
+            <a href="#gioi-thieu">Tôn tượng</a>
+            <a href="#phat-phap">Phật pháp</a>
+            <a href="#tin-tuc">Tin tức</a>
+            <a href="#ve-dieu-tuong-am">Về Diệu Tướng Am</a>
             <a href="#lien-he">Liên hệ</a>
           </nav>
           <a id="dta-header-cta" class="header-cta" href="#tu-van" data-consult-trigger data-ga-event="click_header_cta" data-ga-cta-name="header_cta">
-            <span>NHẬN TƯ VẤN</span>
+            <span>TƯ VẤN THỈNH TƯỢNG</span>
             <span class="cta-lotus-icon" aria-hidden="true">
               <svg viewBox="0 0 32 32" focusable="false" role="img">
                 <path class="lotus-petal lotus-center" d="M16 6.2C12.9 10.1 12.6 14.6 16 19.1C19.4 14.6 19.1 10.1 16 6.2Z" />
@@ -11747,12 +12920,13 @@ body{
         </div>
         <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
           <div class="mobile-menu-panel">
-            <a href="#gioi-thieu">Giới thiệu</a>
-            <a href="#dich-vu">Dịch vụ</a>
-            <a href="#quy-trinh">Quy trình</a>
-            <a href="#du-an">Dự án</a>
+            <a href="#">Trang chủ</a>
+            <a href="#gioi-thieu">Tôn tượng</a>
+            <a href="#phat-phap">Phật pháp</a>
+            <a href="#tin-tuc">Tin tức</a>
+            <a href="#ve-dieu-tuong-am">Về Diệu Tướng Am</a>
             <a href="#lien-he">Liên hệ</a>
-            <a class="mobile-menu-cta" href="#tu-van" data-consult-trigger data-ga-event="click_header_cta" data-ga-cta-name="mobile_header_cta">BẮT ĐẦU HÀNH TRÌNH KIẾN TẠO</a>
+            <a class="mobile-menu-cta" href="#tu-van" data-consult-trigger data-ga-event="click_header_cta" data-ga-cta-name="mobile_header_cta">TƯ VẤN THỈNH TƯỢNG</a>
           </div>
         </nav>
       </header>
@@ -11760,7 +12934,7 @@ body{
       <div class="hero-intro-veil" aria-hidden="true"></div>
 
       <div class="hero-media" aria-hidden="true">
-        <img src="assets/images/hero/hero-altar-room.webp" alt="" />
+        <img src="assets/images/hero/hero-altar-room.jpg" alt="" />
         <span class="hero-sacred-halo"></span>
         <span class="hero-sacred-rays"></span>
         <span class="hero-sacred-mist"></span>
@@ -11771,33 +12945,37 @@ body{
 
       <div class="hero__content-wrap">
         <div class="hero__content">
-          <img class="hero__ornament" src="assets/images/decor/decor-heading-lotus.png" alt="" aria-hidden="true" />
+          <img class="hero__ornament" src="assets/images/decor/hero/ornament-flourish-full.png" alt="" aria-hidden="true" />
           <p class="hero__eyebrow">Tôn tượng</p>
-          <h1 class="hero__title" data-text="Phật Bổn Sư">Phật Bổn Sư</h1>
+          <h1 class="hero__title" data-text="PHẬT BỔN SƯ">PHẬT BỔN SƯ</h1>
           <span class="hero__title-line" aria-hidden="true"></span>
           <p class="hero__subtitle">Lan tỏa năng lượng an lành</p>
-          <div class="hero__virtues" aria-label="Giá trị cốt lõi"><span>Trang nghiêm – Từ bi – Vi diệu</span></div>
-
-          <div class="benefits" aria-label="Lợi ích nổi bật">
-            <div class="benefit">
-              <img class="benefit__icon" src="assets/icons/hero/icon-buddha-standard.png" alt="" aria-hidden="true" />
-              <div>Diệu tướng<br />chuẩn mực</div>
-            </div>
-            <div class="benefit">
-              <img class="benefit__icon" src="assets/icons/hero/icon-lotus-craft.png" alt="" aria-hidden="true" />
-              <div>Chế tác<br />tinh xảo</div>
-            </div>
-            <div class="benefit">
-              <img class="benefit__icon" src="assets/icons/hero/icon-altar-anvi.png" alt="" aria-hidden="true" />
-              <div>An vị<br />trang nghiêm</div>
-            </div>
+          <div class="hero__virtues" aria-label="Giá trị cốt lõi">
+            <img class="hero__virtue-decor hero__virtue-decor--left" src="assets/images/decor/decor-value-flourish-left-gold.png" alt="" aria-hidden="true" />
+            <span>Trang nghiêm – Từ bi – Vi diệu</span>
+            <img class="hero__virtue-decor hero__virtue-decor--right" src="assets/images/decor/decor-value-flourish-right-gold.png" alt="" aria-hidden="true" />
           </div>
 
           <div class="hero__cta">
             <a id="dta-hero-cta" class="btn btn--hero" href="#tu-van" data-consult-trigger data-ga-event="click_hero_cta" data-ga-cta-name="hero_cta">
-              <img src="assets/icons/hero/icon-lotus-button.png" alt="" aria-hidden="true" />
+              <img src="assets/ui/buttons/btn-lotus-icon-gold.png" alt="" aria-hidden="true" />
               Tư vấn thỉnh tượng
             </a>
+          </div>
+
+          <div class="benefits" aria-label="Lợi ích nổi bật">
+            <div class="benefit">
+              <img class="benefit__icon" src="assets/icons/hero/hero-icon-lotus-circle.png" alt="" aria-hidden="true" />
+              <div><strong>Chuẩn tôn nghiêm</strong><span>Tượng Phật chuẩn tỷ lệ</span></div>
+            </div>
+            <div class="benefit">
+              <img class="benefit__icon" src="assets/icons/hero/hero-icon-hand-heart-circle.png" alt="" aria-hidden="true" />
+              <div><strong>Chất liệu cao cấp</strong><span>Bền đẹp với thời gian</span></div>
+            </div>
+            <div class="benefit">
+              <img class="benefit__icon" src="assets/icons/hero/hero-icon-mandala-circle.png" alt="" aria-hidden="true" />
+              <div><strong>Tâm huyết & tinh xảo</strong><span>Từng chi tiết hoàn mỹ</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -11819,7 +12997,7 @@ body{
           <path class="divider-gold" d="M0,67 C250,109 407,110 597,90 C725,77 856,60 1017,71 C1186,82 1297,118 1440,105" />
         </svg>
         <div class="divider-medallion">
-          <img src="assets/images/decor/decor-lotus-medallion.png" alt="" />
+          <img src="assets/images/decor/hero/divider-lotus-medallion.png" alt="" />
         </div>
       </div>
     </section>
