@@ -14148,6 +14148,39 @@ body{
       }
     }
 
+
+    /* === DTA HERO BACKGROUND ALIGNMENT TWEAK - 2026-06-01 ===
+       Dịch ảnh hero sang trái nhẹ trên mobile/tablet để trục tượng/đường giữa vào đúng tâm hơn. */
+    @media (max-width:940px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:54% 40% !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:55% 40% !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:56% 39% !important;
+      }
+    }
+
 </style>
   <script>
     window.dtaTurnstileReady = function(){
