@@ -9,3 +9,55 @@
 {"ts":1780071432.5906713,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
 {"ts":1780071464.4161849,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
 {"ts":1780071466.1196232,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780220392.0649116,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780221896.5104618,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780221908.8585925,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780222464.8877156,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780222467.4609139,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780223387.9630165,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780223893.6392558,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780223970.2346256,"message":"micro-compact running (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":231126,"source":"usage.input_tokens"}}
+{"ts":1780223970.2425094,"message":"micro-compact skipped (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":231126,"source":"usage.input_tokens"}}
+{"ts":1780223978.7940693,"message":"micro-compact running (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":232099,"source":"usage.input_tokens"}}
+{"ts":1780223978.7989147,"message":"micro-compact skipped (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":232099,"source":"usage.input_tokens"}}
+{"ts":1780223998.0718307,"message":"micro-compact running (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":233044,"source":"usage.input_tokens"}}
+{"ts":1780223998.0779715,"message":"micro-compact skipped (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":233044,"source":"usage.input_tokens"}}
+{"ts":1780224044.0553575,"message":"micro-compact running (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":233826,"source":"usage.input_tokens"}}
+{"ts":1780224044.0591042,"message":"micro-compact skipped (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":233826,"source":"usage.input_tokens"}}
+{"ts":1780224073.5728302,"message":"micro-compact running (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":236191,"source":"usage.input_tokens"}}
+{"ts":1780224073.5766294,"message":"micro-compact skipped (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":236191,"source":"usage.input_tokens"}}
+{"ts":1780224085.2645559,"message":"micro-compact running (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":238729,"source":"usage.input_tokens"}}
+{"ts":1780224085.269053,"message":"micro-compact skipped (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":238729,"source":"usage.input_tokens"}}
+{"ts":1780224093.9766517,"message":"micro-compact running (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":239571,"source":"usage.input_tokens"}}
+{"ts":1780224093.9839933,"message":"micro-compact skipped (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":239571,"source":"usage.input_tokens"}}
+{"ts":1780224106.5826807,"message":"micro-compact running (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":239855,"source":"usage.input_tokens"}}
+{"ts":1780224106.5870311,"message":"micro-compact skipped (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":239855,"source":"usage.input_tokens"}}
+{"ts":1780224117.8079548,"message":"micro-compact running (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":241243,"source":"usage.input_tokens"}}
+{"ts":1780224117.8112962,"message":"micro-compact skipped (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":241243,"source":"usage.input_tokens"}}
+{"ts":1780224397.4348898,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780224412.0281038,"message":"micro-compact running (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":238253,"source":"usage.input_tokens"}}
+{"ts":1780224412.0333316,"message":"micro-compact skipped (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":238253,"source":"usage.input_tokens"}}
+{"ts":1780224418.6253686,"message":"micro-compact running (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":240262,"source":"usage.input_tokens"}}
+{"ts":1780224418.9087932,"message":"micro-compact triggered (input_tokens threshold)","extra":{"threshold":230000,"input_tokens":240262,"saved_tokens":22545,"source":"usage.input_tokens"}}
+{"ts":1780224656.3757775,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780224656.7486548,"message":"micro-compact triggered (startup)","extra":{"min_saved":0,"saved_tokens":1422}}
+{"ts":1780225128.8722343,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780225129.2261026,"message":"micro-compact triggered (startup)","extra":{"min_saved":0,"saved_tokens":14759}}
+{"ts":1780225131.943574,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780225496.2916496,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780225496.7444334,"message":"micro-compact triggered (startup)","extra":{"min_saved":0,"saved_tokens":16413}}
+{"ts":1780226223.5057521,"message":"pre-compact running (session overwrite)"}
+{"ts":1780226261.2534807,"message":"pre-compact applied (session overwritten)"}
+{"ts":1780226261.2712529,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780228750.6462448,"message":"pre-compact running (session overwrite)"}
+{"ts":1780228797.4523447,"message":"pre-compact applied (session overwritten)"}
+{"ts":1780228797.46348,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780229120.8342965,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780276291.7651651,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780276294.9394302,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780277116.8755386,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780277591.8145671,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780278026.6633093,"message":"pre-compact running (session overwrite)"}
+{"ts":1780278080.7328284,"message":"pre-compact applied (session overwritten)"}
+{"ts":1780278080.7472129,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}
+{"ts":1780279294.9444845,"message":"environment_context refreshed (removed stale items)","extra":{"removed":1,"workdir":"/mnt/d/WORKING/DTA_LandingpageBanhang/DTA_LandingpageThinhTonTuong052026"}}

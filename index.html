@@ -13315,32 +13315,55 @@ body{
       to{transform:translateX(285%) skewX(-22deg)}
     }
 
-    /* Final header correction: larger logo and no top gap. */
+    /* Comprehensive responsive sizing for logo-dieu-tuong-am-gold.png. */
     .site-header{
+      --dta-logo-size:clamp(128px, 7.1vw, 148px);
       top:0 !important;
     }
+    .brand{
+      flex:0 0 auto !important;
+      width:var(--dta-logo-size) !important;
+      max-width:28vw !important;
+    }
+    .brand::before{
+      left:calc(var(--dta-logo-size) * -.12) !important;
+      width:calc(var(--dta-logo-size) * 1.18) !important;
+      height:calc(var(--dta-logo-size) * 1.18) !important;
+    }
     .brand-logo{
-      width:clamp(120px, 9.8vw, 160px) !important;
+      display:block !important;
+      width:100% !important;
+      max-width:100% !important;
+      height:auto !important;
+      aspect-ratio:1 / 1 !important;
+      object-fit:contain !important;
+      transform-origin:center center !important;
+    }
+    @media (max-width:1180px){
+      .site-header{
+        --dta-logo-size:clamp(118px, 9.8vw, 128px);
+      }
     }
     @media (max-width:940px){
       .site-header{
+        --dta-logo-size:118px;
         top:0 !important;
-      }
-      .brand-logo{
-        width:124px !important;
       }
     }
     @media (max-width:680px){
       .site-header{
+        --dta-logo-size:clamp(92px, 23vw, 104px);
         top:0 !important;
       }
-      .brand-logo{
-        width:110px !important;
+    }
+    @media (max-width:430px){
+      .site-header{
+        --dta-logo-size:clamp(88px, 22vw, 96px);
       }
     }
-    @media (max-width:380px){
-      .brand-logo{
-        width:100px !important;
+    @media (max-width:360px){
+      .site-header{
+        --dta-logo-size:84px;
       }
     }
 </style>
