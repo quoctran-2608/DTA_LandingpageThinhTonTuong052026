@@ -13863,6 +13863,83 @@ body{
         height:38px !important;
       }
     }
+
+    /* Mobile hero framing: học từ bản balanced-v3 nhưng giữ ảnh gần hơn, không zoom-out quá xa. */
+    @media (max-width:940px){
+      .hero-section{
+        min-height:900px !important;
+        background:#070301 url("assets/images/bg/bg-hero-dark-wood.webp") center / cover no-repeat !important;
+      }
+
+      .hero-media{
+        inset:82px 0 auto 0 !important;
+        width:100% !important;
+        height:clamp(600px, 64vw, 660px) !important;
+        overflow:hidden !important;
+        background:#080401 !important;
+        mask-image:none !important;
+        -webkit-mask-image:none !important;
+      }
+
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        width:100% !important;
+        height:100% !important;
+        object-fit:cover !important;
+        object-position:62% 43% !important;
+        transform:none !important;
+        transform-origin:center center !important;
+        filter:saturate(1.08) contrast(1.06) brightness(.84) !important;
+      }
+
+      .hero-media::after{
+        z-index:3 !important;
+        background:
+          linear-gradient(180deg,
+            rgba(0,0,0,.10) 0%,
+            rgba(0,0,0,.04) 30%,
+            rgba(0,0,0,.36) 62%,
+            rgba(0,0,0,.90) 100%),
+          radial-gradient(ellipse at 50% 66%, rgba(0,0,0,.40) 0%, rgba(0,0,0,.20) 44%, transparent 74%) !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-section{
+        min-height:890px !important;
+      }
+
+      .hero-media{
+        top:72px !important;
+        height:clamp(600px, 158vw, 680px) !important;
+      }
+
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:62% 42% !important;
+        filter:saturate(1.08) contrast(1.06) brightness(.82) !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero-media{
+        height:clamp(590px, 155vw, 635px) !important;
+      }
+
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:61% 41% !important;
+      }
+    }
 </style>
   <script>
     window.dtaTurnstileReady = function(){
