@@ -14417,6 +14417,95 @@ body{
       }
     }
 
+
+
+    /* =========================================================
+       DTA FINAL MOBILE GAP FIX — hero benefits to divider
+       - Rút ngắn khoảng trống không cần thiết bên dưới 3 benefit mobile
+       - Giữ desktop không đổi
+       ========================================================= */
+    @media (max-width:940px){
+      .hero__content-wrap{
+        padding-bottom:92px !important;
+      }
+
+      .benefits{
+        margin-top:16px !important;
+        margin-bottom:0 !important;
+        transform:translateY(22px) !important;
+      }
+
+      .section-divider{
+        height:112px !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-section{
+        min-height:820px !important;
+      }
+
+      .hero__content-wrap{
+        min-height:820px !important;
+        padding-bottom:112px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-48px) !important;
+      }
+
+      .benefits{
+        margin-top:14px !important;
+        margin-bottom:0 !important;
+        transform:translateY(42px) !important;
+      }
+
+      .section-divider{
+        height:108px !important;
+      }
+
+      .divider-medallion{
+        bottom:0 !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero-section{
+        min-height:790px !important;
+      }
+
+      .hero__content-wrap{
+        min-height:790px !important;
+        padding-bottom:104px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-44px) !important;
+      }
+
+      .benefits{
+        margin-top:12px !important;
+        transform:translateY(38px) !important;
+      }
+
+      .section-divider{
+        height:104px !important;
+      }
+    }
+
+    @media (max-width:360px){
+      .hero__content-wrap{
+        padding-bottom:98px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-40px) !important;
+      }
+
+      .benefits{
+        transform:translateY(34px) !important;
+      }
+    }
 </style>
   <script>
     window.dtaTurnstileReady = function(){
