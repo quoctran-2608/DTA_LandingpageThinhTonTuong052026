@@ -14085,7 +14085,7 @@ body{
       }
 
       .hero-media{
-        height:clamp(590px, 154vw, 640px) !important;
+        height:clamp(551px, 130vw, 630px) !important;
       }
 
       .hero-media img,
@@ -14145,6 +14145,475 @@ body{
       .hero__virtues{
         font-size:11.2px !important;
         letter-spacing:.02em !important;
+      }
+    }
+
+
+    /* === DTA FINAL HERO TUNE v50 - 2026-06-01 ===
+       - Dịch ảnh hero sang trái nhẹ để Đức Phật nằm gần trung tâm hơn.
+       - Tăng nhẹ toàn bộ chữ trong vùng hero trên mobile, giữ desktop không đổi. */
+    @media (max-width:940px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:55% 40% !important;
+      }
+
+      .hero__content{
+        max-width:410px !important;
+      }
+
+      .hero__eyebrow{
+        font-size:clamp(19px, 5.45vw, 24px) !important;
+      }
+
+      .hero__title{
+        font-size:clamp(39px, 10.95vw, 52px) !important;
+        line-height:1.03 !important;
+        letter-spacing:.014em !important;
+      }
+
+      .hero__subtitle{
+        font-size:clamp(18px, 4.85vw, 22px) !important;
+        line-height:1.13 !important;
+      }
+
+      .hero__virtues{
+        font-size:clamp(13.4px, 3.7vw, 16px) !important;
+        line-height:1.24 !important;
+      }
+
+      .hero-button,
+      .hero__button,
+      .hero-cta,
+      .hero__cta{
+        font-size:clamp(15.5px, 4.1vw, 17px) !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:55% 39.5% !important;
+      }
+
+      .hero__content-wrap{
+        width:min(100% - 30px, 410px) !important;
+      }
+
+      .hero__content{
+        max-width:410px !important;
+      }
+
+      .hero__title{
+        font-size:clamp(39px, 11.05vw, 52px) !important;
+        margin-bottom:4px !important;
+      }
+
+      .hero__subtitle{
+        font-size:clamp(18px, 4.9vw, 22px) !important;
+        margin:7px auto 15px !important;
+        padding-bottom:23px !important;
+      }
+
+      .hero__virtues{
+        font-size:clamp(13.2px, 3.72vw, 16px) !important;
+        margin:11px 0 18px !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:55.5% 39% !important;
+      }
+
+      .hero__content-wrap{
+        width:min(100% - 28px, 390px) !important;
+      }
+
+      .hero__title{
+        font-size:clamp(35px, 10.65vw, 43px) !important;
+        letter-spacing:.008em !important;
+      }
+
+      .hero__subtitle{
+        font-size:clamp(17px, 4.65vw, 20px) !important;
+      }
+
+      .hero__virtues{
+        font-size:clamp(12.2px, 3.72vw, 14.6px) !important;
+        letter-spacing:.03em !important;
+      }
+    }
+
+    @media (max-width:360px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:56% 39% !important;
+      }
+
+      .hero__title{
+        font-size:clamp(32px, 9.7vw, 36px) !important;
+      }
+
+      .hero__subtitle{
+        font-size:15.8px !important;
+      }
+
+      .hero__virtues{
+        font-size:11.8px !important;
+      }
+    }
+
+
+
+
+    /* =========================================================
+       DTA FINAL MOBILE HERO TUNING — index(52)
+       - Move hero-altar-room.jpg further left so Đức Phật sits closer to center
+       - Increase hero text group only on tablet/mobile
+       ========================================================= */
+    @media (max-width:940px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:58% 40% !important;
+      }
+
+      .hero__eyebrow{
+        font-size:clamp(20px, 5.85vw, 26px) !important;
+        line-height:1.08 !important;
+        letter-spacing:.035em !important;
+      }
+
+      .hero__title{
+        font-size:clamp(42px, 11.75vw, 56px) !important;
+        line-height:1.01 !important;
+        letter-spacing:.012em !important;
+      }
+
+      .hero__subtitle{
+        font-size:clamp(19.5px, 5.25vw, 24px) !important;
+        line-height:1.14 !important;
+      }
+
+      .hero__virtues{
+        font-size:clamp(14.5px, 4vw, 17px) !important;
+        line-height:1.25 !important;
+        letter-spacing:.035em !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:58.5% 39.5% !important;
+      }
+
+      .hero__content-wrap{
+        width:min(100% - 28px, 420px) !important;
+      }
+
+      .hero__content{
+        max-width:420px !important;
+      }
+
+      .hero__eyebrow{
+        font-size:clamp(20px, 5.95vw, 25px) !important;
+        margin-bottom:5px !important;
+      }
+
+      .hero__title{
+        font-size:clamp(42px, 11.9vw, 55px) !important;
+        line-height:1.0 !important;
+        margin-bottom:5px !important;
+        letter-spacing:.006em !important;
+      }
+
+      .hero__subtitle{
+        font-size:clamp(19px, 5.35vw, 23px) !important;
+        line-height:1.12 !important;
+        margin:8px auto 16px !important;
+      }
+
+      .hero__virtues{
+        font-size:clamp(14px, 4.05vw, 16.8px) !important;
+        line-height:1.22 !important;
+        margin:12px 0 19px !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:59% 39% !important;
+      }
+
+      .hero__content-wrap{
+        width:min(100% - 26px, 398px) !important;
+      }
+
+      .hero__eyebrow{
+        font-size:clamp(19px, 5.7vw, 22.5px) !important;
+      }
+
+      .hero__title{
+        font-size:clamp(38px, 11.35vw, 46px) !important;
+        letter-spacing:.002em !important;
+      }
+
+      .hero__subtitle{
+        font-size:clamp(18px, 5vw, 21px) !important;
+      }
+
+      .hero__virtues{
+        font-size:clamp(13px, 3.95vw, 15.3px) !important;
+      }
+    }
+
+    @media (max-width:360px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:60% 39% !important;
+      }
+
+      .hero__eyebrow{
+        font-size:18px !important;
+      }
+
+      .hero__title{
+        font-size:36px !important;
+      }
+
+      .hero__subtitle{
+        font-size:17px !important;
+      }
+
+      .hero__virtues{
+        font-size:12.6px !important;
+      }
+    }
+
+
+
+    /* =========================================================
+       DTA FINAL MOBILE GAP FIX — hero benefits to divider
+       - Rút ngắn khoảng trống không cần thiết bên dưới 3 benefit mobile
+       - Giữ desktop không đổi
+       ========================================================= */
+    @media (max-width:940px){
+      .hero__content-wrap{
+        padding-bottom:92px !important;
+      }
+
+      .benefits{
+        margin-top:16px !important;
+        margin-bottom:0 !important;
+        transform:translateY(22px) !important;
+      }
+
+      .section-divider{
+        height:112px !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-section{
+        min-height:820px !important;
+      }
+
+      .hero__content-wrap{
+        min-height:820px !important;
+        padding-bottom:112px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-48px) !important;
+      }
+
+      .benefits{
+        margin-top:14px !important;
+        margin-bottom:0 !important;
+        transform:translateY(42px) !important;
+      }
+
+      .section-divider{
+        height:108px !important;
+      }
+
+      .divider-medallion{
+        bottom:0 !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero-section{
+        min-height:790px !important;
+      }
+
+      .hero__content-wrap{
+        min-height:790px !important;
+        padding-bottom:104px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-44px) !important;
+      }
+
+      .benefits{
+        margin-top:12px !important;
+        transform:translateY(38px) !important;
+      }
+
+      .section-divider{
+        height:104px !important;
+      }
+    }
+
+    @media (max-width:360px){
+      .hero__content-wrap{
+        padding-bottom:98px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-40px) !important;
+      }
+
+      .benefits{
+        transform:translateY(34px) !important;
+      }
+    }
+
+
+    /* =========================================================
+       DTA HERO BACKGROUND CLARITY FIX — index(54)
+       - Cho hero-altar-room.jpg hiện rõ khoảng 90%
+       - Gỡ lớp mờ/che tối quá mạnh trên hero media
+       - Giữ một lớp tối rất nhẹ để chữ vẫn đọc được trên mobile
+       ========================================================= */
+    .hero-media{
+      filter:none !important;
+      backdrop-filter:none !important;
+    }
+
+    .hero-media img,
+    .hero-media:hover img,
+    .hero-media.is-sacred-active img,
+    .hero-section.is-sacred-title-active .hero-media img,
+    body.dta-intro-started .hero-media img{
+      filter:saturate(1.08) contrast(1.04) brightness(.96) !important;
+      opacity:.98 !important;
+      transform:none !important;
+      image-rendering:auto !important;
+    }
+
+    .hero-media::before{
+      display:none !important;
+      opacity:0 !important;
+      filter:none !important;
+      backdrop-filter:none !important;
+    }
+
+    .hero-media::after{
+      z-index:3 !important;
+      backdrop-filter:none !important;
+      background:
+        linear-gradient(90deg,
+          rgba(5,2,1,.42) 0%,
+          rgba(5,2,1,.24) 17%,
+          rgba(5,2,1,.08) 36%,
+          rgba(5,2,1,.04) 64%,
+          rgba(5,2,1,.10) 100%),
+        linear-gradient(180deg,
+          rgba(0,0,0,.04) 0%,
+          rgba(0,0,0,.02) 48%,
+          rgba(0,0,0,.18) 100%) !important;
+    }
+
+    @media (max-width:940px){
+      .hero-section::before{
+        background:
+          linear-gradient(180deg,
+            rgba(3,2,1,.16) 0%,
+            rgba(5,2,1,.08) 34%,
+            rgba(5,2,1,.28) 72%,
+            rgba(6,3,1,.46) 100%),
+          radial-gradient(circle at 50% 34%, rgba(235,170,50,.12), transparent 42%) !important;
+      }
+
+      .hero-media{
+        mask-image:none !important;
+        -webkit-mask-image:none !important;
+      }
+
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        filter:saturate(1.09) contrast(1.04) brightness(.94) !important;
+        opacity:.99 !important;
+      }
+
+      .hero-media::after{
+        background:
+          linear-gradient(180deg,
+            rgba(0,0,0,.03) 0%,
+            rgba(0,0,0,.02) 34%,
+            rgba(0,0,0,.16) 68%,
+            rgba(0,0,0,.42) 100%),
+          linear-gradient(90deg,
+            rgba(0,0,0,.22) 0%,
+            rgba(0,0,0,.09) 28%,
+            rgba(0,0,0,.02) 56%,
+            rgba(0,0,0,.08) 100%) !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        filter:saturate(1.1) contrast(1.04) brightness(.93) !important;
+      }
+
+      .hero-media::after{
+        background:
+          linear-gradient(180deg,
+            rgba(0,0,0,.02) 0%,
+            rgba(0,0,0,.01) 34%,
+            rgba(0,0,0,.13) 66%,
+            rgba(0,0,0,.38) 100%),
+          linear-gradient(90deg,
+            rgba(0,0,0,.20) 0%,
+            rgba(0,0,0,.08) 34%,
+            rgba(0,0,0,.02) 62%,
+            rgba(0,0,0,.07) 100%) !important;
       }
     }
 
