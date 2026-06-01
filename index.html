@@ -14149,15 +14149,47 @@ body{
     }
 
 
-    /* === DTA HERO BACKGROUND ALIGNMENT TWEAK - 2026-06-01 ===
-       Dịch ảnh hero sang trái nhẹ trên mobile/tablet để trục tượng/đường giữa vào đúng tâm hơn. */
+    /* === DTA FINAL HERO TUNE v50 - 2026-06-01 ===
+       - Dịch ảnh hero sang trái nhẹ để Đức Phật nằm gần trung tâm hơn.
+       - Tăng nhẹ toàn bộ chữ trong vùng hero trên mobile, giữ desktop không đổi. */
     @media (max-width:940px){
       .hero-media img,
       .hero-media:hover img,
       .hero-media.is-sacred-active img,
       .hero-section.is-sacred-title-active .hero-media img,
       body.dta-intro-started .hero-media img{
-        object-position:54% 40% !important;
+        object-position:55% 40% !important;
+      }
+
+      .hero__content{
+        max-width:410px !important;
+      }
+
+      .hero__eyebrow{
+        font-size:clamp(19px, 5.45vw, 24px) !important;
+      }
+
+      .hero__title{
+        font-size:clamp(39px, 10.95vw, 52px) !important;
+        line-height:1.03 !important;
+        letter-spacing:.014em !important;
+      }
+
+      .hero__subtitle{
+        font-size:clamp(18px, 4.85vw, 22px) !important;
+        line-height:1.13 !important;
+      }
+
+      .hero__virtues{
+        font-size:clamp(13.4px, 3.7vw, 16px) !important;
+        line-height:1.24 !important;
+      }
+
+      .hero-button,
+      .hero__button,
+      .hero-cta,
+      .hero__cta{
+        font-size:clamp(15.5px, 4.1vw, 17px) !important;
       }
     }
 
@@ -14167,7 +14199,31 @@ body{
       .hero-media.is-sacred-active img,
       .hero-section.is-sacred-title-active .hero-media img,
       body.dta-intro-started .hero-media img{
-        object-position:55% 40% !important;
+        object-position:55% 39.5% !important;
+      }
+
+      .hero__content-wrap{
+        width:min(100% - 30px, 410px) !important;
+      }
+
+      .hero__content{
+        max-width:410px !important;
+      }
+
+      .hero__title{
+        font-size:clamp(39px, 11.05vw, 52px) !important;
+        margin-bottom:4px !important;
+      }
+
+      .hero__subtitle{
+        font-size:clamp(18px, 4.9vw, 22px) !important;
+        margin:7px auto 15px !important;
+        padding-bottom:23px !important;
+      }
+
+      .hero__virtues{
+        font-size:clamp(13.2px, 3.72vw, 16px) !important;
+        margin:11px 0 18px !important;
       }
     }
 
@@ -14177,9 +14233,50 @@ body{
       .hero-media.is-sacred-active img,
       .hero-section.is-sacred-title-active .hero-media img,
       body.dta-intro-started .hero-media img{
-        object-position:56% 39% !important;
+        object-position:55.5% 39% !important;
+      }
+
+      .hero__content-wrap{
+        width:min(100% - 28px, 390px) !important;
+      }
+
+      .hero__title{
+        font-size:clamp(35px, 10.65vw, 43px) !important;
+        letter-spacing:.008em !important;
+      }
+
+      .hero__subtitle{
+        font-size:clamp(17px, 4.65vw, 20px) !important;
+      }
+
+      .hero__virtues{
+        font-size:clamp(12.2px, 3.72vw, 14.6px) !important;
+        letter-spacing:.03em !important;
       }
     }
+
+    @media (max-width:360px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:56% 39% !important;
+      }
+
+      .hero__title{
+        font-size:clamp(32px, 9.7vw, 36px) !important;
+      }
+
+      .hero__subtitle{
+        font-size:15.8px !important;
+      }
+
+      .hero__virtues{
+        font-size:11.8px !important;
+      }
+    }
+
 
 </style>
   <script>
