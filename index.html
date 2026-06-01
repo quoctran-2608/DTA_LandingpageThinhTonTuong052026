@@ -13689,21 +13689,39 @@ body{
     html.dta-motion-js body:not(.dta-intro-started) .divider-shadow,
     html.dta-motion-js body:not(.dta-intro-started) .divider-gold,
     html.dta-motion-js body:not(.dta-intro-started) .divider-glow,
-    html.dta-motion-js body:not(.dta-intro-started) .divider-medallion,
-    html.dta-motion-js body:not(.dta-intro-started) .divider-medallion img,
     body.dta-intro-started .section-divider,
     body.dta-intro-started .section-divider svg,
     body.dta-intro-started .divider-cream,
     body.dta-intro-started .divider-shadow,
     body.dta-intro-started .divider-gold,
-    body.dta-intro-started .divider-glow,
-    body.dta-intro-started .divider-medallion,
-    body.dta-intro-started .divider-medallion img{
+    body.dta-intro-started .divider-glow{
       opacity:1 !important;
       visibility:visible !important;
       transform:none !important;
       filter:none !important;
       animation:none !important;
+    }
+
+    html.dta-motion-js body:not(.dta-intro-started) .divider-medallion,
+    body.dta-intro-started .divider-medallion{
+      opacity:1 !important;
+      visibility:visible !important;
+      transform:translateX(-50%) !important;
+      filter:none !important;
+      animation:none !important;
+    }
+
+    html.dta-motion-js body:not(.dta-intro-started) .divider-medallion img,
+    body.dta-intro-started .divider-medallion img{
+      opacity:1 !important;
+      visibility:visible !important;
+      animation:none !important;
+    }
+
+    html.dta-motion-js body:not(.dta-intro-started) .divider-medallion:hover,
+    body.dta-intro-started .divider-medallion:hover{
+      transform:translateX(-50%) scale(1.035) !important;
+      filter:drop-shadow(0 0 16px rgba(241,200,102,.28)) !important;
     }
 
     html.dta-motion-js body:not(.dta-intro-started) .section-divider svg,
