@@ -13863,6 +13863,62 @@ body{
         height:38px !important;
       }
     }
+
+
+    /* === DTA FIX: mobile hero zoom nhỏ hơn + nâng cụm chữ ===
+       Chỉ áp dụng cho tablet/mobile, giữ nguyên giao diện desktop. */
+    @media (max-width:940px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:center center !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-media{
+        background:#120803 !important;
+      }
+
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:center center !important;
+        transform:scale(.94) !important;
+        transform-origin:center center !important;
+      }
+
+      .hero__content-wrap{
+        padding-bottom:172px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-34px) !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:center center !important;
+        transform:scale(.93) !important;
+      }
+
+      .hero__content-wrap{
+        padding-bottom:160px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-30px) !important;
+      }
+    }
 </style>
   <script>
     window.dtaTurnstileReady = function(){

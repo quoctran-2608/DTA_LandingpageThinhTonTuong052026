@@ -13863,6 +13863,131 @@ body{
         height:38px !important;
       }
     }
+
+
+    /* === DTA FIX: mobile hero zoom nhỏ hơn + nâng cụm chữ ===
+       Chỉ áp dụng cho tablet/mobile, giữ nguyên giao diện desktop. */
+    @media (max-width:940px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:center center !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-media{
+        background:#120803 !important;
+      }
+
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:center center !important;
+        transform:scale(.94) !important;
+        transform-origin:center center !important;
+      }
+
+      .hero__content-wrap{
+        padding-bottom:172px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-34px) !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:center center !important;
+        transform:scale(.93) !important;
+      }
+
+      .hero__content-wrap{
+        padding-bottom:160px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-30px) !important;
+      }
+    }
+
+
+    /* === DTA FIX v2: mobile hero - đưa tượng Phật vào giữa và zoom-out rõ hơn ===
+       Chỉ áp dụng mobile/tablet, không đụng layout desktop. */
+    @media (max-width:940px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        /* Dịch vùng nhìn sang phần tượng để mặt/tượng Phật nằm gần trung tâm khung mobile. */
+        object-position:69% center !important;
+        transform:scale(.90) !important;
+        transform-origin:69% center !important;
+      }
+
+      .hero__content-wrap{
+        padding-bottom:150px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-22px) !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .hero-media{
+        background:#090401 !important;
+      }
+
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        /* Tăng zoom-out so với bản cũ (.94) để thấy tượng nhỏ hơn và không bị cắt sát mép phải. */
+        object-position:72% center !important;
+        transform:scale(.84) !important;
+        transform-origin:72% center !important;
+      }
+
+      .hero__content-wrap{
+        padding-bottom:214px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-58px) !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:73% center !important;
+        transform:scale(.82) !important;
+        transform-origin:73% center !important;
+      }
+
+      .hero__content-wrap{
+        padding-bottom:198px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-52px) !important;
+      }
+    }
 </style>
   <script>
     window.dtaTurnstileReady = function(){
