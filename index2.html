@@ -13864,22 +13864,57 @@ body{
       }
     }
 
-
-    /* === DTA FIX: mobile hero zoom nhỏ hơn + nâng cụm chữ ===
-       Chỉ áp dụng cho tablet/mobile, giữ nguyên giao diện desktop. */
+    /* Mobile hero framing: học từ bản balanced-v3 nhưng giữ ảnh gần hơn, không zoom-out quá xa. */
     @media (max-width:940px){
+      .hero-section{
+        min-height:900px !important;
+        background:#070301 url("assets/images/bg/bg-hero-dark-wood.webp") center / cover no-repeat !important;
+      }
+
+      .hero-media{
+        inset:82px 0 auto 0 !important;
+        width:100% !important;
+        height:clamp(600px, 64vw, 660px) !important;
+        overflow:hidden !important;
+        background:#080401 !important;
+        mask-image:none !important;
+        -webkit-mask-image:none !important;
+      }
+
       .hero-media img,
       .hero-media:hover img,
       .hero-media.is-sacred-active img,
       .hero-section.is-sacred-title-active .hero-media img,
       body.dta-intro-started .hero-media img{
-        object-position:center center !important;
+        width:100% !important;
+        height:100% !important;
+        object-fit:cover !important;
+        object-position:62% 43% !important;
+        transform:none !important;
+        transform-origin:center center !important;
+        filter:saturate(1.08) contrast(1.06) brightness(.84) !important;
+      }
+
+      .hero-media::after{
+        z-index:3 !important;
+        background:
+          linear-gradient(180deg,
+            rgba(0,0,0,.10) 0%,
+            rgba(0,0,0,.04) 30%,
+            rgba(0,0,0,.36) 62%,
+            rgba(0,0,0,.90) 100%),
+          radial-gradient(ellipse at 50% 66%, rgba(0,0,0,.40) 0%, rgba(0,0,0,.20) 44%, transparent 74%) !important;
       }
     }
 
     @media (max-width:680px){
+      .hero-section{
+        min-height:890px !important;
+      }
+
       .hero-media{
-        background:#120803 !important;
+        top:72px !important;
+        height:clamp(600px, 158vw, 680px) !important;
       }
 
       .hero-media img,
@@ -13887,38 +13922,232 @@ body{
       .hero-media.is-sacred-active img,
       .hero-section.is-sacred-title-active .hero-media img,
       body.dta-intro-started .hero-media img{
-        object-position:center center !important;
-        transform:scale(.94) !important;
-        transform-origin:center center !important;
-      }
-
-      .hero__content-wrap{
-        padding-bottom:172px !important;
-      }
-
-      .hero__content{
-        transform:translateY(-34px) !important;
+        object-position:62% 42% !important;
+        filter:saturate(1.08) contrast(1.06) brightness(.82) !important;
       }
     }
 
     @media (max-width:420px){
+      .hero-media{
+        height:clamp(590px, 155vw, 635px) !important;
+      }
+
       .hero-media img,
       .hero-media:hover img,
       .hero-media.is-sacred-active img,
       .hero-section.is-sacred-title-active .hero-media img,
       body.dta-intro-started .hero-media img{
-        object-position:center center !important;
-        transform:scale(.93) !important;
+        object-position:61% 41% !important;
+      }
+    }
+
+
+    /* === DTA FINAL MOBILE HERO FIX - 2026-06-01 ===
+       1) Kéo hero mobile lên sát vùng menu hơn đúng khoảng chiều cao header.
+       2) Khóa lớp shadow/highlight của tiêu đề PHẬT BỔN SƯ để không còn chạy qua lại.
+       3) Cân lại size chữ mobile cho title, subtitle và virtues. */
+    @media (max-width:940px){
+      .hero-media{
+        top:0 !important;
+        inset:0 0 auto 0 !important;
+        height:clamp(640px, 72vw, 720px) !important;
       }
 
       .hero__content-wrap{
-        padding-bottom:160px !important;
+        align-items:flex-end !important;
+        padding-top:0 !important;
+        padding-bottom:clamp(176px, 18vw, 220px) !important;
       }
 
       .hero__content{
-        transform:translateY(-30px) !important;
+        transform:translateY(-58px) !important;
+      }
+
+      .hero__title,
+      .hero__title::before,
+      .hero__title::after{
+        animation:none !important;
+        transition:none !important;
       }
     }
+
+    @media (max-width:680px){
+      .hero-section{
+        min-height:850px !important;
+        padding-top:0 !important;
+      }
+
+      .hero-media{
+        top:0 !important;
+        height:clamp(620px, 162vw, 690px) !important;
+      }
+
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:center 40% !important;
+        transform:none !important;
+      }
+
+      .hero__content-wrap{
+        width:min(100% - 32px, 390px) !important;
+        min-height:850px !important;
+        padding:0 0 208px !important;
+        align-items:flex-end !important;
+      }
+
+      .hero__content{
+        max-width:390px !important;
+        transform:translateY(-72px) !important;
+      }
+
+      .hero__eyebrow{
+        font-size:clamp(18px, 5.2vw, 23px) !important;
+        letter-spacing:.13em !important;
+        margin-bottom:2px !important;
+      }
+
+      .hero__title{
+        font-size:clamp(36px, 10.25vw, 48px) !important;
+        line-height:1.04 !important;
+        letter-spacing:.018em !important;
+        margin:0 auto 2px !important;
+        padding:.075em .018em .09em !important;
+        filter:none !important;
+        text-shadow:
+          0 .5px 0 rgba(255,244,199,.62),
+          0 5px 13px rgba(0,0,0,.68),
+          0 0 12px rgba(236,190,82,.16) !important;
+      }
+
+      .hero__title::before,
+      .hero__title::after{
+        inset:.075em .018em .09em !important;
+        transform:none !important;
+        animation:none !important;
+        transition:none !important;
+        filter:none !important;
+      }
+
+      .hero__title::before{
+        opacity:.72 !important;
+        -webkit-text-stroke:.012em rgba(48,21,3,.56) !important;
+        text-shadow:0 5px 13px rgba(0,0,0,.62) !important;
+      }
+
+      .hero__title::after{
+        opacity:.48 !important;
+        mix-blend-mode:normal !important;
+        -webkit-mask-image:linear-gradient(180deg, #000 0%, #000 47%, rgba(0,0,0,.12) 62%, transparent 76%) !important;
+        mask-image:linear-gradient(180deg, #000 0%, #000 47%, rgba(0,0,0,.12) 62%, transparent 76%) !important;
+      }
+
+      .hero__subtitle{
+        font-size:clamp(17px, 4.55vw, 21px) !important;
+        line-height:1.12 !important;
+        letter-spacing:.035em !important;
+        margin:6px auto 14px !important;
+        padding-bottom:22px !important;
+        white-space:nowrap !important;
+      }
+
+      .hero__subtitle::after{
+        width:82% !important;
+        height:20px !important;
+        bottom:-4px !important;
+      }
+
+      .hero__virtues{
+        font-size:clamp(12.5px, 3.45vw, 15px) !important;
+        line-height:1.25 !important;
+        letter-spacing:.055em !important;
+        gap:8px !important;
+        margin:10px 0 17px !important;
+        white-space:nowrap !important;
+      }
+
+      .hero__virtues::before,
+      .hero__virtues::after{
+        width:clamp(22px, 7vw, 34px) !important;
+        flex:0 0 auto !important;
+      }
+
+      .benefits{
+        margin-top:18px !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .hero-section{
+        min-height:820px !important;
+      }
+
+      .hero-media{
+        height:clamp(590px, 154vw, 640px) !important;
+      }
+
+      .hero-media img,
+      .hero-media:hover img,
+      .hero-media.is-sacred-active img,
+      .hero-section.is-sacred-title-active .hero-media img,
+      body.dta-intro-started .hero-media img{
+        object-position:center 39% !important;
+      }
+
+      .hero__content-wrap{
+        min-height:820px !important;
+        padding-bottom:190px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-68px) !important;
+      }
+
+      .hero__title{
+        font-size:clamp(33px, 9.8vw, 39px) !important;
+        letter-spacing:.012em !important;
+      }
+
+      .hero__subtitle{
+        font-size:clamp(16px, 4.35vw, 19px) !important;
+        letter-spacing:.025em !important;
+        margin-bottom:12px !important;
+      }
+
+      .hero__virtues{
+        font-size:clamp(11.6px, 3.55vw, 13.8px) !important;
+        letter-spacing:.035em !important;
+      }
+    }
+
+    @media (max-width:360px){
+      .hero__content-wrap{
+        width:min(100% - 28px, 350px) !important;
+        padding-bottom:178px !important;
+      }
+
+      .hero__content{
+        transform:translateY(-62px) !important;
+      }
+
+      .hero__title{
+        font-size:clamp(30px, 9.2vw, 34px) !important;
+        letter-spacing:.006em !important;
+      }
+
+      .hero__subtitle{
+        font-size:15px !important;
+        letter-spacing:.018em !important;
+      }
+
+      .hero__virtues{
+        font-size:11.2px !important;
+        letter-spacing:.02em !important;
+      }
+    }
+
 </style>
   <script>
     window.dtaTurnstileReady = function(){
