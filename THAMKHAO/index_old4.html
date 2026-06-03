@@ -12975,57 +12975,6 @@ body{
       }
     }
 
-
-
-    /* =========================================================
-       Mobile fix: repeat bg-ton-tuong-parchment.jpg twice in
-       bon-su-meaning-section so the parchment texture continues
-       when scrolling down the mobile section.
-       ========================================================= */
-    @media (max-width:680px){
-      .bon-su-meaning-section{
-        background-image:
-          linear-gradient(180deg,
-            rgba(247,236,215,.96) 0%,
-            rgba(247,236,215,.78) 34%,
-            rgba(246,226,183,.70) 58%,
-            rgba(239,211,155,.88) 100%),
-          url("assets/images/bg/bg-ton-tuong-parchment.jpg"),
-          url("assets/images/bg/bg-ton-tuong-parchment.jpg"),
-          linear-gradient(180deg, #f7ecd7 0%, #f2ddb4 58%, #efd39b 100%) !important;
-        background-size:
-          100% 100%,
-          100% auto,
-          100% auto,
-          100% 100% !important;
-        background-position:
-          center top,
-          center top,
-          center bottom,
-          center center !important;
-        background-repeat:
-          no-repeat,
-          no-repeat,
-          no-repeat,
-          no-repeat !important;
-        background-color:#f2ddb4 !important;
-      }
-    }
-
-    @media (max-width:420px){
-      .bon-su-meaning-section{
-        background-size:
-          100% 100%,
-          120% auto,
-          120% auto,
-          100% 100% !important;
-        background-position:
-          center top,
-          center top,
-          center bottom,
-          center center !important;
-      }
-    }
 </style>
   <script>
     window.dtaTurnstileReady = function(){
