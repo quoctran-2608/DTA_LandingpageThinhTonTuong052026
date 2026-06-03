@@ -11926,117 +11926,369 @@ body{
     }
 
 
-
     /* =========================================================
-       FINAL TUNING 3 - mobile visual balance for Bon Su section
-       Fix the main Buddha visual on mobile: avoid oversized cropping,
-       give the image a taller calm frame, and keep the full statue/halo visible.
+       FINAL TUNING 3 - mobile visual Phật Bổn Sư
+       - Thu nhỏ background parchment ngoài section trên mobile để hoa sen không quá to/thô.
+       - Cho khung ảnh Phật có nền/floor phía dưới, tránh cảm giác tượng bị cắt cụt.
+       - Dùng contain/absolute-position để ảnh Phật hiện cân đối hơn trên màn hình nhỏ.
        ========================================================= */
     @media (max-width:940px){
-      .bon-su-visual{
-        display:flex !important;
-        align-items:center !important;
-        justify-content:center !important;
-        overflow:hidden !important;
+      .bon-su-meaning-section{
+        background-color:#f3d38b !important;
+        background-image:
+          linear-gradient(180deg,
+            rgba(255,244,205,.30) 0%,
+            rgba(255,241,197,.34) 26%,
+            rgba(246,226,183,.58) 62%,
+            rgba(239,211,155,.86) 100%),
+          url("assets/images/bg/bg-ton-tuong-parchment.jpg"),
+          linear-gradient(180deg, #f8edcf 0%, #efd39b 100%) !important;
+        background-repeat:no-repeat, no-repeat, no-repeat !important;
+        background-position:left top, left top, center center !important;
+        background-size:100% auto, 100% auto, cover !important;
       }
 
-      .bon-su-visual img{
-        display:block !important;
+      .bon-su-visual{
+        position:relative !important;
+        overflow:hidden !important;
+        border-radius:22px !important;
+        border:1px solid rgba(181,111,34,.42) !important;
+        background:
+          linear-gradient(180deg, rgba(255,248,226,.38) 0%, rgba(248,226,170,.26) 50%, rgba(218,160,62,.18) 100%),
+          url("assets/images/bg/bg-ton-tuong-parchment.jpg") center center / cover no-repeat,
+          linear-gradient(180deg, #f7e8be 0%, #eecb82 100%) !important;
+        box-shadow:
+          inset 0 0 0 1px rgba(255,255,255,.36),
+          inset 0 -40px 70px rgba(201,137,38,.16),
+          0 18px 44px rgba(132,82,24,.10) !important;
+      }
+
+      .bon-su-visual::before{
+        z-index:1 !important;
+        inset:0 !important;
+        width:100% !important;
+        height:100% !important;
+        border-radius:inherit !important;
+        background:
+          radial-gradient(circle at 54% 34%, rgba(255,226,136,.34), transparent 38%),
+          radial-gradient(ellipse at 50% 100%, rgba(199,126,24,.24) 0%, rgba(199,126,24,.12) 34%, transparent 66%),
+          linear-gradient(180deg, rgba(255,255,255,.16) 0%, rgba(255,255,255,0) 46%, rgba(249,229,178,.38) 100%) !important;
+        filter:none !important;
+        opacity:1 !important;
+      }
+
+      .bon-su-visual::after{
+        content:"";
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:2;
+        height:32%;
+        pointer-events:none;
+        background:
+          radial-gradient(ellipse at 50% 92%, rgba(154,91,17,.20) 0%, rgba(154,91,17,.10) 28%, transparent 68%),
+          linear-gradient(180deg, transparent 0%, rgba(249,229,178,.48) 70%, rgba(237,200,124,.72) 100%);
+      }
+
+      .bon-su-visual > img{
+        position:absolute !important;
+        z-index:3 !important;
+        left:50% !important;
+        bottom:0 !important;
+        width:min(92%, 560px) !important;
         max-width:none !important;
-        max-height:100% !important;
-        object-fit:contain !important;
-        object-position:center center !important;
+        height:auto !important;
+        transform:translateX(-50%) translateY(0) scale(.98) !important;
+        transform-origin:center bottom !important;
       }
     }
 
     @media (max-width:680px){
       .bon-su-meaning-section{
-        padding-top:46px !important;
-        padding-bottom:76px !important;
-      }
-
-      .bon-su-heading-block{
-        margin-bottom:clamp(10px, 3vw, 16px) !important;
-      }
-
-      .bon-su-divider{
-        margin:15px auto 18px !important;
+        background-position:left top, left top, center center !important;
+        background-size:100% auto, 100% auto, cover !important;
+        padding-top:42px !important;
       }
 
       .bon-su-visual{
-        width:100% !important;
-        height:clamp(360px, 96vw, 460px) !important;
-        min-height:360px !important;
-        max-height:460px !important;
-        margin:4px auto 28px !important;
-        border-radius:20px !important;
-        background:
-          radial-gradient(circle at 53% 38%, rgba(255,225,130,.34) 0 28%, rgba(255,225,130,.12) 47%, transparent 70%),
-          linear-gradient(180deg, rgba(255,248,226,.15) 0%, rgba(255,235,174,.08) 48%, rgba(238,203,130,.18) 100%) !important;
+        height:clamp(326px, 86vw, 390px) !important;
+        margin-top:2px !important;
+        margin-bottom:24px !important;
+        border-radius:17px !important;
       }
 
-      .bon-su-visual::before{
-        width:100% !important;
-        height:100% !important;
-        inset:0 !important;
-        border-radius:20px !important;
-        background:
-          radial-gradient(circle at 53% 34%, rgba(255,232,150,.34), transparent 42%),
-          linear-gradient(180deg, rgba(247,236,215,.08) 0%, rgba(247,236,215,0) 48%, rgba(247,236,215,.26) 100%) !important;
-      }
-
-      .bon-su-visual img{
-        width:min(92vw, 410px) !important;
-        height:96% !important;
-        max-height:96% !important;
-        transform:translateY(-6px) scale(.96) !important;
-        filter:
-          saturate(1.05)
-          contrast(1.02)
-          drop-shadow(0 18px 34px rgba(112,70,18,.14))
-          drop-shadow(0 0 22px rgba(232,175,58,.14)) !important;
-      }
-
-      .bon-su-desc{
-        margin-top:0 !important;
+      .bon-su-visual > img{
+        width:min(98%, 440px) !important;
+        bottom:2px !important;
+        transform:translateX(-50%) translateY(0) scale(.96) !important;
       }
     }
 
     @media (max-width:420px){
       .bon-su-meaning-section{
-        padding-top:42px !important;
-      }
-
-      .bon-su-title{
-        font-size:clamp(28px, 8.4vw, 36px) !important;
-        line-height:1.22 !important;
-        letter-spacing:.7px !important;
+        background-size:100% auto, 100% auto, cover !important;
       }
 
       .bon-su-visual{
-        height:clamp(350px, 96vw, 410px) !important;
-        min-height:350px !important;
-        max-height:410px !important;
-        margin-bottom:26px !important;
+        height:clamp(314px, 82vw, 344px) !important;
       }
 
-      .bon-su-visual img{
-        width:min(92vw, 388px) !important;
-        height:96% !important;
-        max-height:96% !important;
-        transform:translateY(-5px) scale(.94) !important;
+      .bon-su-visual > img{
+        width:min(100%, 392px) !important;
+        bottom:4px !important;
+        transform:translateX(-50%) translateY(0) scale(.94) !important;
       }
     }
 
-    @media (max-width:370px){
+    @media (max-width:360px){
       .bon-su-visual{
-        height:342px !important;
-        min-height:342px !important;
+        height:300px !important;
       }
 
-      .bon-su-visual img{
-        width:360px !important;
-        transform:translateY(-4px) scale(.93) !important;
+      .bon-su-visual > img{
+        width:101% !important;
+        transform:translateX(-50%) translateY(0) scale(.92) !important;
+      }
+    }
+
+
+    /* =========================================================
+       FINAL TUNING 4 - sửa triệt để visual Phật trên mobile
+       - Không để composite bị dạt/cắt ở mép phải.
+       - Giảm độ phóng của background parchment ngoài section.
+       - Tạo nền/floor vàng sáng phía dưới trong khung ảnh để tượng có điểm tựa.
+       ========================================================= */
+    @media (max-width:680px){
+      .bon-su-meaning-section{
+        background-color:#f4d895 !important;
+        background-image:
+          linear-gradient(180deg,
+            rgba(255,247,218,.34) 0%,
+            rgba(255,242,200,.42) 28%,
+            rgba(247,225,176,.62) 68%,
+            rgba(239,211,155,.86) 100%),
+          url("assets/images/bg/bg-ton-tuong-parchment.jpg"),
+          linear-gradient(180deg, #f9edcf 0%, #efd39b 100%) !important;
+        background-repeat:no-repeat, no-repeat, no-repeat !important;
+        background-position:left top, left top, center center !important;
+        background-size:760px auto, 760px auto, cover !important;
+      }
+
+      .bon-su-visual{
+        position:relative !important;
+        width:100% !important;
+        max-width:100% !important;
+        height:clamp(330px, 86vw, 374px) !important;
+        margin:0 auto 22px !important;
+        overflow:hidden !important;
+        border-radius:16px !important;
+        border:1px solid rgba(174,104,28,.34) !important;
+        background:
+          radial-gradient(ellipse at 60% 22%, rgba(255,232,155,.34) 0%, rgba(255,232,155,.10) 36%, transparent 68%),
+          linear-gradient(180deg, rgba(255,249,226,.78) 0%, rgba(250,232,183,.70) 53%, rgba(229,178,84,.56) 100%),
+          url("assets/images/bg/bg-ton-tuong-parchment.jpg") center bottom / 720px auto no-repeat,
+          linear-gradient(180deg, #f8e9bd 0%, #edc877 100%) !important;
+        box-shadow:
+          inset 0 1px 0 rgba(255,255,255,.48),
+          inset 0 -54px 92px rgba(190,119,24,.18),
+          0 16px 34px rgba(118,70,18,.08) !important;
+      }
+
+      .bon-su-visual::before{
+        content:"" !important;
+        position:absolute !important;
+        inset:0 !important;
+        z-index:1 !important;
+        width:100% !important;
+        height:100% !important;
+        border-radius:inherit !important;
+        pointer-events:none !important;
+        opacity:1 !important;
+        filter:none !important;
+        background:
+          radial-gradient(circle at 64% 34%, rgba(255,238,178,.42) 0%, rgba(255,220,116,.18) 32%, transparent 56%),
+          linear-gradient(90deg, rgba(255,250,232,.52) 0%, rgba(255,250,232,.22) 44%, rgba(255,233,162,.16) 100%) !important;
+      }
+
+      .bon-su-visual::after{
+        content:"" !important;
+        position:absolute !important;
+        left:0 !important;
+        right:0 !important;
+        bottom:0 !important;
+        z-index:2 !important;
+        height:38% !important;
+        pointer-events:none !important;
+        background:
+          radial-gradient(ellipse at 58% 96%, rgba(137,78,13,.22) 0%, rgba(137,78,13,.11) 25%, transparent 62%),
+          linear-gradient(180deg, transparent 0%, rgba(249,229,178,.58) 62%, rgba(235,192,105,.82) 100%) !important;
+      }
+
+      .bon-su-visual > img{
+        position:absolute !important;
+        z-index:3 !important;
+        left:50% !important;
+        right:auto !important;
+        bottom:8px !important;
+        width:min(152%, 560px) !important;
+        max-width:none !important;
+        height:auto !important;
+        transform:translateX(-66%) translateY(0) scale(.98) !important;
+        transform-origin:center bottom !important;
+        object-fit:contain !important;
+        object-position:center bottom !important;
+        filter:saturate(1.04) contrast(1.02) brightness(1.02) drop-shadow(0 10px 18px rgba(111,65,12,.12)) !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .bon-su-meaning-section{
+        background-size:700px auto, 700px auto, cover !important;
+      }
+
+      .bon-su-visual{
+        height:clamp(320px, 84vw, 346px) !important;
+        margin-bottom:21px !important;
+        background:
+          radial-gradient(ellipse at 60% 22%, rgba(255,232,155,.32) 0%, rgba(255,232,155,.09) 36%, transparent 68%),
+          linear-gradient(180deg, rgba(255,249,226,.80) 0%, rgba(250,232,183,.72) 54%, rgba(229,178,84,.56) 100%),
+          url("assets/images/bg/bg-ton-tuong-parchment.jpg") center bottom / 660px auto no-repeat,
+          linear-gradient(180deg, #f8e9bd 0%, #edc877 100%) !important;
+      }
+
+      .bon-su-visual > img{
+        width:min(162%, 520px) !important;
+        bottom:8px !important;
+        transform:translateX(-68%) translateY(0) scale(.965) !important;
+      }
+    }
+
+    @media (max-width:360px){
+      .bon-su-meaning-section{
+        background-size:660px auto, 660px auto, cover !important;
+      }
+
+      .bon-su-visual{
+        height:305px !important;
+      }
+
+      .bon-su-visual > img{
+        width:166% !important;
+        transform:translateX(-69%) translateY(0) scale(.95) !important;
+      }
+    }
+
+
+    /* =========================================================
+       FINAL TUNING 5 - bon-su-visual mobile: tượng nằm gọn trong khung
+       - Thu nhỏ nền parchment bên trong khung ảnh để có lớp nền vàng nhẹ.
+       - Giảm phóng/giảm lệch ảnh composite, đưa tượng vào giữa khung hơn.
+       - Tạo lớp floor vàng phía dưới để tượng có nền đỡ, không bị cụt/cắt.
+       ========================================================= */
+    @media (max-width:680px){
+      .bon-su-visual{
+        position:relative !important;
+        display:block !important;
+        width:100% !important;
+        max-width:100% !important;
+        height:clamp(338px, 88vw, 388px) !important;
+        margin:4px auto 24px !important;
+        overflow:hidden !important;
+        border-radius:17px !important;
+        border:1px solid rgba(174,104,28,.36) !important;
+        background-color:#f5d88f !important;
+        background-image:
+          radial-gradient(ellipse at 63% 28%, rgba(255,236,168,.46) 0%, rgba(255,228,135,.18) 34%, transparent 64%),
+          linear-gradient(180deg, rgba(255,251,231,.82) 0%, rgba(250,235,192,.74) 48%, rgba(232,184,91,.56) 100%),
+          url("assets/images/bg/bg-ton-tuong-parchment.jpg"),
+          linear-gradient(180deg, #f9edcf 0%, #efcf88 100%) !important;
+        background-repeat:no-repeat, no-repeat, no-repeat, no-repeat !important;
+        background-position:center center, center center, center bottom, center center !important;
+        background-size:100% 100%, 100% 100%, 560px auto, cover !important;
+        box-shadow:
+          inset 0 1px 0 rgba(255,255,255,.52),
+          inset 0 -58px 96px rgba(185,112,22,.18),
+          0 16px 34px rgba(118,70,18,.08) !important;
+      }
+
+      .bon-su-visual::before{
+        content:"" !important;
+        position:absolute !important;
+        inset:0 !important;
+        z-index:1 !important;
+        width:100% !important;
+        height:100% !important;
+        border-radius:inherit !important;
+        pointer-events:none !important;
+        opacity:1 !important;
+        filter:none !important;
+        background:
+          radial-gradient(circle at 63% 34%, rgba(255,244,203,.48) 0%, rgba(255,221,116,.18) 32%, transparent 58%),
+          linear-gradient(90deg, rgba(255,250,232,.56) 0%, rgba(255,250,232,.24) 46%, rgba(255,233,162,.12) 100%) !important;
+      }
+
+      .bon-su-visual::after{
+        content:"" !important;
+        position:absolute !important;
+        left:0 !important;
+        right:0 !important;
+        bottom:0 !important;
+        z-index:2 !important;
+        height:34% !important;
+        pointer-events:none !important;
+        background:
+          radial-gradient(ellipse at 58% 92%, rgba(128,74,14,.18) 0%, rgba(128,74,14,.08) 30%, transparent 64%),
+          linear-gradient(180deg, transparent 0%, rgba(250,231,184,.62) 60%, rgba(234,190,100,.84) 100%) !important;
+      }
+
+      .bon-su-visual > img{
+        position:absolute !important;
+        z-index:3 !important;
+        left:50% !important;
+        right:auto !important;
+        bottom:6px !important;
+        width:min(136%, 500px) !important;
+        max-width:none !important;
+        height:auto !important;
+        object-fit:contain !important;
+        object-position:center bottom !important;
+        transform:translateX(-56.5%) translateY(0) scale(.96) !important;
+        transform-origin:center bottom !important;
+        filter:
+          saturate(1.04)
+          contrast(1.02)
+          brightness(1.02)
+          drop-shadow(0 12px 18px rgba(111,65,12,.12)) !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .bon-su-visual{
+        height:clamp(324px, 86vw, 354px) !important;
+        margin-top:2px !important;
+        margin-bottom:23px !important;
+        background-size:100% 100%, 100% 100%, 520px auto, cover !important;
+        background-position:center center, center center, center bottom, center center !important;
+      }
+
+      .bon-su-visual > img{
+        width:min(142%, 462px) !important;
+        bottom:7px !important;
+        transform:translateX(-57.5%) translateY(0) scale(.945) !important;
+      }
+    }
+
+    @media (max-width:360px){
+      .bon-su-visual{
+        height:310px !important;
+        background-size:100% 100%, 100% 100%, 492px auto, cover !important;
+      }
+
+      .bon-su-visual > img{
+        width:145% !important;
+        bottom:7px !important;
+        transform:translateX(-58.5%) translateY(0) scale(.93) !important;
       }
     }
 
