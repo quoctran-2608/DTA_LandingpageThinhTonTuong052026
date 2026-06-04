@@ -18236,42 +18236,6 @@ body{
       }
     }
     /* === DTA IMPORT THAMKHAO BON SU CSS END === */
-
-
-    /* Mobile: remove gradual reveal/load effects from bon-su-meaning-section downward */
-    @media (max-width:680px){
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .bon-su-meaning-section .dta-reveal,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .bon-su-meaning-section .dta-reveal:not(.is-visible),
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .bon-su-meaning-section .dta-reveal.is-visible,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .bon-su-meaning-section .dta-reveal.is-visible.has-revealed,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .service-section .dta-reveal,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .service-section .dta-reveal:not(.is-visible),
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .service-section .dta-reveal.is-visible,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .service-section .dta-reveal.is-visible.has-revealed,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .process-section .dta-reveal,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .process-section .dta-reveal:not(.is-visible),
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .process-section .dta-reveal.is-visible,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .process-section .dta-reveal.is-visible.has-revealed,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .trust-section .dta-reveal,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .trust-section .dta-reveal:not(.is-visible),
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .trust-section .dta-reveal.is-visible,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .trust-section .dta-reveal.is-visible.has-revealed,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .project-section .dta-reveal,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .project-section .dta-reveal:not(.is-visible),
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .project-section .dta-reveal.is-visible,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .project-section .dta-reveal.is-visible.has-revealed,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .contact-footer-section .dta-reveal,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .contact-footer-section .dta-reveal:not(.is-visible),
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .contact-footer-section .dta-reveal.is-visible,
-      html.dta-motion-js body.dta-mobile-no-bonsu-reveal .contact-footer-section .dta-reveal.is-visible.has-revealed{
-        opacity:1 !important;
-        visibility:visible !important;
-        transform:none !important;
-        filter:none !important;
-        animation:none !important;
-        transition:none !important;
-      }
-    }
 </style>
   <script>
     window.dtaTurnstileReady = function(){
@@ -18547,21 +18511,6 @@ body{
     try{
       prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     }catch(error){}
-
-    var disableRevealFromBonSuOnMobile = false;
-    try{
-      disableRevealFromBonSuOnMobile = window.matchMedia && window.matchMedia('(max-width: 680px)').matches;
-    }catch(error){}
-
-    /*
-      Mobile: keep content from bon-su-meaning-section downward visible immediately.
-      This removes the slow scroll/load reveal effect on phones while preserving
-      the desktop/tablet reveal choreography.
-    */
-    if(disableRevealFromBonSuOnMobile){
-      body.classList.add('dta-mobile-no-bonsu-reveal');
-      return;
-    }
 
     var revealPlan = [
       {selector:'.bon-su-decor', type:'soft', delay:60, gap:80, max:220},
