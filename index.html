@@ -1,31 +1,15 @@
-<!doctype html>
-<html lang="vi">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Diệu Tướng Am | Kiến tạo không gian an trú tại gia</title>
-  <meta name="description" content="Diệu Tướng Am thiết trí không gian thờ Phật, gia tiên, thiền trà trọn gói: tư vấn, thiết kế, chế tác, thi công chuẩn nghi thức tại Hà Nội & TP.HCM." />
-  <script>
+<!DOCTYPE html>
+
+<html class="dta-motion-js" data-dta-turtle-scroll-version="DTA_TURTLE_SCROLL_54X_V9_2026_05_23" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Diệu Tướng Am | Kiến tạo không gian an trú tại gia</title>
+<meta content="Diệu Tướng Am thiết trí không gian thờ Phật, gia tiên, thiền trà trọn gói: tư vấn, thiết kế, chế tác, thi công chuẩn nghi thức tại Hà Nội &amp; TP.HCM." name="description"/>
+<!-- Google Analytics / Google Tag Manager scripts temporarily disabled. Re-enable by restoring GA/GTM script blocks and dtaTrackEvent hook when needed. -->
+<script>
     document.documentElement.classList.add('dta-motion-js');
   </script>
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZY5HPEL8K"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-DZY5HPEL8K');
-    window.dtaTrackEvent = function(eventName, eventParams){
-      if(!eventName || typeof gtag !== 'function') return;
-      gtag('event', eventName, Object.assign({
-        send_to: 'G-DZY5HPEL8K',
-        page_location: window.location.href,
-        page_title: document.title,
-        transport_type: 'beacon'
-      }, eventParams || {}));
-    };
-  </script>
-  <style>
+<style>
     @font-face{
       font-family:"DVN DAREK";
       src:url("fonts/DVN - DAREK.ttf") format("truetype");
@@ -18272,236 +18256,3052 @@ body{
         transition:none !important;
       }
     }
+    /* === DTA SECTION CHIEM NGUONG PHAT BON SU START === */
+    .chiem-nguong-section{
+      position:relative;
+      z-index:4;
+      width:100vw;
+      min-height:clamp(720px, 58vw, 980px);
+      padding:clamp(70px, 5.2vw, 106px) 0 clamp(82px, 6vw, 118px);
+      color:#25170c;
+      overflow:hidden;
+      isolation:isolate;
+      background:
+        linear-gradient(180deg, rgba(248,236,205,.96) 0%, rgba(249,231,185,.84) 46%, rgba(236,199,128,.58) 100%),
+        url("assets/images/bg/bg-chiem-nguong-parchment.jpg") center center / cover no-repeat,
+        linear-gradient(135deg, #f8edd1 0%, #f2d9a0 100%);
+    }
+    .chiem-nguong-section::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:-2;
+      pointer-events:none;
+      background:
+        radial-gradient(ellipse at 50% 16%, rgba(255,255,255,.48) 0 19%, rgba(255,255,255,0) 54%),
+        radial-gradient(ellipse at 6% 72%, rgba(168,103,24,.15) 0 24%, rgba(168,103,24,0) 62%),
+        radial-gradient(ellipse at 94% 70%, rgba(168,103,24,.14) 0 25%, rgba(168,103,24,0) 64%),
+        linear-gradient(90deg, rgba(139,82,22,.18) 0%, rgba(255,255,255,0) 23%, rgba(255,255,255,0) 77%, rgba(139,82,22,.18) 100%);
+      mix-blend-mode:multiply;
+      opacity:.78;
+    }
+    .chiem-nguong-section::after{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:-1px;
+      height:clamp(74px, 6vw, 120px);
+      z-index:2;
+      pointer-events:none;
+      background:linear-gradient(180deg, rgba(246,225,176,0) 0%, rgba(238,201,130,.44) 58%, rgba(225,178,84,.72) 100%);
+    }
+    .chiem-decor{
+      position:absolute;
+      z-index:3;
+      pointer-events:none;
+      user-select:none;
+    }
+    .chiem-decor--corner-left{
+      top:clamp(10px, 1vw, 18px);
+      left:clamp(-20px, -1.2vw, -4px);
+      width:clamp(200px, 17vw, 330px);
+      opacity:.86;
+      filter:drop-shadow(0 2px 3px rgba(118,69,14,.16));
+    }
+    .chiem-decor--corner-right{
+      top:clamp(10px, 1vw, 18px);
+      right:clamp(-20px, -1.2vw, -4px);
+      width:clamp(200px, 17vw, 330px);
+      opacity:.86;
+      filter:drop-shadow(0 2px 3px rgba(118,69,14,.16));
+    }
+    .chiem-decor--lotus-left{
+      left:clamp(-50px, -2.6vw, -18px);
+      bottom:clamp(-46px, -2.8vw, -18px);
+      width:clamp(250px, 25vw, 480px);
+      opacity:.72;
+      transform:translateZ(0);
+      filter:drop-shadow(0 12px 22px rgba(130,83,20,.12));
+    }
+    .chiem-decor--lotus-right{
+      right:clamp(-62px, -3.4vw, -20px);
+      bottom:clamp(-50px, -3vw, -18px);
+      width:clamp(270px, 28vw, 535px);
+      opacity:.78;
+      filter:drop-shadow(0 12px 22px rgba(130,83,20,.12));
+    }
+    .chiem-inner{
+      width:var(--container);
+      margin-inline:auto;
+      position:relative;
+      z-index:5;
+    }
+    .chiem-heading{
+      text-align:center;
+      margin:0 auto clamp(34px, 3vw, 54px);
+      position:relative;
+      z-index:4;
+    }
+    .chiem-title-lotus{
+      width:clamp(118px, 9vw, 176px);
+      height:auto;
+      margin:0 auto clamp(18px, 1.4vw, 26px);
+      opacity:.96;
+      filter:drop-shadow(0 5px 10px rgba(144,88,18,.16));
+    }
+    .chiem-heading h2{
+      margin:0;
+      font-family:var(--serif);
+      font-weight:700;
+      text-transform:uppercase;
+      color:#24170e;
+      font-size:clamp(38px, 3.55vw, 66px);
+      line-height:1.12;
+      letter-spacing:clamp(1.6px, .28vw, 5.4px);
+      text-shadow:
+        0 1px 0 rgba(255,255,255,.62),
+        0 10px 26px rgba(126,76,18,.14);
+      text-wrap:balance;
+    }
+    .chiem-title-divider{
+      width:min(340px, 54vw);
+      margin:clamp(10px, .9vw, 16px) auto 0;
+      opacity:.92;
+      filter:drop-shadow(0 3px 8px rgba(144,88,18,.12));
+    }
+    .chiem-layout{
+      display:grid;
+      grid-template-columns:minmax(160px, 224px) minmax(620px, 1fr) minmax(160px, 224px);
+      align-items:center;
+      gap:clamp(28px, 3.2vw, 58px);
+    }
+    .chiem-benefits{
+      display:flex;
+      flex-direction:column;
+      gap:clamp(36px, 4.2vw, 78px);
+      position:relative;
+      z-index:5;
+    }
+    .chiem-benefits--left{text-align:center;}
+    .chiem-benefits--right{text-align:center;}
+    .chiem-benefit{
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:0 clamp(4px, .6vw, 10px);
+    }
+    .chiem-benefit-icon{
+      width:clamp(112px, 9vw, 156px);
+      aspect-ratio:1;
+      object-fit:contain;
+      margin:0 auto clamp(15px, 1.15vw, 22px);
+      filter:drop-shadow(0 8px 14px rgba(143,86,16,.16));
+      transition:transform .45s ease, filter .45s ease;
+    }
+    .chiem-benefit h3{
+      margin:0;
+      font-family:var(--serif);
+      font-weight:700;
+      color:#2a180b;
+      font-size:clamp(18px, 1.22vw, 24px);
+      line-height:1.26;
+      letter-spacing:.01em;
+      text-shadow:0 1px 0 rgba(255,255,255,.52);
+    }
+    .chiem-benefit p{
+      margin:clamp(10px, .8vw, 14px) auto 0;
+      max-width:180px;
+      color:#372517;
+      font-family:var(--sans);
+      font-size:clamp(15px, .98vw, 18px);
+      line-height:1.55;
+      letter-spacing:.01em;
+    }
+    .chiem-benefit-divider{
+      width:min(160px, 76%);
+      margin:clamp(18px, 1.35vw, 26px) auto 0;
+      opacity:.68;
+    }
+    .chiem-benefit:hover .chiem-benefit-icon{
+      transform:translateY(-6px) scale(1.035);
+      filter:
+        drop-shadow(0 10px 18px rgba(143,86,16,.18))
+        drop-shadow(0 0 18px rgba(215,156,48,.22));
+    }
+    .chiem-gallery{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:clamp(20px, 1.45vw, 30px);
+      position:relative;
+      z-index:6;
+    }
+    .chiem-card{
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+      overflow:hidden;
+      border-radius:9px;
+      background:rgba(255,248,231,.82);
+      border:1px solid rgba(176,105,27,.38);
+      box-shadow:
+        0 18px 42px rgba(109,66,18,.13),
+        inset 0 0 0 1px rgba(255,255,255,.38);
+      transition:transform .45s ease, box-shadow .45s ease, border-color .45s ease;
+    }
+    .chiem-card::before{
+      content:"";
+      position:absolute;
+      inset:7px;
+      z-index:2;
+      border:1px solid rgba(179,111,34,.16);
+      border-radius:6px;
+      pointer-events:none;
+      opacity:.9;
+    }
+    .chiem-card-image{
+      position:relative;
+      aspect-ratio:1.48 / 1;
+      overflow:hidden;
+      background:#dcb767;
+    }
+    .chiem-card-image::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(0,0,0,.08)),
+        radial-gradient(ellipse at 50% 0%, rgba(255,238,166,.22), transparent 48%);
+      mix-blend-mode:soft-light;
+    }
+    .chiem-card-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center center;
+      transform:scale(1.01);
+      transition:transform .75s cubic-bezier(.2,.8,.2,1), filter .75s cubic-bezier(.2,.8,.2,1);
+    }
+    .chiem-card-body{
+      position:relative;
+      min-height:clamp(70px, 5.5vw, 86px);
+      padding:clamp(15px, 1vw, 18px) 14px clamp(12px, 1vw, 16px);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      background:
+        linear-gradient(180deg, rgba(255,249,236,.92), rgba(246,228,191,.92));
+      border-top:1px solid rgba(169,103,32,.22);
+    }
+    .chiem-card-body h3{
+      margin:0;
+      color:#24170e;
+      font-family:var(--serif);
+      font-size:clamp(18px, 1.18vw, 23px);
+      font-weight:400;
+      line-height:1.24;
+      letter-spacing:.01em;
+      text-shadow:0 1px 0 rgba(255,255,255,.6);
+    }
+    .chiem-card-line{
+      width:min(118px, 60%);
+      margin:8px auto 0;
+      opacity:.82;
+      filter:drop-shadow(0 3px 5px rgba(145,83,18,.12));
+    }
+    .chiem-card:hover{
+      transform:translateY(-8px);
+      border-color:rgba(188,115,32,.62);
+      box-shadow:
+        0 24px 50px rgba(100,58,17,.18),
+        0 0 0 1px rgba(255,232,158,.26),
+        inset 0 0 0 1px rgba(255,255,255,.52);
+    }
+    .chiem-card:hover .chiem-card-image img{
+      transform:scale(1.06);
+      filter:saturate(1.08) contrast(1.04) brightness(1.03);
+    }
+    .chiem-bottom-ornament{
+      width:clamp(118px, 9vw, 176px);
+      height:auto;
+      margin:clamp(26px, 2vw, 36px) auto 0;
+      opacity:.88;
+      filter:drop-shadow(0 5px 10px rgba(144,88,18,.16));
+    }
+
+    @media (max-width:1280px){
+      .chiem-layout{
+        grid-template-columns:1fr;
+        gap:clamp(24px, 3vw, 40px);
+      }
+      .chiem-benefits{
+        display:grid;
+        grid-template-columns:repeat(4, minmax(0, 1fr));
+        gap:18px;
+        order:1;
+      }
+      .chiem-benefits--left,
+      .chiem-benefits--right{
+        display:contents;
+      }
+      .chiem-gallery{
+        order:2;
+        width:min(100%, 980px);
+        margin-inline:auto;
+      }
+      .chiem-benefit{
+        padding:18px 12px 16px;
+        border:1px solid rgba(176,105,27,.2);
+        border-radius:16px;
+        background:rgba(255,248,231,.34);
+        box-shadow:inset 0 0 0 1px rgba(255,255,255,.22);
+      }
+      .chiem-benefit-icon{
+        width:clamp(86px, 8vw, 118px);
+        margin-bottom:10px;
+      }
+      .chiem-benefit-divider{display:none;}
+      .chiem-benefit p{max-width:210px;font-size:15px;}
+    }
+
+    @media (max-width:920px){
+      .chiem-nguong-section{
+        padding:70px 0 82px;
+      }
+      .chiem-decor--corner-left,
+      .chiem-decor--corner-right{
+        width:210px;
+        opacity:.45;
+      }
+      .chiem-decor--lotus-left,
+      .chiem-decor--lotus-right{
+        opacity:.32;
+        width:310px;
+      }
+      .chiem-heading h2{
+        font-size:clamp(34px, 6.3vw, 54px);
+        letter-spacing:1.6px;
+      }
+      .chiem-benefits{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+      .chiem-gallery{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width:680px){
+      .chiem-nguong-section{
+        min-height:0;
+        padding:58px 0 66px;
+        background:
+          linear-gradient(180deg, rgba(248,236,205,.98), rgba(242,215,155,.92)),
+          url("assets/images/bg/bg-chiem-nguong-parchment.jpg") center top / auto 100% no-repeat,
+          linear-gradient(135deg, #f8edd1 0%, #f2d9a0 100%);
+      }
+      .chiem-nguong-section::after{height:72px;}
+      .chiem-decor--corner-left,
+      .chiem-decor--corner-right{
+        width:150px;
+        opacity:.28;
+      }
+      .chiem-decor--corner-left{left:-44px;top:4px;}
+      .chiem-decor--corner-right{right:-44px;top:4px;}
+      .chiem-decor--lotus-left,
+      .chiem-decor--lotus-right{
+        display:none;
+      }
+      .chiem-title-lotus{width:112px;margin-bottom:7px;}
+      .chiem-heading{margin-bottom:28px;}
+      .chiem-heading h2{
+        font-size:clamp(28px, 8.2vw, 42px);
+        line-height:1.18;
+        letter-spacing:.8px;
+      }
+      .chiem-title-divider{width:min(260px, 70vw);}
+      .chiem-benefits{
+        grid-template-columns:1fr;
+        gap:12px;
+        margin-bottom:4px;
+      }
+      .chiem-benefit{
+        display:grid;
+        grid-template-columns:72px 1fr;
+        align-items:center;
+        column-gap:14px;
+        text-align:left;
+        padding:14px 16px;
+      }
+      .chiem-benefit-icon{
+        grid-row:1 / span 2;
+        width:66px;
+        margin:0;
+      }
+      .chiem-benefit h3{
+        font-size:20px;
+      }
+      .chiem-benefit p{
+        max-width:none;
+        margin:4px 0 0;
+        font-size:14px;
+        line-height:1.45;
+      }
+      .chiem-gallery{
+        grid-template-columns:1fr;
+        gap:18px;
+      }
+      .chiem-card{
+        border-radius:14px;
+      }
+      .chiem-card-image{
+        aspect-ratio:1.36 / 1;
+      }
+      .chiem-card-body{
+        min-height:68px;
+        padding:14px 10px 12px;
+      }
+      .chiem-card-body h3{
+        font-size:20px;
+      }
+      .chiem-bottom-ornament{width:min(260px, 70vw);}
+    }
+
+    @media (max-width:420px){
+      .chiem-inner{width:min(100% - 28px, 1440px);}
+      .chiem-benefit{
+        grid-template-columns:62px 1fr;
+        column-gap:12px;
+        padding:13px 14px;
+      }
+      .chiem-benefit-icon{width:58px;}
+      .chiem-card-image{aspect-ratio:1.18 / 1;}
+    }
+    /* === DTA SECTION CHIEM NGUONG PHAT BON SU END === */
+
+
+
+    /* === DTA SECTION CHIEM NGUONG VISUAL OPTIMIZE V2 START === */
+    .chiem-nguong-section{
+      min-height:auto !important;
+      padding:clamp(28px, 2.6vw, 52px) 0 clamp(32px, 3.2vw, 58px) !important;
+      background:
+        linear-gradient(180deg, rgba(249,238,210,.56) 0%, rgba(246,226,181,.36) 55%, rgba(231,190,112,.28) 100%),
+        url("assets/images/bg/bg-chiem-nguong-parchment.jpg") center center / 100% 100% no-repeat,
+        #f4dfaa !important;
+    }
+    .chiem-nguong-section::before{
+      z-index:0 !important;
+      opacity:.34 !important;
+      mix-blend-mode:multiply !important;
+      background:
+        radial-gradient(ellipse at 50% 20%, rgba(255,255,255,.62) 0 20%, rgba(255,255,255,0) 58%),
+        linear-gradient(90deg, rgba(128,75,17,.16) 0%, transparent 19%, transparent 81%, rgba(128,75,17,.14) 100%) !important;
+    }
+    .chiem-nguong-section::after{
+      height:clamp(34px, 3vw, 58px) !important;
+      opacity:.55 !important;
+      background:linear-gradient(180deg, rgba(246,225,176,0), rgba(219,168,76,.36)) !important;
+    }
+    .chiem-decor{z-index:2 !important;}
+    .chiem-decor--corner-left,
+    .chiem-decor--corner-right{
+      top:0 !important;
+      width:clamp(245px, 19vw, 370px) !important;
+      opacity:.9 !important;
+    }
+    .chiem-decor--corner-left{left:-18px !important;}
+    .chiem-decor--corner-right{right:-18px !important;}
+    .chiem-decor--lotus-left{
+      left:-22px !important;
+      bottom:-16px !important;
+      width:clamp(330px, 28vw, 545px) !important;
+      opacity:.9 !important;
+    }
+    .chiem-decor--lotus-right{
+      right:-28px !important;
+      bottom:-18px !important;
+      width:clamp(355px, 30vw, 590px) !important;
+      opacity:.92 !important;
+    }
+    .chiem-inner{
+      width:min(100% - clamp(34px, 4.8vw, 92px), 1760px) !important;
+      z-index:5 !important;
+    }
+    .chiem-heading{
+      margin:0 auto clamp(22px, 1.75vw, 34px) !important;
+    }
+    .chiem-title-lotus{
+      width:clamp(116px, 7.2vw, 156px) !important;
+      margin-bottom:2px !important;
+    }
+    .chiem-heading h2{
+      font-size:clamp(43px, 3.3vw, 68px) !important;
+      line-height:1.02 !important;
+      letter-spacing:clamp(3px, .36vw, 7px) !important;
+      font-weight:700 !important;
+      color:#25180f !important;
+      text-shadow:0 1px 0 rgba(255,255,255,.62), 0 8px 22px rgba(105,60,15,.12) !important;
+    }
+    .chiem-title-divider{
+      width:min(330px, 38vw) !important;
+      margin-top:10px !important;
+    }
+    .chiem-layout{
+      width:min(100%, 1540px) !important;
+      margin-inline:auto !important;
+      grid-template-columns:minmax(190px, 250px) minmax(850px, 1fr) minmax(190px, 250px) !important;
+      gap:clamp(22px, 2.05vw, 42px) !important;
+      align-items:center !important;
+    }
+    .chiem-benefits{
+      gap:clamp(40px, 4.2vw, 82px) !important;
+    }
+    .chiem-benefit-icon{
+      width:clamp(128px, 8.8vw, 170px) !important;
+      margin-bottom:clamp(12px, .9vw, 18px) !important;
+      opacity:.94 !important;
+    }
+    .chiem-benefit h3{
+      font-size:clamp(19px, 1.25vw, 25px) !important;
+      line-height:1.25 !important;
+      color:#26180d !important;
+    }
+    .chiem-benefit p{
+      max-width:210px !important;
+      font-size:clamp(15px, .98vw, 18px) !important;
+      line-height:1.52 !important;
+      margin-top:10px !important;
+    }
+    .chiem-benefit-divider{
+      width:min(176px, 84%) !important;
+      margin-top:clamp(18px, 1.15vw, 24px) !important;
+      opacity:.7 !important;
+    }
+    .chiem-gallery{
+      gap:clamp(18px, 1.2vw, 26px) !important;
+      width:min(100%, 1110px) !important;
+      margin-inline:auto !important;
+    }
+    .chiem-card{
+      border-radius:7px !important;
+      background:rgba(255,247,225,.9) !important;
+      border-color:rgba(176,105,27,.42) !important;
+      box-shadow:0 14px 28px rgba(95,55,14,.13), inset 0 0 0 1px rgba(255,255,255,.42) !important;
+    }
+    .chiem-card::before{inset:6px !important;border-radius:5px !important;}
+    .chiem-card-image{
+      aspect-ratio:1.18 / 1 !important;
+      background:#dcb767 !important;
+    }
+    .chiem-card-image img{
+      object-fit:cover !important;
+      object-position:center center !important;
+      transform:scale(1.005) !important;
+    }
+    .chiem-card-body{
+      min-height:clamp(70px, 4.7vw, 86px) !important;
+      padding:13px 14px 12px !important;
+      background:linear-gradient(180deg, rgba(255,249,235,.96), rgba(247,230,193,.94)) !important;
+    }
+    .chiem-card-body h3{
+      font-size:clamp(18px, 1.11vw, 22px) !important;
+      line-height:1.18 !important;
+      white-space:normal !important;
+    }
+    .chiem-card-line{
+      width:min(114px, 52%) !important;
+      margin-top:7px !important;
+    }
+    .chiem-bottom-ornament{
+      width:min(340px, 36vw) !important;
+      margin-top:clamp(18px, 1.5vw, 30px) !important;
+      opacity:.78 !important;
+    }
+
+    @media (min-width:1281px) and (max-width:1540px){
+      .chiem-inner{width:min(100% - 44px, 1440px) !important;}
+      .chiem-layout{
+        grid-template-columns:minmax(160px, 214px) minmax(760px, 1fr) minmax(160px, 214px) !important;
+        gap:22px !important;
+      }
+      .chiem-gallery{width:min(100%, 980px) !important;gap:18px !important;}
+      .chiem-benefit-icon{width:124px !important;}
+      .chiem-benefit h3{font-size:20px !important;}
+      .chiem-benefit p{font-size:15px !important;max-width:180px !important;}
+      .chiem-heading h2{font-size:clamp(40px, 3.1vw, 56px) !important;}
+    }
+
+    @media (max-width:1280px){
+      .chiem-nguong-section{padding-top:48px !important;}
+      .chiem-layout{
+        width:min(100%, 1080px) !important;
+        grid-template-columns:1fr !important;
+        gap:24px !important;
+      }
+      .chiem-benefits{
+        grid-template-columns:repeat(4, minmax(0, 1fr)) !important;
+        gap:14px !important;
+      }
+      .chiem-gallery{width:min(100%, 980px) !important;}
+      .chiem-benefit{padding:14px 10px !important;background:rgba(255,248,231,.42) !important;}
+      .chiem-benefit-icon{width:92px !important;}
+    }
+
+    @media (max-width:920px){
+      .chiem-nguong-section{padding:48px 0 64px !important;}
+      .chiem-heading h2{font-size:clamp(33px, 5.8vw, 50px) !important;letter-spacing:1.4px !important;}
+      .chiem-gallery{grid-template-columns:repeat(2, minmax(0, 1fr)) !important;gap:18px !important;}
+      .chiem-card-image{aspect-ratio:1.22 / 1 !important;}
+      .chiem-decor--lotus-left,.chiem-decor--lotus-right{opacity:.45 !important;}
+    }
+
+    @media (max-width:680px){
+      .chiem-nguong-section{
+        padding:44px 0 58px !important;
+        background:
+          linear-gradient(180deg, rgba(249,238,210,.78), rgba(242,215,155,.76)),
+          url("assets/images/bg/bg-chiem-nguong-parchment.jpg") center top / cover no-repeat,
+          #f4dfaa !important;
+      }
+      .chiem-inner{width:min(100% - 28px, 1440px) !important;}
+      .chiem-decor--corner-left,.chiem-decor--corner-right{width:135px !important;opacity:.32 !important;}
+      .chiem-heading h2{font-size:clamp(28px, 8.4vw, 40px) !important;line-height:1.14 !important;letter-spacing:.8px !important;}
+      .chiem-title-lotus{width:94px !important;}
+      .chiem-title-divider{width:min(250px, 72vw) !important;}
+      .chiem-benefits{grid-template-columns:1fr !important;gap:12px !important;}
+      .chiem-benefit{grid-template-columns:68px 1fr !important;padding:13px 15px !important;border-radius:14px !important;}
+      .chiem-benefit-icon{width:60px !important;}
+      .chiem-gallery{grid-template-columns:1fr !important;width:min(100%, 430px) !important;}
+      .chiem-card-image{aspect-ratio:1.22 / 1 !important;}
+      .chiem-card-body h3{font-size:20px !important;}
+      .chiem-bottom-ornament{width:min(250px, 72vw) !important;}
+    }
+
+
+    /* === DTA CHIEM CARD PREMIUM CLICK EFFECT START === */
+    .chiem-gallery{
+      perspective:1200px !important;
+    }
+    .chiem-card{
+      cursor:pointer !important;
+      isolation:isolate !important;
+      overflow:hidden !important;
+      border-radius:18px !important;
+      background:
+        linear-gradient(180deg, rgba(255,251,239,.96), rgba(246,224,177,.92)) padding-box,
+        linear-gradient(135deg, rgba(116,67,18,.36), rgba(255,231,156,.95), rgba(178,103,27,.54)) border-box !important;
+      border:1px solid transparent !important;
+      box-shadow:
+        0 18px 40px rgba(86,48,11,.16),
+        0 2px 0 rgba(255,255,255,.48) inset,
+        0 -1px 0 rgba(127,73,19,.16) inset !important;
+      transform:translateZ(0) !important;
+      will-change:transform, box-shadow, filter !important;
+      transition:
+        transform .55s cubic-bezier(.2,.8,.2,1),
+        box-shadow .55s cubic-bezier(.2,.8,.2,1),
+        filter .55s ease !important;
+    }
+    .chiem-card::before{
+      inset:9px !important;
+      z-index:4 !important;
+      border-radius:13px !important;
+      border:1px solid rgba(255,236,168,.44) !important;
+      box-shadow:
+        inset 0 0 0 1px rgba(133,78,21,.12),
+        inset 0 0 22px rgba(255,238,174,.12) !important;
+      opacity:1 !important;
+    }
+    .chiem-card::after{
+      content:"" !important;
+      position:absolute !important;
+      inset:-42% -34% auto auto !important;
+      width:72% !important;
+      aspect-ratio:1 !important;
+      z-index:3 !important;
+      pointer-events:none !important;
+      opacity:0 !important;
+      border-radius:50% !important;
+      background:
+        radial-gradient(circle, rgba(255,244,194,.82) 0 7%, rgba(238,179,64,.34) 26%, rgba(238,179,64,0) 68%) !important;
+      filter:blur(5px) !important;
+      transform:scale(.66) !important;
+      transition:opacity .55s ease, transform .55s ease !important;
+      mix-blend-mode:screen !important;
+    }
+    .chiem-card-image{
+      border-radius:17px 17px 0 0 !important;
+      background:
+        radial-gradient(ellipse at center, rgba(255,231,151,.38), rgba(196,138,47,.25) 48%, rgba(95,50,13,.18) 100%),
+        #dcb767 !important;
+    }
+    .chiem-card-image::before{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      height:46%;
+      z-index:2;
+      pointer-events:none;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,0), rgba(47,25,7,.28)),
+        radial-gradient(ellipse at center bottom, rgba(255,222,124,.26), transparent 66%);
+      opacity:.9;
+    }
+    .chiem-card-image::after{
+      z-index:3 !important;
+      background:
+        linear-gradient(115deg, transparent 0%, rgba(255,255,255,0) 36%, rgba(255,255,255,.46) 48%, rgba(255,231,154,.18) 54%, transparent 70%),
+        radial-gradient(ellipse at 50% 0%, rgba(255,242,181,.28), transparent 52%) !important;
+      transform:translateX(-118%) skewX(-16deg) !important;
+      opacity:0 !important;
+      mix-blend-mode:screen !important;
+    }
+    .chiem-card-image img{
+      transform:scale(1.018) !important;
+      filter:saturate(1.03) contrast(1.03) brightness(1.01) !important;
+    }
+    .chiem-card-body{
+      min-height:clamp(78px, 5.1vw, 96px) !important;
+      border-top:1px solid rgba(184,113,32,.28) !important;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(255,238,180,.46), rgba(255,238,180,0) 56%),
+        linear-gradient(180deg, rgba(255,250,236,.98), rgba(247,228,188,.96)) !important;
+    }
+    .chiem-card-body::before{
+      content:"";
+      position:absolute;
+      left:12%;
+      right:12%;
+      top:0;
+      height:1px;
+      background:linear-gradient(90deg, transparent, rgba(170,101,27,.58), rgba(255,225,139,.92), rgba(170,101,27,.58), transparent);
+      opacity:.9;
+    }
+    .chiem-card-body h3{
+      color:#241409 !important;
+      font-weight:700 !important;
+      letter-spacing:.02em !important;
+      text-shadow:
+        0 1px 0 rgba(255,255,255,.75),
+        0 8px 18px rgba(119,70,16,.08) !important;
+      transition:transform .45s ease, color .45s ease, text-shadow .45s ease !important;
+    }
+    .chiem-card-line{
+      filter:drop-shadow(0 4px 7px rgba(145,83,18,.16)) !important;
+      transition:transform .45s ease, opacity .45s ease, filter .45s ease !important;
+    }
+    .chiem-card:hover,
+    .chiem-card:focus-visible,
+    .chiem-card.is-chiem-active{
+      transform:translateY(-11px) scale(1.018) rotateX(1deg) !important;
+      border-color:transparent !important;
+      box-shadow:
+        0 30px 66px rgba(84,47,12,.24),
+        0 0 0 1px rgba(255,231,154,.52),
+        0 0 34px rgba(215,158,50,.25),
+        0 2px 0 rgba(255,255,255,.58) inset !important;
+      filter:saturate(1.05) !important;
+    }
+    .chiem-card:hover::after,
+    .chiem-card:focus-visible::after,
+    .chiem-card.is-chiem-active::after{
+      opacity:1 !important;
+      transform:scale(1) !important;
+    }
+    .chiem-card:hover .chiem-card-image::after,
+    .chiem-card:focus-visible .chiem-card-image::after,
+    .chiem-card.is-chiem-active .chiem-card-image::after{
+      animation:chiemCardShine 1.05s cubic-bezier(.2,.8,.2,1) both !important;
+      opacity:1 !important;
+    }
+    .chiem-card:hover .chiem-card-image img,
+    .chiem-card:focus-visible .chiem-card-image img,
+    .chiem-card.is-chiem-active .chiem-card-image img{
+      transform:scale(1.085) !important;
+      filter:saturate(1.12) contrast(1.06) brightness(1.06) !important;
+    }
+    .chiem-card:hover .chiem-card-body h3,
+    .chiem-card:focus-visible .chiem-card-body h3,
+    .chiem-card.is-chiem-active .chiem-card-body h3{
+      color:#6d3a0f !important;
+      transform:translateY(-2px) !important;
+      text-shadow:0 1px 0 rgba(255,255,255,.78), 0 0 18px rgba(215,158,50,.18) !important;
+    }
+    .chiem-card:hover .chiem-card-line,
+    .chiem-card:focus-visible .chiem-card-line,
+    .chiem-card.is-chiem-active .chiem-card-line{
+      transform:scaleX(1.12) translateY(1px) !important;
+      opacity:.95 !important;
+      filter:drop-shadow(0 4px 9px rgba(145,83,18,.22)) drop-shadow(0 0 12px rgba(224,172,69,.22)) !important;
+    }
+    .chiem-card.is-chiem-active{
+      animation:chiemCardClickPulse .82s cubic-bezier(.2,.8,.2,1) both !important;
+    }
+    .chiem-card-ripple{
+      position:absolute;
+      z-index:5;
+      width:18px;
+      height:18px;
+      border-radius:999px;
+      pointer-events:none;
+      background:radial-gradient(circle, rgba(255,247,205,.84) 0%, rgba(231,171,56,.42) 38%, rgba(231,171,56,0) 72%);
+      transform:translate(-50%, -50%) scale(.4);
+      animation:chiemRipple .82s ease-out forwards;
+      mix-blend-mode:screen;
+    }
+    @keyframes chiemCardShine{
+      0%{transform:translateX(-118%) skewX(-16deg);opacity:0}
+      18%{opacity:.95}
+      100%{transform:translateX(118%) skewX(-16deg);opacity:0}
+    }
+    @keyframes chiemCardClickPulse{
+      0%{transform:translateY(-11px) scale(1.018) rotateX(1deg)}
+      42%{transform:translateY(-14px) scale(1.04) rotateX(1.6deg)}
+      100%{transform:translateY(-11px) scale(1.018) rotateX(1deg)}
+    }
+    @keyframes chiemRipple{
+      0%{opacity:.85;transform:translate(-50%, -50%) scale(.4)}
+      100%{opacity:0;transform:translate(-50%, -50%) scale(18)}
+    }
+    @media (max-width:680px){
+      .chiem-card{border-radius:16px !important;}
+      .chiem-card:hover,
+      .chiem-card:focus-visible,
+      .chiem-card.is-chiem-active{
+        transform:translateY(-7px) scale(1.012) !important;
+      }
+    }
+    /* === DTA CHIEM CARD PREMIUM CLICK EFFECT END === */
+
+    /* === DTA SECTION CHIEM NGUONG VISUAL OPTIMIZE V2 END === */
+
+
+
+    /* =========================================================
+       FINAL FIX - Blend boundary into .bon-su-meaning-section only
+       Chỉ đổi nền của vùng bên dưới để mép nối với vùng trước mềm hơn.
+       ========================================================= */
+    .bon-su-meaning-section{
+      margin-top:0 !important;
+      padding-top:clamp(72px, 6.4vw, 108px) !important;
+      background-color:#f7e9cb !important;
+      background-image:
+        linear-gradient(180deg,
+          #f7e9cb 0px,
+          rgba(248,235,202,.98) 34px,
+          rgba(248,230,183,.82) 88px,
+          rgba(248,224,159,.42) 158px,
+          rgba(248,224,159,0) 255px
+        ),
+        radial-gradient(ellipse at center top,
+          rgba(255,224,126,.42) 0%,
+          rgba(255,232,166,.24) 34%,
+          rgba(255,245,210,.08) 58%,
+          rgba(255,245,210,0) 76%
+        ),
+        url("assets/images/bg/bg-ton-tuong-parchment.jpg"),
+        linear-gradient(135deg, #f8edcf 0%, #f4dc9f 52%, #e6b64d 100%) !important;
+      background-repeat:no-repeat, no-repeat, no-repeat, no-repeat !important;
+      background-position:left top, center top, left top, center center !important;
+      background-size:
+        100% clamp(240px, 17vw, 320px),
+        100% clamp(280px, 21vw, 400px),
+        100% auto,
+        cover !important;
+    }
+
+    .bon-su-meaning-section::before{
+      content:"" !important;
+      position:absolute !important;
+      inset:0 !important;
+      z-index:0 !important;
+      pointer-events:none !important;
+      opacity:1 !important;
+      mix-blend-mode:normal !important;
+      background:
+        radial-gradient(ellipse at 50% 0%,
+          rgba(255,226,137,.30) 0%,
+          rgba(255,232,166,.16) 28%,
+          rgba(255,245,216,0) 62%
+        ),
+        radial-gradient(ellipse at 73% 34%, rgba(255,220,118,.20) 0 19%, transparent 54%),
+        linear-gradient(90deg,
+          rgba(255,248,230,.06) 0%,
+          rgba(255,248,230,.04) 30%,
+          rgba(255,248,230,.10) 58%,
+          rgba(255,248,230,.16) 100%
+        ) !important;
+    }
+
+    .bon-su-meaning-section::after{
+      content:"" !important;
+      display:block !important;
+      position:absolute !important;
+      left:0 !important;
+      right:0 !important;
+      top:0 !important;
+      height:clamp(150px, 12vw, 230px) !important;
+      z-index:1 !important;
+      pointer-events:none !important;
+      background:
+        linear-gradient(180deg,
+          #f7e9cb 0%,
+          rgba(248,235,202,.94) 22%,
+          rgba(248,229,178,.62) 52%,
+          rgba(248,229,178,.20) 78%,
+          rgba(248,229,178,0) 100%
+        ) !important;
+    }
+
+    .bon-su-meaning-inner,
+    .bon-su-decor,
+    .bon-su-heading-block,
+    .bon-su-body-block,
+    .bon-su-visual,
+    .bon-su-cards{
+      position:relative !important;
+    }
+
+    .bon-su-meaning-inner{
+      z-index:5 !important;
+    }
+
+    @media (min-width:1441px){
+      .bon-su-meaning-section{
+        background-position:left top, center top, left center, center center !important;
+        background-size:
+          100% clamp(250px, 16vw, 330px),
+          100% clamp(300px, 20vw, 420px),
+          auto 100%,
+          cover !important;
+      }
+    }
+
+    @media (max-width:1180px){
+      .bon-su-meaning-section{
+        background-position:left top, center top, left top, center center !important;
+        background-size:
+          100% 260px,
+          100% 340px,
+          auto 100%,
+          cover !important;
+      }
+    }
+
+    @media (max-width:940px){
+      .bon-su-meaning-section{
+        padding-top:64px !important;
+        background-image:
+          linear-gradient(180deg,
+            #f7e9cb 0px,
+            rgba(248,235,202,.98) 36px,
+            rgba(248,230,183,.78) 92px,
+            rgba(248,224,159,.30) 170px,
+            rgba(248,224,159,0) 250px
+          ),
+          radial-gradient(ellipse at center top,
+            rgba(255,224,126,.34) 0%,
+            rgba(255,232,166,.18) 38%,
+            rgba(255,245,210,0) 74%
+          ),
+          url("assets/images/bg/bg-ton-tuong-parchment.jpg"),
+          linear-gradient(180deg, #f8edcf 0%, #efd4a0 100%) !important;
+      }
+
+      .bon-su-meaning-section::after{
+        height:150px !important;
+      }
+    }
+
+    @media (max-width:680px){
+      .bon-su-meaning-section{
+        padding-top:54px !important;
+        background-image:
+          linear-gradient(180deg,
+            #f7e9cb 0px,
+            rgba(248,235,202,.98) 34px,
+            rgba(248,230,183,.72) 82px,
+            rgba(248,224,159,.28) 140px,
+            rgba(248,224,159,0) 210px
+          ),
+          radial-gradient(ellipse at center top,
+            rgba(255,224,126,.30) 0%,
+            rgba(255,232,166,.14) 40%,
+            rgba(255,245,210,0) 72%
+          ),
+          url("assets/images/bg/bg-ton-tuong-parchment.jpg"),
+          linear-gradient(180deg, #f8edcf 0%, #efd39b 100%) !important;
+        background-size:
+          100% 220px,
+          100% 270px,
+          auto 100%,
+          cover !important;
+      }
+
+      .bon-su-meaning-section::after{
+        height:118px !important;
+      }
+    }
+
+
+    /* === DTA FIX - Chiem card body divider icon update START === */
+    .chiem-card-body .chiem-card-line{
+      content:url("assets/images/decor/chiem-nguong/golden-lotus-divider-line.png");
+      display:block !important;
+      width:min(178px, 72%) !important;
+      height:auto !important;
+      aspect-ratio:auto !important;
+      object-fit:contain !important;
+      margin:8px auto 0 !important;
+      opacity:.9 !important;
+      filter:
+        drop-shadow(0 3px 5px rgba(145,83,18,.14))
+        drop-shadow(0 0 10px rgba(218,164,62,.16)) !important;
+    }
+    /* === DTA FIX - Chiem card body divider icon update END === */
+
+  
+
+    /* === DTA custom fixes 2026-06-06: chiem section spacing/alignment === */
+    .chiem-title-lotus{
+      margin:0 auto 8px !important;
+    }
+
+    .chiem-benefit:first-child .chiem-benefit-divider{
+      position:absolute !important;
+      left:50% !important;
+      top:calc(100% + (clamp(36px, 4.2vw, 78px) / 2)) !important;
+      transform:translate(-50%, -50%) !important;
+      margin:0 !important;
+      z-index:3 !important;
+      width:min(160px, 76%) !important;
+      opacity:.68 !important;
+      pointer-events:none !important;
+    }
+
+    @media (max-width:1280px){
+      .chiem-benefit:first-child .chiem-benefit-divider{
+        position:static !important;
+        transform:none !important;
+        margin:18px auto 0 !important;
+      }
+    }
+
+
+    /* === DTA CHIEM GALLERY ART FRAME UPGRADE V3 START === */
+    .chiem-gallery{
+      gap:clamp(18px, 1.35vw, 26px) !important;
+      align-items:stretch !important;
+    }
+    .chiem-card{
+      border-radius:10px !important;
+      overflow:hidden !important;
+      background:
+        linear-gradient(180deg, rgba(255,249,235,.98), rgba(244,221,174,.98)) padding-box,
+        linear-gradient(135deg,
+          rgba(118,65,14,.70) 0%,
+          rgba(255,226,139,.96) 24%,
+          rgba(156,88,19,.58) 48%,
+          rgba(255,234,164,.92) 74%,
+          rgba(121,67,16,.70) 100%
+        ) border-box !important;
+      border:1px solid transparent !important;
+      box-shadow:
+        0 20px 42px rgba(83,45,10,.18),
+        0 6px 18px rgba(155,93,23,.10),
+        inset 0 1px 0 rgba(255,255,255,.65),
+        inset 0 -1px 0 rgba(116,66,17,.20) !important;
+      transform-origin:center center !important;
+    }
+    .chiem-card::before{
+      inset:5px !important;
+      z-index:6 !important;
+      border-radius:7px !important;
+      border:1px solid rgba(255,236,170,.52) !important;
+      box-shadow:
+        inset 0 0 0 1px rgba(105,61,17,.16),
+        inset 0 0 18px rgba(255,232,154,.12) !important;
+    }
+    .chiem-card::after{
+      inset:auto 0 0 0 !important;
+      width:100% !important;
+      height:100% !important;
+      border-radius:inherit !important;
+      z-index:5 !important;
+      opacity:.72 !important;
+      transform:none !important;
+      filter:none !important;
+      mix-blend-mode:normal !important;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 16%, rgba(71,37,7,0) 64%, rgba(71,37,7,.14) 100%),
+        linear-gradient(90deg, rgba(86,45,8,.22), transparent 7%, transparent 93%, rgba(86,45,8,.20)) !important;
+      transition:opacity .5s ease !important;
+    }
+    .chiem-card-image{
+      aspect-ratio:1.36 / 1 !important;
+      border-radius:8px 8px 0 0 !important;
+      background:#a96f22 !important;
+      overflow:hidden !important;
+    }
+    .chiem-card-image::before{
+      z-index:2 !important;
+      height:100% !important;
+      opacity:.8 !important;
+      background:
+        radial-gradient(ellipse at 50% 16%, rgba(255,236,164,.22), transparent 42%),
+        linear-gradient(180deg, rgba(255,247,214,.10) 0%, rgba(20,10,3,0) 42%, rgba(43,21,5,.24) 100%) !important;
+    }
+    .chiem-card-image::after{
+      z-index:4 !important;
+      background:
+        linear-gradient(110deg, transparent 0%, transparent 38%, rgba(255,255,255,.54) 48%, rgba(255,219,126,.24) 56%, transparent 70%) !important;
+      transform:translateX(-130%) skewX(-18deg) !important;
+      opacity:0 !important;
+      mix-blend-mode:screen !important;
+    }
+    .chiem-card-image img{
+      width:100% !important;
+      height:100% !important;
+      object-fit:cover !important;
+      object-position:center center !important;
+      transform:scale(1.065) !important;
+      filter:saturate(1.08) contrast(1.06) brightness(1.02) !important;
+      transition:
+        transform .85s cubic-bezier(.2,.8,.2,1),
+        filter .85s cubic-bezier(.2,.8,.2,1) !important;
+    }
+    .chiem-card:nth-child(1) .chiem-card-image img{object-position:center 48% !important; transform:scale(1.105) !important;}
+    .chiem-card:nth-child(2) .chiem-card-image img{object-position:center 46% !important; transform:scale(1.12) !important;}
+    .chiem-card:nth-child(3) .chiem-card-image img{object-position:center 48% !important; transform:scale(1.11) !important;}
+    .chiem-card:nth-child(4) .chiem-card-image img{object-position:center 46% !important; transform:scale(1.14) !important;}
+    .chiem-card:nth-child(5) .chiem-card-image img{object-position:center 47% !important; transform:scale(1.14) !important;}
+    .chiem-card:nth-child(6) .chiem-card-image img{object-position:center 49% !important; transform:scale(1.12) !important;}
+    .chiem-card-body{
+      min-height:clamp(76px, 5.3vw, 92px) !important;
+      padding:clamp(13px, .9vw, 16px) 12px clamp(10px, .82vw, 14px) !important;
+      border-top:1px solid rgba(147,83,20,.30) !important;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(255,245,204,.78), rgba(255,245,204,0) 62%),
+        linear-gradient(180deg, rgba(255,250,239,.98) 0%, rgba(248,231,194,.98) 100%) !important;
+    }
+    .chiem-card-body::before{
+      left:18% !important;
+      right:18% !important;
+      background:linear-gradient(90deg, transparent, rgba(166,93,22,.48), rgba(238,187,78,.92), rgba(166,93,22,.48), transparent) !important;
+    }
+    .chiem-card-body h3{
+      color:#25170d !important;
+      font-size:clamp(20px, 1.18vw, 25px) !important;
+      font-weight:400 !important;
+      line-height:1.18 !important;
+      letter-spacing:.005em !important;
+      text-shadow:0 1px 0 rgba(255,255,255,.75), 0 8px 18px rgba(104,58,12,.10) !important;
+    }
+    .chiem-card-line{
+      width:min(132px, 46%) !important;
+      height:auto !important;
+      aspect-ratio:auto !important;
+      object-fit:contain !important;
+      margin:7px auto 0 !important;
+      opacity:.86 !important;
+    }
+    .chiem-card:hover,
+    .chiem-card:focus-visible,
+    .chiem-card.is-chiem-active{
+      transform:translateY(-10px) scale(1.018) !important;
+      box-shadow:
+        0 34px 72px rgba(74,40,9,.28),
+        0 0 0 1px rgba(255,230,145,.60),
+        0 0 32px rgba(216,158,49,.24),
+        inset 0 1px 0 rgba(255,255,255,.72) !important;
+    }
+    .chiem-card:hover::after,
+    .chiem-card:focus-visible::after,
+    .chiem-card.is-chiem-active::after{
+      opacity:.95 !important;
+    }
+    .chiem-card:hover .chiem-card-image img,
+    .chiem-card:focus-visible .chiem-card-image img,
+    .chiem-card.is-chiem-active .chiem-card-image img{
+      transform:scale(1.18) !important;
+      filter:saturate(1.18) contrast(1.08) brightness(1.07) !important;
+    }
+    .chiem-card:hover .chiem-card-image::after,
+    .chiem-card:focus-visible .chiem-card-image::after,
+    .chiem-card.is-chiem-active .chiem-card-image::after{
+      animation:chiemCardShine 1.05s cubic-bezier(.2,.8,.2,1) both !important;
+      opacity:1 !important;
+    }
+    .chiem-card-ripple{
+      z-index:7 !important;
+      width:24px !important;
+      height:24px !important;
+      background:radial-gradient(circle, rgba(255,252,226,.96) 0%, rgba(244,194,81,.50) 35%, rgba(244,194,81,0) 72%) !important;
+    }
+    @media (max-width:1280px){
+      .chiem-gallery{width:min(100%, 1040px) !important;}
+      .chiem-card-image{aspect-ratio:1.34 / 1 !important;}
+    }
+    @media (max-width:920px){
+      .chiem-gallery{grid-template-columns:repeat(2, minmax(0, 1fr)) !important; width:min(100%, 760px) !important;}
+      .chiem-card-image{aspect-ratio:1.32 / 1 !important;}
+    }
+    @media (max-width:680px){
+      .chiem-gallery{width:min(100%, 440px) !important; gap:16px !important;}
+      .chiem-card{border-radius:12px !important;}
+      .chiem-card::before{inset:5px !important;border-radius:8px !important;}
+      .chiem-card-image{aspect-ratio:1.30 / 1 !important;border-radius:10px 10px 0 0 !important;}
+      .chiem-card-body{min-height:74px !important;padding:12px 10px 10px !important;}
+      .chiem-card-body h3{font-size:20px !important;}
+      .chiem-card-line{width:min(120px, 42%) !important;margin-top:5px !important;}
+    }
+    @media (max-width:420px){
+      .chiem-card-image{aspect-ratio:1.22 / 1 !important;}
+      .chiem-card-image img{transform:scale(1.13) !important;}
+    }
+    /* === DTA CHIEM GALLERY ART FRAME UPGRADE V3 END === */
+
+
+    /* === DTA CHIEM GALLERY LUXURY FULL-FRAME UPGRADE V4 START === */
+    .chiem-gallery{
+      width:min(100%, 1168px) !important;
+      gap:clamp(16px, 1.15vw, 22px) !important;
+      perspective:1400px !important;
+    }
+
+    .chiem-card{
+      position:relative !important;
+      border-radius:18px !important;
+      overflow:hidden !important;
+      background:
+        linear-gradient(180deg, rgba(255,250,236,.98), rgba(240,210,154,.98)) padding-box,
+        linear-gradient(135deg,
+          rgba(92,49,10,.92) 0%,
+          rgba(210,145,39,.84) 15%,
+          rgba(255,239,176,.98) 32%,
+          rgba(161,88,19,.72) 50%,
+          rgba(255,231,145,.96) 70%,
+          rgba(126,68,14,.92) 100%) border-box !important;
+      border:1.5px solid transparent !important;
+      box-shadow:
+        0 26px 58px rgba(75,38,7,.22),
+        0 9px 22px rgba(151,85,19,.13),
+        inset 0 1px 0 rgba(255,255,255,.76),
+        inset 0 -1px 0 rgba(104,59,12,.24) !important;
+      transform:translateZ(0) !important;
+      transition:
+        transform .62s cubic-bezier(.2,.8,.2,1),
+        box-shadow .62s cubic-bezier(.2,.8,.2,1),
+        filter .62s ease !important;
+    }
+
+    .chiem-card::before{
+      content:"" !important;
+      position:absolute !important;
+      inset:7px !important;
+      z-index:7 !important;
+      border-radius:13px !important;
+      pointer-events:none !important;
+      border:1px solid rgba(255,237,171,.62) !important;
+      box-shadow:
+        inset 0 0 0 1px rgba(95,53,10,.18),
+        inset 0 0 28px rgba(255,234,157,.14),
+        0 0 0 1px rgba(91,50,10,.10) !important;
+      opacity:1 !important;
+    }
+
+    .chiem-card::after{
+      content:"" !important;
+      position:absolute !important;
+      inset:0 !important;
+      width:auto !important;
+      height:auto !important;
+      z-index:6 !important;
+      border-radius:inherit !important;
+      pointer-events:none !important;
+      opacity:.88 !important;
+      transform:none !important;
+      filter:none !important;
+      mix-blend-mode:normal !important;
+      background:
+        radial-gradient(circle at 12px 12px, rgba(255,235,160,.9) 0 2px, transparent 3px),
+        radial-gradient(circle at calc(100% - 12px) 12px, rgba(255,235,160,.9) 0 2px, transparent 3px),
+        radial-gradient(circle at 12px calc(100% - 12px), rgba(255,235,160,.76) 0 2px, transparent 3px),
+        radial-gradient(circle at calc(100% - 12px) calc(100% - 12px), rgba(255,235,160,.76) 0 2px, transparent 3px),
+        linear-gradient(180deg, rgba(255,255,255,.18) 0%, transparent 18%, transparent 72%, rgba(72,38,7,.16) 100%),
+        linear-gradient(90deg, rgba(85,45,8,.20), transparent 8%, transparent 92%, rgba(85,45,8,.20)) !important;
+      transition:opacity .55s ease !important;
+    }
+
+    .chiem-card-image{
+      position:relative !important;
+      aspect-ratio:1.10 / 1 !important;
+      margin:0 !important;
+      border-radius:16px 16px 0 0 !important;
+      overflow:hidden !important;
+      background:#8c5217 !important;
+    }
+
+    .chiem-card-image::before{
+      content:"" !important;
+      position:absolute !important;
+      inset:0 !important;
+      z-index:2 !important;
+      pointer-events:none !important;
+      height:auto !important;
+      opacity:.72 !important;
+      background:
+        radial-gradient(ellipse at 50% 18%, rgba(255,241,179,.30), rgba(255,218,114,.08) 32%, transparent 58%),
+        linear-gradient(180deg, rgba(255,250,222,.10) 0%, rgba(0,0,0,0) 42%, rgba(39,19,4,.22) 100%) !important;
+      mix-blend-mode:screen !important;
+    }
+
+    .chiem-card-image::after{
+      content:"" !important;
+      position:absolute !important;
+      inset:0 !important;
+      z-index:5 !important;
+      pointer-events:none !important;
+      background:
+        linear-gradient(110deg, transparent 0%, transparent 40%, rgba(255,255,255,.58) 48%, rgba(255,225,137,.28) 56%, transparent 72%) !important;
+      transform:translateX(-135%) skewX(-18deg) !important;
+      opacity:0 !important;
+      mix-blend-mode:screen !important;
+    }
+
+    .chiem-card-image img{
+      display:block !important;
+      width:100% !important;
+      height:100% !important;
+      object-fit:cover !important;
+      object-position:center center !important;
+      transform:scale(1.22) !important;
+      filter:saturate(1.1) contrast(1.08) brightness(1.04) !important;
+      transition:
+        transform .9s cubic-bezier(.2,.8,.2,1),
+        filter .9s cubic-bezier(.2,.8,.2,1) !important;
+      will-change:transform, filter !important;
+    }
+
+    .chiem-card:nth-child(1) .chiem-card-image img{object-position:center 48% !important; transform:scale(1.235) !important;}
+    .chiem-card:nth-child(2) .chiem-card-image img{object-position:center 45% !important; transform:scale(1.265) !important;}
+    .chiem-card:nth-child(3) .chiem-card-image img{object-position:center 47% !important; transform:scale(1.255) !important;}
+    .chiem-card:nth-child(4) .chiem-card-image img{object-position:center 45% !important; transform:scale(1.285) !important;}
+    .chiem-card:nth-child(5) .chiem-card-image img{object-position:center 45% !important; transform:scale(1.285) !important;}
+    .chiem-card:nth-child(6) .chiem-card-image img{object-position:center 48% !important; transform:scale(1.265) !important;}
+
+    .chiem-card-body{
+      position:relative !important;
+      min-height:clamp(58px, 4.05vw, 72px) !important;
+      padding:clamp(10px, .72vw, 12px) 12px clamp(8px, .62vw, 10px) !important;
+      border-top:1px solid rgba(142,79,17,.38) !important;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(255,246,205,.9), rgba(255,246,205,0) 62%),
+        linear-gradient(180deg, rgba(255,251,240,.98) 0%, rgba(247,226,183,.98) 100%) !important;
+    }
+
+    .chiem-card-body::before{
+      content:"" !important;
+      position:absolute !important;
+      left:14% !important;
+      right:14% !important;
+      top:0 !important;
+      height:1px !important;
+      background:linear-gradient(90deg, transparent, rgba(150,83,17,.55), rgba(255,226,139,.98), rgba(150,83,17,.55), transparent) !important;
+      opacity:1 !important;
+    }
+
+    .chiem-card-body h3{
+      margin:0 !important;
+      color:#241409 !important;
+      font-size:clamp(19px, 1.12vw, 24px) !important;
+      line-height:1.08 !important;
+      font-weight:400 !important;
+      letter-spacing:.008em !important;
+      white-space:normal !important;
+      text-shadow:
+        0 1px 0 rgba(255,255,255,.82),
+        0 9px 18px rgba(99,54,11,.12) !important;
+    }
+
+    .chiem-card-body .chiem-card-line,
+    .chiem-card-line{
+      width:min(118px, 42%) !important;
+      margin:5px auto 0 !important;
+      opacity:.84 !important;
+      filter:
+        drop-shadow(0 2px 4px rgba(145,83,18,.14))
+        drop-shadow(0 0 10px rgba(218,164,62,.16)) !important;
+      transition:transform .45s ease, opacity .45s ease, filter .45s ease !important;
+    }
+
+    .chiem-card:hover,
+    .chiem-card:focus-visible,
+    .chiem-card.is-chiem-active{
+      transform:translateY(-12px) scale(1.022) rotateX(1.2deg) !important;
+      box-shadow:
+        0 38px 82px rgba(71,36,7,.31),
+        0 0 0 1px rgba(255,232,151,.72),
+        0 0 38px rgba(218,161,50,.30),
+        inset 0 1px 0 rgba(255,255,255,.82) !important;
+      filter:saturate(1.08) !important;
+    }
+
+    .chiem-card:hover::after,
+    .chiem-card:focus-visible::after,
+    .chiem-card.is-chiem-active::after{
+      opacity:1 !important;
+    }
+
+    .chiem-card:hover .chiem-card-image img,
+    .chiem-card:focus-visible .chiem-card-image img,
+    .chiem-card.is-chiem-active .chiem-card-image img{
+      transform:scale(1.34) !important;
+      filter:saturate(1.22) contrast(1.1) brightness(1.09) !important;
+    }
+
+    .chiem-card:hover .chiem-card-image::after,
+    .chiem-card:focus-visible .chiem-card-image::after,
+    .chiem-card.is-chiem-active .chiem-card-image::after{
+      animation:chiemCardShine 1.08s cubic-bezier(.2,.8,.2,1) both !important;
+      opacity:1 !important;
+    }
+
+    .chiem-card:hover .chiem-card-body h3,
+    .chiem-card:focus-visible .chiem-card-body h3,
+    .chiem-card.is-chiem-active .chiem-card-body h3{
+      color:#7a3f12 !important;
+      text-shadow:
+        0 1px 0 rgba(255,255,255,.86),
+        0 0 14px rgba(218,161,50,.20) !important;
+    }
+
+    .chiem-card:hover .chiem-card-line,
+    .chiem-card:focus-visible .chiem-card-line,
+    .chiem-card.is-chiem-active .chiem-card-line{
+      opacity:1 !important;
+      transform:translateY(-1px) scale(1.06) !important;
+      filter:
+        drop-shadow(0 2px 5px rgba(145,83,18,.20))
+        drop-shadow(0 0 14px rgba(218,164,62,.30)) !important;
+    }
+
+    .chiem-card-ripple{
+      z-index:8 !important;
+      width:28px !important;
+      height:28px !important;
+      background:radial-gradient(circle, rgba(255,252,226,.98) 0%, rgba(244,194,81,.54) 34%, rgba(244,194,81,0) 72%) !important;
+    }
+
+    @media (max-width:1280px){
+      .chiem-gallery{width:min(100%, 1040px) !important;}
+      .chiem-card-image{aspect-ratio:1.08 / 1 !important;}
+    }
+
+    @media (max-width:920px){
+      .chiem-gallery{grid-template-columns:repeat(2, minmax(0, 1fr)) !important; width:min(100%, 780px) !important; gap:18px !important;}
+      .chiem-card-image{aspect-ratio:1.06 / 1 !important;}
+      .chiem-card-body{min-height:66px !important;}
+    }
+
+    @media (max-width:680px){
+      .chiem-gallery{width:min(100%, 450px) !important; gap:16px !important;}
+      .chiem-card{border-radius:16px !important;}
+      .chiem-card::before{inset:6px !important;border-radius:11px !important;}
+      .chiem-card-image{aspect-ratio:1.05 / 1 !important;border-radius:15px 15px 0 0 !important;}
+      .chiem-card-image img{transform:scale(1.28) !important;}
+      .chiem-card-body{min-height:62px !important;padding:10px 10px 8px !important;}
+      .chiem-card-body h3{font-size:20px !important;line-height:1.1 !important;}
+      .chiem-card-body .chiem-card-line,.chiem-card-line{width:min(112px, 40%) !important;margin-top:4px !important;}
+    }
+
+    @media (max-width:420px){
+      .chiem-card-image{aspect-ratio:1.02 / 1 !important;}
+      .chiem-card-image img{transform:scale(1.34) !important;}
+      .chiem-card:hover .chiem-card-image img,
+      .chiem-card:focus-visible .chiem-card-image img,
+      .chiem-card.is-chiem-active .chiem-card-image img{transform:scale(1.42) !important;}
+    }
+    /* === DTA CHIEM GALLERY LUXURY FULL-FRAME UPGRADE V4 END === */
+
+
+
+    /* === DTA CHIEM GALLERY DISPLAY FIX V5 START ===
+       Fix: bỏ crop/zoom quá mạnh ở 6 khung tượng, tách rõ vùng ảnh và vùng tên,
+       giữ bố cục 3x2 sang trọng, hiển thị tôn tượng đầy đủ và ổn định responsive.
+    */
+    .chiem-gallery{
+      width:min(100%, 1188px) !important;
+      display:grid !important;
+      grid-template-columns:repeat(3, minmax(0, 1fr)) !important;
+      gap:clamp(20px, 1.55vw, 30px) !important;
+      align-items:stretch !important;
+      overflow:visible !important;
+      perspective:1200px !important;
+    }
+
+    .chiem-card{
+      display:flex !important;
+      flex-direction:column !important;
+      min-width:0 !important;
+      height:100% !important;
+      overflow:hidden !important;
+      border-radius:20px !important;
+      background:
+        linear-gradient(180deg, rgba(255,251,240,.98), rgba(244,221,173,.98)) padding-box,
+        linear-gradient(135deg,
+          rgba(99,53,10,.92) 0%,
+          rgba(216,151,45,.88) 18%,
+          rgba(255,239,178,.98) 34%,
+          rgba(154,85,18,.72) 52%,
+          rgba(255,229,143,.95) 74%,
+          rgba(113,60,12,.92) 100%) border-box !important;
+      border:1.5px solid transparent !important;
+      box-shadow:
+        0 24px 56px rgba(77,43,10,.20),
+        0 8px 18px rgba(144,84,18,.12),
+        inset 0 1px 0 rgba(255,255,255,.78),
+        inset 0 -1px 0 rgba(106,61,12,.20) !important;
+      transform:translateZ(0) !important;
+      transition:transform .55s cubic-bezier(.2,.8,.2,1), box-shadow .55s cubic-bezier(.2,.8,.2,1), filter .55s ease !important;
+    }
+
+    .chiem-card::before{
+      inset:8px !important;
+      z-index:8 !important;
+      border-radius:15px !important;
+      border:1px solid rgba(255,237,172,.60) !important;
+      box-shadow:
+        inset 0 0 0 1px rgba(99,56,11,.15),
+        inset 0 0 24px rgba(255,232,154,.12) !important;
+      pointer-events:none !important;
+    }
+
+    .chiem-card::after{
+      inset:0 !important;
+      width:auto !important;
+      height:auto !important;
+      z-index:7 !important;
+      border-radius:inherit !important;
+      opacity:.92 !important;
+      transform:none !important;
+      filter:none !important;
+      mix-blend-mode:normal !important;
+      pointer-events:none !important;
+      background:
+        radial-gradient(circle at 14px 14px, rgba(255,238,170,.92) 0 2px, transparent 3px),
+        radial-gradient(circle at calc(100% - 14px) 14px, rgba(255,238,170,.92) 0 2px, transparent 3px),
+        radial-gradient(circle at 14px calc(100% - 14px), rgba(255,238,170,.72) 0 2px, transparent 3px),
+        radial-gradient(circle at calc(100% - 14px) calc(100% - 14px), rgba(255,238,170,.72) 0 2px, transparent 3px),
+        linear-gradient(180deg, rgba(255,255,255,.16) 0%, transparent 22%, transparent 70%, rgba(70,38,8,.12) 100%),
+        linear-gradient(90deg, rgba(76,42,9,.18), transparent 8%, transparent 92%, rgba(76,42,9,.18)) !important;
+    }
+
+    .chiem-card-image{
+      position:relative !important;
+      flex:0 0 auto !important;
+      aspect-ratio:1.48 / 1 !important;
+      margin:0 !important;
+      border-radius:18px 18px 0 0 !important;
+      overflow:hidden !important;
+      background:
+        radial-gradient(ellipse at 50% 38%, rgba(255,239,178,.28) 0%, rgba(200,134,40,.18) 48%, rgba(87,45,10,.18) 100%),
+        linear-gradient(135deg, #5a2f0a 0%, #b37a29 45%, #f1d28b 100%) !important;
+    }
+
+    .chiem-card-image::before{
+      content:"" !important;
+      position:absolute !important;
+      inset:0 !important;
+      z-index:3 !important;
+      height:auto !important;
+      opacity:.68 !important;
+      pointer-events:none !important;
+      mix-blend-mode:screen !important;
+      background:
+        radial-gradient(ellipse at 50% 14%, rgba(255,242,185,.30), rgba(255,224,122,.10) 34%, transparent 62%),
+        linear-gradient(180deg, rgba(255,252,226,.12) 0%, rgba(0,0,0,0) 48%, rgba(38,18,4,.14) 100%) !important;
+    }
+
+    .chiem-card-image::after{
+      content:"" !important;
+      position:absolute !important;
+      inset:0 !important;
+      z-index:6 !important;
+      pointer-events:none !important;
+      background:linear-gradient(110deg, transparent 0%, transparent 40%, rgba(255,255,255,.52) 49%, rgba(255,226,139,.25) 56%, transparent 72%) !important;
+      transform:translateX(-135%) skewX(-18deg) !important;
+      opacity:0 !important;
+      mix-blend-mode:screen !important;
+    }
+
+    .chiem-card-image img,
+    .chiem-card:nth-child(1) .chiem-card-image img,
+    .chiem-card:nth-child(2) .chiem-card-image img,
+    .chiem-card:nth-child(3) .chiem-card-image img,
+    .chiem-card:nth-child(4) .chiem-card-image img,
+    .chiem-card:nth-child(5) .chiem-card-image img,
+    .chiem-card:nth-child(6) .chiem-card-image img{
+      display:block !important;
+      width:100% !important;
+      height:100% !important;
+      object-fit:contain !important;
+      object-position:center center !important;
+      transform:scale(1.01) !important;
+      filter:saturate(1.06) contrast(1.04) brightness(1.02) !important;
+      transition:transform .75s cubic-bezier(.2,.8,.2,1), filter .75s cubic-bezier(.2,.8,.2,1) !important;
+      will-change:transform, filter !important;
+    }
+
+    .chiem-card-body{
+      position:relative !important;
+      flex:1 0 auto !important;
+      min-height:clamp(72px, 4.85vw, 88px) !important;
+      padding:clamp(13px, .85vw, 16px) 18px clamp(11px, .78vw, 14px) !important;
+      display:flex !important;
+      flex-direction:column !important;
+      align-items:center !important;
+      justify-content:center !important;
+      text-align:center !important;
+      border-top:1px solid rgba(142,79,17,.34) !important;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(255,247,208,.86), rgba(255,247,208,0) 62%),
+        linear-gradient(180deg, rgba(255,251,241,.98) 0%, rgba(247,228,190,.98) 100%) !important;
+    }
+
+    .chiem-card-body::before{
+      content:"" !important;
+      position:absolute !important;
+      left:16% !important;
+      right:16% !important;
+      top:0 !important;
+      height:1px !important;
+      opacity:1 !important;
+      background:linear-gradient(90deg, transparent, rgba(150,83,17,.55), rgba(255,226,139,.98), rgba(150,83,17,.55), transparent) !important;
+    }
+
+    .chiem-card-body h3{
+      margin:0 !important;
+      color:#241409 !important;
+      font-family:var(--serif) !important;
+      font-size:clamp(18px, 1.02vw, 22px) !important;
+      line-height:1.16 !important;
+      font-weight:400 !important;
+      letter-spacing:0 !important;
+      word-spacing:0 !important;
+      white-space:nowrap !important;
+      max-width:100% !important;
+      text-shadow:0 1px 0 rgba(255,255,255,.82), 0 8px 16px rgba(99,54,11,.10) !important;
+    }
+
+    .chiem-card-body .chiem-card-line,
+    .chiem-card-line{
+      width:min(142px, 48%) !important;
+      height:auto !important;
+      aspect-ratio:auto !important;
+      object-fit:contain !important;
+      margin:7px auto 0 !important;
+      opacity:.88 !important;
+      filter:drop-shadow(0 2px 4px rgba(145,83,18,.14)) drop-shadow(0 0 10px rgba(218,164,62,.16)) !important;
+    }
+
+    .chiem-card:hover,
+    .chiem-card:focus-visible,
+    .chiem-card.is-chiem-active{
+      transform:translateY(-10px) scale(1.018) !important;
+      box-shadow:
+        0 36px 76px rgba(70,36,8,.30),
+        0 0 0 1px rgba(255,232,151,.70),
+        0 0 34px rgba(218,161,50,.28),
+        inset 0 1px 0 rgba(255,255,255,.82) !important;
+      filter:saturate(1.06) !important;
+    }
+
+    .chiem-card:hover .chiem-card-image img,
+    .chiem-card:focus-visible .chiem-card-image img,
+    .chiem-card.is-chiem-active .chiem-card-image img{
+      transform:scale(1.045) !important;
+      filter:saturate(1.16) contrast(1.08) brightness(1.06) !important;
+    }
+
+    .chiem-card:hover .chiem-card-image::after,
+    .chiem-card:focus-visible .chiem-card-image::after,
+    .chiem-card.is-chiem-active .chiem-card-image::after{
+      animation:chiemCardShine 1.08s cubic-bezier(.2,.8,.2,1) both !important;
+      opacity:1 !important;
+    }
+
+    .chiem-card:hover .chiem-card-body h3,
+    .chiem-card:focus-visible .chiem-card-body h3,
+    .chiem-card.is-chiem-active .chiem-card-body h3{
+      color:#7a3f12 !important;
+      text-shadow:0 1px 0 rgba(255,255,255,.86), 0 0 14px rgba(218,161,50,.20) !important;
+    }
+
+    .chiem-card-ripple{
+      z-index:9 !important;
+      width:28px !important;
+      height:28px !important;
+      background:radial-gradient(circle, rgba(255,252,226,.98) 0%, rgba(244,194,81,.54) 34%, rgba(244,194,81,0) 72%) !important;
+    }
+
+    @media (min-width:1281px) and (max-width:1540px){
+      .chiem-gallery{
+        width:min(100%, 1040px) !important;
+        gap:20px !important;
+      }
+      .chiem-card-body h3{font-size:19px !important;}
+    }
+
+    @media (max-width:1280px){
+      .chiem-gallery{
+        width:min(100%, 1000px) !important;
+        grid-template-columns:repeat(3, minmax(0, 1fr)) !important;
+      }
+      .chiem-card-image{aspect-ratio:1.42 / 1 !important;}
+      .chiem-card-body h3{font-size:clamp(17px, 1.55vw, 21px) !important;}
+    }
+
+    @media (max-width:920px){
+      .chiem-gallery{
+        width:min(100%, 760px) !important;
+        grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+        gap:18px !important;
+      }
+      .chiem-card-image{aspect-ratio:1.36 / 1 !important;}
+      .chiem-card-body{min-height:70px !important;}
+      .chiem-card-body h3{white-space:normal !important;font-size:20px !important;}
+    }
+
+    @media (max-width:680px){
+      .chiem-gallery{
+        width:min(100%, 450px) !important;
+        grid-template-columns:1fr !important;
+        gap:16px !important;
+      }
+      .chiem-card{border-radius:16px !important;}
+      .chiem-card::before{inset:6px !important;border-radius:11px !important;}
+      .chiem-card-image{aspect-ratio:1.34 / 1 !important;border-radius:15px 15px 0 0 !important;}
+      .chiem-card-image img{transform:scale(1.01) !important;}
+      .chiem-card-body{min-height:68px !important;padding:12px 12px 10px !important;}
+      .chiem-card-body h3{font-size:20px !important;line-height:1.15 !important;white-space:normal !important;}
+      .chiem-card-body .chiem-card-line,.chiem-card-line{width:min(126px, 42%) !important;margin-top:5px !important;}
+      .chiem-card:hover,
+      .chiem-card:focus-visible,
+      .chiem-card.is-chiem-active{transform:translateY(-6px) scale(1.01) !important;}
+    }
+
+    @media (max-width:420px){
+      .chiem-card-image{aspect-ratio:1.24 / 1 !important;}
+      .chiem-card-body h3{font-size:19px !important;}
+    }
+    /* === DTA CHIEM GALLERY DISPLAY FIX V5 END === */
+
+
+
+    /* === DTA FIX CHIEM GALLERY IMAGE FULL WIDTH V6 START === */
+    .chiem-gallery .chiem-card-image{
+      position:relative !important;
+      isolation:isolate !important;
+      overflow:hidden !important;
+      background:
+        radial-gradient(ellipse at center, rgba(255,232,158,.32), rgba(177,112,35,.2) 56%, rgba(92,48,12,.18) 100%),
+        #d5ad57 !important;
+    }
+    .chiem-gallery .chiem-card-image::before{
+      content:"" !important;
+      position:absolute !important;
+      inset:-18% !important;
+      z-index:0 !important;
+      pointer-events:none !important;
+      display:block !important;
+      background-image:var(--chiem-cover-image) !important;
+      background-size:cover !important;
+      background-position:center center !important;
+      background-repeat:no-repeat !important;
+      filter:blur(18px) saturate(1.18) contrast(1.04) brightness(.95) !important;
+      transform:scale(1.2) !important;
+      opacity:.98 !important;
+    }
+    .chiem-gallery .chiem-card-image img{
+      position:absolute !important;
+      inset:0 !important;
+      z-index:1 !important;
+      width:100% !important;
+      height:100% !important;
+      max-width:none !important;
+      object-fit:cover !important;
+      object-position:center center !important;
+      transform:scale(var(--chiem-img-zoom, 1.78)) !important;
+      transform-origin:center center !important;
+      filter:saturate(1.06) contrast(1.04) brightness(1.02) !important;
+      transition:transform .75s cubic-bezier(.2,.8,.2,1), filter .75s cubic-bezier(.2,.8,.2,1) !important;
+    }
+    .chiem-gallery .chiem-card-image::after{
+      z-index:3 !important;
+      pointer-events:none !important;
+    }
+    .chiem-gallery .chiem-card:hover .chiem-card-image img,
+    .chiem-gallery .chiem-card:focus-visible .chiem-card-image img,
+    .chiem-gallery .chiem-card.is-chiem-active .chiem-card-image img{
+      transform:scale(calc(var(--chiem-img-zoom, 1.78) + .09)) !important;
+      filter:saturate(1.14) contrast(1.07) brightness(1.06) !important;
+    }
+    .chiem-gallery .chiem-card-image img[src*="an-tru"]{
+      object-position:center 46% !important;
+    }
+    @media (max-width:920px){
+      .chiem-gallery .chiem-card-image{aspect-ratio:1.36 / 1 !important;}
+      .chiem-gallery .chiem-card-image img{transform:scale(1.66) !important;}
+      .chiem-gallery .chiem-card:hover .chiem-card-image img,
+      .chiem-gallery .chiem-card:focus-visible .chiem-card-image img,
+      .chiem-gallery .chiem-card.is-chiem-active .chiem-card-image img{transform:scale(1.74) !important;}
+    }
+    @media (max-width:680px){
+      .chiem-gallery .chiem-card-image{aspect-ratio:1.52 / 1 !important;}
+      .chiem-gallery .chiem-card-image img{transform:scale(1.54) !important;}
+      .chiem-gallery .chiem-card:hover .chiem-card-image img,
+      .chiem-gallery .chiem-card:focus-visible .chiem-card-image img,
+      .chiem-gallery .chiem-card.is-chiem-active .chiem-card-image img{transform:scale(1.62) !important;}
+    }
+    /* === DTA FIX CHIEM GALLERY IMAGE FULL WIDTH V6 END === */
+
+/* DTA upgrade: full-screen chiem lightbox + detail zoom */
+.chiem-lightbox{
+  padding:clamp(6px, 1.1vw, 16px) !important;
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(170,109,32,.16), transparent 56%),
+    rgba(8,4,1,.92) !important;
+  -webkit-backdrop-filter:blur(10px);
+  backdrop-filter:blur(10px);
+}
+.chiem-lightbox-panel{
+  width:min(99vw, 1920px) !important;
+  height:min(98dvh, 1080px) !important;
+  max-height:98dvh !important;
+  padding:0 !important;
+}
+.chiem-lightbox-frame{
+  width:100% !important;
+  height:calc(98dvh - 52px) !important;
+  max-height:none !important;
+  padding:clamp(6px, .8vw, 12px) !important;
+  border-radius:clamp(14px, 1.2vw, 22px) !important;
+  overflow:hidden !important;
+  touch-action:none;
+}
+.chiem-lightbox-image{
+  max-width:100% !important;
+  max-height:100% !important;
+  width:auto !important;
+  height:auto !important;
+  object-fit:contain !important;
+  border-radius:clamp(10px, .9vw, 16px) !important;
+  transform:translate3d(var(--chiem-pan-x, 0px), var(--chiem-pan-y, 0px), 0) scale(var(--chiem-zoom, 1));
+  transform-origin:center center;
+  transition:transform .32s cubic-bezier(.2,.8,.2,1), filter .32s ease;
+  will-change:transform;
+  cursor:zoom-in;
+  user-select:none;
+  -webkit-user-drag:none;
+}
+.chiem-lightbox-frame.is-zoomed .chiem-lightbox-image{
+  cursor:grab;
+}
+.chiem-lightbox-frame.is-dragging .chiem-lightbox-image{
+  cursor:grabbing;
+  transition:none;
+}
+.chiem-lightbox-caption{
+  margin:8px auto 0 !important;
+  min-height:32px;
+  max-width:calc(100vw - 220px);
+  font-size:clamp(15px, 1.05vw, 22px) !important;
+  line-height:1.25 !important;
+}
+.chiem-lightbox-toolbar{
+  position:absolute;
+  top:clamp(8px, 1vw, 16px);
+  left:50%;
+  z-index:6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  transform:translateX(-50%);
+  padding:6px;
+  border:1px solid rgba(255,224,144,.42);
+  border-radius:999px;
+  background:linear-gradient(135deg, rgba(34,17,4,.78), rgba(111,68,16,.60));
+  box-shadow:0 16px 34px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.12);
+  -webkit-backdrop-filter:blur(8px);
+  backdrop-filter:blur(8px);
+}
+.chiem-lightbox-tool{
+  min-width:38px;
+  height:38px;
+  padding:0 13px;
+  border:1px solid rgba(255,224,144,.42);
+  border-radius:999px;
+  color:#ffe9a8;
+  font-family:var(--sans);
+  font-size:13px;
+  font-weight:700;
+  line-height:1;
+  background:linear-gradient(135deg, rgba(63,33,7,.84), rgba(147,92,23,.72));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.16);
+  cursor:pointer;
+  transition:transform .22s ease, filter .22s ease, box-shadow .22s ease;
+}
+.chiem-lightbox-tool:hover,
+.chiem-lightbox-tool:focus-visible{
+  transform:translateY(-1px);
+  filter:brightness(1.1);
+  box-shadow:0 10px 24px rgba(0,0,0,.22), 0 0 18px rgba(241,200,102,.20), inset 0 1px 0 rgba(255,255,255,.20);
+  outline:none;
+}
+.chiem-lightbox-close{
+  position:fixed !important;
+  top:clamp(10px, 1.2vw, 18px) !important;
+  right:clamp(10px, 1.2vw, 18px) !important;
+  z-index:7 !important;
+}
+.chiem-lightbox-nav{
+  z-index:6 !important;
+}
+.chiem-lightbox-prev{left:clamp(8px, 1vw, 16px) !important;}
+.chiem-lightbox-next{right:clamp(8px, 1vw, 16px) !important;}
+
+@media (max-width:680px){
+  .chiem-lightbox{
+    padding:6px !important;
+  }
+  .chiem-lightbox-panel{
+    width:100vw !important;
+    height:98dvh !important;
+  }
+  .chiem-lightbox-frame{
+    height:calc(98dvh - 48px) !important;
+    padding:6px !important;
+    border-radius:14px !important;
+  }
+  .chiem-lightbox-caption{
+    max-width:calc(100vw - 28px) !important;
+    min-height:28px;
+    margin-top:6px !important;
+    padding:0 44px !important;
+    font-size:15px !important;
+  }
+  .chiem-lightbox-toolbar{
+    top:auto;
+    left:50%;
+    bottom:clamp(42px, 8dvh, 70px);
+    gap:6px;
+    padding:5px;
+  }
+  .chiem-lightbox-tool{
+    min-width:34px;
+    height:34px;
+    padding:0 9px;
+    font-size:12px;
+  }
+  .chiem-lightbox-zoom-reset{
+    display:none;
+  }
+}
+
+
+
+    /* === DTA CHIEM NGUONG MOBILE EXPERIENCE REDESIGN START === */
+    @media (max-width:680px){
+      .chiem-nguong-section{
+        min-height:0 !important;
+        padding:40px 0 54px !important;
+        overflow:hidden !important;
+        background:
+          radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.74) 0 16%, rgba(255,255,255,0) 48%),
+          linear-gradient(180deg, rgba(250,239,214,.98) 0%, rgba(245,224,177,.94) 54%, rgba(230,190,111,.78) 100%),
+          url("assets/images/bg/bg-chiem-nguong-parchment.jpg") center top / cover no-repeat,
+          #f4dfaa !important;
+      }
+
+      .chiem-nguong-section::before{
+        opacity:.26 !important;
+        background:
+          radial-gradient(ellipse at 50% 10%, rgba(255,255,255,.66) 0 18%, transparent 56%),
+          linear-gradient(90deg, rgba(128,75,17,.12) 0%, transparent 24%, transparent 76%, rgba(128,75,17,.12) 100%) !important;
+      }
+
+      .chiem-nguong-section::after{
+        height:46px !important;
+        opacity:.42 !important;
+      }
+
+      .chiem-inner{
+        width:min(100% - 30px, 430px) !important;
+        margin-inline:auto !important;
+      }
+
+      .chiem-decor--corner-left,
+      .chiem-decor--corner-right{
+        width:118px !important;
+        top:0 !important;
+        opacity:.18 !important;
+        filter:blur(.2px) drop-shadow(0 4px 8px rgba(118,69,14,.12)) !important;
+      }
+      .chiem-decor--corner-left{left:-48px !important;}
+      .chiem-decor--corner-right{right:-48px !important;}
+      .chiem-decor--lotus-left,
+      .chiem-decor--lotus-right{display:none !important;}
+
+      .chiem-heading{
+        margin:0 auto 18px !important;
+        padding-inline:4px !important;
+      }
+
+      .chiem-title-lotus{
+        width:86px !important;
+        height:auto !important;
+        margin:0 auto 6px !important;
+        opacity:.88 !important;
+      }
+
+      .chiem-heading h2{
+        max-width:360px !important;
+        margin-inline:auto !important;
+        font-size:clamp(27px, 7.8vw, 36px) !important;
+        line-height:1.13 !important;
+        letter-spacing:.45px !important;
+        text-transform:uppercase !important;
+        text-wrap:balance !important;
+        text-shadow:0 1px 0 rgba(255,255,255,.7), 0 10px 22px rgba(109,63,14,.12) !important;
+      }
+
+      .chiem-title-divider{
+        width:min(210px, 62vw) !important;
+        margin-top:8px !important;
+        opacity:.78 !important;
+      }
+
+      .chiem-layout{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:stretch !important;
+        gap:10px !important;
+        width:100% !important;
+        margin:0 !important;
+      }
+
+      .chiem-benefits--left,
+      .chiem-benefits--right{
+        display:grid !important;
+        grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+        gap:10px !important;
+        width:100% !important;
+      }
+      .chiem-benefits--left{order:1 !important;}
+      .chiem-benefits--right{order:2 !important;}
+
+      .chiem-benefit{
+        min-height:76px !important;
+        display:grid !important;
+        grid-template-columns:38px 1fr !important;
+        grid-template-rows:auto auto !important;
+        align-items:center !important;
+        column-gap:9px !important;
+        padding:10px 10px 9px !important;
+        text-align:left !important;
+        border-radius:16px !important;
+        background:
+          linear-gradient(135deg, rgba(255,251,238,.72), rgba(246,225,181,.48)) padding-box,
+          linear-gradient(135deg, rgba(157,92,24,.24), rgba(255,228,143,.62), rgba(157,92,24,.22)) border-box !important;
+        border:1px solid transparent !important;
+        box-shadow:0 10px 24px rgba(96,56,16,.07), inset 0 1px 0 rgba(255,255,255,.5) !important;
+        overflow:hidden !important;
+      }
+
+      .chiem-benefit::before{
+        content:"" !important;
+        position:absolute !important;
+        inset:0 !important;
+        border-radius:inherit !important;
+        background:radial-gradient(circle at 18% 15%, rgba(255,242,184,.42), transparent 45%) !important;
+        pointer-events:none !important;
+      }
+
+      .chiem-benefit-icon{
+        grid-row:1 / span 2 !important;
+        width:36px !important;
+        height:36px !important;
+        margin:0 !important;
+        object-fit:contain !important;
+        opacity:.94 !important;
+        filter:drop-shadow(0 5px 8px rgba(143,86,16,.14)) !important;
+      }
+
+      .chiem-benefit h3{
+        margin:0 !important;
+        color:#28180c !important;
+        font-size:clamp(13.6px, 3.7vw, 15.5px) !important;
+        line-height:1.16 !important;
+        letter-spacing:.01em !important;
+      }
+
+      .chiem-benefit p{
+        margin:3px 0 0 !important;
+        max-width:none !important;
+        color:rgba(55,37,23,.78) !important;
+        font-size:12.2px !important;
+        line-height:1.24 !important;
+        display:-webkit-box !important;
+        -webkit-line-clamp:1 !important;
+        -webkit-box-orient:vertical !important;
+        overflow:hidden !important;
+      }
+
+      .chiem-benefit-divider{display:none !important;}
+
+      .chiem-gallery{
+        order:3 !important;
+        display:flex !important;
+        width:100vw !important;
+        max-width:none !important;
+        margin:12px 0 0 50% !important;
+        transform:translateX(-50%) !important;
+        padding:0 max(15px, calc((100vw - 430px) / 2)) 18px !important;
+        gap:14px !important;
+        overflow-x:auto !important;
+        overflow-y:hidden !important;
+        overscroll-behavior-x:contain !important;
+        scroll-snap-type:x mandatory !important;
+        scroll-padding-inline:max(15px, calc((100vw - 430px) / 2)) !important;
+        -webkit-overflow-scrolling:touch !important;
+        scrollbar-width:none !important;
+      }
+
+      .chiem-gallery::-webkit-scrollbar{display:none !important;}
+
+      .chiem-gallery::before{
+        content:"Vuốt ngang để xem bộ sưu tập" !important;
+        flex:0 0 100% !important;
+        height:28px !important;
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+        margin:0 0 -2px !important;
+        color:rgba(74,45,17,.72) !important;
+        font-family:var(--sans) !important;
+        font-size:13px !important;
+        letter-spacing:.035em !important;
+      }
+
+      .chiem-card{
+        flex:0 0 min(79vw, 338px) !important;
+        width:min(79vw, 338px) !important;
+        aspect-ratio:.82 / 1 !important;
+        scroll-snap-align:center !important;
+        display:block !important;
+        border-radius:22px !important;
+        overflow:hidden !important;
+        background:
+          linear-gradient(180deg, rgba(255,251,239,.96), rgba(246,224,177,.92)) padding-box,
+          linear-gradient(135deg, rgba(116,67,18,.42), rgba(255,231,156,.96), rgba(178,103,27,.56)) border-box !important;
+        border:1px solid transparent !important;
+        box-shadow:0 18px 38px rgba(85,49,13,.18), 0 1px 0 rgba(255,255,255,.55) inset !important;
+        transform:none !important;
+      }
+
+      .chiem-card:first-of-type{scroll-snap-align:start !important;}
+      .chiem-card:last-of-type{scroll-snap-align:end !important;}
+
+      .chiem-card::before{
+        inset:9px !important;
+        border-radius:17px !important;
+        z-index:5 !important;
+        border-color:rgba(255,236,168,.46) !important;
+      }
+
+      .chiem-card::after{display:none !important;}
+
+      .chiem-card-image{
+        width:100% !important;
+        height:100% !important;
+        aspect-ratio:auto !important;
+        border-radius:22px !important;
+        background:radial-gradient(ellipse at center, rgba(255,231,151,.42), rgba(196,138,47,.24) 48%, rgba(95,50,13,.18) 100%) !important;
+      }
+
+      .chiem-card-image::before{
+        height:58% !important;
+        background:
+          linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(55,29,8,.10) 40%, rgba(38,19,5,.42) 100%),
+          radial-gradient(ellipse at center bottom, rgba(255,222,124,.28), transparent 68%) !important;
+      }
+
+      .chiem-card-image::after{display:none !important;}
+
+      .chiem-card-image img{
+        width:100% !important;
+        height:100% !important;
+        object-fit:cover !important;
+        object-position:center center !important;
+        transform:scale(1.03) !important;
+        filter:saturate(1.04) contrast(1.03) brightness(1.02) !important;
+      }
+
+      .chiem-card-body{
+        position:absolute !important;
+        left:10px !important;
+        right:10px !important;
+        bottom:10px !important;
+        z-index:6 !important;
+        min-height:62px !important;
+        padding:11px 12px 10px !important;
+        border-radius:16px !important;
+        border:1px solid rgba(255,229,150,.48) !important;
+        background:linear-gradient(180deg, rgba(255,250,237,.92), rgba(244,223,181,.86)) !important;
+        backdrop-filter:blur(7px) saturate(1.08) !important;
+        box-shadow:0 12px 24px rgba(45,24,7,.16), inset 0 1px 0 rgba(255,255,255,.62) !important;
+      }
+
+      .chiem-card-body::before{
+        left:18% !important;
+        right:18% !important;
+        opacity:.68 !important;
+      }
+
+      .chiem-card-body h3{
+        font-size:clamp(17px, 4.7vw, 20px) !important;
+        line-height:1.18 !important;
+        letter-spacing:.01em !important;
+        display:-webkit-box !important;
+        -webkit-line-clamp:2 !important;
+        -webkit-box-orient:vertical !important;
+        overflow:hidden !important;
+      }
+
+      .chiem-card-line{
+        width:92px !important;
+        max-width:42% !important;
+        margin-top:6px !important;
+        opacity:.72 !important;
+      }
+
+      .chiem-card:hover,
+      .chiem-card:focus-visible,
+      .chiem-card.is-chiem-active{
+        transform:none !important;
+        box-shadow:0 18px 38px rgba(85,49,13,.18), 0 1px 0 rgba(255,255,255,.55) inset !important;
+        filter:none !important;
+      }
+
+      .chiem-card:hover .chiem-card-image img,
+      .chiem-card:focus-visible .chiem-card-image img,
+      .chiem-card.is-chiem-active .chiem-card-image img{
+        transform:scale(1.03) !important;
+        filter:saturate(1.04) contrast(1.03) brightness(1.02) !important;
+      }
+
+      .chiem-bottom-ornament{
+        width:118px !important;
+        height:auto !important;
+        margin:8px auto 0 !important;
+        opacity:.56 !important;
+      }
+    }
+
+    @media (max-width:420px){
+      .chiem-inner{width:min(100% - 26px, 390px) !important;}
+      .chiem-benefits--left,
+      .chiem-benefits--right{gap:8px !important;}
+      .chiem-benefit{
+        min-height:72px !important;
+        grid-template-columns:34px 1fr !important;
+        column-gap:8px !important;
+        padding:9px 9px 8px !important;
+        border-radius:14px !important;
+      }
+      .chiem-benefit-icon{width:32px !important;height:32px !important;}
+      .chiem-benefit h3{font-size:13.2px !important;}
+      .chiem-benefit p{font-size:11.8px !important;}
+      .chiem-card{
+        flex-basis:82vw !important;
+        width:82vw !important;
+        aspect-ratio:.80 / 1 !important;
+      }
+    }
+    /* === DTA CHIEM NGUONG MOBILE EXPERIENCE REDESIGN END === */
+
 </style>
-  <script>
+<script>
     window.dtaTurnstileReady = function(){
       window.dtaTurnstileLoaded = true;
       if(typeof window.dtaRenderTurnstile === 'function') window.dtaRenderTurnstile();
     };
   </script>
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=dtaTurnstileReady" async defer></script>
+<script async="" defer="" src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&amp;onload=dtaTurnstileReady"></script>
+<style data-dta-turtle-scroll-style="DTA_TURTLE_SCROLL_54X_V9_2026_05_23">html, body { scroll-behavior: auto !important; }
+
+    /* DTA UPDATE 2026-06-07: Chiêm ngưỡng gallery - ảnh phủ kín khung ở trạng thái thường, hover zoom tinh tế hơn */
+    .chiem-card-image{
+      overflow:hidden !important;
+      background:#8c5217 !important;
+      isolation:isolate !important;
+    }
+
+    .chiem-card-image img{
+      width:100% !important;
+      height:100% !important;
+      max-width:none !important;
+      object-fit:cover !important;
+      object-position:center center !important;
+      transform:scale(1.34) !important;
+      transform-origin:center center !important;
+      filter:saturate(1.14) contrast(1.09) brightness(1.055) !important;
+      transition:
+        transform 1.65s cubic-bezier(.16,.84,.28,1),
+        filter 1.65s cubic-bezier(.16,.84,.28,1) !important;
+      will-change:transform, filter !important;
+    }
+
+    .chiem-card:nth-child(1) .chiem-card-image img{object-position:center 48% !important; transform:scale(1.34) !important;}
+    .chiem-card:nth-child(2) .chiem-card-image img{object-position:center 45% !important; transform:scale(1.34) !important;}
+    .chiem-card:nth-child(3) .chiem-card-image img{object-position:center 47% !important; transform:scale(1.34) !important;}
+    .chiem-card:nth-child(4) .chiem-card-image img{object-position:center 45% !important; transform:scale(1.34) !important;}
+    .chiem-card:nth-child(5) .chiem-card-image img{object-position:center 45% !important; transform:scale(1.34) !important;}
+    .chiem-card:nth-child(6) .chiem-card-image img{object-position:center 48% !important; transform:scale(1.34) !important;}
+
+    .chiem-card:hover .chiem-card-image img,
+    .chiem-card:focus-visible .chiem-card-image img,
+    .chiem-card.is-chiem-active .chiem-card-image img{
+      transform:scale(1.46) !important;
+      filter:saturate(1.24) contrast(1.12) brightness(1.10) !important;
+    }
+
+    @media (max-width:680px){
+      .chiem-card-image img{
+        transform:scale(1.36) !important;
+      }
+
+      .chiem-card:hover .chiem-card-image img,
+      .chiem-card:focus-visible .chiem-card-image img,
+      .chiem-card.is-chiem-active .chiem-card-image img{
+        transform:scale(1.48) !important;
+      }
+    }
+
+
+
+    /* === DTA CHIEM GALLERY IMAGE FULL BLEED FINAL FIX START ===
+       Bình thường ảnh được phóng vừa đủ để phần tượng/nền ảnh phủ kín toàn bộ chiều ngang khung,
+       không còn lộ hai mảng nền vàng hai bên. Hover tiếp tục zoom chậm và tinh tế hơn. */
+    .chiem-gallery .chiem-card .chiem-card-image{
+      background:#7a4510 !important;
+      isolation:isolate !important;
+    }
+    .chiem-gallery .chiem-card .chiem-card-image > img{
+      display:block !important;
+      width:100% !important;
+      max-width:none !important;
+      height:100% !important;
+      object-fit:cover !important;
+      transform-origin:center center !important;
+      transform:translateZ(0) scale(1.34) !important;
+      transition:
+        transform 1.65s cubic-bezier(.16,.84,.28,1),
+        filter 1.65s cubic-bezier(.16,.84,.28,1) !important;
+      will-change:transform, filter !important;
+    }
+    .chiem-gallery .chiem-card:hover .chiem-card-image > img,
+    .chiem-gallery .chiem-card:focus-visible .chiem-card-image > img,
+    .chiem-gallery .chiem-card.is-chiem-active .chiem-card-image > img{
+      transform:translateZ(0) scale(1.50) !important;
+      filter:saturate(1.18) contrast(1.08) brightness(1.07) !important;
+    }
+    @media (max-width:680px){
+      .chiem-gallery .chiem-card .chiem-card-image > img{
+        transform:translateZ(0) scale(1.30) !important;
+      }
+      .chiem-gallery .chiem-card:hover .chiem-card-image > img,
+      .chiem-gallery .chiem-card:focus-visible .chiem-card-image > img,
+      .chiem-gallery .chiem-card.is-chiem-active .chiem-card-image > img{
+        transform:translateZ(0) scale(1.43) !important;
+      }
+    }
+    /* === DTA CHIEM GALLERY IMAGE FULL BLEED FINAL FIX END === */
+</style>
+<style id="dta-chiem-gallery-image-height-plus-10">
+  /* DTA UPDATE: tăng chiều cao vùng ảnh trong 6 card thêm 10%, giữ nguyên chiều rộng. */
+  .chiem-gallery .chiem-card .chiem-card-image{
+    aspect-ratio:1.345 / 1 !important;
+  }
+
+  @media (max-width:1280px){
+    .chiem-gallery .chiem-card .chiem-card-image{
+      aspect-ratio:1.291 / 1 !important;
+    }
+  }
+
+  @media (max-width:920px){
+    .chiem-gallery .chiem-card .chiem-card-image{
+      aspect-ratio:1.236 / 1 !important;
+    }
+  }
+
+  @media (max-width:680px){
+    .chiem-gallery .chiem-card .chiem-card-image{
+      aspect-ratio:1.382 / 1 !important;
+    }
+  }
+</style>
+
+<style id="dta-chiem-gallery-lightbox-popup">
+  /* DTA UPDATE: 6 card tượng Phật có thumbnail + lightbox xem ảnh full đầy đủ. */
+  .chiem-gallery .chiem-card{
+    cursor:pointer !important;
+  }
+  .chiem-gallery .chiem-card .chiem-card-image{
+    cursor:zoom-in !important;
+  }
+  .chiem-gallery .chiem-card .chiem-card-image::before{
+    content:"Xem ảnh";
+    position:absolute;
+    right:12px;
+    top:12px;
+    z-index:5;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:30px;
+    padding:0 12px;
+    border-radius:999px;
+    color:#fff4cf;
+    font-family:var(--sans);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    background:linear-gradient(135deg, rgba(61,31,6,.76), rgba(152,97,25,.62));
+    border:1px solid rgba(255,221,132,.44);
+    box-shadow:0 10px 26px rgba(52,28,6,.24), inset 0 1px 0 rgba(255,255,255,.18);
+    opacity:0;
+    transform:translateY(-8px);
+    transition:opacity .45s ease, transform .45s ease;
+    pointer-events:none;
+    backdrop-filter:blur(4px);
+  }
+  .chiem-gallery .chiem-card:hover .chiem-card-image::before,
+  .chiem-gallery .chiem-card:focus-visible .chiem-card-image::before{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  .chiem-lightbox{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+    display:grid;
+    place-items:center;
+    padding:clamp(18px, 3.5vw, 52px);
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(170,109,32,.22), transparent 52%),
+      rgba(10,5,2,.86);
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transition:opacity .34s ease, visibility .34s ease;
+  }
+  .chiem-lightbox[hidden]{
+    display:none;
+  }
+  .chiem-lightbox.is-open{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+  }
+  body.chiem-lightbox-open{
+    overflow:hidden;
+  }
+  .chiem-lightbox-panel{
+    position:relative;
+    width:min(94vw, 1180px);
+    max-height:92vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    isolation:isolate;
+  }
+  .chiem-lightbox-frame{
+    position:relative;
+    width:100%;
+    max-height:calc(92vh - 72px);
+    display:grid;
+    place-items:center;
+    padding:clamp(10px, 1.2vw, 18px);
+    border-radius:22px;
+    background:
+      linear-gradient(145deg, rgba(255,237,180,.16), rgba(87,45,9,.18)) padding-box,
+      linear-gradient(135deg, rgba(255,229,153,.82), rgba(151,89,23,.58), rgba(255,226,141,.68)) border-box;
+    border:1px solid transparent;
+    box-shadow:
+      0 32px 88px rgba(0,0,0,.52),
+      0 0 0 1px rgba(255,255,255,.08),
+      inset 0 1px 0 rgba(255,255,255,.16);
+    overflow:hidden;
+    transform:translateY(16px) scale(.982);
+    transition:transform .38s cubic-bezier(.2,.8,.2,1);
+  }
+  .chiem-lightbox.is-open .chiem-lightbox-frame{
+    transform:translateY(0) scale(1);
+  }
+  .chiem-lightbox-frame::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:-1;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(255,230,156,.18), transparent 44%),
+      linear-gradient(180deg, rgba(35,17,4,.92), rgba(17,8,2,.92));
+  }
+  .chiem-lightbox-image{
+    display:block;
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:calc(92vh - 128px);
+    object-fit:contain;
+    border-radius:15px;
+    box-shadow:0 18px 50px rgba(0,0,0,.42);
+  }
+  .chiem-lightbox-caption{
+    margin:clamp(12px, 1.2vw, 18px) auto 0;
+    color:#ffe9a8;
+    font-family:var(--serif);
+    font-size:clamp(18px, 1.35vw, 26px);
+    line-height:1.3;
+    text-align:center;
+    text-shadow:0 5px 18px rgba(0,0,0,.52);
+  }
+  .chiem-lightbox-close,
+  .chiem-lightbox-nav{
+    position:absolute;
+    z-index:4;
+    display:grid;
+    place-items:center;
+    border:1px solid rgba(255,224,144,.52);
+    color:#ffe9a8;
+    background:linear-gradient(135deg, rgba(63,33,7,.82), rgba(147,92,23,.74));
+    box-shadow:0 14px 32px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.16);
+    cursor:pointer;
+    transition:transform .25s ease, filter .25s ease, box-shadow .25s ease;
+    backdrop-filter:blur(6px);
+  }
+  .chiem-lightbox-close:hover,
+  .chiem-lightbox-nav:hover{
+    transform:translateY(-2px) scale(1.04);
+    filter:brightness(1.08);
+    box-shadow:0 18px 42px rgba(0,0,0,.34), 0 0 22px rgba(241,200,102,.22), inset 0 1px 0 rgba(255,255,255,.22);
+  }
+  .chiem-lightbox-close{
+    top:clamp(10px, 1.2vw, 18px);
+    right:clamp(10px, 1.2vw, 18px);
+    width:44px;
+    height:44px;
+    border-radius:999px;
+    font-size:24px;
+    line-height:1;
+  }
+  .chiem-lightbox-nav{
+    top:50%;
+    width:48px;
+    height:58px;
+    border-radius:18px;
+    font-size:34px;
+    line-height:1;
+  }
+  .chiem-lightbox-prev{left:clamp(10px, 1.2vw, 18px); transform:translateY(-50%);}
+  .chiem-lightbox-next{right:clamp(10px, 1.2vw, 18px); transform:translateY(-50%);}
+  .chiem-lightbox-prev:hover{transform:translateY(calc(-50% - 2px)) scale(1.04);}
+  .chiem-lightbox-next:hover{transform:translateY(calc(-50% - 2px)) scale(1.04);}
+
+  @media (max-width:680px){
+    .chiem-gallery .chiem-card .chiem-card-image::before{
+      opacity:1;
+      transform:none;
+      min-height:28px;
+      padding:0 10px;
+      font-size:11px;
+      right:10px;
+      top:10px;
+    }
+    .chiem-lightbox{
+      padding:14px;
+    }
+    .chiem-lightbox-panel{
+      width:100%;
+      max-height:94vh;
+    }
+    .chiem-lightbox-frame{
+      border-radius:18px;
+      padding:8px;
+      max-height:calc(94vh - 70px);
+    }
+    .chiem-lightbox-image{
+      max-height:calc(94vh - 126px);
+      border-radius:12px;
+    }
+    .chiem-lightbox-close{
+      width:42px;
+      height:42px;
+      top:8px;
+      right:8px;
+    }
+    .chiem-lightbox-nav{
+      width:42px;
+      height:52px;
+      border-radius:14px;
+      font-size:30px;
+    }
+    .chiem-lightbox-caption{
+      font-size:18px;
+      padding:0 52px;
+    }
+  }
+
+
+/* === DTA FIX 2026-06-07: Chiem lightbox portrait fit + jpg paths V2 === */
+.chiem-lightbox{
+  align-items:center !important;
+  justify-items:center !important;
+  padding:clamp(4px, .8vw, 12px) !important;
+}
+.chiem-lightbox-panel{
+  width:100vw !important;
+  height:100dvh !important;
+  max-width:none !important;
+  max-height:none !important;
+  padding:clamp(8px, 1vw, 14px) !important;
+  display:grid !important;
+  grid-template-rows:1fr auto !important;
+  align-items:center !important;
+  justify-items:center !important;
+}
+.chiem-lightbox-frame{
+  width:calc(100vw - clamp(12px, 2vw, 32px)) !important;
+  height:calc(100dvh - clamp(58px, 7dvh, 86px)) !important;
+  max-width:none !important;
+  max-height:none !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  padding:clamp(5px, .7vw, 10px) !important;
+  overflow:hidden !important;
+}
+.chiem-lightbox-image{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  max-height:100% !important;
+  min-width:0 !important;
+  min-height:0 !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  aspect-ratio:auto !important;
+  transform:translate3d(var(--chiem-pan-x, 0px), var(--chiem-pan-y, 0px), 0) scale(var(--chiem-zoom, 1)) !important;
+  transform-origin:center center !important;
+}
+.chiem-lightbox-frame.is-zoomed .chiem-lightbox-image{
+  object-fit:contain !important;
+}
+.chiem-lightbox-caption{
+  width:min(92vw, 1180px) !important;
+  max-width:min(92vw, 1180px) !important;
+  min-height:30px !important;
+  margin:6px auto 0 !important;
+}
+@media (orientation:portrait){
+  .chiem-lightbox-frame{
+    height:calc(100dvh - clamp(72px, 9dvh, 110px)) !important;
+  }
+}
+@media (max-width:680px){
+  .chiem-lightbox-panel{
+    padding:6px !important;
+  }
+  .chiem-lightbox-frame{
+    width:calc(100vw - 12px) !important;
+    height:calc(100dvh - 70px) !important;
+    padding:5px !important;
+  }
+  .chiem-lightbox-caption{
+    width:calc(100vw - 20px) !important;
+    max-width:calc(100vw - 20px) !important;
+    padding:0 46px !important;
+  }
+}
+/* === DTA FIX 2026-06-07: Chiem lightbox portrait fit + jpg paths V2 END === */
+
+
+/* === DTA FIX 2026-06-07: Chiem gallery long title wrap === */
+.chiem-gallery .chiem-card{
+  overflow:hidden !important;
+}
+.chiem-gallery .chiem-card .chiem-card-body{
+  height:auto !important;
+  min-height:clamp(88px, 6.6vw, 112px) !important;
+  padding:clamp(15px, 1vw, 18px) clamp(12px, 1vw, 16px) clamp(13px, 1vw, 17px) !important;
+  gap:7px !important;
+  overflow:visible !important;
+}
+.chiem-gallery .chiem-card .chiem-card-body h3{
+  display:block !important;
+  width:100% !important;
+  max-width:min(100%, 310px) !important;
+  margin:0 auto !important;
+  white-space:normal !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+  word-break:normal !important;
+  overflow-wrap:break-word !important;
+  hyphens:auto !important;
+  text-wrap:balance !important;
+  -webkit-line-clamp:unset !important;
+  line-clamp:unset !important;
+  -webkit-box-orient:initial !important;
+  font-size:clamp(17px, 1.06vw, 21px) !important;
+  line-height:1.24 !important;
+  letter-spacing:.006em !important;
+}
+.chiem-gallery .chiem-card .chiem-card-line{
+  flex:0 0 auto !important;
+  margin:2px auto 0 !important;
+}
+@media (max-width:1280px){
+  .chiem-gallery .chiem-card .chiem-card-body{
+    min-height:clamp(86px, 8vw, 106px) !important;
+  }
+}
+@media (max-width:680px){
+  .chiem-gallery .chiem-card .chiem-card-body{
+    min-height:auto !important;
+    padding:16px 14px 15px !important;
+  }
+  .chiem-gallery .chiem-card .chiem-card-body h3{
+    max-width:100% !important;
+    font-size:clamp(18px, 5.1vw, 22px) !important;
+    line-height:1.22 !important;
+  }
+}
+/* === DTA FIX 2026-06-07: Chiem gallery long title wrap END === */
+</style>
+
 </head>
-<body>
-  <main class="dta-page">
-    <section class="hero-section" aria-label="Tôn tượng Phật Bổn Sư">
-      <header class="site-header">
-        <div class="header-inner">
-          <a class="brand" href="#" aria-label="Diệu Tướng Am">
-            <img class="brand-logo" src="assets/logo/logo-dieu-tuong-am-gold.png" alt="Diệu Tướng Am" />
-          </a>
-          <div class="brand-slogan">Nơi tôn trí đức tướng<br/>vi diệu của chư Phật</div>
-          <nav class="main-nav" aria-label="Điều hướng chính">
-            <a href="#" class="is-active">Trang chủ</a>
-            <a href="#gioi-thieu">Tôn tượng</a>
-            <a href="#phat-phap">Phật pháp</a>
-            <a href="#tin-tuc">Tin tức</a>
-            <a href="#ve-dieu-tuong-am">Về Diệu Tướng Am</a>
-            <a href="#lien-he">Liên hệ</a>
-          </nav>
-          <a id="dta-header-cta" class="header-cta" href="#tu-van" data-consult-trigger data-ga-event="click_header_cta" data-ga-cta-name="header_cta">
-            <span>NHẬN TƯ VẤN</span>
-            <i class="cta-light-sweep" aria-hidden="true"></i>
-            <span class="cta-lotus-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32" focusable="false" role="img">
-                <path class="lotus-petal lotus-center" d="M16 6.2C12.9 10.1 12.6 14.6 16 19.1C19.4 14.6 19.1 10.1 16 6.2Z" />
-                <path class="lotus-petal lotus-left" d="M9.2 10.8C8.8 15.5 10.8 18.9 15.2 20.7C15.1 16.2 12.9 13 9.2 10.8Z" />
-                <path class="lotus-petal lotus-right" d="M22.8 10.8C23.2 15.5 21.2 18.9 16.8 20.7C16.9 16.2 19.1 13 22.8 10.8Z" />
-                <path class="lotus-petal lotus-base-left" d="M5.6 17.2C8.2 21.6 11.7 23.3 15.6 22.2C12.9 19.4 9.8 17.8 5.6 17.2Z" />
-                <path class="lotus-petal lotus-base-right" d="M26.4 17.2C23.8 21.6 20.3 23.3 16.4 22.2C19.1 19.4 22.2 17.8 26.4 17.2Z" />
-                <path class="lotus-stem" d="M9.2 24.2C12.3 25.6 19.7 25.6 22.8 24.2" />
-              </svg>
-            </span>
-          </a>
-          <button class="mobile-nav-toggle" type="button" aria-label="Mở menu" aria-controls="mobile-menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-        <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
-          <div class="mobile-menu-panel">
-            <a href="#">Trang chủ</a>
-            <a href="#gioi-thieu">Tôn tượng</a>
-            <a href="#phat-phap">Phật pháp</a>
-            <a href="#tin-tuc">Tin tức</a>
-            <a href="#ve-dieu-tuong-am">Về Diệu Tướng Am</a>
-            <a href="#lien-he">Liên hệ</a>
-            <a class="mobile-menu-cta" href="#tu-van" data-consult-trigger data-ga-event="click_header_cta" data-ga-cta-name="mobile_header_cta">NHẬN TƯ VẤN</a>
-          </div>
-        </nav>
-      </header>
-
-      <div class="hero-intro-veil" aria-hidden="true"></div>
-
-      <div class="hero-media" aria-hidden="true">
-        <img src="assets/images/hero/hero-altar-room.jpg" alt="" />
-        <span class="hero-sacred-halo"></span>
-        <span class="hero-sacred-rays"></span>
-        <span class="hero-sacred-mist"></span>
-        <span class="hero-sacred-sun"></span>
-        <span class="hero-sacred-dust"></span>
-        <span class="hero-sacred-sparkles"></span>
-      </div>
-
-      <div class="hero__content-wrap">
-        <div class="hero__content">
-          <img class="hero__ornament" src="assets/images/decor/hero/ornament-flourish-full.png" alt="" aria-hidden="true" />
-          <p class="hero__eyebrow">Tôn tượng</p>
-          <h1 class="hero__title" data-text="PHẬT BỔN SƯ">PHẬT BỔN SƯ</h1>
-          <span class="hero__title-line" aria-hidden="true"></span>
-          <p class="hero__subtitle">Lan tỏa năng lượng an lành</p>
-          <div class="hero__virtues" aria-label="Giá trị cốt lõi">
-            <img class="hero__virtue-decor hero__virtue-decor--left" src="assets/images/decor/decor-value-flourish-left-gold.png" alt="" aria-hidden="true" />
-            <span>Trang nghiêm – Từ bi – Vi diệu</span>
-            <img class="hero__virtue-decor hero__virtue-decor--right" src="assets/images/decor/decor-value-flourish-right-gold.png" alt="" aria-hidden="true" />
-          </div>
-
-          <div class="hero__cta">
-            <a id="dta-hero-cta" class="btn btn--hero" href="#tu-van" data-consult-trigger data-ga-event="click_hero_cta" data-ga-cta-name="hero_cta">
-              <i class="cta-light-sweep" aria-hidden="true"></i>
-              <img src="assets/ui/buttons/btn-lotus-icon-gold.png" alt="" aria-hidden="true" />
+<body class="dta-motion-reduced dta-intro-started dta-intro-complete">
+<main class="dta-page">
+<section aria-label="Tôn tượng Phật Bổn Sư" class="hero-section">
+<header class="site-header">
+<div class="header-inner">
+<a aria-label="Diệu Tướng Am" class="brand" data-dta-original-href="#" data-dta-turtle-scroll="top" href="javascript:void(0)">
+<img alt="Diệu Tướng Am" class="brand-logo" src="assets/logo/logo-dieu-tuong-am-gold.png"/>
+</a>
+<div class="brand-slogan">Nơi tôn trí đức tướng<br/>vi diệu của chư Phật</div>
+<nav aria-label="Điều hướng chính" class="main-nav">
+<a class="is-active" data-dta-original-href="#" data-dta-turtle-scroll="top" href="javascript:void(0)">Trang chủ</a>
+<a data-dta-original-href="#gioi-thieu" data-dta-turtle-scroll="gioi-thieu" href="javascript:void(0)">Tôn tượng</a>
+<a data-dta-original-href="#phat-phap" data-dta-turtle-scroll="phat-phap" href="javascript:void(0)">Phật pháp</a>
+<a data-dta-original-href="#tin-tuc" data-dta-turtle-scroll="tin-tuc" href="javascript:void(0)">Tin tức</a>
+<a data-dta-original-href="#ve-dieu-tuong-am" data-dta-turtle-scroll="ve-dieu-tuong-am" href="javascript:void(0)">Về Diệu Tướng Am</a>
+<a data-dta-original-href="#lien-he" data-dta-turtle-scroll="lien-he" href="javascript:void(0)">Liên hệ</a>
+</nav>
+<a class="header-cta" data-consult-trigger="" data-ga-cta-name="header_cta" data-ga-event="click_header_cta" data-ga-tracking-bound="true" href="#tu-van" id="dta-header-cta">
+<span>NHẬN TƯ VẤN</span>
+<i aria-hidden="true" class="cta-light-sweep"></i>
+<span aria-hidden="true" class="cta-lotus-icon">
+<svg focusable="false" role="img" viewbox="0 0 32 32">
+<path class="lotus-petal lotus-center" d="M16 6.2C12.9 10.1 12.6 14.6 16 19.1C19.4 14.6 19.1 10.1 16 6.2Z"></path>
+<path class="lotus-petal lotus-left" d="M9.2 10.8C8.8 15.5 10.8 18.9 15.2 20.7C15.1 16.2 12.9 13 9.2 10.8Z"></path>
+<path class="lotus-petal lotus-right" d="M22.8 10.8C23.2 15.5 21.2 18.9 16.8 20.7C16.9 16.2 19.1 13 22.8 10.8Z"></path>
+<path class="lotus-petal lotus-base-left" d="M5.6 17.2C8.2 21.6 11.7 23.3 15.6 22.2C12.9 19.4 9.8 17.8 5.6 17.2Z"></path>
+<path class="lotus-petal lotus-base-right" d="M26.4 17.2C23.8 21.6 20.3 23.3 16.4 22.2C19.1 19.4 22.2 17.8 26.4 17.2Z"></path>
+<path class="lotus-stem" d="M9.2 24.2C12.3 25.6 19.7 25.6 22.8 24.2"></path>
+</svg>
+</span>
+</a>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Mở menu" class="mobile-nav-toggle" type="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+<nav aria-label="Menu mobile" class="mobile-menu" id="mobile-menu">
+<div class="mobile-menu-panel">
+<a data-dta-original-href="#" data-dta-turtle-scroll="top" href="javascript:void(0)">Trang chủ</a>
+<a data-dta-original-href="#gioi-thieu" data-dta-turtle-scroll="gioi-thieu" href="javascript:void(0)">Tôn tượng</a>
+<a data-dta-original-href="#phat-phap" data-dta-turtle-scroll="phat-phap" href="javascript:void(0)">Phật pháp</a>
+<a data-dta-original-href="#tin-tuc" data-dta-turtle-scroll="tin-tuc" href="javascript:void(0)">Tin tức</a>
+<a data-dta-original-href="#ve-dieu-tuong-am" data-dta-turtle-scroll="ve-dieu-tuong-am" href="javascript:void(0)">Về Diệu Tướng Am</a>
+<a data-dta-original-href="#lien-he" data-dta-turtle-scroll="lien-he" href="javascript:void(0)">Liên hệ</a>
+<a class="mobile-menu-cta" data-consult-trigger="" data-ga-cta-name="mobile_header_cta" data-ga-event="click_header_cta" data-ga-tracking-bound="true" href="#tu-van">NHẬN TƯ VẤN</a>
+</div>
+</nav>
+</header>
+<div aria-hidden="true" class="hero-intro-veil"></div>
+<div aria-hidden="true" class="hero-media">
+<img alt="" src="assets/images/hero/hero-altar-room.jpg"/>
+<span class="hero-sacred-halo"></span>
+<span class="hero-sacred-rays"></span>
+<span class="hero-sacred-mist"></span>
+<span class="hero-sacred-sun"></span>
+<span class="hero-sacred-dust"></span>
+<span class="hero-sacred-sparkles"></span>
+</div>
+<div class="hero__content-wrap">
+<div class="hero__content">
+<img alt="" aria-hidden="true" class="hero__ornament" src="assets/images/decor/hero/ornament-flourish-full.png"/>
+<p class="hero__eyebrow">Tôn tượng</p>
+<h1 class="hero__title" data-text="PHẬT BỔN SƯ">PHẬT BỔN SƯ</h1>
+<span aria-hidden="true" class="hero__title-line"></span>
+<p class="hero__subtitle">Lan tỏa năng lượng an lành</p>
+<div aria-label="Giá trị cốt lõi" class="hero__virtues">
+<img alt="" aria-hidden="true" class="hero__virtue-decor hero__virtue-decor--left" src="assets/images/decor/decor-value-flourish-left-gold.png"/>
+<span>Trang nghiêm – Từ bi – Vi diệu</span>
+<img alt="" aria-hidden="true" class="hero__virtue-decor hero__virtue-decor--right" src="assets/images/decor/decor-value-flourish-right-gold.png"/>
+</div>
+<div class="hero__cta">
+<a class="btn btn--hero" data-consult-trigger="" data-ga-cta-name="hero_cta" data-ga-event="click_hero_cta" data-ga-tracking-bound="true" href="#tu-van" id="dta-hero-cta">
+<i aria-hidden="true" class="cta-light-sweep"></i>
+<img alt="" aria-hidden="true" src="assets/ui/buttons/btn-lotus-icon-gold.png"/>
               Tư vấn thỉnh tượng
             </a>
-          </div>
-
-          <div class="benefits" aria-label="Lợi ích nổi bật">
-            <div class="benefit">
-              <img class="benefit__icon" src="assets/icons/hero/icon-buddha-standard.png" alt="" aria-hidden="true" />
-              <div>Diệu tướng<br />chuẩn mực</div>
-            </div>
-            <div class="benefit">
-              <img class="benefit__icon" src="assets/icons/hero/icon-lotus-craft.png" alt="" aria-hidden="true" />
-              <div>Chế tác<br />tinh xảo</div>
-            </div>
-            <div class="benefit">
-              <img class="benefit__icon" src="assets/icons/hero/icon-altar-anvi.png" alt="" aria-hidden="true" />
-              <div>An vị<br />trang nghiêm</div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="section-divider" aria-hidden="true">
-        <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
-          <defs>
-            <linearGradient id="goldStroke" x1="0" x2="1" y1="0" y2="0">
-              <stop offset="0" stop-color="#8f5c19" stop-opacity=".18" />
-              <stop offset=".34" stop-color="#f1c866" stop-opacity=".95" />
-              <stop offset=".52" stop-color="#f8dd91" stop-opacity=".96" />
-              <stop offset=".68" stop-color="#f1c866" stop-opacity=".95" />
-              <stop offset="1" stop-color="#8f5c19" stop-opacity=".18" />
-            </linearGradient>
-          </defs>
-          <path class="divider-shadow" d="M0,55 C245,104 405,102 588,84 C725,71 853,55 1016,67 C1180,79 1299,116 1440,102 L1440,160 L0,160 Z" />
-          <path class="divider-cream" d="M0,68 C250,110 407,111 597,91 C725,78 856,61 1017,72 C1186,83 1297,119 1440,106 L1440,160 L0,160 Z" />
-          <path class="divider-glow" d="M0,67 C250,109 407,110 597,90 C725,77 856,60 1017,71 C1186,82 1297,118 1440,105" />
-          <path class="divider-gold" d="M0,67 C250,109 407,110 597,90 C725,77 856,60 1017,71 C1186,82 1297,118 1440,105" />
-        </svg>
-        <div class="divider-medallion">
-          <span class="medallion-hover-orbs" aria-hidden="true"></span>
-          <img src="assets/images/decor/decor-lotus-medallion.png" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <section class="bon-su-meaning-section" id="ton-tuong" aria-label="Thỉnh Tôn Tượng Phật Bổn Sư">
-
-      <div class="bon-su-meaning-inner">
-        <div class="bon-su-heading-block">
-          <img class="bon-su-lotus-mark" src="assets/images/decor/ton-tuong/decor-heading-lotus.png" alt="" loading="lazy" />
-          <h2 class="bon-su-title">
-            <span class="bon-su-title-main">Thỉnh Tôn Tượng Phật</span>
-            <span class="bon-su-title-sep" aria-hidden="true">–</span>
-            <span class="bon-su-title-accent">Gieo Trồng Hạt Giống An Lạc</span>
-          </h2>
-          <img class="bon-su-divider" src="assets/images/decor/ton-tuong/decor-divider-lotus.png" alt="" loading="lazy" />
-        </div>
-
-        <figure class="bon-su-visual" aria-hidden="true">
-          <img src="assets/images/ton-tuong/visual-bon-su-composite.png" alt="" loading="lazy" />
-        </figure>
-
-        <div class="bon-su-body-block">
-          <p class="bon-su-desc">
+</div>
+<div aria-label="Lợi ích nổi bật" class="benefits">
+<div class="benefit">
+<img alt="" aria-hidden="true" class="benefit__icon" src="assets/icons/hero/icon-buddha-standard.png"/>
+<div>Diệu tướng<br/>chuẩn mực</div>
+</div>
+<div class="benefit">
+<img alt="" aria-hidden="true" class="benefit__icon" src="assets/icons/hero/icon-lotus-craft.png"/>
+<div>Chế tác<br/>tinh xảo</div>
+</div>
+<div class="benefit">
+<img alt="" aria-hidden="true" class="benefit__icon" src="assets/icons/hero/icon-altar-anvi.png"/>
+<div>An vị<br/>trang nghiêm</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="section-divider">
+<svg preserveaspectratio="none" viewbox="0 0 1440 160">
+<defs>
+<lineargradient id="goldStroke" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#8f5c19" stop-opacity=".18"></stop>
+<stop offset=".34" stop-color="#f1c866" stop-opacity=".95"></stop>
+<stop offset=".52" stop-color="#f8dd91" stop-opacity=".96"></stop>
+<stop offset=".68" stop-color="#f1c866" stop-opacity=".95"></stop>
+<stop offset="1" stop-color="#8f5c19" stop-opacity=".18"></stop>
+</lineargradient>
+</defs>
+<path class="divider-shadow" d="M0,55 C245,104 405,102 588,84 C725,71 853,55 1016,67 C1180,79 1299,116 1440,102 L1440,160 L0,160 Z"></path>
+<path class="divider-cream" d="M0,68 C250,110 407,111 597,91 C725,78 856,61 1017,72 C1186,83 1297,119 1440,106 L1440,160 L0,160 Z"></path>
+<path class="divider-glow" d="M0,67 C250,109 407,110 597,90 C725,77 856,60 1017,71 C1186,82 1297,118 1440,105"></path>
+<path class="divider-gold" d="M0,67 C250,109 407,110 597,90 C725,77 856,60 1017,71 C1186,82 1297,118 1440,105"></path>
+</svg>
+<div class="divider-medallion">
+<span aria-hidden="true" class="medallion-hover-orbs"></span>
+<img alt="" src="assets/images/decor/decor-lotus-medallion.png"/>
+</div>
+</div>
+</section>
+<section aria-label="Thỉnh Tôn Tượng Phật Bổn Sư" class="bon-su-meaning-section" id="ton-tuong">
+<div class="bon-su-meaning-inner">
+<div class="bon-su-heading-block">
+<img alt="" class="bon-su-lotus-mark dta-reveal is-visible has-revealed" data-reveal="up" loading="lazy" src="assets/images/decor/ton-tuong/decor-heading-lotus.png" style="--reveal-delay: 90ms;"/>
+<h2 class="bon-su-title dta-reveal is-visible has-revealed" data-reveal="up" style="--reveal-delay: 200ms;">
+<span class="bon-su-title-main">Thỉnh Tôn Tượng Phật</span>
+<span aria-hidden="true" class="bon-su-title-sep">–</span>
+<span class="bon-su-title-accent">Gieo Trồng Hạt Giống An Lạc</span>
+</h2>
+<img alt="" class="bon-su-divider dta-reveal is-visible has-revealed" data-reveal="up" loading="lazy" src="assets/images/decor/ton-tuong/decor-divider-lotus.png" style="--reveal-delay: 310ms;"/>
+</div>
+<figure aria-hidden="true" class="bon-su-visual dta-reveal is-visible has-revealed" data-reveal="zoom" style="--reveal-delay: 170ms;">
+<img alt="" loading="lazy" src="assets/images/ton-tuong/visual-bon-su-composite.png"/>
+</figure>
+<div class="bon-su-body-block">
+<p class="bon-su-desc dta-reveal is-visible has-revealed" data-reveal="up" style="--reveal-delay: 190ms;">
             Diệu Tướng Am gìn giữ tinh thần chuẩn mực trong từng đường nét tạo tác, để mỗi tôn tượng hiện diện không chỉ với vẻ đẹp an nhiên tự tại, nhiệm màu, mà còn như một nơi nương tựa cho đời sống tinh thần của mỗi người.
           </p>
-
-          <div class="bon-su-cards" aria-label="Giá trị khi thỉnh tôn tượng tại Diệu Tướng Am">
-            <article class="bon-su-card bon-su-card--chuan-tuong">
-              <span class="bon-su-card-icon-wrap">
-                <img class="bon-su-card-icon" src="assets/icons/ton-tuong/icon-chuan-tuong.png" alt="" loading="lazy" />
-              </span>
-              <h3>Chuẩn tướng</h3>
-              <img class="bon-su-card-line" src="assets/images/decor/ton-tuong/duong-line-vang-dau-thap.png" alt="" aria-hidden="true" loading="lazy" />
-              <p>Theo tinh thần kinh điển và mỹ thuật Phật giáo.</p>
-            </article>
-
-            <article class="bon-su-card bon-su-card--che-tac">
-              <span class="bon-su-card-icon-wrap">
-                <img class="bon-su-card-icon" src="assets/icons/ton-tuong/icon-che-tac.png" alt="" loading="lazy" />
-              </span>
-              <h3>Chuẩn mực chế tác</h3>
-              <img class="bon-su-card-line" src="assets/images/decor/ton-tuong/duong-line-vang-dau-thap.png" alt="" aria-hidden="true" loading="lazy" />
-              <p>Tỉ mỉ trong từng đường nét và thần thái tôn tượng.</p>
-            </article>
-
-            <article class="bon-su-card bon-su-card--an-vi">
-              <span class="bon-su-card-icon-wrap">
-                <img class="bon-su-card-icon" src="assets/icons/ton-tuong/icon-an-vi.png" alt="" loading="lazy" />
-              </span>
-              <h3>An vị trang nghiêm</h3>
-              <img class="bon-su-card-line" src="assets/images/decor/ton-tuong/duong-line-vang-dau-thap.png" alt="" aria-hidden="true" loading="lazy" />
-              <p>Đồng hành cùng gia chủ trong nghi thức an vị.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Nội dung từ phần Dịch vụ trở xuống đã được xóa để thay thế sau. -->
-
-  </main>
-
-  <div class="service-lightbox" id="service-lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Xem ảnh dịch vụ" hidden>
-    <button class="service-lightbox-close" type="button" aria-label="Đóng ảnh">×</button>
-    <figure class="service-lightbox-frame">
-      <img class="service-lightbox-image" alt="" />
-      <figcaption class="service-lightbox-caption" hidden></figcaption>
-    </figure>
-  </div>
-
-  <div class="consult-modal" id="consult-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="consult-modal-title" hidden>
-    <div class="consult-modal-panel" role="document">
-      <button class="consult-modal-close" type="button" aria-label="Đóng form tư vấn" data-consult-modal-close>×</button>
-      <div class="consult-modal-kicker">Bắt đầu hành trình kiến tạo</div>
-      <h2 class="consult-modal-title" id="consult-modal-title">Gửi tâm nguyện – Nhận tư vấn</h2>
-      <p class="consult-modal-note">Chia sẻ mong muốn của bạn, Diệu Tướng Am sẽ lắng nghe và phản hồi với định hướng phù hợp nhất.</p>
-      <div class="consult-modal-form-slot" data-consult-modal-form></div>
-    </div>
-  </div>
-
-
-  <a id="dta-call-sticky" class="sticky-call" href="tel:0938959503" aria-label="Gọi tư vấn Diệu Tướng Am qua số 0938959503" data-ga-event="click_call_sticky" data-ga-cta-name="sticky_call" data-ga-phone="0938959503">
-    <span class="sticky-call-wave" aria-hidden="true"></span>
-    <span class="sticky-call-wave sticky-call-wave--delay" aria-hidden="true"></span>
-    <span class="sticky-call-label" aria-hidden="true">Gọi tư vấn <strong>0938959503</strong></span>
-    <svg class="sticky-call-icon" viewBox="0 0 44 44" aria-hidden="true" focusable="false">
-      <path class="sticky-call-phone" d="M29.4 28.1C23 26.2 17.8 21 15.9 14.6C15.6 13.6 16.1 12.6 17 12.2L19.5 11.2C20.3 10.9 21.2 11.2 21.6 12L22.9 14.6C23.3 15.3 23.1 16.2 22.4 16.7L21 17.8C22.3 20.5 24.5 22.7 27.2 24L28.3 22.6C28.8 21.9 29.7 21.7 30.4 22.1L33 23.4C33.8 23.8 34.1 24.7 33.8 25.5L32.8 28C32.4 28.9 30.4 28.4 29.4 28.1Z" />
-    </svg>
-  </a>
-
-  <button class="back-to-top" type="button" aria-label="Trở về đầu trang" aria-hidden="true" tabindex="-1" data-back-to-top>
-    <svg viewBox="0 0 44 44" aria-hidden="true" focusable="false">
-      <path class="back-to-top-lotus" d="M22 25.8C18.9 22.4 18.8 18.8 22 15.6C25.2 18.8 25.1 22.4 22 25.8Z" />
-      <path class="back-to-top-lotus" d="M14.8 24.8C15.2 20.9 17.5 18.4 21.2 17.7C20.9 21.8 18.8 24.2 14.8 24.8Z" />
-      <path class="back-to-top-lotus" d="M29.2 24.8C28.8 20.9 26.5 18.4 22.8 17.7C23.1 21.8 25.2 24.2 29.2 24.8Z" />
-      <path class="back-to-top-arrow" d="M22 30V13.5" />
-      <path class="back-to-top-arrow" d="M15.4 20.1L22 13.5L28.6 20.1" />
-    </svg>
-  </button>
-
+<div aria-label="Giá trị khi thỉnh tôn tượng tại Diệu Tướng Am" class="bon-su-cards">
+<article class="bon-su-card bon-su-card--chuan-tuong dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 220ms;">
+<span class="bon-su-card-icon-wrap">
+<img alt="" class="bon-su-card-icon" loading="lazy" src="assets/icons/ton-tuong/icon-chuan-tuong.png"/>
+</span>
+<h3>Chuẩn tướng</h3>
+<img alt="" aria-hidden="true" class="bon-su-card-line" loading="lazy" src="assets/images/decor/ton-tuong/duong-line-vang-dau-thap.png"/>
+<p>Theo tinh thần kinh điển và mỹ thuật Phật giáo.</p>
+</article>
+<article class="bon-su-card bon-su-card--che-tac dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 340ms;">
+<span class="bon-su-card-icon-wrap">
+<img alt="" class="bon-su-card-icon" loading="lazy" src="assets/icons/ton-tuong/icon-che-tac.png"/>
+</span>
+<h3>Chuẩn mực chế tác</h3>
+<img alt="" aria-hidden="true" class="bon-su-card-line" loading="lazy" src="assets/images/decor/ton-tuong/duong-line-vang-dau-thap.png"/>
+<p>Tỉ mỉ trong từng đường nét và thần thái tôn tượng.</p>
+</article>
+<article class="bon-su-card bon-su-card--an-vi dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 460ms;">
+<span class="bon-su-card-icon-wrap">
+<img alt="" class="bon-su-card-icon" loading="lazy" src="assets/icons/ton-tuong/icon-an-vi.png"/>
+</span>
+<h3>An vị trang nghiêm</h3>
+<img alt="" aria-hidden="true" class="bon-su-card-line" loading="lazy" src="assets/images/decor/ton-tuong/duong-line-vang-dau-thap.png"/>
+<p>Đồng hành cùng gia chủ trong nghi thức an vị.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- === Section: Chiêm ngưỡng Diệu Tướng Phật Bổn Sư === -->
+<section aria-label="Chiêm ngưỡng Diệu Tướng Phật Bổn Sư" class="chiem-nguong-section" id="chiem-nguong" style="padding-right: 0px;">
+<img alt="" aria-hidden="true" class="chiem-decor chiem-decor--corner-left dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/chiem-nguong/decor-corner-top-left.png" style="--reveal-delay: 60ms;"/>
+<img alt="" aria-hidden="true" class="chiem-decor chiem-decor--corner-right dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/chiem-nguong/decor-corner-top-right.png" style="--reveal-delay: 130ms;"/>
+<img alt="" aria-hidden="true" class="chiem-decor chiem-decor--lotus-left dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/chiem-nguong/decor-lotus-left.png" style="--reveal-delay: 200ms;"/>
+<img alt="" aria-hidden="true" class="chiem-decor chiem-decor--lotus-right dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/chiem-nguong/decor-lotus-right.png" style="--reveal-delay: 220ms;"/>
+<div class="chiem-inner">
+<header class="chiem-heading">
+<img alt="" aria-hidden="true" class="chiem-title-lotus dta-reveal is-visible has-revealed" data-reveal="up" loading="lazy" src="assets/images/decor/chiem-nguong/decor-title-lotus.png" style="--reveal-delay: 80ms; aspect-ratio: 4 / 1 !important; object-fit: fill; width: 152.4px !important; height: 38.1px !important;"/>
+<h2 class="dta-reveal is-visible has-revealed" data-reveal="up" style="--reveal-delay: 185ms;">Chiêm ngưỡng Diệu Tướng Phật Bổn Sư</h2>
+<img alt="" aria-hidden="true" class="chiem-title-divider dta-reveal is-visible has-revealed" data-reveal="up" loading="lazy" src="assets/images/decor/chiem-nguong/decor-title-divider-diamond.png" style="--reveal-delay: 290ms;"/>
+</header>
+<div class="chiem-layout">
+<aside aria-label="Ưu điểm tôn tượng" class="chiem-benefits chiem-benefits--left">
+<article class="chiem-benefit dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 130ms;">
+<img alt="" aria-hidden="true" class="chiem-benefit-icon" loading="lazy" src="assets/icons/chiem-nguong/icon-da-dang-hinh-tuong.png"/>
+<h3>Đa dạng hình tướng</h3>
+<p>Nhiều kích thước, kiểu dáng</p>
+<img alt="" aria-hidden="true" class="chiem-benefit-divider" loading="lazy" src="assets/images/decor/chiem-nguong/decor-benefit-divider.png"/>
+</article>
+<article class="chiem-benefit dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 225ms;">
+<img alt="" aria-hidden="true" class="chiem-benefit-icon" loading="lazy" src="assets/icons/chiem-nguong/icon-dong-hanh-dai-lau.png"/>
+<h3>Đồng hành dài lâu</h3>
+<p>Hỗ trợ tận tâm, chu đáo</p>
+</article>
+</aside>
+<div aria-label="Bộ sưu tập tôn tượng Phật Bổn Sư" class="chiem-gallery">
+<article class="chiem-card dta-reveal is-visible has-revealed" data-reveal="zoom" style="--reveal-delay: 160ms;">
+<figure class="chiem-card-image" style="--chiem-cover-image:url('assets/images/chiem-nguong/tuong-phat-bon-su-kim-than_thumnail.webp'); --chiem-img-zoom:1.78;" data-full-src="assets/images/chiem-nguong/tuong-phat-bon-su-kim-than.webp" data-full-title="Tượng Phật Bổn Sư Kim Thân">
+<img alt="Tượng Phật Bổn Sư Kim Thân" loading="lazy" src="assets/images/chiem-nguong/tuong-phat-bon-su-kim-than_thumnail.webp"/>
+</figure>
+<div class="chiem-card-body">
+<h3>Tượng Phật Bổn Sư Kim Thân</h3>
+<img alt="" aria-hidden="true" class="chiem-card-line" loading="lazy" src="assets/images/decor/chiem-nguong/golden-lotus-divider-line.png"/>
+</div>
+</article>
+<article class="chiem-card dta-reveal is-visible has-revealed" data-reveal="zoom" style="--reveal-delay: 250ms;">
+<figure class="chiem-card-image" style="--chiem-cover-image:url('assets/images/chiem-nguong/tuong-phat-bon-su-go-tinh-tai_thumnail.webp'); --chiem-img-zoom:1.78;" data-full-src="assets/images/chiem-nguong/tuong-phat-bon-su-go-tinh-tai.webp" data-full-title="Tượng Bổn Sư Đồng 240cm">
+<img alt="Tượng Bổn Sư Đồng 240cm" loading="lazy" src="assets/images/chiem-nguong/tuong-phat-bon-su-go-tinh-tai_thumnail.webp"/>
+</figure>
+<div class="chiem-card-body">
+<h3>Tượng Bổn Sư Đồng 240cm</h3>
+<img alt="" aria-hidden="true" class="chiem-card-line" loading="lazy" src="assets/images/decor/chiem-nguong/golden-lotus-divider-line.png"/>
+</div>
+</article>
+<article class="chiem-card dta-reveal is-visible has-revealed" data-reveal="zoom" style="--reveal-delay: 340ms;">
+<figure class="chiem-card-image" style="--chiem-cover-image:url('assets/images/chiem-nguong/tuong-phat-bon-su-bao-toa_thumnail.webp'); --chiem-img-zoom:1.78;" data-full-src="assets/images/chiem-nguong/tuong-phat-bon-su-bao-toa.webp" data-full-title="Tượng Phật Bổn Sư Bảo Toa">
+<img alt="Tượng Phật Bổn Sư Bảo Toa" loading="lazy" src="assets/images/chiem-nguong/tuong-phat-bon-su-bao-toa_thumnail.webp"/>
+</figure>
+<div class="chiem-card-body">
+<h3>Tượng Phật Bổn Sư Bảo Toa</h3>
+<img alt="" aria-hidden="true" class="chiem-card-line" loading="lazy" src="assets/images/decor/chiem-nguong/golden-lotus-divider-line.png"/>
+</div>
+</article>
+<article class="chiem-card dta-reveal is-visible has-revealed" data-reveal="zoom" style="--reveal-delay: 430ms;">
+<figure class="chiem-card-image" style="--chiem-cover-image:url('assets/images/chiem-nguong/tuong-phat-bon-su-hoa-van_thumnail.webp'); --chiem-img-zoom:1.78;" data-full-src="assets/images/chiem-nguong/tuong-phat-bon-su-hoa-van.webp" data-full-title="Tượng Bổn Sư Chuyển Pháp Luân Vẽ">
+<img alt="Tượng Bổn Sư Chuyển Pháp Luân Vẽ" loading="lazy" src="assets/images/chiem-nguong/tuong-phat-bon-su-hoa-van_thumnail.webp"/>
+</figure>
+<div class="chiem-card-body">
+<h3>Tượng Bổn Sư Chuyển Pháp Luân Vẽ</h3>
+<img alt="" aria-hidden="true" class="chiem-card-line" loading="lazy" src="assets/images/decor/chiem-nguong/golden-lotus-divider-line.png"/>
+</div>
+</article>
+<article class="chiem-card dta-reveal is-visible has-revealed" data-reveal="zoom" style="--reveal-delay: 520ms;">
+<figure class="chiem-card-image" style="--chiem-cover-image:url('assets/images/chiem-nguong/tuong-phat-bon-su-men-mau_thumnail.webp'); --chiem-img-zoom:1.78;" data-full-src="assets/images/chiem-nguong/tuong-phat-bon-su-men-mau.webp" data-full-title="Tượng Phật Bổn Sư Men Màu">
+<img alt="Tượng Phật Bổn Sư Men Màu" loading="lazy" src="assets/images/chiem-nguong/tuong-phat-bon-su-men-mau_thumnail.webp"/>
+</figure>
+<div class="chiem-card-body">
+<h3>Tượng Phật Bổn Sư Men Màu</h3>
+<img alt="" aria-hidden="true" class="chiem-card-line" loading="lazy" src="assets/images/decor/chiem-nguong/golden-lotus-divider-line.png"/>
+</div>
+</article>
+<article class="chiem-card dta-reveal is-visible has-revealed" data-reveal="zoom" style="--reveal-delay: 520ms;">
+<figure class="chiem-card-image" style="--chiem-cover-image:url('assets/images/chiem-nguong/tuong-phat-bon-su-an-tru_thumnail.webp'); --chiem-img-zoom:1.78;" data-full-src="assets/images/chiem-nguong/tuong-phat-bon-su-an-tru.webp" data-full-title="Tượng Phật Bổn Sư An Trú">
+<img alt="Tượng Phật Bổn Sư An Trú" loading="lazy" src="assets/images/chiem-nguong/tuong-phat-bon-su-an-tru_thumnail.webp"/>
+</figure>
+<div class="chiem-card-body">
+<h3>Tượng Phật Bổn Sư An Trú</h3>
+<img alt="" aria-hidden="true" class="chiem-card-line" loading="lazy" src="assets/images/decor/chiem-nguong/golden-lotus-divider-line.png"/>
+</div>
+</article>
+</div>
+<aside aria-label="Cam kết phục vụ" class="chiem-benefits chiem-benefits--right">
+<article class="chiem-benefit dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 320ms;">
+<img alt="" aria-hidden="true" class="chiem-benefit-icon" loading="lazy" src="assets/icons/chiem-nguong/icon-van-chuyen-an-vi.png"/>
+<h3>Vận chuyển và an vị toàn quốc</h3>
+<p>Đóng gói cẩn thận, an toàn</p>
+<img alt="" aria-hidden="true" class="chiem-benefit-divider" loading="lazy" src="assets/images/decor/chiem-nguong/decor-benefit-divider.png"/>
+</article>
+<article class="chiem-benefit dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 415ms;">
+<img alt="" aria-hidden="true" class="chiem-benefit-icon" loading="lazy" src="assets/icons/chiem-nguong/icon-thau-hieu-tam-nguyen.png"/>
+<h3>Thấu hiểu tâm nguyện gia chủ</h3>
+<p>Phù hợp nhu cầu từng gia đình</p>
+</article>
+</aside>
+</div>
+<img alt="" aria-hidden="true" class="chiem-bottom-ornament dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/chiem-nguong/decor-title-lotus.png" style="--reveal-delay: 220ms; aspect-ratio: 4 / 1 !important; object-fit: fill; width: 152.4px !important; height: 38.1px !important;"/>
+</div>
+</section>
+<!-- Nội dung từ phần Dịch vụ trở xuống đã được xóa để thay thế sau. -->
+</main>
+<div aria-hidden="true" aria-label="Xem ảnh dịch vụ" aria-modal="true" class="service-lightbox" hidden="" id="service-lightbox" role="dialog">
+<button aria-label="Đóng ảnh" class="service-lightbox-close" type="button">×</button>
+<figure class="service-lightbox-frame">
+<img alt="" class="service-lightbox-image"/>
+<figcaption class="service-lightbox-caption" hidden=""></figcaption>
+</figure>
+</div>
+<div aria-hidden="true" aria-labelledby="consult-modal-title" aria-modal="true" class="consult-modal" hidden="" id="consult-modal" role="dialog">
+<div class="consult-modal-panel" role="document">
+<button aria-label="Đóng form tư vấn" class="consult-modal-close" data-consult-modal-close="" type="button">×</button>
+<div class="consult-modal-kicker">Bắt đầu hành trình kiến tạo</div>
+<h2 class="consult-modal-title" id="consult-modal-title">Gửi tâm nguyện – Nhận tư vấn</h2>
+<p class="consult-modal-note">Chia sẻ mong muốn của bạn, Diệu Tướng Am sẽ lắng nghe và phản hồi với định hướng phù hợp nhất.</p>
+<div class="consult-modal-form-slot" data-consult-modal-form=""></div>
+</div>
+</div>
+<a aria-label="Gọi tư vấn Diệu Tướng Am qua số 0938959503" class="sticky-call" data-ga-cta-name="sticky_call" data-ga-event="click_call_sticky" data-ga-phone="0938959503" data-ga-tracking-bound="true" href="tel:0938959503" id="dta-call-sticky">
+<span aria-hidden="true" class="sticky-call-wave"></span>
+<span aria-hidden="true" class="sticky-call-wave sticky-call-wave--delay"></span>
+<span aria-hidden="true" class="sticky-call-label">Gọi tư vấn <strong>0938959503</strong></span>
+<svg aria-hidden="true" class="sticky-call-icon" focusable="false" viewbox="0 0 44 44">
+<path class="sticky-call-phone" d="M29.4 28.1C23 26.2 17.8 21 15.9 14.6C15.6 13.6 16.1 12.6 17 12.2L19.5 11.2C20.3 10.9 21.2 11.2 21.6 12L22.9 14.6C23.3 15.3 23.1 16.2 22.4 16.7L21 17.8C22.3 20.5 24.5 22.7 27.2 24L28.3 22.6C28.8 21.9 29.7 21.7 30.4 22.1L33 23.4C33.8 23.8 34.1 24.7 33.8 25.5L32.8 28C32.4 28.9 30.4 28.4 29.4 28.1Z"></path>
+</svg>
+</a>
+<button aria-hidden="false" aria-label="Trở về đầu trang" class="back-to-top is-visible" data-back-to-top="" tabindex="0" type="button">
+<svg aria-hidden="true" focusable="false" viewbox="0 0 44 44">
+<path class="back-to-top-lotus" d="M22 25.8C18.9 22.4 18.8 18.8 22 15.6C25.2 18.8 25.1 22.4 22 25.8Z"></path>
+<path class="back-to-top-lotus" d="M14.8 24.8C15.2 20.9 17.5 18.4 21.2 17.7C20.9 21.8 18.8 24.2 14.8 24.8Z"></path>
+<path class="back-to-top-lotus" d="M29.2 24.8C28.8 20.9 26.5 18.4 22.8 17.7C23.1 21.8 25.2 24.2 29.2 24.8Z"></path>
+<path class="back-to-top-arrow" d="M22 30V13.5"></path>
+<path class="back-to-top-arrow" d="M15.4 20.1L22 13.5L28.6 20.1"></path>
+</svg>
+</button>
 <script>
   (function(){
     var root = document.documentElement;
@@ -18569,6 +21369,12 @@ body{
       {selector:'.bon-su-visual', type:'zoom', delay:170},
       {selector:'.bon-su-desc', type:'up', delay:190},
       {selector:'.bon-su-card', type:'rise', delay:220, gap:120, max:460},
+
+      {selector:'.chiem-decor', type:'soft', delay:60, gap:70, max:220},
+      {selector:'.chiem-title-lotus, .chiem-heading h2, .chiem-title-divider', type:'up', delay:80, gap:105, max:320},
+      {selector:'.chiem-benefit', type:'rise', delay:130, gap:95, max:420},
+      {selector:'.chiem-card', type:'zoom', delay:160, gap:90, max:520},
+      {selector:'.chiem-bottom-ornament', type:'soft', delay:220},
 
       {selector:'.service-decor', type:'soft', gap:70, max:230},
       {selector:'.service-heading', type:'up'},
@@ -19180,13 +21986,18 @@ body{
       })
       .then(function(data){
         setFeedback(data.message || 'Cảm ơn bạn. Diệu Tướng Am đã nhận được tâm nguyện và sẽ liên hệ lại sớm.', 'success');
-        if(window.dtaTrackEvent){
-          window.dtaTrackEvent('submit_form_success', {
-            form_name: form.getAttribute('data-ga-form-name') || 'consultation_form',
-            form_id: form.id || 'tu-van',
-            cta_name: 'consultation_form_success'
-          });
-        }
+        /*
+          Google Analytics tracking is temporarily disabled.
+          Original submit_form_success tracking block kept here for easy re-enable later:
+
+          if(window.dtaTrackEvent){
+            window.dtaTrackEvent('submit_form_success', {
+              form_name: form.getAttribute('data-ga-form-name') || 'consultation_form',
+              form_id: form.id || 'tu-van',
+              cta_name: 'consultation_form_success'
+            });
+          }
+        */
         form.reset();
         if(newProvinceInput) newProvinceInput.value = '';
         fields.forEach(function(field){ setFieldState(field, ''); });
@@ -19415,9 +22226,6 @@ body{
     });
   })();
 </script>
-
-
-
 <script>
   (function(){
     var root = document.documentElement;
@@ -19617,38 +22425,448 @@ body{
     window.dtaTurtleScrollTo = turtleScrollTo;
   })();
 </script>
-
-
 <script>
   (function(){
-    function getTrackingParams(element){
-      var params = {
-        cta_name: element.getAttribute('data-ga-cta-name') || element.id || element.className || 'cta'
-      };
-      var phone = element.getAttribute('data-ga-phone');
-      if(phone) params.phone_number = phone;
-      return params;
-    }
+    function initChiemCards(){
+      var cards = Array.prototype.slice.call(document.querySelectorAll('.chiem-card'));
+      if(!cards.length) return;
+      cards.forEach(function(card){
+        if(card.dataset.chiemPremiumBound === 'true') return;
+        card.dataset.chiemPremiumBound = 'true';
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-label', (card.querySelector('h3') ? card.querySelector('h3').textContent.trim() : 'Chiêm ngưỡng tôn tượng Phật'));
+        function activate(event){
+          cards.forEach(function(item){
+            if(item !== card) item.classList.remove('is-chiem-active');
+          });
+          card.classList.remove('is-chiem-active');
+          void card.offsetWidth;
+          card.classList.add('is-chiem-active');
 
-    function bindGaClickTracking(){
-      var elements = Array.prototype.slice.call(document.querySelectorAll('[data-ga-event]'));
-      elements.forEach(function(element){
-        if(element.dataset.gaTrackingBound === 'true') return;
-        element.dataset.gaTrackingBound = 'true';
-        element.addEventListener('click', function(){
-          if(!window.dtaTrackEvent) return;
-          window.dtaTrackEvent(element.getAttribute('data-ga-event'), getTrackingParams(element));
-        }, {capture:true});
+          var rect = card.getBoundingClientRect();
+          var ripple = document.createElement('span');
+          ripple.className = 'chiem-card-ripple';
+          var clientX = event && typeof event.clientX === 'number' ? event.clientX : rect.left + rect.width / 2;
+          var clientY = event && typeof event.clientY === 'number' ? event.clientY : rect.top + rect.height / 2;
+          ripple.style.left = (clientX - rect.left) + 'px';
+          ripple.style.top = (clientY - rect.top) + 'px';
+          card.appendChild(ripple);
+          window.setTimeout(function(){ ripple.remove(); }, 900);
+          window.setTimeout(function(){ card.classList.remove('is-chiem-active'); }, 1350);
+        }
+        card.addEventListener('click', activate);
+        card.addEventListener('keydown', function(event){
+          if(event.key === 'Enter' || event.key === ' '){
+            event.preventDefault();
+            activate(event);
+          }
+        });
       });
     }
-
     if(document.readyState === 'loading'){
-      document.addEventListener('DOMContentLoaded', bindGaClickTracking);
+      document.addEventListener('DOMContentLoaded', initChiemCards);
     }else{
-      bindGaClickTracking();
+      initChiemCards();
     }
   })();
 </script>
 
-</body>
-</html>
+<div class="chiem-lightbox" id="chiemLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Xem ảnh tôn tượng Phật Bổn Sư" hidden>
+  <div class="chiem-lightbox-panel" role="document">
+    <button class="chiem-lightbox-close" type="button" aria-label="Đóng ảnh">×</button>
+    <div class="chiem-lightbox-toolbar" aria-label="Công cụ xem ảnh">
+      <button class="chiem-lightbox-tool chiem-lightbox-zoom-out" type="button" aria-label="Thu nhỏ ảnh" data-chiem-zoom-out>−</button>
+      <button class="chiem-lightbox-tool chiem-lightbox-zoom-toggle" type="button" aria-label="Phóng to ảnh" data-chiem-zoom-toggle>🔍 Phóng to</button>
+      <button class="chiem-lightbox-tool chiem-lightbox-zoom-in" type="button" aria-label="Phóng to ảnh thêm" data-chiem-zoom-in>+</button>
+      <button class="chiem-lightbox-tool chiem-lightbox-zoom-reset" type="button" aria-label="Đưa ảnh về vừa khung" data-chiem-zoom-reset>Vừa khung</button>
+    </div>
+    <button class="chiem-lightbox-nav chiem-lightbox-prev" type="button" aria-label="Ảnh trước">‹</button>
+    <div class="chiem-lightbox-frame">
+      <img class="chiem-lightbox-image" alt="" />
+    </div>
+    <button class="chiem-lightbox-nav chiem-lightbox-next" type="button" aria-label="Ảnh tiếp theo">›</button>
+    <div class="chiem-lightbox-caption"></div>
+  </div>
+</div>
+
+
+<script id="dta-chiem-gallery-lightbox-popup-script">
+  (function(){
+    var lightbox = document.getElementById('chiemLightbox');
+    if(!lightbox) return;
+
+    var image = lightbox.querySelector('.chiem-lightbox-image');
+    var caption = lightbox.querySelector('.chiem-lightbox-caption');
+    var closeBtn = lightbox.querySelector('.chiem-lightbox-close');
+    var prevBtn = lightbox.querySelector('.chiem-lightbox-prev');
+    var nextBtn = lightbox.querySelector('.chiem-lightbox-next');
+    var items = [];
+    var currentIndex = 0;
+    var closeTimer = null;
+    var lastFocused = null;
+
+    function getTitle(card, figure, img){
+      var heading = card ? card.querySelector('.chiem-card-body h3') : null;
+      return (figure && figure.getAttribute('data-full-title')) ||
+        (heading ? heading.textContent.trim() : '') ||
+        (img ? img.getAttribute('alt') : '') ||
+        'Tượng Phật Bổn Sư';
+    }
+
+    function collectItems(){
+      items = Array.prototype.slice.call(document.querySelectorAll('.chiem-gallery .chiem-card')).map(function(card){
+        var figure = card.querySelector('.chiem-card-image');
+        var img = figure ? figure.querySelector('img') : null;
+        var src = figure ? figure.getAttribute('data-full-src') : '';
+        if(!src && img) src = img.currentSrc || img.getAttribute('src');
+        return {
+          card: card,
+          figure: figure,
+          img: img,
+          src: src,
+          title: getTitle(card, figure, img)
+        };
+      }).filter(function(item){
+        return item.src && item.figure && item.img;
+      });
+    }
+
+    function render(index){
+      if(!items.length) collectItems();
+      if(!items.length) return;
+
+      currentIndex = (index + items.length) % items.length;
+      var item = items[currentIndex];
+
+      image.src = item.src;
+      image.alt = item.title;
+      caption.textContent = item.title;
+
+      if(items.length <= 1){
+        if(prevBtn) prevBtn.hidden = true;
+        if(nextBtn) nextBtn.hidden = true;
+      }else{
+        if(prevBtn) prevBtn.hidden = false;
+        if(nextBtn) nextBtn.hidden = false;
+      }
+    }
+
+    function open(index){
+      if(!items.length) collectItems();
+      if(!items.length) return;
+
+      lastFocused = document.activeElement;
+      if(closeTimer) window.clearTimeout(closeTimer);
+
+      render(index);
+      lightbox.hidden = false;
+      requestAnimationFrame(function(){
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('chiem-lightbox-open');
+        if(closeBtn) closeBtn.focus({preventScroll:true});
+      });
+    }
+
+    function close(){
+      if(lightbox.getAttribute('aria-hidden') === 'true') return;
+
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('chiem-lightbox-open');
+
+      closeTimer = window.setTimeout(function(){
+        if(lightbox.getAttribute('aria-hidden') === 'true'){
+          lightbox.hidden = true;
+          if(image) image.removeAttribute('src');
+          if(caption) caption.textContent = '';
+        }
+      }, 340);
+
+      if(lastFocused && typeof lastFocused.focus === 'function'){
+        lastFocused.focus({preventScroll:true});
+      }
+    }
+
+    function next(){
+      render(currentIndex + 1);
+    }
+
+    function prev(){
+      render(currentIndex - 1);
+    }
+
+    function bind(){
+      collectItems();
+      items.forEach(function(item, index){
+        item.figure.setAttribute('role', 'button');
+        item.figure.setAttribute('tabindex', '0');
+        item.figure.setAttribute('aria-label', 'Xem ảnh lớn: ' + item.title);
+
+        item.card.addEventListener('click', function(event){
+          var target = event.target;
+          if(target && target.closest && target.closest('a, button, input, textarea, select')) return;
+          open(index);
+        });
+
+        item.figure.addEventListener('keydown', function(event){
+          if(event.key === 'Enter' || event.key === ' '){
+            event.preventDefault();
+            open(index);
+          }
+        });
+      });
+    }
+
+    if(closeBtn) closeBtn.addEventListener('click', close);
+    if(prevBtn) prevBtn.addEventListener('click', function(event){ event.stopPropagation(); prev(); });
+    if(nextBtn) nextBtn.addEventListener('click', function(event){ event.stopPropagation(); next(); });
+
+    lightbox.addEventListener('click', function(event){
+      if(event.target === lightbox) close();
+    });
+
+    document.addEventListener('keydown', function(event){
+      if(lightbox.getAttribute('aria-hidden') === 'true') return;
+      if(event.key === 'Escape') close();
+      if(event.key === 'ArrowRight') next();
+      if(event.key === 'ArrowLeft') prev();
+    });
+
+    if(document.readyState === 'loading'){
+      document.addEventListener('DOMContentLoaded', bind);
+    }else{
+      bind();
+    }
+
+    window.dtaOpenChiemLightbox = open;
+  })();
+</script>
+
+
+<script id="dta-chiem-gallery-lightbox-zoom-upgrade">
+  (function(){
+    var lightbox = document.getElementById('chiemLightbox');
+    if(!lightbox) return;
+
+    var frame = lightbox.querySelector('.chiem-lightbox-frame');
+    var image = lightbox.querySelector('.chiem-lightbox-image');
+    var zoomToggle = lightbox.querySelector('[data-chiem-zoom-toggle]');
+    var zoomInBtn = lightbox.querySelector('[data-chiem-zoom-in]');
+    var zoomOutBtn = lightbox.querySelector('[data-chiem-zoom-out]');
+    var zoomResetBtn = lightbox.querySelector('[data-chiem-zoom-reset]');
+
+    if(!frame || !image) return;
+
+    var zoomLevels = [1, 1.45, 2, 2.75, 3.5];
+    var zoomIndex = 0;
+    var panX = 0;
+    var panY = 0;
+    var dragging = false;
+    var startX = 0;
+    var startY = 0;
+    var baseX = 0;
+    var baseY = 0;
+
+    function currentZoom(){
+      return zoomLevels[zoomIndex] || 1;
+    }
+
+    function applyZoom(instant){
+      var zoom = currentZoom();
+      image.style.setProperty('--chiem-zoom', zoom);
+      image.style.setProperty('--chiem-pan-x', panX + 'px');
+      image.style.setProperty('--chiem-pan-y', panY + 'px');
+
+      frame.classList.toggle('is-zoomed', zoom > 1);
+      if(zoomToggle){
+        zoomToggle.textContent = zoom > 1 ? '🔍 ' + Math.round(zoom * 100) + '%' : '🔍 Phóng to';
+        zoomToggle.setAttribute('aria-label', zoom > 1 ? 'Phóng to thêm ảnh' : 'Phóng to ảnh');
+      }
+
+      if(zoomOutBtn) zoomOutBtn.disabled = zoomIndex === 0;
+      if(zoomInBtn) zoomInBtn.disabled = zoomIndex >= zoomLevels.length - 1;
+
+      if(instant){
+        image.style.transition = 'none';
+        requestAnimationFrame(function(){
+          image.style.transition = '';
+        });
+      }
+    }
+
+    function resetZoom(instant){
+      zoomIndex = 0;
+      panX = 0;
+      panY = 0;
+      applyZoom(instant);
+    }
+
+    function zoomIn(){
+      if(zoomIndex < zoomLevels.length - 1){
+        zoomIndex += 1;
+        if(currentZoom() === 1){
+          panX = 0;
+          panY = 0;
+        }
+        applyZoom(false);
+      }
+    }
+
+    function zoomOut(){
+      if(zoomIndex > 0){
+        zoomIndex -= 1;
+        if(currentZoom() === 1){
+          panX = 0;
+          panY = 0;
+        }
+        applyZoom(false);
+      }
+    }
+
+    function toggleZoom(){
+      if(currentZoom() === 1){
+        zoomIndex = 1;
+      }else if(zoomIndex < zoomLevels.length - 1){
+        zoomIndex += 1;
+      }else{
+        zoomIndex = 0;
+        panX = 0;
+        panY = 0;
+      }
+      applyZoom(false);
+    }
+
+    function clampPan(){
+      if(currentZoom() <= 1){
+        panX = 0;
+        panY = 0;
+        return;
+      }
+
+      var rect = image.getBoundingClientRect();
+      var frameRect = frame.getBoundingClientRect();
+      var zoom = currentZoom();
+
+      var baseW = rect.width / zoom;
+      var baseH = rect.height / zoom;
+      var maxX = Math.max(0, (baseW * zoom - frameRect.width) / 2 + 80);
+      var maxY = Math.max(0, (baseH * zoom - frameRect.height) / 2 + 80);
+
+      panX = Math.max(-maxX, Math.min(maxX, panX));
+      panY = Math.max(-maxY, Math.min(maxY, panY));
+    }
+
+    if(zoomToggle) zoomToggle.addEventListener('click', function(event){
+      event.stopPropagation();
+      toggleZoom();
+    });
+    if(zoomInBtn) zoomInBtn.addEventListener('click', function(event){
+      event.stopPropagation();
+      zoomIn();
+    });
+    if(zoomOutBtn) zoomOutBtn.addEventListener('click', function(event){
+      event.stopPropagation();
+      zoomOut();
+    });
+    if(zoomResetBtn) zoomResetBtn.addEventListener('click', function(event){
+      event.stopPropagation();
+      resetZoom(false);
+    });
+
+    image.addEventListener('click', function(event){
+      if(lightbox.getAttribute('aria-hidden') === 'true') return;
+      if(currentZoom() === 1){
+        event.preventDefault();
+        event.stopPropagation();
+        zoomIndex = 1;
+        panX = 0;
+        panY = 0;
+        applyZoom(false);
+      }
+    });
+
+    image.addEventListener('dblclick', function(event){
+      event.preventDefault();
+      event.stopPropagation();
+      toggleZoom();
+    });
+
+    image.addEventListener('pointerdown', function(event){
+      if(currentZoom() <= 1) return;
+      dragging = true;
+      startX = event.clientX;
+      startY = event.clientY;
+      baseX = panX;
+      baseY = panY;
+      frame.classList.add('is-dragging');
+      image.setPointerCapture(event.pointerId);
+    });
+
+    image.addEventListener('pointermove', function(event){
+      if(!dragging) return;
+      panX = baseX + (event.clientX - startX);
+      panY = baseY + (event.clientY - startY);
+      clampPan();
+      applyZoom(true);
+    });
+
+    function stopDrag(event){
+      if(!dragging) return;
+      dragging = false;
+      frame.classList.remove('is-dragging');
+      try{ image.releasePointerCapture(event.pointerId); }catch(e){}
+    }
+
+    image.addEventListener('pointerup', stopDrag);
+    image.addEventListener('pointercancel', stopDrag);
+    image.addEventListener('pointerleave', function(event){
+      if(dragging) stopDrag(event);
+    });
+
+    frame.addEventListener('wheel', function(event){
+      if(!lightbox.classList.contains('is-open')) return;
+      event.preventDefault();
+      if(event.deltaY < 0) zoomIn();
+      else zoomOut();
+    }, {passive:false});
+
+    var observer = new MutationObserver(function(mutations){
+      mutations.forEach(function(mutation){
+        if(mutation.type === 'attributes' && mutation.attributeName === 'src'){
+          resetZoom(true);
+        }
+      });
+    });
+    observer.observe(image, {attributes:true});
+
+    document.addEventListener('keydown', function(event){
+      if(lightbox.getAttribute('aria-hidden') === 'true') return;
+      if(event.key === '+' || event.key === '=') zoomIn();
+      if(event.key === '-') zoomOut();
+      if(event.key === '0') resetZoom(false);
+    });
+
+    resetZoom(true);
+  })();
+</script>
+
+
+<script id="dta-chiem-lightbox-fit-safety-v2">
+  (function(){
+    var lightbox = document.getElementById('chiemLightbox');
+    if(!lightbox) return;
+    var image = lightbox.querySelector('.chiem-lightbox-image');
+    var frame = lightbox.querySelector('.chiem-lightbox-frame');
+    if(!image || !frame) return;
+    image.setAttribute('decoding', 'async');
+    image.addEventListener('load', function(){
+      image.style.objectFit = 'contain';
+      image.style.objectPosition = 'center center';
+      frame.scrollTop = 0;
+      frame.scrollLeft = 0;
+    });
+  })();
+</script>
+</body></html>
