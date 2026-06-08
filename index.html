@@ -21004,6 +21004,248 @@ body{
 /* === DTA FIX 2026-06-07: Chiem gallery long title wrap END === */
 </style>
 
+
+
+<style id="dta-chiem-mobile-list-final-fix-2026-06-08">
+  /*
+    DTA FINAL MOBILE FIX:
+    1) Không cắt mô tả của 4 ô lợi ích trên mobile.
+    2) Đổi 6 tượng từ carousel vuốt ngang sang list/grid đầy đủ 2 cột, gọn và không kéo trang quá dài.
+  */
+  @media (max-width:680px){
+    .chiem-benefits--left,
+    .chiem-benefits--right{
+      display:grid !important;
+      grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+      gap:10px !important;
+      width:100% !important;
+    }
+
+    .chiem-benefit{
+      min-height:auto !important;
+      align-items:flex-start !important;
+      padding:11px 10px 10px !important;
+      overflow:visible !important;
+    }
+
+    .chiem-benefit h3{
+      min-width:0 !important;
+      white-space:normal !important;
+      overflow:visible !important;
+      text-overflow:clip !important;
+    }
+
+    .chiem-benefit p{
+      display:block !important;
+      -webkit-line-clamp:unset !important;
+      line-clamp:unset !important;
+      -webkit-box-orient:initial !important;
+      overflow:visible !important;
+      max-width:none !important;
+      white-space:normal !important;
+      text-overflow:clip !important;
+      font-size:clamp(11.4px, 3.1vw, 12.4px) !important;
+      line-height:1.34 !important;
+      margin:4px 0 0 !important;
+    }
+
+    .chiem-gallery{
+      order:3 !important;
+      display:grid !important;
+      grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+      gap:12px !important;
+      width:100% !important;
+      max-width:430px !important;
+      margin:16px auto 0 !important;
+      padding:0 !important;
+      transform:none !important;
+      overflow:visible !important;
+      scroll-snap-type:none !important;
+      scroll-padding-inline:0 !important;
+      overscroll-behavior:auto !important;
+      -webkit-overflow-scrolling:auto !important;
+      scrollbar-width:auto !important;
+    }
+
+    .chiem-gallery::before{
+      content:none !important;
+      display:none !important;
+    }
+
+    .chiem-card,
+    .chiem-card:first-of-type,
+    .chiem-card:last-of-type{
+      width:auto !important;
+      max-width:none !important;
+      min-width:0 !important;
+      flex:initial !important;
+      flex-basis:auto !important;
+      aspect-ratio:auto !important;
+      scroll-snap-align:none !important;
+      display:flex !important;
+      flex-direction:column !important;
+      border-radius:16px !important;
+      overflow:hidden !important;
+      transform:none !important;
+      box-shadow:
+        0 13px 26px rgba(84,48,12,.14),
+        0 1px 0 rgba(255,255,255,.55) inset !important;
+    }
+
+    .chiem-card::before{
+      inset:6px !important;
+      border-radius:11px !important;
+    }
+
+    .chiem-card::after{
+      display:block !important;
+      opacity:.72 !important;
+    }
+
+    .chiem-card-image,
+    .chiem-gallery .chiem-card .chiem-card-image{
+      position:relative !important;
+      width:100% !important;
+      height:auto !important;
+      aspect-ratio:1 / .92 !important;
+      border-radius:15px 15px 0 0 !important;
+      overflow:hidden !important;
+      cursor:zoom-in !important;
+    }
+
+    .chiem-card-image::after{
+      display:block !important;
+    }
+
+    .chiem-card-image img,
+    .chiem-gallery .chiem-card .chiem-card-image > img{
+      width:100% !important;
+      height:100% !important;
+      object-fit:cover !important;
+      object-position:center center !important;
+      transform:translateZ(0) scale(1.20) !important;
+      filter:saturate(1.08) contrast(1.05) brightness(1.035) !important;
+    }
+
+    .chiem-card:nth-child(1) .chiem-card-image img,
+    .chiem-card:nth-child(2) .chiem-card-image img,
+    .chiem-card:nth-child(3) .chiem-card-image img,
+    .chiem-card:nth-child(4) .chiem-card-image img,
+    .chiem-card:nth-child(5) .chiem-card-image img,
+    .chiem-card:nth-child(6) .chiem-card-image img{
+      transform:translateZ(0) scale(1.20) !important;
+    }
+
+    .chiem-card-body{
+      position:relative !important;
+      left:auto !important;
+      right:auto !important;
+      bottom:auto !important;
+      z-index:6 !important;
+      min-height:58px !important;
+      padding:9px 8px 8px !important;
+      border-radius:0 0 15px 15px !important;
+      border:0 !important;
+      border-top:1px solid rgba(142,79,17,.30) !important;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(255,247,208,.72), rgba(255,247,208,0) 62%),
+        linear-gradient(180deg, rgba(255,251,241,.96) 0%, rgba(247,228,190,.96) 100%) !important;
+      box-shadow:none !important;
+      backdrop-filter:none !important;
+    }
+
+    .chiem-card-body h3{
+      display:block !important;
+      -webkit-line-clamp:unset !important;
+      line-clamp:unset !important;
+      -webkit-box-orient:initial !important;
+      overflow:visible !important;
+      white-space:normal !important;
+      font-size:clamp(14.6px, 4vw, 17px) !important;
+      line-height:1.16 !important;
+      letter-spacing:0 !important;
+    }
+
+    .chiem-card-body .chiem-card-line,
+    .chiem-card-line{
+      width:min(82px, 48%) !important;
+      margin-top:4px !important;
+      opacity:.70 !important;
+    }
+
+    .chiem-card:hover,
+    .chiem-card:focus-visible,
+    .chiem-card.is-chiem-active{
+      transform:translateY(-3px) !important;
+      box-shadow:
+        0 16px 30px rgba(84,48,12,.16),
+        0 0 0 1px rgba(255,232,151,.44),
+        0 1px 0 rgba(255,255,255,.55) inset !important;
+    }
+
+    .chiem-card:hover .chiem-card-image img,
+    .chiem-card:focus-visible .chiem-card-image img,
+    .chiem-card.is-chiem-active .chiem-card-image img,
+    .chiem-gallery .chiem-card:hover .chiem-card-image > img,
+    .chiem-gallery .chiem-card:focus-visible .chiem-card-image > img,
+    .chiem-gallery .chiem-card.is-chiem-active .chiem-card-image > img{
+      transform:translateZ(0) scale(1.27) !important;
+    }
+
+    .chiem-bottom-ornament{
+      margin-top:16px !important;
+    }
+  }
+
+  @media (max-width:420px){
+    .chiem-inner{width:min(100% - 26px, 390px) !important;}
+
+    .chiem-benefits--left,
+    .chiem-benefits--right{
+      gap:8px !important;
+    }
+
+    .chiem-benefit{
+      grid-template-columns:32px 1fr !important;
+      column-gap:8px !important;
+      padding:9px 8px 9px !important;
+    }
+
+    .chiem-benefit-icon{
+      width:30px !important;
+      height:30px !important;
+    }
+
+    .chiem-benefit h3{
+      font-size:12.7px !important;
+      line-height:1.15 !important;
+    }
+
+    .chiem-benefit p{
+      font-size:11.2px !important;
+      line-height:1.30 !important;
+    }
+
+    .chiem-gallery{
+      gap:10px !important;
+      margin-top:14px !important;
+    }
+
+    .chiem-card-image,
+    .chiem-gallery .chiem-card .chiem-card-image{
+      aspect-ratio:1 / .94 !important;
+    }
+
+    .chiem-card-body{
+      min-height:56px !important;
+      padding:8px 7px 7px !important;
+    }
+
+    .chiem-card-body h3{
+      font-size:clamp(13.4px, 3.75vw, 15.6px) !important;
+    }
+  }
+</style>
 </head>
 <body class="dta-motion-reduced dta-intro-started dta-intro-complete">
 <main class="dta-page">
