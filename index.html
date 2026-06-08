@@ -21246,6 +21246,88 @@ body{
     }
   }
 </style>
+
+
+<style id="dta-chiem-mobile-bg-decor-boost-2026-06-08">
+  /*
+    DTA MOBILE VISUAL BOOST:
+    - Phóng lớn 2 họa tiết góc trên của section Chiêm ngưỡng.
+    - Hiển thị rõ nền bg-chiem-nguong-parchment.jpg trên mobile, ưu tiên phần nền bên trái.
+  */
+  @media (max-width:680px){
+    .chiem-nguong-section{
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.58) 0 14%, rgba(255,255,255,0) 48%),
+        linear-gradient(90deg, rgba(250,239,214,.34) 0%, rgba(250,239,214,.68) 42%, rgba(242,211,143,.78) 100%),
+        linear-gradient(180deg, rgba(250,239,214,.56) 0%, rgba(245,224,177,.48) 52%, rgba(230,190,111,.54) 100%),
+        url("assets/images/bg/bg-chiem-nguong-parchment.jpg") left top / auto 100% no-repeat,
+        #f4dfaa !important;
+      background-blend-mode:normal, normal, normal, normal, normal !important;
+    }
+
+    .chiem-nguong-section::before{
+      z-index:0 !important;
+      opacity:.34 !important;
+      mix-blend-mode:multiply !important;
+      background:
+        radial-gradient(ellipse at 0% 18%, rgba(137,78,20,.18) 0 28%, rgba(137,78,20,0) 62%),
+        linear-gradient(90deg, rgba(128,75,17,.16) 0%, transparent 38%, transparent 100%) !important;
+    }
+
+    .chiem-nguong-section::after{
+      opacity:.34 !important;
+    }
+
+    .chiem-decor{
+      z-index:3 !important;
+    }
+
+    .chiem-decor--corner-left,
+    .chiem-decor--corner-right{
+      display:block !important;
+      width:clamp(215px, 58vw, 292px) !important;
+      top:-18px !important;
+      opacity:.52 !important;
+      filter:
+        drop-shadow(0 8px 14px rgba(118,69,14,.16))
+        saturate(1.04) !important;
+    }
+
+    .chiem-decor--corner-left{
+      left:clamp(-92px, -20vw, -66px) !important;
+    }
+
+    .chiem-decor--corner-right{
+      right:clamp(-92px, -20vw, -66px) !important;
+    }
+
+    .chiem-inner{
+      position:relative !important;
+      z-index:5 !important;
+    }
+  }
+
+  @media (max-width:420px){
+    .chiem-decor--corner-left,
+    .chiem-decor--corner-right{
+      width:clamp(205px, 64vw, 252px) !important;
+      top:-16px !important;
+      opacity:.50 !important;
+    }
+
+    .chiem-decor--corner-left{left:-76px !important;}
+    .chiem-decor--corner-right{right:-76px !important;}
+
+    .chiem-nguong-section{
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.56) 0 14%, rgba(255,255,255,0) 48%),
+        linear-gradient(90deg, rgba(250,239,214,.26) 0%, rgba(250,239,214,.62) 44%, rgba(242,211,143,.76) 100%),
+        linear-gradient(180deg, rgba(250,239,214,.52) 0%, rgba(245,224,177,.44) 54%, rgba(230,190,111,.52) 100%),
+        url("assets/images/bg/bg-chiem-nguong-parchment.jpg") left top / auto 100% no-repeat,
+        #f4dfaa !important;
+    }
+  }
+</style>
 </head>
 <body class="dta-motion-reduced dta-intro-started dta-intro-complete">
 <main class="dta-page">
