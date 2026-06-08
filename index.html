@@ -21449,6 +21449,82 @@ body{
   }
 </style>
 
+
+
+<style id="dta-mobile-bonsu-chiem-section-blend-2026-06-08">
+  /*
+    DTA PATCH: Mobile blend between "Thỉnh Tôn Tượng Phật Bổn Sư"
+    and "Chiêm ngưỡng Diệu Tướng Phật Bổn Sư".
+    - Giảm khoảng trống cuối section Thỉnh Tôn Tượng trên mobile.
+    - Kéo section Chiêm ngưỡng chồng nhẹ lên trên để mất đường tách lớp.
+    - Tạo lớp chuyển màu vàng kem ở mép nối để hai nền hòa vào nhau.
+  */
+  @media (max-width:680px){
+    .bon-su-meaning-section{
+      padding-bottom:28px !important;
+      background-color:#efd39b !important;
+      box-shadow:inset 0 -42px 46px rgba(239,211,155,.92) !important;
+    }
+
+    .chiem-nguong-section{
+      margin-top:-34px !important;
+      padding-top:72px !important;
+      position:relative !important;
+      z-index:4 !important;
+      box-shadow:
+        inset 0 58px 46px rgba(239,211,155,.84),
+        inset 0 1px 0 rgba(255,247,221,.18) !important;
+      background-image:
+        linear-gradient(180deg,
+          rgba(239,211,155,.96) 0px,
+          rgba(242,218,166,.82) 22px,
+          rgba(247,231,194,.34) 64px,
+          rgba(247,231,194,0) 130px
+        ),
+        url("assets/images/bg/bg-chiem-nguong-parchment.jpg"),
+        linear-gradient(180deg,
+          rgba(250,239,214,.58) 0%,
+          rgba(247,225,179,.42) 48%,
+          rgba(229,187,100,.48) 100%
+        ) !important;
+      background-size:100% 150px, auto 100%, 100% 100% !important;
+      background-position:left top, left center, center center !important;
+      background-repeat:no-repeat, no-repeat, no-repeat !important;
+    }
+
+    .chiem-nguong-section::before{
+      top:0 !important;
+      opacity:.045 !important;
+    }
+
+    .chiem-heading{
+      position:relative !important;
+      z-index:6 !important;
+    }
+
+    .chiem-decor--corner-left,
+    .chiem-decor--corner-right{
+      top:2px !important;
+    }
+  }
+
+  @media (max-width:420px){
+    .bon-su-meaning-section{
+      padding-bottom:24px !important;
+      box-shadow:inset 0 -38px 42px rgba(239,211,155,.94) !important;
+    }
+
+    .chiem-nguong-section{
+      margin-top:-30px !important;
+      padding-top:68px !important;
+      box-shadow:
+        inset 0 52px 42px rgba(239,211,155,.86),
+        inset 0 1px 0 rgba(255,247,221,.18) !important;
+      background-size:100% 140px, auto 100%, 100% 100% !important;
+    }
+  }
+</style>
+
 </head>
 <body class="dta-motion-reduced dta-intro-started dta-intro-complete">
 <main class="dta-page">
