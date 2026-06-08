@@ -21346,12 +21346,13 @@ body{
 
 
 
-<style id="dta-chiem-mobile-decor-bg-final-fix-v2-2026-06-08">
+<style id="dta-chiem-mobile-decor-bg-final-fix-v3-2026-06-08">
   /*
-    DTA PATCH V2:
-    - Không cho 2 hoa văn góc bị cắt đầu trên mobile.
-    - Đưa nền bg-chiem-nguong-parchment.jpg lên lớp nhìn rõ hơn.
-    - Ép nền hiển thị phần bên trái, không lấy vùng giữa ảnh.
+    DTA PATCH V3:
+    - Tinh chỉnh lại 2 decor góc trên mobile: nhỏ hơn nhẹ, sát viền trên hơn,
+      và tràn ra cạnh màn hình vừa đủ để tự nhiên nhưng không cụt đầu.
+    - Giữ nền bg-chiem-nguong-parchment.jpg lấy phần bên trái.
+    - Tắt decor-lotus-right.png trên mobile để giao diện thoáng hơn.
   */
   @media (max-width:680px){
     .chiem-nguong-section{
@@ -21385,28 +21386,23 @@ body{
 
     .chiem-decor--corner-left,
     .chiem-decor--corner-right{
-      width:clamp(196px, 52vw, 256px) !important;
-      top:10px !important;
-      opacity:.68 !important;
+      width:clamp(184px, 49vw, 240px) !important;
+      top:2px !important;
+      opacity:.66 !important;
       transform:none !important;
       filter:drop-shadow(0 8px 12px rgba(116,66,13,.14)) !important;
     }
 
     .chiem-decor--corner-left{
-      left:-6px !important;
+      left:-18px !important;
     }
 
     .chiem-decor--corner-right{
-      right:-6px !important;
+      right:-18px !important;
     }
 
     .chiem-decor--lotus-right{
-      display:block !important;
-      width:clamp(198px, 52vw, 268px) !important;
-      right:clamp(-106px, -24vw, -70px) !important;
-      bottom:clamp(38px, 8vw, 64px) !important;
-      opacity:.28 !important;
-      transform:rotate(-5deg) translateZ(0) !important;
+      display:none !important;
     }
   }
 
@@ -21418,19 +21414,16 @@ body{
 
     .chiem-decor--corner-left,
     .chiem-decor--corner-right{
-      width:clamp(186px, 55vw, 226px) !important;
-      top:9px !important;
-      opacity:.66 !important;
+      width:clamp(174px, 52vw, 212px) !important;
+      top:1px !important;
+      opacity:.64 !important;
     }
 
-    .chiem-decor--corner-left{left:-4px !important;}
-    .chiem-decor--corner-right{right:-4px !important;}
+    .chiem-decor--corner-left{left:-16px !important;}
+    .chiem-decor--corner-right{right:-16px !important;}
 
     .chiem-decor--lotus-right{
-      width:clamp(184px, 55vw, 230px) !important;
-      right:-92px !important;
-      bottom:44px !important;
-      opacity:.25 !important;
+      display:none !important;
     }
   }
 </style>
