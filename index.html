@@ -21897,6 +21897,72 @@ body{
   }
 </style>
 
+
+
+<style id="dta-why-thinh-mobile-content-visible-fix">
+  /* DTA FIX 2026-06-09:
+     Trên một số trình duyệt mobile, các phần tử trong section Vì sao dùng .dta-reveal
+     có thể chưa được JS gắn .is-visible nên bị giữ opacity:0, dẫn đến chỉ thấy nền.
+     Ép riêng section này hiển thị đầy đủ trên tablet/mobile, không ảnh hưởng desktop. */
+  @media (max-width: 940px){
+    html.dta-motion-js .why-thinh-section .dta-reveal,
+    html.dta-motion-js .why-thinh-section .dta-reveal:not(.is-visible),
+    html.dta-motion-js .why-thinh-section .dta-reveal.is-visible,
+    html.dta-motion-js .why-thinh-section .dta-reveal.is-visible.has-revealed{
+      opacity:1 !important;
+      visibility:visible !important;
+      transform:none !important;
+      filter:none !important;
+      animation:none !important;
+      will-change:auto !important;
+      clip-path:none !important;
+    }
+
+    .why-thinh-section .why-thinh-inner,
+    .why-thinh-section .why-thinh-heading,
+    .why-thinh-section .why-thinh-heading-row,
+    .why-thinh-section .why-thinh-title,
+    .why-thinh-section .why-thinh-title-divider,
+    .why-thinh-section .why-thinh-grid,
+    .why-thinh-section .why-thinh-item,
+    .why-thinh-section .why-thinh-icon-wrap,
+    .why-thinh-section .why-thinh-icon,
+    .why-thinh-section .why-thinh-item h3,
+    .why-thinh-section .why-thinh-item p{
+      opacity:1 !important;
+      visibility:visible !important;
+      filter:none !important;
+    }
+
+    .why-thinh-section .why-thinh-inner{
+      position:relative !important;
+      z-index:8 !important;
+    }
+
+    .why-thinh-section .why-thinh-grid{
+      position:relative !important;
+      z-index:9 !important;
+    }
+
+    .why-thinh-section .why-thinh-title,
+    .why-thinh-section .why-thinh-item h3,
+    .why-thinh-section .why-thinh-item p{
+      color:inherit;
+    }
+  }
+
+  @media (max-width: 680px){
+    .why-thinh-section .why-thinh-title{
+      color:#f6d982 !important;
+    }
+    .why-thinh-section .why-thinh-item h3{
+      color:#f5d77d !important;
+    }
+    .why-thinh-section .why-thinh-item p{
+      color:rgba(255,255,255,.92) !important;
+    }
+  }
+</style>
 </head>
 <body class="dta-motion-reduced dta-intro-started dta-intro-complete">
 <main class="dta-page">
