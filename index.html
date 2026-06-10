@@ -24065,6 +24065,279 @@ body{
       filter:none !important;
     }
 </style>
+
+<style id="dta-process-mobile-restore-index-old-v8">
+/* Restore the process cards' mobile behavior from index_old.html.
+   The later V7 safe-frame block is good on desktop, but its absolute/grid
+   content placement makes the 5-card process area cramped on phones. */
+@media (max-width:620px){
+  #quy-trinh-thinh-tuong.process-section{
+    overflow:hidden !important;
+    padding-top:42px !important;
+    padding-bottom:38px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-inner{
+    width:min(100% - 24px, 460px) !important;
+    max-width:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading{
+    margin-bottom:16px !important;
+    padding-top:6px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading-row{
+    gap:7px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading-ornament{
+    width:30px !important;
+    flex:0 0 auto !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading h2{
+    font-size:clamp(27px, 7.35vw, 36px) !important;
+    line-height:1.16 !important;
+    letter-spacing:.02em !important;
+    max-width:calc(100vw - 88px) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading-divider{
+    width:min(270px, 68vw) !important;
+    margin-top:8px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading::after{
+    content:"Vuốt ngang để xem 5 bước" !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    min-height:28px !important;
+    margin-top:11px !important;
+    padding:5px 13px 6px !important;
+    border:1px solid rgba(181,121,45,.34) !important;
+    border-radius:999px !important;
+    color:#7b4d17 !important;
+    background:rgba(255,249,235,.58) !important;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.42), 0 8px 20px rgba(112,71,29,.06) !important;
+    font-family:var(--process-sans) !important;
+    font-size:13px !important;
+    line-height:1 !important;
+    letter-spacing:.02em !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-cards{
+    display:flex !important;
+    grid-template-columns:none !important;
+    align-items:stretch !important;
+    justify-content:flex-start !important;
+    justify-items:initial !important;
+    gap:16px !important;
+    width:100vw !important;
+    max-width:none !important;
+    margin-left:50% !important;
+    margin-right:0 !important;
+    padding:4px max(14px, calc((100vw - 460px) / 2 + 14px)) 10px !important;
+    transform:translateX(-50%) !important;
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+    overscroll-behavior-x:contain !important;
+    -webkit-overflow-scrolling:touch !important;
+    scroll-snap-type:x mandatory !important;
+    scroll-padding-inline:max(14px, calc((100vw - 460px) / 2 + 14px)) !important;
+    scrollbar-width:thin !important;
+    scrollbar-color:rgba(178,112,34,.58) rgba(178,112,34,.12) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card{
+    position:relative !important;
+    flex:0 0 clamp(266px, 82vw, 340px) !important;
+    width:clamp(266px, 82vw, 340px) !important;
+    height:auto !important;
+    min-height:0 !important;
+    max-height:none !important;
+    aspect-ratio:3 / 5 !important;
+    padding:
+      clamp(34px, 9.2vw, 44px)
+      clamp(21px, 6vw, 26px)
+      clamp(102px, 26vw, 124px) !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    text-align:center !important;
+    overflow:hidden !important;
+    contain:none !important;
+    scroll-snap-align:center !important;
+    scroll-snap-stop:always !important;
+    transform:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:hover{
+    transform:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-frame{
+    content:url("assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi_mobile.png") !important;
+    position:absolute !important;
+    inset:0 !important;
+    z-index:0 !important;
+    width:100% !important;
+    height:100% !important;
+    max-width:none !important;
+    max-height:none !important;
+    aspect-ratio:3 / 5 !important;
+    object-fit:contain !important;
+    object-position:center center !important;
+    pointer-events:none !important;
+    transform:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-content{
+    position:relative !important;
+    z-index:2 !important;
+    inset:auto !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    width:100% !important;
+    height:100% !important;
+    min-height:0 !important;
+    max-height:none !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    overflow:visible !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon{
+    width:clamp(132px, 41vw, 160px) !important;
+    height:clamp(132px, 41vw, 160px) !important;
+    aspect-ratio:1 / 1 !important;
+    margin:clamp(-4px, -1vw, -2px) auto 2px !important;
+    display:grid !important;
+    place-items:center !important;
+    flex:0 0 auto !important;
+    position:relative !important;
+    z-index:3 !important;
+    transform:none !important;
+    filter:drop-shadow(0 10px 18px rgba(103,58,13,.18)) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon::before{
+    content:"" !important;
+    position:absolute !important;
+    inset:12% !important;
+    z-index:-1 !important;
+    border-radius:50% !important;
+    background:radial-gradient(circle, rgba(255,238,177,.42) 0%, rgba(222,165,57,.20) 42%, rgba(222,165,57,0) 72%) !important;
+    filter:blur(8px) !important;
+    opacity:.86 !important;
+    pointer-events:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon img{
+    width:100% !important;
+    height:100% !important;
+    max-width:none !important;
+    max-height:none !important;
+    object-fit:contain !important;
+    transform:none !important;
+    filter:
+      drop-shadow(0 4px 7px rgba(121,72,20,.16))
+      drop-shadow(0 0 10px rgba(224,172,74,.14)) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:hover .process-card-icon,
+  #quy-trinh-thinh-tuong .process-card:hover .process-card-icon img{
+    transform:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-mini-mark{
+    width:20px !important;
+    height:20px !important;
+    margin:0 auto 7px !important;
+    flex:0 0 auto !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card h3{
+    margin:0 auto 7px !important;
+    max-width:238px !important;
+    min-height:0 !important;
+    font-size:clamp(18px, 5vw, 22.5px) !important;
+    line-height:1.17 !important;
+    letter-spacing:.008em !important;
+    flex:0 0 auto !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card p{
+    max-width:230px !important;
+    margin:0 auto !important;
+    font-size:clamp(13.5px, 3.85vw, 15.5px) !important;
+    line-height:1.36 !important;
+    display:-webkit-box !important;
+    -webkit-line-clamp:3 !important;
+    -webkit-box-orient:vertical !important;
+    overflow:hidden !important;
+  }
+}
+
+@media (max-width:390px){
+  #quy-trinh-thinh-tuong.process-section{
+    padding-top:38px !important;
+    padding-bottom:34px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-inner{
+    width:min(100% - 20px, 360px) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading-ornament{
+    width:25px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading h2{
+    font-size:clamp(25px, 7.1vw, 32px) !important;
+    max-width:calc(100vw - 76px) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card{
+    flex-basis:84vw !important;
+    width:84vw !important;
+    padding:
+      34px
+      18px
+      106px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon{
+    width:130px !important;
+    height:130px !important;
+    margin-top:-3px !important;
+    margin-bottom:2px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-mini-mark{
+    width:18px !important;
+    height:18px !important;
+    margin-bottom:6px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card h3{
+    font-size:19.2px !important;
+    line-height:1.15 !important;
+    margin-bottom:6px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card p{
+    max-width:210px !important;
+    font-size:13.2px !important;
+    line-height:1.33 !important;
+  }
+}
+</style>
 <section class="process-section" id="quy-trinh-thinh-tuong" aria-labelledby="process-title">
 
   <div class="process-inner">
