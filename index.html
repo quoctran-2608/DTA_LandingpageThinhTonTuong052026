@@ -8144,13 +8144,19 @@ body{
     }
     .project-heading h2{
       margin:0;
-      color:#5c3c22;
+      color:#3f2816;
       font-family:var(--serif);
       font-weight:700;
       font-size:clamp(38px, 3.1vw, 62px);
       line-height:1.04;
       letter-spacing:.045em;
-      text-shadow:0 1px 0 rgba(255,255,255,.48), 0 10px 26px rgba(110,67,24,.08);
+      background:linear-gradient(180deg, #6f4a28 0%, #3c2615 56%, #8a5b29 100%);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      -webkit-text-fill-color:transparent;
+      filter:drop-shadow(0 1px 0 rgba(255,255,255,.58)) drop-shadow(0 8px 18px rgba(88,50,18,.18));
+      text-shadow:none;
     }
     .project-heading-diamond{
       position:absolute;
@@ -21007,12 +21013,18 @@ body{
 
 </style>
 <script>
+    /* DTA LOCAL TEST MODE
+       Tạm thời vô hiệu hoá Cloudflare Turnstile/API submit khi chạy local.
+       Khi đưa lên production: đổi DTA_LOCAL_MODE=false và khôi phục script Turnstile bên dưới. */
+    window.DTA_LOCAL_MODE = true;
     window.dtaTurnstileReady = function(){
       window.dtaTurnstileLoaded = true;
-      if(typeof window.dtaRenderTurnstile === 'function') window.dtaRenderTurnstile();
+      if(!window.DTA_LOCAL_MODE && typeof window.dtaRenderTurnstile === 'function') window.dtaRenderTurnstile();
     };
   </script>
-<script async="" defer="" src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&amp;onload=dtaTurnstileReady"></script>
+<!-- LOCAL TEST: Cloudflare Turnstile tạm tắt để không báo lỗi local.
+<script async defer src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=dtaTurnstileReady"></script>
+-->
 <style data-dta-turtle-scroll-style="DTA_TURTLE_SCROLL_54X_V9_2026_05_23">html, body { scroll-behavior: auto !important; }
 
     /* DTA UPDATE 2026-06-07: Chiêm ngưỡng gallery - ảnh phủ kín khung ở trạng thái thường, hover zoom tinh tế hơn */
@@ -22044,7 +22056,105 @@ body{
     }
   }
 </style>
-<style data-dta-turtle-scroll-style="DTA_TURTLE_SCROLL_54X_V9_2026_05_23">html, body { scroll-behavior: auto !important; }</style><style data-dta-turtle-scroll-style="DTA_TURTLE_SCROLL_54X_V9_2026_05_23">html, body { scroll-behavior: auto !important; }</style></head>
+<style data-dta-turtle-scroll-style="DTA_TURTLE_SCROLL_54X_V9_2026_05_23">html, body { scroll-behavior: auto !important; }</style><style data-dta-turtle-scroll-style="DTA_TURTLE_SCROLL_54X_V9_2026_05_23">html, body { scroll-behavior: auto !important; }</style>
+<style id="dta-local-and-heading-polish-20260610">
+  /* LOCAL TEST: ẩn Turnstile để không phát sinh lỗi Cloudflare khi chạy file/local server. */
+  .turnstile-field{
+    display:none !important;
+    min-height:0 !important;
+    margin:0 !important;
+  }
+
+  /* DTA UPDATE: tiêu đề dự án chuyển sang chữ thường/sentence case, mềm và sang hơn. */
+  .project-heading h2{
+    text-transform:none !important;
+    letter-spacing:.018em !important;
+    font-weight:700 !important;
+    line-height:1.08 !important;
+    max-width:min(980px, 88vw) !important;
+    background:linear-gradient(180deg, #6d4524 0%, #3f2a18 72%, #7f552b 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent !important;
+  }
+
+  /* DTA UPDATE: cân bằng lại cụm CTA cuối trang bằng phân cấp chữ hoa/thường và màu sắc. */
+  .contact-title-balanced{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    justify-content:center !important;
+    gap:clamp(6px, .55vw, 10px) !important;
+    text-transform:none !important;
+    letter-spacing:0 !important;
+    line-height:1.06 !important;
+  }
+  .contact-title-balanced .contact-title-soft{
+    display:block;
+    color:#f7e8c7;
+    font-size:.58em;
+    line-height:1.18;
+    font-family:var(--sans);
+    font-weight:400;
+    letter-spacing:.035em;
+    text-shadow:0 7px 20px rgba(0,0,0,.5);
+  }
+  .contact-title-balanced .contact-title-strong{
+    display:block;
+    color:#fff6df;
+    font-family:var(--serif);
+    font-weight:700;
+    font-size:.92em;
+    line-height:1.05;
+    letter-spacing:.018em;
+    text-shadow:0 10px 30px rgba(0,0,0,.62), 0 0 22px rgba(217,167,65,.18);
+  }
+  .contact-subtitle-balanced{
+    position:relative;
+    margin-top:clamp(8px, .8vw, 14px) !important;
+    padding-left:clamp(18px, 1.4vw, 26px) !important;
+    color:#f2dcae !important;
+    font-size:clamp(17px, 1.18vw, 21px) !important;
+    letter-spacing:.012em !important;
+    line-height:1.58 !important;
+  }
+  .contact-subtitle-balanced::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:.78em;
+    width:clamp(10px, .8vw, 14px);
+    height:1px;
+    background:linear-gradient(90deg, #f0c66b, rgba(240,198,107,0));
+    box-shadow:0 0 10px rgba(240,198,107,.35);
+  }
+
+  @media (max-width:680px){
+    .project-heading h2{
+      letter-spacing:.008em !important;
+      line-height:1.13 !important;
+    }
+    .contact-title-balanced{
+      min-height:118px !important;
+      padding-left:84px !important;
+      gap:7px !important;
+    }
+    .contact-title-balanced .contact-title-soft{
+      font-size:.54em !important;
+      line-height:1.2 !important;
+      letter-spacing:.02em !important;
+    }
+    .contact-title-balanced .contact-title-strong{
+      font-size:.86em !important;
+      line-height:1.08 !important;
+    }
+    .contact-subtitle-balanced{
+      padding-left:18px !important;
+      font-size:16px !important;
+    }
+  }
+</style>
+</head>
 <body class="dta-motion-reduced dta-intro-started dta-intro-complete">
 <main class="dta-page">
 <section aria-label="Tôn tượng Phật Bổn Sư" class="hero-section">
@@ -23594,13 +23704,13 @@ body{
         <header class="project-heading">
           <div class="project-heading-core">
             <span class="project-heading-diamond is-left" aria-hidden="true"></span>
-            <h2 id="project-title">Dự án tiêu biểu</h2>
+            <h2 id="project-title">Những tôn tượng an vị từ tâm nguyện gia chủ</h2>
             <span class="project-heading-diamond is-right" aria-hidden="true"></span>
             <span class="project-heading-lotus" aria-hidden="true"></span>
           </div>
         </header>
 
-        <div class="project-list" aria-label="Các dự án tiêu biểu của Diệu Tướng Am">
+        <div class="project-list" aria-label="Những tôn tượng an vị từ tâm nguyện gia chủ của Diệu Tướng Am">
           <article class="project-card">
             <img src="assets/images/projects/project-that-phat-duoc-su.webp" alt="Không gian tôn tượng Thất Phật Dược Sư trang nghiêm" loading="lazy" />
             <a class="project-label" href="https://dieutuongam.com/tin-tuc/du-an/hanh-trinh-kien-tao-va-ho-tong-bo-ton-tuong-that-phat-duoc-su-ve-chua-sac-tu-khai-doan.html" target="_blank" rel="noopener noreferrer"><span class="project-label-text">Tôn tượng Thất Phật<br>Dược Sư</span></a>
@@ -23646,32 +23756,32 @@ body{
       <div class="contact-footer-inner">
         <div class="contact-cta">
           <div class="contact-copy">
-            <h2 id="contact-footer-title">Bắt đầu từ một tâm nguyện an lành</h2>
-            <p>Diệu Tướng Am sẵn sàng lắng nghe và đồng hành cùng gia chủ trên hành trình kiến tạo không gian thờ tự trang nghiêm, an lạc và mang đậm dấu ấn riêng.</p>
+            <h2 id="contact-footer-title" class="contact-title-balanced">
+              <span class="contact-title-soft">Tôn tượng không chỉ hiện diện</span>
+              <span class="contact-title-strong">trong không gian thờ</span>
+            </h2>
+            <p class="contact-subtitle-balanced">Mà hiện diện như một nguồn năng lượng bình an trong đời sống</p>
 
             <div class="contact-benefits" aria-label="Lợi ích khi nhận tư vấn từ Diệu Tướng Am">
               <article class="contact-benefit-card">
                 <img src="assets/icons/footer/icon-consult.png" alt="" loading="lazy" />
-                <h3>Tư vấn miễn phí</h3>
-                <p>Tận tâm - Chuyên sâu</p>
+                <h3>Tư vấn tận tâm 24/7</h3>
               </article>
 
               <article class="contact-benefit-card">
                 <img src="assets/icons/footer/icon-survey.png" alt="" loading="lazy" />
-                <h3>Khảo sát tận nơi</h3>
-                <p>Đúng nhu cầu - Đúng thực tế</p>
+                <h3>Bảo hành trọn đời</h3>
               </article>
 
               <article class="contact-benefit-card">
                 <img src="assets/icons/footer/icon-solution.png" alt="" loading="lazy" />
-                <h3>Giải pháp tối ưu</h3>
-                <p>Chất liệu chọn lọc - Chuẩn nghi thức</p>
+                <h3>Giao hàng toàn quốc</h3>
               </article>
             </div>
           </div>
 
           <form class="consult-form dta-consult-form" id="tu-van" action="/api/contact" method="post" novalidate data-ga-form-name="consultation_form">
-            <h2>Gửi tâm nguyện – Nhận tư vấn</h2>
+            <h2>HÃY ĐỂ DIỆU TƯỚNG AM LẮNG NGHE TÂM NGUYỆN CỦA QUÝ VỊ</h2>
 
             <div class="form-grid">
               <label class="form-field">
@@ -23864,7 +23974,7 @@ body{
 <div class="consult-modal-panel" role="document">
 <button aria-label="Đóng form tư vấn" class="consult-modal-close" data-consult-modal-close="" type="button">×</button>
 <div class="consult-modal-kicker">Bắt đầu hành trình kiến tạo</div>
-<h2 class="consult-modal-title" id="consult-modal-title">Gửi tâm nguyện – Nhận tư vấn</h2>
+<h2 class="consult-modal-title" id="consult-modal-title">HÃY ĐỂ DIỆU TƯỚNG AM LẮNG NGHE TÂM NGUYỆN CỦA QUÝ VỊ</h2>
 <p class="consult-modal-note">Chia sẻ mong muốn của bạn, Diệu Tướng Am sẽ lắng nghe và phản hồi với định hướng phù hợp nhất.</p>
 <div class="consult-modal-form-slot" data-consult-modal-form=""></div>
 </div>
@@ -24326,6 +24436,7 @@ body{
     var turnstileWidgetId = null;
 
     function renderTurnstile(force){
+      if(window.DTA_LOCAL_MODE) return true;
       var el = form.querySelector('.cf-turnstile');
       if(!el || !el.getAttribute('data-sitekey')) return false;
       if(!window.turnstile || typeof window.turnstile.render !== 'function') return false;
@@ -24359,6 +24470,7 @@ body{
     }
 
     function resetTurnstile(){
+      if(window.DTA_LOCAL_MODE) return;
       if(window.turnstile && turnstileWidgetId !== null && typeof window.turnstile.reset === 'function'){
         try{ window.turnstile.reset(turnstileWidgetId); }catch(error){}
       }
@@ -24528,7 +24640,7 @@ body{
       var formData = new FormData(form);
       var turnstileToken = formData.get('cf-turnstile-response');
 
-      if(!turnstileToken){
+      if(!window.DTA_LOCAL_MODE && !turnstileToken){
         setFeedback('Vui lòng hoàn tất xác minh bảo mật trước khi gửi.', 'error');
         return;
       }
@@ -24542,7 +24654,21 @@ body{
         submitButton.disabled = true;
         submitButton.setAttribute('aria-busy', 'true');
       }
-      setFeedback('Đang gửi thông tin, vui lòng chờ trong giây lát...', 'success');
+      setFeedback(window.DTA_LOCAL_MODE ? 'Đang chạy thử local: form đã được kiểm tra hợp lệ, không gửi lên máy chủ.' : 'Đang gửi thông tin, vui lòng chờ trong giây lát...', 'success');
+
+      if(window.DTA_LOCAL_MODE){
+        window.setTimeout(function(){
+          setFeedback('Chế độ local: đã mô phỏng gửi thành công. Khi deploy thật, hãy tắt DTA_LOCAL_MODE để gửi về Cloudflare/API.', 'success');
+          form.reset();
+          if(newProvinceInput) newProvinceInput.value = '';
+          fields.forEach(function(field){ setFieldState(field, ''); });
+          if(submitButton){
+            submitButton.disabled = false;
+            submitButton.removeAttribute('aria-busy');
+          }
+        }, 250);
+        return;
+      }
 
       fetch(action, {
         method:'POST',
