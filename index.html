@@ -22164,6 +22164,91 @@ body{
     }
   }
 </style>
+
+
+<style id="dta-why-thinh-desktop-content-visible-fix-20260610">
+  /* DTA FIX 2026-06-10:
+     Section “Vì sao nên thỉnh tôn tượng tại Diệu Tướng Am?” từng phụ thuộc hoàn toàn
+     vào IntersectionObserver + class .is-visible của hiệu ứng .dta-reveal. Nếu trình duyệt,
+     extension, lazy rendering hoặc resize lúc tải trang làm observer không kích hoạt, các phần tử
+     bị giữ opacity:0 nên chỉ còn thấy nền gỗ. Khóa riêng section này luôn hiển thị ở mọi màn hình. */
+  html.dta-motion-js .why-thinh-section .dta-reveal,
+  html.dta-motion-js .why-thinh-section .dta-reveal:not(.is-visible),
+  html.dta-motion-js .why-thinh-section .dta-reveal.is-visible,
+  html.dta-motion-js .why-thinh-section .dta-reveal.is-visible.has-revealed{
+    opacity:1 !important;
+    visibility:visible !important;
+    animation:none !important;
+    will-change:auto !important;
+    clip-path:none !important;
+  }
+
+  html.dta-motion-js .why-thinh-section .dta-reveal:not(.why-thinh-lotus){
+    transform:none !important;
+    filter:none !important;
+  }
+
+  .why-thinh-section .why-thinh-inner,
+  .why-thinh-section .why-thinh-heading,
+  .why-thinh-section .why-thinh-heading-row,
+  .why-thinh-section .why-thinh-title,
+  .why-thinh-section .why-thinh-title-divider,
+  .why-thinh-section .why-thinh-grid,
+  .why-thinh-section .why-thinh-item,
+  .why-thinh-section .why-thinh-icon-wrap,
+  .why-thinh-section .why-thinh-icon,
+  .why-thinh-section .why-thinh-item h3,
+  .why-thinh-section .why-thinh-item p{
+    opacity:1 !important;
+    visibility:visible !important;
+  }
+
+  .why-thinh-section .why-thinh-inner{
+    position:relative !important;
+    z-index:8 !important;
+  }
+
+  .why-thinh-section .why-thinh-heading{
+    position:relative !important;
+    z-index:9 !important;
+  }
+
+  .why-thinh-section .why-thinh-grid{
+    position:relative !important;
+    z-index:10 !important;
+  }
+
+  .why-thinh-section .why-thinh-title{
+    color:#f6d982 !important;
+  }
+
+  .why-thinh-section .why-thinh-item h3{
+    color:#f5d77d !important;
+  }
+
+  .why-thinh-section .why-thinh-item p{
+    color:rgba(255,255,255,.90) !important;
+  }
+
+  .why-thinh-section .why-thinh-lotus--left{opacity:.90 !important;}
+  .why-thinh-section .why-thinh-lotus--right{opacity:.90 !important;}
+
+  @media (max-width:940px){
+    .why-thinh-section .why-thinh-lotus--left{opacity:.28 !important;}
+    .why-thinh-section .why-thinh-lotus--right{opacity:.25 !important;}
+  }
+
+  @media (max-width:680px){
+    .why-thinh-section .why-thinh-lotus--left{opacity:.34 !important;}
+    .why-thinh-section .why-thinh-lotus--right{opacity:.27 !important;}
+  }
+
+  @media (max-width:420px){
+    .why-thinh-section .why-thinh-lotus--left{opacity:.33 !important;}
+    .why-thinh-section .why-thinh-lotus--right{opacity:.25 !important;}
+  }
+</style>
+
 </head>
 <body class="dta-motion-reduced dta-intro-started dta-intro-complete">
 <main class="dta-page">
@@ -22430,50 +22515,50 @@ body{
 
 <!-- === Section: Vì sao nên thỉnh tôn tượng tại Diệu Tướng Am === -->
 <section aria-label="Vì sao nên thỉnh tôn tượng tại Diệu Tướng Am" class="why-thinh-section" id="vi-sao-thinh-ton-tuong">
-<img alt="" aria-hidden="true" class="why-thinh-lotus why-thinh-lotus--left dta-reveal" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/lotus-left-gold-line.png" style="--reveal-delay: 80ms;">
-<img alt="" aria-hidden="true" class="why-thinh-lotus why-thinh-lotus--right dta-reveal" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/lotus-right-gold-line.png" style="--reveal-delay: 140ms;">
+<img alt="" aria-hidden="true" class="why-thinh-lotus why-thinh-lotus--left dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/lotus-left-gold-line.png" style="--reveal-delay: 80ms;">
+<img alt="" aria-hidden="true" class="why-thinh-lotus why-thinh-lotus--right dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/lotus-right-gold-line.png" style="--reveal-delay: 140ms;">
 <div class="why-thinh-inner">
 <header class="why-thinh-heading">
 <div class="why-thinh-heading-row">
-<img alt="" aria-hidden="true" class="why-thinh-title-ornament dta-reveal" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-ornament-left.png" style="--reveal-delay: 100ms;">
-<h2 class="why-thinh-title dta-reveal" data-reveal="up" style="--reveal-delay: 180ms;">
+<img alt="" aria-hidden="true" class="why-thinh-title-ornament dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-ornament-left.png" style="--reveal-delay: 100ms;">
+<h2 class="why-thinh-title dta-reveal is-visible has-revealed" data-reveal="up" style="--reveal-delay: 180ms;">
 <span>Vì sao nên thỉnh tôn tượng</span>
 <span>tại Diệu Tướng Am?</span>
 </h2>
-<img alt="" aria-hidden="true" class="why-thinh-title-ornament dta-reveal" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-ornament-right.png" style="--reveal-delay: 100ms;">
+<img alt="" aria-hidden="true" class="why-thinh-title-ornament dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-ornament-right.png" style="--reveal-delay: 100ms;">
 </div>
-<img alt="" aria-hidden="true" class="why-thinh-title-divider dta-reveal" data-reveal="up" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-divider-lotus-line.png" style="--reveal-delay: 280ms;">
+<img alt="" aria-hidden="true" class="why-thinh-title-divider dta-reveal is-visible has-revealed" data-reveal="up" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-divider-lotus-line.png" style="--reveal-delay: 280ms;">
 </header>
 <div aria-label="Lý do nên thỉnh tôn tượng tại Diệu Tướng Am" class="why-thinh-grid">
-<article class="why-thinh-item dta-reveal" data-reveal="rise" style="--reveal-delay: 140ms;">
+<article class="why-thinh-item dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 140ms;">
 <div class="why-thinh-icon-wrap">
 <img alt="" aria-hidden="true" class="why-thinh-icon" loading="lazy" src="assets/icons/why-thinh-ton-tuong/icon-dieu-tuong-trang-nghiem.png">
 </div>
 <h3>Diệu tướng<br>trang nghiêm</h3>
 <p>Theo kinh điển và nghệ thuật Phật giáo</p>
 </article>
-<article class="why-thinh-item dta-reveal" data-reveal="rise" style="--reveal-delay: 230ms;">
+<article class="why-thinh-item dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 230ms;">
 <div class="why-thinh-icon-wrap">
 <img alt="" aria-hidden="true" class="why-thinh-icon" loading="lazy" src="assets/icons/why-thinh-ton-tuong/icon-chat-lieu-quy-hiem.png">
 </div>
 <h3>Chất liệu<br>quý hiếm</h3>
 <p>Đồng tím, Hán bạch ngọc, Ngọc Iran</p>
 </article>
-<article class="why-thinh-item dta-reveal" data-reveal="rise" style="--reveal-delay: 320ms;">
+<article class="why-thinh-item dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 320ms;">
 <div class="why-thinh-icon-wrap">
 <img alt="" aria-hidden="true" class="why-thinh-icon" loading="lazy" src="assets/icons/why-thinh-ton-tuong/icon-che-tac-tinh-xao.png">
 </div>
 <h3>Chế tác<br>tinh xảo</h3>
 <p>Tỉ mỉ trong từng đường nét</p>
 </article>
-<article class="why-thinh-item dta-reveal" data-reveal="rise" style="--reveal-delay: 410ms;">
+<article class="why-thinh-item dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 410ms;">
 <div class="why-thinh-icon-wrap">
 <img alt="" aria-hidden="true" class="why-thinh-icon" loading="lazy" src="assets/icons/why-thinh-ton-tuong/icon-nghi-thuc-an-vi.png">
 </div>
 <h3>Nghi thức<br>an vị</h3>
 <p>Trang nghiêm, chuẩn mực</p>
 </article>
-<article class="why-thinh-item dta-reveal" data-reveal="rise" style="--reveal-delay: 500ms;">
+<article class="why-thinh-item dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 500ms;">
 <div class="why-thinh-icon-wrap">
 <img alt="" aria-hidden="true" class="why-thinh-icon" loading="lazy" src="assets/icons/why-thinh-ton-tuong/icon-cham-soc-bao-hanh.png">
 </div>
@@ -25796,4 +25881,15 @@ body{
     });
   })();
 </script>
+
+<script id="dta-why-thinh-reveal-failsafe-20260610">
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('.why-thinh-section .dta-reveal').forEach(function(el){
+      el.classList.add('is-visible', 'has-revealed');
+      el.style.opacity = '1';
+      el.style.visibility = 'visible';
+    });
+  });
+</script>
+
 </body></html>
