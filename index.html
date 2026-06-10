@@ -23129,6 +23129,95 @@ body{
 /* === DTA MOBILE ICON SAFE FIX END === */
 </style>
 
+
+<style id="dta-process-mobile-frame-ratio-fix-v4">
+/* === DTA PROCESS MOBILE FRAME RATIO FIX V4
+   Sửa lỗi frame-quy-trinh-thinh-tuong-an-vi.png bị ép dọc nhẹ trên mobile.
+   Frame gốc tỷ lệ 486x810 = 3:5, vì vậy card mobile cũng phải giữ aspect-ratio 3/5.
+   Block này đặt cuối head để override các CSS/inline style cũ.
+=== */
+@media (max-width:620px){
+  #quy-trinh-thinh-tuong .process-card{
+    /* Giữ đúng tỷ lệ frame 3:5, không để height clamp/inline làm méo frame */
+    flex:0 0 clamp(252px, 78vw, 330px) !important;
+    width:clamp(252px, 78vw, 330px) !important;
+    height:auto !important;
+    aspect-ratio:3 / 5 !important;
+    min-height:0 !important;
+    max-height:none !important;
+
+    /* Padding cân lại nội dung sau khi trả đúng tỷ lệ frame */
+    padding:clamp(42px, 11vw, 54px) 20px clamp(44px, 12vw, 54px) !important;
+    overflow:hidden !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-frame{
+    /* Không dùng object-fit:fill vì sẽ kéo méo hoạ tiết frame */
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    max-width:none !important;
+    max-height:none !important;
+    aspect-ratio:3 / 5 !important;
+    object-fit:contain !important;
+    object-position:center center !important;
+    transform:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-content{
+    position:relative !important;
+    z-index:2 !important;
+    height:100% !important;
+    min-height:0 !important;
+    justify-content:flex-start !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon{
+    width:clamp(92px, 29vw, 118px) !important;
+    height:clamp(92px, 29vw, 118px) !important;
+    margin:0 auto 8px !important;
+    flex:0 0 auto !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:contain !important;
+    transform:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card h3{
+    margin:0 auto 8px !important;
+    font-size:clamp(18px, 5.1vw, 23px) !important;
+    line-height:1.2 !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card p{
+    max-width:226px !important;
+    font-size:clamp(14px, 4.05vw, 16px) !important;
+    line-height:1.42 !important;
+  }
+}
+
+@media (max-width:390px){
+  #quy-trinh-thinh-tuong .process-card{
+    flex-basis:82vw !important;
+    width:82vw !important;
+    height:auto !important;
+    aspect-ratio:3 / 5 !important;
+    padding:42px 18px 46px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon{
+    width:102px !important;
+    height:102px !important;
+  }
+}
+/* === DTA PROCESS MOBILE FRAME RATIO FIX END === */
+</style>
+
+
 <section class="process-section" id="quy-trinh-thinh-tuong" aria-labelledby="process-title">
 
   <div class="process-inner">
