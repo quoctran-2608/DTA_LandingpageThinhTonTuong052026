@@ -22164,91 +22164,6 @@ body{
     }
   }
 </style>
-
-
-<style id="dta-why-thinh-desktop-content-visible-fix-20260610">
-  /* DTA FIX 2026-06-10:
-     Section “Vì sao nên thỉnh tôn tượng tại Diệu Tướng Am?” từng phụ thuộc hoàn toàn
-     vào IntersectionObserver + class .is-visible của hiệu ứng .dta-reveal. Nếu trình duyệt,
-     extension, lazy rendering hoặc resize lúc tải trang làm observer không kích hoạt, các phần tử
-     bị giữ opacity:0 nên chỉ còn thấy nền gỗ. Khóa riêng section này luôn hiển thị ở mọi màn hình. */
-  html.dta-motion-js .why-thinh-section .dta-reveal,
-  html.dta-motion-js .why-thinh-section .dta-reveal:not(.is-visible),
-  html.dta-motion-js .why-thinh-section .dta-reveal.is-visible,
-  html.dta-motion-js .why-thinh-section .dta-reveal.is-visible.has-revealed{
-    opacity:1 !important;
-    visibility:visible !important;
-    animation:none !important;
-    will-change:auto !important;
-    clip-path:none !important;
-  }
-
-  html.dta-motion-js .why-thinh-section .dta-reveal:not(.why-thinh-lotus){
-    transform:none !important;
-    filter:none !important;
-  }
-
-  .why-thinh-section .why-thinh-inner,
-  .why-thinh-section .why-thinh-heading,
-  .why-thinh-section .why-thinh-heading-row,
-  .why-thinh-section .why-thinh-title,
-  .why-thinh-section .why-thinh-title-divider,
-  .why-thinh-section .why-thinh-grid,
-  .why-thinh-section .why-thinh-item,
-  .why-thinh-section .why-thinh-icon-wrap,
-  .why-thinh-section .why-thinh-icon,
-  .why-thinh-section .why-thinh-item h3,
-  .why-thinh-section .why-thinh-item p{
-    opacity:1 !important;
-    visibility:visible !important;
-  }
-
-  .why-thinh-section .why-thinh-inner{
-    position:relative !important;
-    z-index:8 !important;
-  }
-
-  .why-thinh-section .why-thinh-heading{
-    position:relative !important;
-    z-index:9 !important;
-  }
-
-  .why-thinh-section .why-thinh-grid{
-    position:relative !important;
-    z-index:10 !important;
-  }
-
-  .why-thinh-section .why-thinh-title{
-    color:#f6d982 !important;
-  }
-
-  .why-thinh-section .why-thinh-item h3{
-    color:#f5d77d !important;
-  }
-
-  .why-thinh-section .why-thinh-item p{
-    color:rgba(255,255,255,.90) !important;
-  }
-
-  .why-thinh-section .why-thinh-lotus--left{opacity:.90 !important;}
-  .why-thinh-section .why-thinh-lotus--right{opacity:.90 !important;}
-
-  @media (max-width:940px){
-    .why-thinh-section .why-thinh-lotus--left{opacity:.28 !important;}
-    .why-thinh-section .why-thinh-lotus--right{opacity:.25 !important;}
-  }
-
-  @media (max-width:680px){
-    .why-thinh-section .why-thinh-lotus--left{opacity:.34 !important;}
-    .why-thinh-section .why-thinh-lotus--right{opacity:.27 !important;}
-  }
-
-  @media (max-width:420px){
-    .why-thinh-section .why-thinh-lotus--left{opacity:.33 !important;}
-    .why-thinh-section .why-thinh-lotus--right{opacity:.25 !important;}
-  }
-</style>
-
 </head>
 <body class="dta-motion-reduced dta-intro-started dta-intro-complete">
 <main class="dta-page">
@@ -22515,50 +22430,50 @@ body{
 
 <!-- === Section: Vì sao nên thỉnh tôn tượng tại Diệu Tướng Am === -->
 <section aria-label="Vì sao nên thỉnh tôn tượng tại Diệu Tướng Am" class="why-thinh-section" id="vi-sao-thinh-ton-tuong">
-<img alt="" aria-hidden="true" class="why-thinh-lotus why-thinh-lotus--left dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/lotus-left-gold-line.png" style="--reveal-delay: 80ms;">
-<img alt="" aria-hidden="true" class="why-thinh-lotus why-thinh-lotus--right dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/lotus-right-gold-line.png" style="--reveal-delay: 140ms;">
+<img alt="" aria-hidden="true" class="why-thinh-lotus why-thinh-lotus--left dta-reveal" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/lotus-left-gold-line.png" style="--reveal-delay: 80ms;">
+<img alt="" aria-hidden="true" class="why-thinh-lotus why-thinh-lotus--right dta-reveal" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/lotus-right-gold-line.png" style="--reveal-delay: 140ms;">
 <div class="why-thinh-inner">
 <header class="why-thinh-heading">
 <div class="why-thinh-heading-row">
-<img alt="" aria-hidden="true" class="why-thinh-title-ornament dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-ornament-left.png" style="--reveal-delay: 100ms;">
-<h2 class="why-thinh-title dta-reveal is-visible has-revealed" data-reveal="up" style="--reveal-delay: 180ms;">
+<img alt="" aria-hidden="true" class="why-thinh-title-ornament dta-reveal" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-ornament-left.png" style="--reveal-delay: 100ms;">
+<h2 class="why-thinh-title dta-reveal" data-reveal="up" style="--reveal-delay: 180ms;">
 <span>Vì sao nên thỉnh tôn tượng</span>
 <span>tại Diệu Tướng Am?</span>
 </h2>
-<img alt="" aria-hidden="true" class="why-thinh-title-ornament dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-ornament-right.png" style="--reveal-delay: 100ms;">
+<img alt="" aria-hidden="true" class="why-thinh-title-ornament dta-reveal" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-ornament-right.png" style="--reveal-delay: 100ms;">
 </div>
-<img alt="" aria-hidden="true" class="why-thinh-title-divider dta-reveal is-visible has-revealed" data-reveal="up" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-divider-lotus-line.png" style="--reveal-delay: 280ms;">
+<img alt="" aria-hidden="true" class="why-thinh-title-divider dta-reveal" data-reveal="up" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/title-divider-lotus-line.png" style="--reveal-delay: 280ms;">
 </header>
 <div aria-label="Lý do nên thỉnh tôn tượng tại Diệu Tướng Am" class="why-thinh-grid">
-<article class="why-thinh-item dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 140ms;">
+<article class="why-thinh-item dta-reveal" data-reveal="rise" style="--reveal-delay: 140ms;">
 <div class="why-thinh-icon-wrap">
 <img alt="" aria-hidden="true" class="why-thinh-icon" loading="lazy" src="assets/icons/why-thinh-ton-tuong/icon-dieu-tuong-trang-nghiem.png">
 </div>
 <h3>Diệu tướng<br>trang nghiêm</h3>
 <p>Theo kinh điển và nghệ thuật Phật giáo</p>
 </article>
-<article class="why-thinh-item dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 230ms;">
+<article class="why-thinh-item dta-reveal" data-reveal="rise" style="--reveal-delay: 230ms;">
 <div class="why-thinh-icon-wrap">
 <img alt="" aria-hidden="true" class="why-thinh-icon" loading="lazy" src="assets/icons/why-thinh-ton-tuong/icon-chat-lieu-quy-hiem.png">
 </div>
 <h3>Chất liệu<br>quý hiếm</h3>
 <p>Đồng tím, Hán bạch ngọc, Ngọc Iran</p>
 </article>
-<article class="why-thinh-item dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 320ms;">
+<article class="why-thinh-item dta-reveal" data-reveal="rise" style="--reveal-delay: 320ms;">
 <div class="why-thinh-icon-wrap">
 <img alt="" aria-hidden="true" class="why-thinh-icon" loading="lazy" src="assets/icons/why-thinh-ton-tuong/icon-che-tac-tinh-xao.png">
 </div>
 <h3>Chế tác<br>tinh xảo</h3>
 <p>Tỉ mỉ trong từng đường nét</p>
 </article>
-<article class="why-thinh-item dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 410ms;">
+<article class="why-thinh-item dta-reveal" data-reveal="rise" style="--reveal-delay: 410ms;">
 <div class="why-thinh-icon-wrap">
 <img alt="" aria-hidden="true" class="why-thinh-icon" loading="lazy" src="assets/icons/why-thinh-ton-tuong/icon-nghi-thuc-an-vi.png">
 </div>
 <h3>Nghi thức<br>an vị</h3>
 <p>Trang nghiêm, chuẩn mực</p>
 </article>
-<article class="why-thinh-item dta-reveal is-visible has-revealed" data-reveal="rise" style="--reveal-delay: 500ms;">
+<article class="why-thinh-item dta-reveal" data-reveal="rise" style="--reveal-delay: 500ms;">
 <div class="why-thinh-icon-wrap">
 <img alt="" aria-hidden="true" class="why-thinh-icon" loading="lazy" src="assets/icons/why-thinh-ton-tuong/icon-cham-soc-bao-hanh.png">
 </div>
@@ -23728,357 +23643,20 @@ body{
 }
 /* === DTA PROCESS MOBILE ICON LARGE TOP FIX END === */
 </style>
-
-
-<style id="dta-process-frame-safe-final-v7">
-/* =========================================================
-   DTA PROCESS FRAME SAFE FINAL V7 - 2026-06-10
-   Sửa triệt để lỗi vùng "Quy Trình Thỉnh Tượng & An Vị":
-   - Bỏ phụ thuộc vào inline width/height do trình dựng/visual editor sinh ra.
-   - Giữ card theo tỷ lệ khung gốc 3:5 để frame không méo trên mọi trình duyệt.
-   - Nội dung được đặt trong "safe area" riêng, chừa đáy cho hoa sen của khung.
-   - Chặn chữ dài tràn ra khỏi khung khi font render khác nhau giữa Chrome/Safari/Edge.
-   ========================================================= */
-#quy-trinh-thinh-tuong .process-cards{
-  display:grid !important;
-  grid-template-columns:repeat(5, minmax(0, 1fr)) !important;
-  align-items:start !important;
-  gap:clamp(18px, 1.85vw, 42px) !important;
-}
-
-#quy-trinh-thinh-tuong .process-card{
-  position:relative !important;
-  width:100% !important;
-  height:auto !important;
-  min-height:0 !important;
-  max-height:none !important;
-  aspect-ratio:3 / 5 !important;
-  padding:0 !important;
-  overflow:hidden !important;
-  box-sizing:border-box !important;
-  display:block !important;
-  contain:layout paint !important;
-}
-
-#quy-trinh-thinh-tuong .process-card-frame{
-  position:absolute !important;
-  inset:0 !important;
-  z-index:0 !important;
-  width:100% !important;
-  height:100% !important;
-  object-fit:fill !important;
-  pointer-events:none !important;
-}
-
-#quy-trinh-thinh-tuong .process-card-content{
-  position:absolute !important;
-  z-index:1 !important;
-  left:clamp(16px, 1.25vw, 26px) !important;
-  right:clamp(16px, 1.25vw, 26px) !important;
-  top:clamp(26px, 1.65vw, 36px) !important;
-  bottom:clamp(70px, 4.15vw, 92px) !important;
-  width:auto !important;
-  height:auto !important;
-  min-height:0 !important;
-  max-height:none !important;
-  display:grid !important;
-  grid-template-rows:auto auto auto minmax(0, 1fr) !important;
-  justify-items:center !important;
-  align-content:start !important;
-  overflow:hidden !important;
-  box-sizing:border-box !important;
-}
-
-#quy-trinh-thinh-tuong .process-card-icon{
-  width:min(56%, 164px) !important;
-  height:auto !important;
-  aspect-ratio:1 / 1 !important;
-  margin:0 auto clamp(2px, .35vw, 6px) !important;
-  display:grid !important;
-  place-items:center !important;
-  flex:none !important;
-  transform:none !important;
-}
-
-#quy-trinh-thinh-tuong .process-card-icon img{
-  width:100% !important;
-  height:100% !important;
-  max-width:100% !important;
-  max-height:100% !important;
-  object-fit:contain !important;
-}
-
-#quy-trinh-thinh-tuong .process-mini-mark{
-  width:clamp(18px, 1.55vw, 26px) !important;
-  height:clamp(18px, 1.55vw, 26px) !important;
-  margin:0 auto clamp(7px, .65vw, 12px) !important;
-  flex:none !important;
-}
-
-#quy-trinh-thinh-tuong .process-card h3{
-  margin:0 auto clamp(7px, .62vw, 12px) !important;
-  min-height:0 !important;
-  max-width:100% !important;
-  color:#2b211a !important;
-  font-size:clamp(19px, 1.28vw, 25px) !important;
-  line-height:1.16 !important;
-  letter-spacing:.012em !important;
-  text-transform:uppercase !important;
-  text-wrap:balance !important;
-  overflow-wrap:normal !important;
-  word-break:normal !important;
-  hyphens:none !important;
-  flex:none !important;
-}
-
-#quy-trinh-thinh-tuong .process-card p{
-  width:100% !important;
-  max-width:230px !important;
-  margin:0 auto !important;
-  color:#2d251e !important;
-  font-size:clamp(14.2px, .88vw, 17px) !important;
-  line-height:1.33 !important;
-  font-weight:400 !important;
-  overflow:hidden !important;
-  display:-webkit-box !important;
-  -webkit-box-orient:vertical !important;
-  -webkit-line-clamp:5 !important;
-}
-
-@media (max-width:1500px){
-  #quy-trinh-thinh-tuong .process-card-content{
-    top:28px !important;
-    bottom:78px !important;
-    left:18px !important;
-    right:18px !important;
-  }
-  #quy-trinh-thinh-tuong .process-card-icon{width:min(54%, 150px) !important;}
-  #quy-trinh-thinh-tuong .process-card h3{font-size:clamp(18px, 1.32vw, 23px) !important;line-height:1.14 !important;}
-  #quy-trinh-thinh-tuong .process-card p{font-size:clamp(13.8px, .95vw, 16px) !important;line-height:1.31 !important;max-width:215px !important;}
-}
-
-@media (max-width:1180px){
-  #quy-trinh-thinh-tuong .process-cards{
-    grid-template-columns:repeat(3, minmax(0, 1fr)) !important;
-    max-width:960px !important;
-    margin-inline:auto !important;
-  }
-}
-
-@media (max-width:760px){
-  #quy-trinh-thinh-tuong .process-cards{
-    grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
-    max-width:680px !important;
-  }
-}
-
-@media (max-width:620px){
-  #quy-trinh-thinh-tuong .process-cards{
-    display:flex !important;
-    grid-template-columns:none !important;
-    gap:16px !important;
-    align-items:stretch !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card{
-    flex:0 0 clamp(266px, 82vw, 340px) !important;
-    width:clamp(266px, 82vw, 340px) !important;
-    height:auto !important;
-    aspect-ratio:3 / 5 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-content{
-    top:clamp(32px, 9vw, 42px) !important;
-    bottom:clamp(88px, 24vw, 116px) !important;
-    left:clamp(18px, 5.6vw, 24px) !important;
-    right:clamp(18px, 5.6vw, 24px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{
-    width:clamp(112px, 35vw, 142px) !important;
-    margin-bottom:2px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark{
-    width:18px !important;
-    height:18px !important;
-    margin-bottom:6px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card h3{
-    max-width:230px !important;
-    font-size:clamp(18px, 5vw, 21px) !important;
-    line-height:1.13 !important;
-    margin-bottom:6px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    max-width:220px !important;
-    font-size:clamp(13px, 3.7vw, 14.8px) !important;
-    line-height:1.30 !important;
-    -webkit-line-clamp:4 !important;
-  }
-}
-
-@media (max-width:390px){
-  #quy-trinh-thinh-tuong .process-card{
-    flex-basis:84vw !important;
-    width:84vw !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-content{
-    top:32px !important;
-    bottom:94px !important;
-    left:18px !important;
-    right:18px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{width:118px !important;}
-  #quy-trinh-thinh-tuong .process-card h3{font-size:18.6px !important;line-height:1.12 !important;}
-  #quy-trinh-thinh-tuong .process-card p{font-size:12.8px !important;line-height:1.28 !important;max-width:205px !important;}
-}
-
-
-/* =========================================================
-   DTA FOOTER BRAND SAFE LAYOUT - 20260610
-   Fix footer logo + tagline overflow at browser zoom / mixed widths.
-   Root cause: .footer-tagline used nowrap + max-content, so it could
-   exceed the first grid column and overlap the next footer column.
-   ========================================================= */
-.footer-brand-col{
-  min-width:0 !important;
-  max-width:100% !important;
-  overflow:hidden !important;
-  display:flex !important;
-  flex-direction:column !important;
-  align-items:center !important;
-  justify-content:flex-start !important;
-  text-align:center !important;
-  padding-left:0 !important;
-}
-.footer-brand-col .footer-logo,
-.footer-logo{
-  display:block !important;
-  flex:0 0 auto !important;
-  width:clamp(138px, 8.8vw, 190px) !important;
-  max-width:min(82%, 190px) !important;
-  height:auto !important;
-  margin:0 auto clamp(6px, .55vw, 10px) !important;
-  transform:none !important;
-}
-.footer-brand-col .footer-tagline,
-.footer-tagline{
-  display:block !important;
-  box-sizing:border-box !important;
-  width:100% !important;
-  max-width:min(100%, 360px) !important;
-  margin:0 auto !important;
-  padding:0 clamp(4px, .45vw, 8px) !important;
-  color:rgba(255,242,217,.9) !important;
-  font-size:clamp(12.5px, .82vw, 15.5px) !important;
-  line-height:1.45 !important;
-  letter-spacing:.002em !important;
-  text-align:center !important;
-  white-space:normal !important;
-  overflow-wrap:normal !important;
-  word-break:normal !important;
-  text-wrap:balance !important;
-  transform:none !important;
-  transform-origin:center center !important;
-}
-@media (max-width:1320px){
-  .footer-brand-col .footer-logo,
-  .footer-logo{
-    width:clamp(132px, 11vw, 176px) !important;
-    max-width:min(78%, 176px) !important;
-  }
-  .footer-brand-col .footer-tagline,
-  .footer-tagline{
-    max-width:min(100%, 330px) !important;
-    font-size:clamp(12px, 1.08vw, 14.5px) !important;
-    line-height:1.45 !important;
-  }
-}
-@media (max-width:1120px){
-  .footer-brand-col{
-    padding:24px 0 !important;
-  }
-  .footer-brand-col .footer-tagline,
-  .footer-tagline{
-    max-width:360px !important;
-  }
-}
-@media (max-width:680px){
-  .footer-brand-col{
-    overflow:visible !important;
-    padding:22px 0 24px !important;
-  }
-  .footer-brand-col .footer-logo,
-  .footer-logo{
-    width:clamp(132px, 42vw, 168px) !important;
-    max-width:78% !important;
-    margin-bottom:8px !important;
-  }
-  .footer-brand-col .footer-tagline,
-  .footer-tagline{
-    width:100% !important;
-    max-width:320px !important;
-    padding-inline:8px !important;
-    font-size:clamp(12px, 3.25vw, 14px) !important;
-    line-height:1.42 !important;
-    letter-spacing:0 !important;
-    white-space:normal !important;
-    transform:none !important;
-  }
-}
-@media (max-width:380px){
-  .footer-brand-col .footer-tagline,
-  .footer-tagline{
-    max-width:292px !important;
-    font-size:12px !important;
-    line-height:1.42 !important;
-    letter-spacing:0 !important;
-    transform:none !important;
-  }
-}
-
-
-    /* DTA FIX 2026-06-10: Hero title rendering
-       Remove text-shadow/glow from "PHẬT BỔN SƯ" because some browsers render
-       shadow artifacts around Vietnamese accents and clipped gradient text. */
-    .hero-title,
-    .hero-title .premium-title,
-    .hero-title .premium-title span{
-      text-shadow:none !important;
-      filter:none !important;
-    }
-
-    .premium-title span{
-      -webkit-text-fill-color:transparent;
-      -webkit-font-smoothing:antialiased;
-      text-rendering:geometricPrecision;
-    }
-
-    .premium-title:hover span,
-    .hero-section.is-sacred-title-active .premium-title span{
-      text-shadow:none !important;
-      filter:none !important;
-    }
-</style>
 <section class="process-section" id="quy-trinh-thinh-tuong" aria-labelledby="process-title">
 
   <div class="process-inner">
     <header class="process-heading dta-reveal is-visible has-revealed" data-reveal="up" style="--reveal-delay: 0ms;">
       <div class="process-heading-row">
         <img class="process-heading-ornament" src="assets/images/decor/quy_trinh_thinh_tuong/ornament-title-left-gold.png" alt="" loading="lazy">
-        <h2 id="process-title">Quy Trình Thỉnh Tượng &amp; An Vị</h2>
+        <h2 id="process-title" style="font-size: 53.139px;">Quy Trình Thỉnh Tượng &amp; An Vị</h2>
         <img class="process-heading-ornament" src="assets/images/decor/quy_trinh_thinh_tuong/ornament-title-right-gold.png" alt="" loading="lazy">
       </div>
       <img class="process-heading-divider" src="assets/images/decor/quy_trinh_thinh_tuong/ornament-title-divider-center-gold.png" alt="" loading="lazy">
     </header>
 
     <div class="process-cards">
-      <article class="process-card">
+      <article class="process-card" style="width: 302.45px; height: 514.362px;">
         <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
         <div class="process-card-content">
           <div class="process-card-icon"><img src="assets/icons/quy_trinh_thinh_tuong/icon-lang-nghe-tam-nguyen.png" alt="Lắng nghe tâm nguyện" loading="lazy"></div>
@@ -24088,7 +23666,7 @@ body{
         </div>
       </article>
 
-      <article class="process-card">
+      <article class="process-card" style="width: 302.45px; height: 514.362px;">
         <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
         <div class="process-card-content">
           <div class="process-card-icon"><img src="assets/icons/quy_trinh_thinh_tuong/icon-tu-van-hinh-tuong.png" alt="Tư vấn hình tượng" loading="lazy"></div>
@@ -24098,7 +23676,7 @@ body{
         </div>
       </article>
 
-      <article class="process-card">
+      <article class="process-card" style="width: 302.45px; height: 514.362px;">
         <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
         <div class="process-card-content">
           <div class="process-card-icon"><img src="assets/icons/quy_trinh_thinh_tuong/icon-thiet-ke-dinh-hinh-khong-gian.png" alt="Thiết kế và định hình không gian" loading="lazy"></div>
@@ -24108,7 +23686,7 @@ body{
         </div>
       </article>
 
-      <article class="process-card">
+      <article class="process-card" style="width: 302.45px; height: 514.362px;">
         <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
         <div class="process-card-content">
           <div class="process-card-icon"><img src="assets/icons/quy_trinh_thinh_tuong/icon-an-vi-ton-tuong.png" alt="An vị tôn tượng" loading="lazy"></div>
@@ -24118,7 +23696,7 @@ body{
         </div>
       </article>
 
-      <article class="process-card">
+      <article class="process-card" style="width: 302.45px; height: 514.362px;">
         <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
         <div class="process-card-content">
           <div class="process-card-icon"><img src="assets/icons/quy_trinh_thinh_tuong/icon-dong-hanh-cham-soc-lau-dai.png" alt="Đồng hành và chăm sóc lâu dài" loading="lazy"></div>
@@ -24338,7 +23916,7 @@ body{
 
         <footer class="footer-main" aria-label="Thông tin liên hệ Diệu Tướng Am">
           <div class="footer-col footer-brand-col">
-            <img class="footer-logo" src="assets/logo/logo-dieu-tuong-am-gold-footer.png" alt="Diệu Tướng Am" loading="lazy" />
+            <img class="footer-logo" src="assets/logo/logo-dieu-tuong-am-gold.png" alt="Diệu Tướng Am" loading="lazy" />
             <p class="footer-tagline">Từ tâm khai mở – Tạc hình tinh hoa – Kiến tạo chốn an</p>
           </div>
 
@@ -26008,15 +25586,4 @@ body{
     });
   })();
 </script>
-
-<script id="dta-why-thinh-reveal-failsafe-20260610">
-  document.addEventListener('DOMContentLoaded', function(){
-    document.querySelectorAll('.why-thinh-section .dta-reveal').forEach(function(el){
-      el.classList.add('is-visible', 'has-revealed');
-      el.style.opacity = '1';
-      el.style.visibility = 'visible';
-    });
-  });
-</script>
-
 </body></html>
