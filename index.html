@@ -23047,6 +23047,88 @@ body{
 }
 /* === DTA MOBILE SMART FIX END === */
 </style>
+
+<style id="dta-process-mobile-icon-safe-v3">
+/* === DTA MOBILE ICON SAFE FIX 2026-06-10
+   Sửa lỗi 5 icon trong carousel mobile bị đè lên khung/lòi khỏi vùng frame.
+   Chỉ tác động màn hình điện thoại, giữ nguyên desktop/tablet.
+=== */
+@media (max-width:620px){
+  #quy-trinh-thinh-tuong .process-card{
+    /* Tạo vùng an toàn phía trên để icon không chạm hoạ tiết đầu khung */
+    padding:clamp(42px, 11vw, 52px) 20px 48px !important;
+    overflow:hidden !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-frame{
+    z-index:0 !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-content{
+    position:relative !important;
+    z-index:2 !important;
+    height:100% !important;
+    justify-content:flex-start !important;
+    overflow:visible !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon{
+    width:clamp(92px, 29vw, 118px) !important;
+    height:clamp(92px, 29vw, 118px) !important;
+    aspect-ratio:1/1 !important;
+    margin:0 auto 8px !important;
+    display:grid !important;
+    place-items:center !important;
+    overflow:visible !important;
+    flex:0 0 auto !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon img{
+    width:100% !important;
+    height:100% !important;
+    max-width:100% !important;
+    max-height:100% !important;
+    object-fit:contain !important;
+    transform:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:hover .process-card-icon img{
+    transform:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-mini-mark{
+    margin:0 auto 9px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card h3{
+    margin-bottom:8px !important;
+    font-size:clamp(18px, 5.1vw, 23px) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card p{
+    max-width:226px !important;
+  }
+}
+
+@media (max-width:390px){
+  #quy-trinh-thinh-tuong .process-card{
+    height:420px !important;
+    padding:42px 18px 46px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon{
+    width:102px !important;
+    height:102px !important;
+    margin-bottom:7px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card h3{
+    font-size:20px !important;
+  }
+}
+/* === DTA MOBILE ICON SAFE FIX END === */
+</style>
+
 <section class="process-section" id="quy-trinh-thinh-tuong" aria-labelledby="process-title">
 
   <div class="process-inner">
