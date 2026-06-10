@@ -23374,6 +23374,155 @@ body{
 </style>
 
 
+
+
+<style id="dta-process-mobile-icon-large-top-v6">
+/* === DTA PROCESS MOBILE ICON LARGE TOP V6 - 2026-06-10
+   Tối ưu riêng mobile cho 5 card quy trình:
+   - Icon lớn hơn, nổi bật hơn.
+   - Icon nằm sát mép trên bên trong frame, không bị lòi khỏi khung.
+   - Chữ vẫn nằm cao hơn vùng hoa sen đáy frame.
+=== */
+@media (max-width:620px){
+  #quy-trinh-thinh-tuong .process-cards{
+    gap:16px !important;
+    padding-top:4px !important;
+    padding-bottom:10px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card{
+    flex:0 0 clamp(266px, 82vw, 340px) !important;
+    width:clamp(266px, 82vw, 340px) !important;
+    height:auto !important;
+    aspect-ratio:3 / 5 !important;
+    min-height:0 !important;
+    max-height:none !important;
+
+    /* Đưa icon lên sát vùng đầu frame, đồng thời giữ đáy thoáng cho hoa sen. */
+    padding:
+      clamp(34px, 9.2vw, 44px)
+      clamp(21px, 6vw, 26px)
+      clamp(102px, 26vw, 124px) !important;
+    overflow:hidden !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-content{
+    height:100% !important;
+    min-height:0 !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    overflow:visible !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon{
+    width:clamp(132px, 41vw, 160px) !important;
+    height:clamp(132px, 41vw, 160px) !important;
+    margin:clamp(-4px, -1vw, -2px) auto 2px !important;
+    display:grid !important;
+    place-items:center !important;
+    flex:0 0 auto !important;
+    position:relative !important;
+    z-index:3 !important;
+    transform:none !important;
+    filter:drop-shadow(0 10px 18px rgba(103,58,13,.18));
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon::before{
+    content:"" !important;
+    position:absolute !important;
+    inset:12% !important;
+    z-index:-1 !important;
+    border-radius:50% !important;
+    background:radial-gradient(circle, rgba(255,238,177,.42) 0%, rgba(222,165,57,.20) 42%, rgba(222,165,57,0) 72%) !important;
+    filter:blur(8px) !important;
+    opacity:.86 !important;
+    pointer-events:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon img{
+    width:100% !important;
+    height:100% !important;
+    max-width:none !important;
+    max-height:none !important;
+    object-fit:contain !important;
+    transform:none !important;
+    filter:
+      drop-shadow(0 4px 7px rgba(121,72,20,.16))
+      drop-shadow(0 0 10px rgba(224,172,74,.14)) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:hover .process-card-icon,
+  #quy-trinh-thinh-tuong .process-card:hover .process-card-icon img{
+    transform:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-mini-mark{
+    width:20px !important;
+    height:20px !important;
+    margin:0 auto 7px !important;
+    flex:0 0 auto !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card h3{
+    margin:0 auto 7px !important;
+    max-width:238px !important;
+    font-size:clamp(18px, 5vw, 22.5px) !important;
+    line-height:1.17 !important;
+    letter-spacing:.008em !important;
+    flex:0 0 auto !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card p{
+    max-width:230px !important;
+    margin:0 auto !important;
+    font-size:clamp(13.5px, 3.85vw, 15.5px) !important;
+    line-height:1.36 !important;
+    display:-webkit-box !important;
+    -webkit-line-clamp:3 !important;
+    -webkit-box-orient:vertical !important;
+    overflow:hidden !important;
+  }
+}
+
+@media (max-width:390px){
+  #quy-trinh-thinh-tuong .process-card{
+    flex-basis:84vw !important;
+    width:84vw !important;
+    padding:
+      34px
+      18px
+      106px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon{
+    width:130px !important;
+    height:130px !important;
+    margin-top:-3px !important;
+    margin-bottom:2px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-mini-mark{
+    width:18px !important;
+    height:18px !important;
+    margin-bottom:6px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card h3{
+    font-size:19.2px !important;
+    line-height:1.15 !important;
+    margin-bottom:6px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card p{
+    max-width:210px !important;
+    font-size:13.2px !important;
+    line-height:1.33 !important;
+  }
+}
+/* === DTA PROCESS MOBILE ICON LARGE TOP FIX END === */
+</style>
 <section class="process-section" id="quy-trinh-thinh-tuong" aria-labelledby="process-title">
 
   <div class="process-inner">
