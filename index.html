@@ -23937,6 +23937,110 @@ body{
   #quy-trinh-thinh-tuong .process-card h3{font-size:18.6px !important;line-height:1.12 !important;}
   #quy-trinh-thinh-tuong .process-card p{font-size:12.8px !important;line-height:1.28 !important;max-width:205px !important;}
 }
+
+
+/* =========================================================
+   DTA FOOTER BRAND SAFE LAYOUT - 20260610
+   Fix footer logo + tagline overflow at browser zoom / mixed widths.
+   Root cause: .footer-tagline used nowrap + max-content, so it could
+   exceed the first grid column and overlap the next footer column.
+   ========================================================= */
+.footer-brand-col{
+  min-width:0 !important;
+  max-width:100% !important;
+  overflow:hidden !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  text-align:center !important;
+  padding-left:0 !important;
+}
+.footer-brand-col .footer-logo,
+.footer-logo{
+  display:block !important;
+  flex:0 0 auto !important;
+  width:clamp(138px, 8.8vw, 190px) !important;
+  max-width:min(82%, 190px) !important;
+  height:auto !important;
+  margin:0 auto clamp(6px, .55vw, 10px) !important;
+  transform:none !important;
+}
+.footer-brand-col .footer-tagline,
+.footer-tagline{
+  display:block !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  max-width:min(100%, 360px) !important;
+  margin:0 auto !important;
+  padding:0 clamp(4px, .45vw, 8px) !important;
+  color:rgba(255,242,217,.9) !important;
+  font-size:clamp(12.5px, .82vw, 15.5px) !important;
+  line-height:1.45 !important;
+  letter-spacing:.002em !important;
+  text-align:center !important;
+  white-space:normal !important;
+  overflow-wrap:normal !important;
+  word-break:normal !important;
+  text-wrap:balance !important;
+  transform:none !important;
+  transform-origin:center center !important;
+}
+@media (max-width:1320px){
+  .footer-brand-col .footer-logo,
+  .footer-logo{
+    width:clamp(132px, 11vw, 176px) !important;
+    max-width:min(78%, 176px) !important;
+  }
+  .footer-brand-col .footer-tagline,
+  .footer-tagline{
+    max-width:min(100%, 330px) !important;
+    font-size:clamp(12px, 1.08vw, 14.5px) !important;
+    line-height:1.45 !important;
+  }
+}
+@media (max-width:1120px){
+  .footer-brand-col{
+    padding:24px 0 !important;
+  }
+  .footer-brand-col .footer-tagline,
+  .footer-tagline{
+    max-width:360px !important;
+  }
+}
+@media (max-width:680px){
+  .footer-brand-col{
+    overflow:visible !important;
+    padding:22px 0 24px !important;
+  }
+  .footer-brand-col .footer-logo,
+  .footer-logo{
+    width:clamp(132px, 42vw, 168px) !important;
+    max-width:78% !important;
+    margin-bottom:8px !important;
+  }
+  .footer-brand-col .footer-tagline,
+  .footer-tagline{
+    width:100% !important;
+    max-width:320px !important;
+    padding-inline:8px !important;
+    font-size:clamp(12px, 3.25vw, 14px) !important;
+    line-height:1.42 !important;
+    letter-spacing:0 !important;
+    white-space:normal !important;
+    transform:none !important;
+  }
+}
+@media (max-width:380px){
+  .footer-brand-col .footer-tagline,
+  .footer-tagline{
+    max-width:292px !important;
+    font-size:12px !important;
+    line-height:1.42 !important;
+    letter-spacing:0 !important;
+    transform:none !important;
+  }
+}
 </style>
 <section class="process-section" id="quy-trinh-thinh-tuong" aria-labelledby="process-title">
 
@@ -24211,7 +24315,7 @@ body{
 
         <footer class="footer-main" aria-label="Thông tin liên hệ Diệu Tướng Am">
           <div class="footer-col footer-brand-col">
-            <img class="footer-logo" src="assets/logo/logo-dieu-tuong-am-gold.png" alt="Diệu Tướng Am" loading="lazy" />
+            <img class="footer-logo" src="assets/logo/logo-dieu-tuong-am-gold-footer.png" alt="Diệu Tướng Am" loading="lazy" />
             <p class="footer-tagline">Từ tâm khai mở – Tạc hình tinh hoa – Kiến tạo chốn an</p>
           </div>
 
