@@ -28071,439 +28071,215 @@ body{
 </style>
 
 
-
-<style id="dta-process-mobile-slim-peek-readable-final-v17">
+<style id="dta-process-mobile-all-visible-smart-map-v1">
 /* =========================================================
-   DTA PROCESS MOBILE SLIM PEEK + READABLE CONTENT FINAL V17 - 2026-06-11
-   Yêu cầu:
-   - Mobile: card ốm hơn để card kế tiếp nhú ra, tạo tín hiệu vuốt ngang.
-   - Icon và chữ trong card lớn hơn, rõ hơn nhưng vẫn không đè hoa sen đáy khung.
-   - Đặt ở cuối file để override toàn bộ các block mobile cũ của section này.
-   ========================================================= */
-@media (max-width:620px){
-  #quy-trinh-thinh-tuong.process-section{
-    overflow:hidden !important;
-    padding-top:clamp(30px, 7.8vw, 40px) !important;
-    padding-bottom:clamp(56px, 14vw, 82px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-inner{
-    width:min(100% - 24px, 460px) !important;
-    max-width:none !important;
-    margin-inline:auto !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-cards{
-    position:relative !important;
-    left:50% !important;
-    right:auto !important;
-    width:100vw !important;
-    max-width:none !important;
-    margin-left:0 !important;
-    margin-right:0 !important;
-    transform:translateX(-50%) !important;
-    display:flex !important;
-    grid-template-columns:none !important;
-    justify-content:flex-start !important;
-    align-items:flex-start !important;
-    gap:clamp(12px, 3.2vw, 16px) !important;
-    padding-top:2px !important;
-    padding-left:max(16px, calc((100vw - 430px) / 2 + 18px)) !important;
-    padding-right:max(92px, calc((100vw - 430px) / 2 + 118px)) !important;
-    padding-bottom:clamp(30px, 7.6vw, 44px) !important;
-    overflow-x:auto !important;
-    overflow-y:hidden !important;
-    overscroll-behavior-x:contain !important;
-    -webkit-overflow-scrolling:touch !important;
-    scroll-snap-type:x mandatory !important;
-    scroll-padding-left:max(16px, calc((100vw - 430px) / 2 + 18px)) !important;
-    scroll-padding-right:max(92px, calc((100vw - 430px) / 2 + 118px)) !important;
-    scrollbar-width:thin !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card{
-    position:relative !important;
-    flex:0 0 clamp(250px, 76vw, 338px) !important;
-    width:clamp(250px, 76vw, 338px) !important;
-    min-width:clamp(250px, 76vw, 338px) !important;
-    max-width:338px !important;
-    height:clamp(452px, 116vw, 522px) !important;
-    min-height:0 !important;
-    max-height:none !important;
-    aspect-ratio:auto !important;
-    box-sizing:border-box !important;
-    padding:
-      clamp(40px, 10.4vw, 52px)
-      clamp(14px, 4vw, 20px)
-      clamp(132px, 34vw, 160px) !important;
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-    justify-content:flex-start !important;
-    overflow:hidden !important;
-    contain:paint !important;
-    scroll-snap-align:start !important;
-    scroll-snap-stop:always !important;
-    scroll-margin-left:max(16px, calc((100vw - 430px) / 2 + 18px)) !important;
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:hover{
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-frame-picture,
-  #quy-trinh-thinh-tuong .process-card-frame{
-    position:absolute !important;
-    inset:0 !important;
-    width:100% !important;
-    height:100% !important;
-    max-width:none !important;
-    max-height:none !important;
-    pointer-events:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-frame{
-    z-index:0 !important;
-    object-fit:fill !important;
-    object-position:center center !important;
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-content{
-    position:relative !important;
-    z-index:2 !important;
-    width:100% !important;
-    height:100% !important;
-    min-height:0 !important;
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-    justify-content:flex-start !important;
-    overflow:visible !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{
-    width:clamp(122px, 34vw, 148px) !important;
-    height:clamp(122px, 34vw, 148px) !important;
-    aspect-ratio:1/1 !important;
-    flex:0 0 auto !important;
-    margin:0 auto clamp(6px, 1.7vw, 9px) !important;
-    display:grid !important;
-    place-items:center !important;
-    overflow:visible !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon img{
-    width:100% !important;
-    height:100% !important;
-    max-width:100% !important;
-    max-height:100% !important;
-    object-fit:contain !important;
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark{
-    width:20px !important;
-    height:20px !important;
-    flex:0 0 auto !important;
-    margin:0 auto clamp(8px, 2.2vw, 12px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark::before,
-  #quy-trinh-thinh-tuong .process-mini-mark::after{
-    width:14px !important;
-    height:14px !important;
-    border-width:1.25px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark span{
-    inset:7px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card h3{
-    flex:0 0 auto !important;
-    width:100% !important;
-    max-width:min(100%, 258px) !important;
-    min-height:0 !important;
-    margin:0 auto clamp(10px, 2.7vw, 14px) !important;
-    color:#2d2015 !important;
-    font-size:clamp(20.6px, 5.55vw, 23.6px) !important;
-    line-height:1.09 !important;
-    letter-spacing:.008em !important;
-    text-align:center !important;
-    text-wrap:balance !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    box-sizing:border-box !important;
-    flex:0 0 auto !important;
-    width:min(100%, 238px) !important;
-    max-width:calc(100% - 4px) !important;
-    min-height:0 !important;
-    max-height:none !important;
-    margin:0 auto !important;
-    padding:0 clamp(5px, 1.5vw, 9px) !important;
-    color:#2d251e !important;
-    font-size:clamp(13.7px, 3.72vw, 15.2px) !important;
-    line-height:1.25 !important;
-    letter-spacing:.001em !important;
-    text-align:center !important;
-    text-wrap:balance !important;
-    overflow:visible !important;
-    display:block !important;
-    -webkit-line-clamp:initial !important;
-    -webkit-box-orient:initial !important;
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 232px) !important;
-    font-size:clamp(13.05px, 3.55vw, 14.4px) !important;
-    line-height:1.20 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:min(100%, 270px) !important;
-    margin-bottom:clamp(8px, 2.1vw, 11px) !important;
-    font-size:clamp(19.4px, 5.1vw, 21.8px) !important;
-    line-height:1.05 !important;
-  }
-}
-
-@media (max-width:360px){
-  #quy-trinh-thinh-tuong .process-cards{
-    gap:11px !important;
-    padding-left:14px !important;
-    padding-right:76px !important;
-    scroll-padding-left:14px !important;
-    scroll-padding-right:76px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card{
-    flex-basis:clamp(250px, 76vw, 274px) !important;
-    width:clamp(250px, 76vw, 274px) !important;
-    min-width:clamp(250px, 76vw, 274px) !important;
-    height:448px !important;
-    padding:
-      38px
-      14px
-      128px !important;
-    scroll-margin-left:14px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{
-    width:116px !important;
-    height:116px !important;
-    margin-bottom:6px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark{
-    width:18px !important;
-    height:18px !important;
-    margin-bottom:8px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card h3{
-    max-width:224px !important;
-    margin-bottom:9px !important;
-    font-size:19.4px !important;
-    line-height:1.07 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    width:min(100%, 216px) !important;
-    max-width:calc(100% - 2px) !important;
-    padding-inline:4px !important;
-    font-size:12.7px !important;
-    line-height:1.22 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 210px) !important;
-    font-size:12.15px !important;
-    line-height:1.17 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:232px !important;
-    font-size:18px !important;
-    line-height:1.04 !important;
-  }
-}
-</style>
-
-
-<style id="dta-process-mobile-vertical-compact-final-v18">
-/* =========================================================
-   DTA PROCESS MOBILE VERTICAL COMPACT FINAL V18 - 2026-06-11
+   DTA PROCESS MOBILE ALL-VISIBLE SMART MAP V1 - 2026-06-11
    Mục tiêu:
-   - Mobile không cần vuốt ngang.
-   - Đổi 5 bước Quy Trình Thỉnh Tượng & An Vị thành timeline dọc gọn.
-   - Giữ nguyên file icon, chỉ thay layout/card/frame ở mobile.
-   - Khác vùng "Vì sao" phía trên: dùng dạng timeline ribbon, không dùng khung card lớn.
+   - Bỏ carousel/vuốt ngang ở vùng “Quy Trình Thỉnh Tượng & An Vị”.
+   - Hiện đủ 5 bước trong một cụm compact trên mobile.
+   - Khác layout list/card ở vùng “Vì sao…”: dùng bố cục bản đồ 2–1–2,
+     có đường liên kết nghi thức ở giữa, card 3 làm điểm neo trung tâm.
+   - Giữ nguyên file icon, không bóp méo/không đổi hình dạng icon.
    ========================================================= */
 @media (max-width:620px){
   #quy-trinh-thinh-tuong.process-section{
     overflow:hidden !important;
-    padding-top:clamp(28px, 7.2vw, 40px) !important;
-    padding-bottom:clamp(42px, 11vw, 62px) !important;
+    padding-top:clamp(30px, 7.5vw, 42px) !important;
+    padding-bottom:clamp(48px, 12vw, 68px) !important;
     background:
-      radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.54) 0%, rgba(255,255,255,0) 46%),
-      radial-gradient(ellipse at 92% 24%, rgba(199,131,30,.12) 0%, rgba(199,131,30,0) 44%),
-      radial-gradient(ellipse at 10% 78%, rgba(199,131,30,.10) 0%, rgba(199,131,30,0) 42%),
-      #f6ead3 !important;
+      radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.72) 0%, rgba(255,255,255,.34) 28%, rgba(255,255,255,0) 58%),
+      radial-gradient(ellipse at 50% 56%, rgba(210,142,41,.12) 0%, rgba(210,142,41,0) 60%),
+      linear-gradient(180deg, #f6ead3 0%, #f6e8cc 55%, #f1ddba 100%) !important;
+  }
+
+  #quy-trinh-thinh-tuong.process-section::after{
+    opacity:.72 !important;
   }
 
   #quy-trinh-thinh-tuong .process-inner{
-    width:min(100% - 28px, 458px) !important;
-    max-width:none !important;
+    width:min(100% - 24px, 440px) !important;
+    max-width:440px !important;
     margin-inline:auto !important;
   }
 
   #quy-trinh-thinh-tuong .process-heading{
-    margin:0 auto clamp(16px, 4.2vw, 22px) !important;
-    padding-top:clamp(2px, 1vw, 6px) !important;
+    margin:0 auto clamp(13px, 3.4vw, 18px) !important;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
   }
 
   #quy-trinh-thinh-tuong .process-heading::after{
-    content:none !important;
-    display:none !important;
+    content:"" !important;
+    display:block !important;
+    width:min(210px, 54vw) !important;
+    height:1px !important;
+    min-height:0 !important;
+    margin:clamp(8px, 2.4vw, 11px) auto 0 !important;
+    padding:0 !important;
+    border:0 !important;
+    border-radius:0 !important;
+    background:linear-gradient(90deg, transparent, rgba(181,121,45,.82), transparent) !important;
+    box-shadow:0 0 12px rgba(181,121,45,.14) !important;
+    color:transparent !important;
   }
 
   #quy-trinh-thinh-tuong .process-heading-row{
-    gap:clamp(7px, 2.2vw, 11px) !important;
+    gap:7px !important;
+    width:100% !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading-row::before,
+  #quy-trinh-thinh-tuong .process-heading-row::after{
+    display:none !important;
   }
 
   #quy-trinh-thinh-tuong .process-heading-ornament{
-    width:clamp(28px, 8.2vw, 40px) !important;
+    width:clamp(24px, 7vw, 32px) !important;
     flex:0 0 auto !important;
   }
 
   #quy-trinh-thinh-tuong .process-heading h2{
-    max-width:calc(100vw - 96px) !important;
-    font-size:clamp(28px, 7.4vw, 38px) !important;
+    max-width:calc(100vw - 86px) !important;
+    font-size:clamp(27px, 7.45vw, 36px) !important;
     line-height:1.12 !important;
-    letter-spacing:.026em !important;
+    letter-spacing:.018em !important;
     white-space:normal !important;
-    text-wrap:balance !important;
   }
 
   #quy-trinh-thinh-tuong .process-heading-divider{
-    width:min(288px, 70vw) !important;
-    margin-top:clamp(7px, 2vw, 10px) !important;
+    width:min(250px, 62vw) !important;
+    margin-top:7px !important;
   }
 
   #quy-trinh-thinh-tuong .process-cards{
-    --dta-process-mobile-icon:clamp(82px, 23.5vw, 100px);
-    --dta-process-mobile-pad-left:8px;
     position:relative !important;
     left:auto !important;
     right:auto !important;
     width:100% !important;
     max-width:430px !important;
     margin:0 auto !important;
-    padding:0 0 2px !important;
+    padding:0 !important;
     transform:none !important;
     display:grid !important;
-    grid-template-columns:1fr !important;
+    grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+    grid-template-areas:
+      "step1 step2"
+      "step3 step3"
+      "step4 step5" !important;
+    gap:clamp(8px, 2.45vw, 12px) !important;
     align-items:stretch !important;
-    justify-content:stretch !important;
+    justify-content:center !important;
     justify-items:stretch !important;
-    gap:clamp(9px, 2.55vw, 12px) !important;
     overflow:visible !important;
-    overflow-x:visible !important;
-    overflow-y:visible !important;
     scroll-snap-type:none !important;
     scroll-padding:0 !important;
-    scrollbar-width:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-cards::-webkit-scrollbar{
-    display:none !important;
+    -webkit-overflow-scrolling:auto !important;
   }
 
   #quy-trinh-thinh-tuong .process-cards::before{
-    content:"";
-    position:absolute;
-    z-index:0;
-    left:calc(var(--dta-process-mobile-pad-left) + var(--dta-process-mobile-icon) / 2);
-    top:clamp(18px, 5vw, 24px);
-    bottom:clamp(18px, 5vw, 24px);
-    width:1px;
+    content:"" !important;
+    position:absolute !important;
+    z-index:0 !important;
+    left:50% !important;
+    top:clamp(34px, 9vw, 42px) !important;
+    bottom:clamp(34px, 9vw, 42px) !important;
+    width:1px !important;
+    transform:translateX(-50%) !important;
     background:
       linear-gradient(180deg,
-        rgba(199,131,30,0),
-        rgba(199,131,30,.34) 12%,
-        rgba(199,131,30,.34) 88%,
-        rgba(199,131,30,0)
-      );
-    box-shadow:0 0 14px rgba(199,131,30,.14);
-    pointer-events:none;
+        rgba(181,121,45,0) 0%,
+        rgba(181,121,45,.34) 15%,
+        rgba(214,166,76,.68) 50%,
+        rgba(181,121,45,.34) 85%,
+        rgba(181,121,45,0) 100%) !important;
+    box-shadow:0 0 14px rgba(214,166,76,.18) !important;
+    pointer-events:none !important;
   }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(1){grid-area:step1 !important;}
+  #quy-trinh-thinh-tuong .process-card:nth-child(2){grid-area:step2 !important;}
+  #quy-trinh-thinh-tuong .process-card:nth-child(3){grid-area:step3 !important;}
+  #quy-trinh-thinh-tuong .process-card:nth-child(4){grid-area:step4 !important;}
+  #quy-trinh-thinh-tuong .process-card:nth-child(5){grid-area:step5 !important;}
 
   #quy-trinh-thinh-tuong .process-card{
     position:relative !important;
     z-index:1 !important;
     flex:none !important;
-    width:100% !important;
+    width:auto !important;
     min-width:0 !important;
     max-width:none !important;
     height:auto !important;
-    min-height:0 !important;
+    min-height:clamp(105px, 27vw, 124px) !important;
     max-height:none !important;
     aspect-ratio:auto !important;
-    box-sizing:border-box !important;
-    padding:clamp(10px, 2.75vw, 13px) clamp(13px, 3.5vw, 16px) clamp(10px, 2.75vw, 13px) var(--dta-process-mobile-pad-left) !important;
-    display:block !important;
-    overflow:visible !important;
-    contain:none !important;
-    scroll-snap-align:none !important;
-    scroll-snap-stop:normal !important;
-    scroll-margin:0 !important;
-    text-align:left !important;
-    border-radius:22px !important;
-    border:1px solid rgba(183,117,39,.20) !important;
+    margin:0 !important;
+    padding:clamp(9px, 2.5vw, 12px) clamp(8px, 2.4vw, 12px) clamp(10px, 2.8vw, 13px) !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    border:1px solid rgba(181,121,45,.36) !important;
+    border-radius:clamp(15px, 4vw, 20px) !important;
     background:
-      linear-gradient(135deg, rgba(255,252,244,.82), rgba(244,224,185,.42)) padding-box,
-      linear-gradient(135deg, rgba(151,91,22,.20), rgba(224,172,74,.44), rgba(151,91,22,.12)) border-box !important;
+      radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.62) 0%, rgba(255,255,255,0) 58%),
+      linear-gradient(180deg, rgba(255,250,238,.76), rgba(243,224,188,.52)) !important;
     box-shadow:
-      inset 0 1px 0 rgba(255,255,255,.52),
-      0 10px 24px rgba(98,57,18,.055) !important;
+      inset 0 0 0 1px rgba(255,255,255,.42),
+      0 10px 24px rgba(100,56,16,.085) !important;
+    overflow:hidden !important;
+    contain:layout paint !important;
+    scroll-snap-align:none !important;
+    scroll-margin:0 !important;
     transform:none !important;
-    transition:border-color .28s ease, box-shadow .28s ease, background .28s ease !important;
+    filter:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3){
+    min-height:clamp(116px, 29vw, 138px) !important;
+    padding:clamp(10px, 2.8vw, 14px) clamp(13px, 4vw, 18px) !important;
+    border-color:rgba(181,121,45,.48) !important;
+    background:
+      radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.78) 0%, rgba(255,255,255,0) 60%),
+      linear-gradient(135deg, rgba(255,248,229,.88), rgba(239,213,166,.60)) !important;
+    box-shadow:
+      inset 0 0 0 1px rgba(255,255,255,.52),
+      0 14px 30px rgba(100,56,16,.12),
+      0 0 22px rgba(214,166,76,.13) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card::before{
+    content:"" !important;
+    position:absolute !important;
+    inset:6px !important;
+    border:1px solid rgba(181,121,45,.13) !important;
+    border-radius:calc(clamp(15px, 4vw, 20px) - 5px) !important;
+    pointer-events:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card::after{
+    content:"" !important;
+    position:absolute !important;
+    left:16px !important;
+    right:16px !important;
+    bottom:0 !important;
+    height:2px !important;
+    opacity:.38 !important;
+    background:linear-gradient(90deg, transparent, rgba(181,121,45,.72), rgba(218,166,74,.86), rgba(181,121,45,.72), transparent) !important;
+    pointer-events:none !important;
   }
 
   #quy-trinh-thinh-tuong .process-card:hover{
     transform:none !important;
-    border-color:rgba(183,117,39,.34) !important;
-    box-shadow:
-      inset 0 1px 0 rgba(255,255,255,.58),
-      0 12px 28px rgba(98,57,18,.08) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card::before{
-    content:"";
-    position:absolute;
-    z-index:1;
-    left:calc(var(--dta-process-mobile-pad-left) + var(--dta-process-mobile-icon) / 2 - 5px);
-    top:50%;
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    background:#c7831e;
-    border:2px solid #f7ecd4;
-    box-shadow:0 0 0 4px rgba(199,131,30,.11), 0 0 14px rgba(199,131,30,.22);
-    transform:translateY(-50%);
-    pointer-events:none;
   }
 
   #quy-trinh-thinh-tuong .process-card-frame-picture,
+  #quy-trinh-thinh-tuong .process-card-frame-picture .process-card-frame,
   #quy-trinh-thinh-tuong .process-card-frame{
     display:none !important;
     content:none !important;
+    opacity:0 !important;
+    visibility:hidden !important;
   }
 
   #quy-trinh-thinh-tuong .process-card-content{
@@ -28512,57 +28288,63 @@ body{
     width:100% !important;
     height:auto !important;
     min-height:0 !important;
-    display:grid !important;
-    grid-template-columns:var(--dta-process-mobile-icon) minmax(0, 1fr) !important;
-    grid-template-rows:auto auto !important;
+    display:flex !important;
+    flex-direction:column !important;
     align-items:center !important;
-    column-gap:clamp(12px, 3.4vw, 16px) !important;
-    row-gap:clamp(2px, .8vw, 4px) !important;
+    justify-content:flex-start !important;
+    gap:0 !important;
     overflow:visible !important;
+    text-align:center !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-content{
+    display:grid !important;
+    grid-template-columns:clamp(52px, 14vw, 64px) 1fr !important;
+    grid-template-rows:auto auto !important;
+    column-gap:clamp(10px, 3vw, 14px) !important;
+    align-items:center !important;
+    text-align:left !important;
   }
 
   #quy-trinh-thinh-tuong .process-card-icon{
-    grid-column:1 !important;
-    grid-row:1 / span 2 !important;
-    position:relative !important;
-    z-index:3 !important;
-    width:var(--dta-process-mobile-icon) !important;
-    height:var(--dta-process-mobile-icon) !important;
+    width:clamp(40px, 11vw, 50px) !important;
+    height:clamp(40px, 11vw, 50px) !important;
     aspect-ratio:1 / 1 !important;
-    flex:none !important;
-    margin:0 !important;
-    align-self:center !important;
+    margin:0 auto clamp(4px, 1.3vw, 6px) !important;
     display:grid !important;
     place-items:center !important;
+    flex:0 0 auto !important;
     overflow:visible !important;
-    border-radius:50% !important;
-    background:
-      radial-gradient(circle, rgba(255,250,238,.94) 0%, rgba(255,242,207,.66) 48%, rgba(230,174,72,.12) 100%) !important;
-    box-shadow:
-      inset 0 0 0 1px rgba(199,131,30,.16),
-      0 8px 18px rgba(110,64,18,.08) !important;
+    background:none !important;
+    border:0 !important;
   }
 
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-icon{
+    grid-row:1 / span 2 !important;
+    width:clamp(52px, 14vw, 64px) !important;
+    height:clamp(52px, 14vw, 64px) !important;
+    margin:0 !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon::before,
   #quy-trinh-thinh-tuong .process-card-icon::after{
-    content:"";
-    position:absolute;
-    inset:8px;
-    border-radius:50%;
-    border:1px dashed rgba(199,131,30,.34);
-    pointer-events:none;
+    display:none !important;
   }
 
   #quy-trinh-thinh-tuong .process-card-icon img{
-    position:relative !important;
-    z-index:2 !important;
     display:block !important;
-    width:92% !important;
-    height:92% !important;
-    max-width:92% !important;
-    max-height:92% !important;
+    width:100% !important;
+    height:100% !important;
+    max-width:100% !important;
+    max-height:100% !important;
     object-fit:contain !important;
     transform:none !important;
-    filter:drop-shadow(0 4px 8px rgba(111,61,12,.12)) !important;
+    filter:drop-shadow(0 3px 6px rgba(127,75,18,.12)) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:hover .process-card-icon,
+  #quy-trinh-thinh-tuong .process-card:hover .process-card-icon img{
+    transform:none !important;
   }
 
   #quy-trinh-thinh-tuong .process-mini-mark{
@@ -28570,108 +28352,126 @@ body{
   }
 
   #quy-trinh-thinh-tuong .process-card h3{
-    grid-column:2 !important;
-    grid-row:1 !important;
-    align-self:end !important;
     width:100% !important;
-    max-width:none !important;
+    max-width:100% !important;
     min-height:0 !important;
-    margin:0 0 clamp(3px, 1vw, 5px) !important;
+    margin:0 auto clamp(3px, .9vw, 5px) !important;
     padding:0 !important;
-    color:#2b2016 !important;
-    font-family:var(--process-serif) !important;
-    font-size:clamp(18px, 4.85vw, 21px) !important;
+    color:#2a2119 !important;
+    font-family:var(--process-serif, var(--serif)) !important;
+    font-size:clamp(12.5px, 3.35vw, 15.4px) !important;
     line-height:1.08 !important;
-    font-weight:700 !important;
     letter-spacing:.01em !important;
-    text-align:left !important;
+    font-weight:700 !important;
+    text-transform:uppercase !important;
     text-wrap:balance !important;
-    text-shadow:0 1px 0 rgba(255,255,255,.62) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
+    grid-column:2 !important;
+    margin:0 0 5px !important;
+    font-size:clamp(15px, 4vw, 18px) !important;
+    line-height:1.08 !important;
+    text-align:left !important;
   }
 
   #quy-trinh-thinh-tuong .process-card p{
-    grid-column:2 !important;
-    grid-row:2 !important;
-    align-self:start !important;
-    box-sizing:border-box !important;
     width:100% !important;
-    max-width:none !important;
-    min-height:0 !important;
-    max-height:none !important;
-    margin:0 !important;
+    max-width:100% !important;
+    margin:0 auto !important;
     padding:0 !important;
-    color:#463528 !important;
-    font-family:var(--process-sans) !important;
-    font-size:clamp(12.6px, 3.45vw, 14px) !important;
-    line-height:1.30 !important;
-    letter-spacing:.002em !important;
-    text-align:left !important;
-    text-wrap:pretty !important;
-    overflow:visible !important;
-    display:block !important;
-    -webkit-line-clamp:initial !important;
-    -webkit-box-orient:initial !important;
-    transform:none !important;
+    color:#3a2b1f !important;
+    font-family:var(--process-sans, var(--sans)) !important;
+    font-size:clamp(10.2px, 2.78vw, 12.2px) !important;
+    line-height:1.22 !important;
+    letter-spacing:0 !important;
+    display:-webkit-box !important;
+    -webkit-box-orient:vertical !important;
+    -webkit-line-clamp:2 !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
   }
 
   #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
   #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
     width:100% !important;
-    max-width:none !important;
-    font-size:clamp(12.15px, 3.28vw, 13.55px) !important;
-    line-height:1.25 !important;
+    max-width:100% !important;
+    font-size:clamp(9.8px, 2.62vw, 11.6px) !important;
+    line-height:1.18 !important;
+    -webkit-line-clamp:2 !important;
   }
 
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:none !important;
-    margin-bottom:clamp(3px, .8vw, 5px) !important;
-    font-size:clamp(17.1px, 4.45vw, 19.3px) !important;
-    line-height:1.04 !important;
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
+    grid-column:2 !important;
+    margin:0 !important;
+    text-align:left !important;
   }
 }
 
-@media (max-width:360px){
+@media (max-width:380px){
   #quy-trinh-thinh-tuong .process-inner{
     width:min(100% - 20px, 360px) !important;
   }
 
+  #quy-trinh-thinh-tuong .process-heading h2{
+    max-width:calc(100vw - 72px) !important;
+    font-size:clamp(25px, 7.25vw, 31px) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading-ornament{
+    width:24px !important;
+  }
+
   #quy-trinh-thinh-tuong .process-cards{
-    --dta-process-mobile-icon:76px;
-    --dta-process-mobile-pad-left:7px;
     gap:8px !important;
-    max-width:340px !important;
   }
 
   #quy-trinh-thinh-tuong .process-card{
-    padding:9px 11px 9px var(--dta-process-mobile-pad-left) !important;
-    border-radius:18px !important;
+    min-height:98px !important;
+    padding:9px 7px 10px !important;
+    border-radius:15px !important;
   }
 
-  #quy-trinh-thinh-tuong .process-card-content{
-    column-gap:10px !important;
+  #quy-trinh-thinh-tuong .process-card:nth-child(3){
+    min-height:108px !important;
+    padding:10px 10px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon{
+    width:38px !important;
+    height:38px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-content{
+    grid-template-columns:48px 1fr !important;
+    column-gap:9px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-icon{
+    width:48px !important;
+    height:48px !important;
   }
 
   #quy-trinh-thinh-tuong .process-card h3{
-    font-size:17px !important;
+    font-size:11.6px !important;
     line-height:1.06 !important;
-    margin-bottom:3px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
+    font-size:14px !important;
   }
 
   #quy-trinh-thinh-tuong .process-card p{
-    font-size:11.7px !important;
-    line-height:1.22 !important;
+    font-size:9.7px !important;
+    line-height:1.16 !important;
   }
 
   #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
   #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    font-size:11.25px !important;
-    line-height:1.18 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    font-size:15.9px !important;
-    line-height:1.03 !important;
+    font-size:9.35px !important;
+    line-height:1.14 !important;
   }
 }
 </style>
+
 </body></html>
