@@ -28841,102 +28841,149 @@ body[data-theme="dark"] .bon-su-meaning-section .bon-su-card p{
 </style>
 
 
-<style id="dta-process-card-title-gap-tight-v20">
+
+<style id="dta-process-card3-text-safe-v20">
 /* =========================================================
    DTA FIX 2026-06-11:
-   Vùng "Quy Trình Thỉnh Tượng & An Vị" - giảm nhẹ khoảng cách
-   giữa tiêu đề card và nội dung mô tả để card 3 không bị cắt chữ.
-   Áp dụng đồng đều cho cả 5 card, đặt cuối file để override v7-v19.
+   Sửa lỗi card 3 trong vùng "Quy Trình Thỉnh Tượng & An Vị"
+   bị cắt phần mô tả ở một số trình duyệt khi font/render khác nhau.
+   - Bỏ line-clamp kiểu WebKit cho vùng quy trình trên desktop/tablet.
+   - Tối ưu riêng card 3: giảm nhẹ title, nới vùng chữ, bỏ clip nội dung.
+   - Mobile vẫn giữ timeline dọc, chỉ khóa lại overflow để text luôn hiện đủ.
    ========================================================= */
 
-/* Desktop + tablet: kéo mô tả lên gần tiêu đề hơn một chút */
 @media (min-width:621px){
-  #quy-trinh-thinh-tuong .process-card h3{
-    margin-bottom:clamp(3px, .34vw, 6px) !important;
+  #quy-trinh-thinh-tuong .process-card-content{
+    overflow:visible !important;
+    grid-template-rows:auto auto auto auto !important;
   }
 
   #quy-trinh-thinh-tuong .process-card p{
-    padding-top:clamp(2px, .18vw, 4px) !important;
+    display:block !important;
+    overflow:visible !important;
+    max-height:none !important;
+    -webkit-line-clamp:unset !important;
+    line-clamp:unset !important;
+    -webkit-box-orient:initial !important;
   }
-}
 
-/* Desktop vừa / laptop: giảm thêm rất nhẹ vì card thấp hơn */
-@media (min-width:621px) and (max-width:1500px){
-  #quy-trinh-thinh-tuong .process-card h3{
+  /* Card 3 có tiêu đề và mô tả dài nhất nên cần safe-area riêng */
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-content{
+    top:clamp(14px, .95vw, 24px) !important;
+    bottom:clamp(48px, 2.85vw, 66px) !important;
+    left:clamp(14px, 1.05vw, 22px) !important;
+    right:clamp(14px, 1.05vw, 22px) !important;
+    overflow:visible !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-icon{
+    width:min(63%, 172px) !important;
+    max-width:172px !important;
     margin-bottom:clamp(2px, .28vw, 5px) !important;
   }
 
-  #quy-trinh-thinh-tuong .process-card p{
-    padding-top:2px !important;
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-icon img{
+    width:106% !important;
+    height:106% !important;
+    max-width:none !important;
+    max-height:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-mini-mark{
+    width:clamp(16px, 1.25vw, 22px) !important;
+    height:clamp(16px, 1.25vw, 22px) !important;
+    margin-bottom:clamp(4px, .42vw, 7px) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
+    max-width:100% !important;
+    margin-bottom:clamp(4px, .36vw, 7px) !important;
+    font-size:clamp(16px, 1.06vw, 21px) !important;
+    line-height:1.08 !important;
+    letter-spacing:.006em !important;
+    text-wrap:balance !important;
+    overflow:visible !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
+    width:100% !important;
+    max-width:240px !important;
+    margin-inline:auto !important;
+    padding:0 clamp(2px, .22vw, 5px) !important;
+    font-size:clamp(12.2px, .78vw, 15px) !important;
+    line-height:1.22 !important;
+    letter-spacing:0 !important;
+    text-align:center !important;
+    overflow:visible !important;
+    display:block !important;
+    max-height:none !important;
+    -webkit-line-clamp:unset !important;
+    line-clamp:unset !important;
+    -webkit-box-orient:initial !important;
   }
 }
 
-/* Tablet 3/2 card: giữ đồng đều khoảng cách trong tất cả card */
-@media (min-width:621px) and (max-width:1180px){
-  #quy-trinh-thinh-tuong .process-card h3{
+/* Dải 5 cột desktop là nơi dễ thiếu chiều cao nhất sau khi icon được tăng lớn */
+@media (min-width:1181px) and (max-width:1500px){
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-content{
+    top:18px !important;
+    bottom:52px !important;
+    left:16px !important;
+    right:16px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-icon{
+    width:min(61%, 160px) !important;
+    max-width:160px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
+    font-size:clamp(15.8px, 1.03vw, 18px) !important;
+    line-height:1.06 !important;
     margin-bottom:4px !important;
   }
-}
 
-/* Mobile timeline dọc: giữ khoảng cách gọn, không ảnh hưởng layout icon mới */
-@media (max-width:620px){
-  #quy-trinh-thinh-tuong .process-card h3{
-    margin-bottom:2px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    padding-top:0 !important;
-  }
-}
-</style>
-
-
-<style id="dta-process-card-title-gap-tighter-v21">
-/* =========================================================
-   DTA FIX 2026-06-11:
-   Vùng "Quy Trình Thỉnh Tượng & An Vị" - tiếp tục giảm rất nhẹ
-   khoảng cách giữa tiêu đề card và nội dung mô tả.
-   Áp dụng đồng đều cho cả 5 card, đặt cuối file để override v20.
-   ========================================================= */
-
-/* Desktop + tablet: giảm thêm nhẹ, đủ để phần mô tả thoáng hơn trong khung */
-@media (min-width:621px){
-  #quy-trinh-thinh-tuong .process-card h3{
-    margin-bottom:clamp(1px, .22vw, 3px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    padding-top:0 !important;
-    margin-top:0 !important;
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
+    max-width:232px !important;
+    font-size:clamp(12px, .76vw, 13.4px) !important;
+    line-height:1.20 !important;
   }
 }
 
-/* Desktop vừa / laptop: nơi card dễ bị thấp hơn, siết khoảng cách thêm một chút */
-@media (min-width:621px) and (max-width:1500px){
-  #quy-trinh-thinh-tuong .process-card h3{
-    margin-bottom:clamp(1px, .18vw, 3px) !important;
-  }
-}
-
-/* Tablet 3/2 card: giữ khoảng cách đồng đều cho cả 5 card */
+/* Tablet 3/2 hoặc 2 cột: vẫn bỏ mọi cơ chế clip để tránh khác biệt Chrome/Safari/Edge */
 @media (min-width:621px) and (max-width:1180px){
-  #quy-trinh-thinh-tuong .process-card h3{
-    margin-bottom:2px !important;
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-content{
+    top:clamp(18px, 2.3vw, 28px) !important;
+    bottom:clamp(54px, 6.5vw, 76px) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
+    font-size:clamp(17px, 2.25vw, 22px) !important;
+    line-height:1.08 !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
+    max-width:270px !important;
+    font-size:clamp(12.8px, 1.55vw, 15.5px) !important;
+    line-height:1.24 !important;
   }
 }
 
-/* Mobile timeline dọc: giảm thêm rất nhẹ nhưng không làm dính chữ */
 @media (max-width:620px){
-  #quy-trinh-thinh-tuong .process-card h3{
-    margin-bottom:1px !important;
+  #quy-trinh-thinh-tuong .process-card,
+  #quy-trinh-thinh-tuong .process-card-content,
+  #quy-trinh-thinh-tuong .process-card p{
+    overflow:visible !important;
+    max-height:none !important;
   }
 
   #quy-trinh-thinh-tuong .process-card p{
-    padding-top:0 !important;
-    margin-top:0 !important;
+    display:block !important;
+    -webkit-line-clamp:unset !important;
+    line-clamp:unset !important;
+    -webkit-box-orient:initial !important;
   }
 }
 </style>
-
 
 </body></html>
