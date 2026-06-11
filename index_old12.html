@@ -22494,53 +22494,6 @@ body{
   }
 </style>
 
-
-<style id="dta-process-mobile-use-frame-mobile-v14">
-/* =========================================================
-   DTA PROCESS MOBILE FRAME SOURCE FINAL V14 - 2026-06-11
-   Yêu cầu: trên mobile dùng trực tiếp khung
-   frame-quy-trinh-thinh-tuong-an-vi_mobile.png
-   thay cho frame desktop.
-   Giải pháp:
-   - Đổi markup sang <picture> để browser chọn đúng asset mobile.
-   - Giữ asset desktop cho tablet/desktop.
-   - Khoá layout của wrapper frame để các block CSS cũ không làm sai lệch.
-   ========================================================= */
-#quy-trinh-thinh-tuong .process-card-frame-picture{
-  display:block;
-}
-
-#quy-trinh-thinh-tuong .process-card-frame-picture .process-card-frame{
-  display:block;
-}
-
-@media (max-width:620px){
-  #quy-trinh-thinh-tuong .process-card-frame-picture{
-    position:absolute !important;
-    inset:0 !important;
-    z-index:0 !important;
-    width:100% !important;
-    height:100% !important;
-    pointer-events:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-frame-picture .process-card-frame{
-    content:none !important;
-    position:absolute !important;
-    inset:0 !important;
-    z-index:0 !important;
-    width:100% !important;
-    height:100% !important;
-    max-width:none !important;
-    max-height:none !important;
-    object-fit:fill !important;
-    object-position:center center !important;
-    transform:none !important;
-    pointer-events:none !important;
-  }
-}
-</style>
-
 </head>
 <body class="dta-motion-reduced dta-intro-started dta-intro-complete">
 <main class="dta-page">
@@ -25296,343 +25249,6 @@ body{
 }
 </style>
 
-<style id="dta-process-mobile-icon-fully-inside-frame-final-v13">
-/* =========================================================
-   DTA PROCESS MOBILE ICON FULLY INSIDE FRAME FINAL V13 - 2026-06-11
-   Mục tiêu mobile:
-   - Icon nằm hẳn trong lòng khung card, không còn đè lên viền trên.
-   - Giảm khoảng trống lớn phía trên/dưới bên ngoài card do frame mobile có vùng trong suốt.
-   - Không tác động desktop/tablet.
-   Cách xử lý:
-   - Crop/reposition frame mobile theo trục dọc để phần khung hiện lên sớm hơn.
-   - Tạo chiều cao card mobile compact hơn thay vì kéo theo tỷ lệ 3:5 quá dài.
-   - Đặt nội dung trong safe-area mới: icon ở trong khung, chữ không chạm hoa sen đáy.
-   ========================================================= */
-@media (max-width:620px){
-  #quy-trinh-thinh-tuong.process-section{
-    padding-top:clamp(26px, 7vw, 34px) !important;
-    padding-bottom:clamp(18px, 5vw, 28px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-heading{
-    margin-bottom:clamp(6px, 1.8vw, 10px) !important;
-    padding-top:0 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-heading::after{
-    margin-top:clamp(7px, 2vw, 10px) !important;
-    margin-bottom:0 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-cards{
-    align-items:flex-start !important;
-    padding-top:0 !important;
-    padding-bottom:4px !important;
-    gap:14px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card{
-    position:relative !important;
-    flex:0 0 clamp(292px, 88vw, 398px) !important;
-    width:clamp(292px, 88vw, 398px) !important;
-    height:clamp(420px, 102vw, 492px) !important;
-    min-height:0 !important;
-    max-height:none !important;
-    aspect-ratio:auto !important;
-    padding:
-      clamp(92px, 23.5vw, 112px)
-      clamp(22px, 6vw, 30px)
-      clamp(70px, 17.5vw, 90px) !important;
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-    justify-content:flex-start !important;
-    box-sizing:border-box !important;
-    overflow:hidden !important;
-    contain:paint !important;
-    transform:none !important;
-    scroll-snap-align:center !important;
-    scroll-snap-stop:always !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:hover{
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-frame{
-    content:url("assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi_mobile.png") !important;
-    position:absolute !important;
-    left:0 !important;
-    right:0 !important;
-    top:clamp(-160px, -36vw, -124px) !important;
-    bottom:clamp(-160px, -36vw, -124px) !important;
-    width:100% !important;
-    height:auto !important;
-    max-width:none !important;
-    max-height:none !important;
-    object-fit:fill !important;
-    object-position:center center !important;
-    pointer-events:none !important;
-    transform:none !important;
-    z-index:0 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-content{
-    position:relative !important;
-    z-index:2 !important;
-    inset:auto !important;
-    width:100% !important;
-    height:100% !important;
-    min-height:0 !important;
-    max-height:none !important;
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-    justify-content:flex-start !important;
-    overflow:visible !important;
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{
-    position:relative !important;
-    z-index:3 !important;
-    width:clamp(88px, 25.5vw, 108px) !important;
-    height:clamp(88px, 25.5vw, 108px) !important;
-    aspect-ratio:1 / 1 !important;
-    flex:0 0 auto !important;
-    display:grid !important;
-    place-items:center !important;
-    margin:0 auto clamp(4px, 1.2vw, 6px) !important;
-    padding:0 !important;
-    transform:none !important;
-    translate:none !important;
-    overflow:visible !important;
-    filter:drop-shadow(0 6px 12px rgba(103,58,13,.15)) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon::before{
-    inset:18% !important;
-    opacity:.46 !important;
-    filter:blur(5px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon img{
-    width:100% !important;
-    height:100% !important;
-    max-width:100% !important;
-    max-height:100% !important;
-    object-fit:contain !important;
-    transform:none !important;
-    translate:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:hover .process-card-icon,
-  #quy-trinh-thinh-tuong .process-card:hover .process-card-icon img{
-    transform:none !important;
-    translate:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark{
-    flex:0 0 auto !important;
-    width:16px !important;
-    height:16px !important;
-    margin:0 auto clamp(6px, 1.7vw, 9px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark::before,
-  #quy-trinh-thinh-tuong .process-mini-mark::after{
-    width:12px !important;
-    height:12px !important;
-    border-width:1.1px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark span{
-    inset:6px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card h3{
-    flex:0 0 auto !important;
-    max-width:min(100%, 252px) !important;
-    min-height:0 !important;
-    margin:0 auto clamp(9px, 2.4vw, 12px) !important;
-    color:#2b211a !important;
-    font-size:clamp(17.4px, 4.65vw, 21px) !important;
-    line-height:1.10 !important;
-    letter-spacing:.004em !important;
-    text-align:center !important;
-    text-wrap:balance !important;
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    box-sizing:border-box !important;
-    flex:0 0 auto !important;
-    width:min(100%, 238px) !important;
-    max-width:calc(100% - 12px) !important;
-    min-height:0 !important;
-    max-height:none !important;
-    margin:0 auto !important;
-    padding:0 clamp(7px, 2vw, 11px) !important;
-    color:#2d251e !important;
-    font-size:clamp(12px, 3.22vw, 13.5px) !important;
-    line-height:1.22 !important;
-    letter-spacing:0 !important;
-    text-align:center !important;
-    text-wrap:balance !important;
-    overflow:visible !important;
-    display:block !important;
-    transform:none !important;
-    -webkit-line-clamp:initial !important;
-    -webkit-box-orient:initial !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 226px) !important;
-    font-size:clamp(11.55px, 3.08vw, 12.85px) !important;
-    line-height:1.17 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:min(100%, 264px) !important;
-    margin-bottom:clamp(7px, 1.9vw, 10px) !important;
-    font-size:clamp(15.9px, 4.25vw, 19.2px) !important;
-    line-height:1.05 !important;
-  }
-}
-
-@media (max-width:390px){
-  #quy-trinh-thinh-tuong.process-section{
-    padding-top:26px !important;
-    padding-bottom:20px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-heading{
-    margin-bottom:7px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-cards{
-    padding-top:0 !important;
-    padding-bottom:2px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card{
-    flex-basis:88vw !important;
-    width:88vw !important;
-    height:clamp(404px, 106vw, 442px) !important;
-    padding:
-      88px
-      18px
-      72px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-frame{
-    top:-134px !important;
-    bottom:-128px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{
-    width:92px !important;
-    height:92px !important;
-    margin-bottom:4px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark{
-    width:15px !important;
-    height:15px !important;
-    margin-bottom:7px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card h3{
-    max-width:232px !important;
-    margin-bottom:8px !important;
-    font-size:16.9px !important;
-    line-height:1.08 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    width:min(100%, 212px) !important;
-    max-width:calc(100% - 10px) !important;
-    padding-inline:6px !important;
-    font-size:11.65px !important;
-    line-height:1.17 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 204px) !important;
-    font-size:11.25px !important;
-    line-height:1.13 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:238px !important;
-    margin-bottom:7px !important;
-    font-size:15.75px !important;
-    line-height:1.04 !important;
-  }
-}
-
-@media (max-width:340px){
-  #quy-trinh-thinh-tuong.process-section{
-    padding-top:22px !important;
-    padding-bottom:18px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card{
-    flex-basis:89vw !important;
-    width:89vw !important;
-    height:398px !important;
-    padding:
-      78px
-      15px
-      66px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-frame{
-    top:-118px !important;
-    bottom:-112px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{
-    width:82px !important;
-    height:82px !important;
-    margin-bottom:4px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark{
-    width:14px !important;
-    height:14px !important;
-    margin-bottom:6px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card h3{
-    margin-bottom:7px !important;
-    font-size:15.25px !important;
-    line-height:1.04 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    width:min(100%, 190px) !important;
-    max-width:calc(100% - 8px) !important;
-    padding-inline:5px !important;
-    font-size:10.6px !important;
-    line-height:1.11 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    font-size:14.6px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 184px) !important;
-    font-size:10.4px !important;
-    line-height:1.09 !important;
-  }
-}
-</style>
-
 <section class="process-section" id="quy-trinh-thinh-tuong" aria-labelledby="process-title">
 
   <div class="process-inner">
@@ -25647,10 +25263,7 @@ body{
 
     <div class="process-cards">
       <article class="process-card">
-        <picture class="process-card-frame-picture">
-          <source media="(max-width: 620px)" srcset="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi_mobile.png">
-          <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
-        </picture>
+        <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
         <div class="process-card-content">
           <div class="process-card-icon"><img src="assets/icons/quy_trinh_thinh_tuong/icon-lang-nghe-tam-nguyen.png" alt="Lắng nghe tâm nguyện" loading="lazy"></div>
           <div class="process-mini-mark" aria-hidden="true"><span></span></div>
@@ -25660,10 +25273,7 @@ body{
       </article>
 
       <article class="process-card">
-        <picture class="process-card-frame-picture">
-          <source media="(max-width: 620px)" srcset="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi_mobile.png">
-          <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
-        </picture>
+        <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
         <div class="process-card-content">
           <div class="process-card-icon"><img src="assets/icons/quy_trinh_thinh_tuong/icon-tu-van-hinh-tuong.png" alt="Tư vấn hình tượng" loading="lazy"></div>
           <div class="process-mini-mark" aria-hidden="true"><span></span></div>
@@ -25673,10 +25283,7 @@ body{
       </article>
 
       <article class="process-card">
-        <picture class="process-card-frame-picture">
-          <source media="(max-width: 620px)" srcset="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi_mobile.png">
-          <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
-        </picture>
+        <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
         <div class="process-card-content">
           <div class="process-card-icon"><img src="assets/icons/quy_trinh_thinh_tuong/icon-thiet-ke-dinh-hinh-khong-gian.png" alt="Thiết kế và định hình không gian" loading="lazy"></div>
           <div class="process-mini-mark" aria-hidden="true"><span></span></div>
@@ -25686,10 +25293,7 @@ body{
       </article>
 
       <article class="process-card">
-        <picture class="process-card-frame-picture">
-          <source media="(max-width: 620px)" srcset="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi_mobile.png">
-          <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
-        </picture>
+        <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
         <div class="process-card-content">
           <div class="process-card-icon"><img src="assets/icons/quy_trinh_thinh_tuong/icon-an-vi-ton-tuong.png" alt="An vị tôn tượng" loading="lazy"></div>
           <div class="process-mini-mark" aria-hidden="true"><span></span></div>
@@ -25699,10 +25303,7 @@ body{
       </article>
 
       <article class="process-card">
-        <picture class="process-card-frame-picture">
-          <source media="(max-width: 620px)" srcset="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi_mobile.png">
-          <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
-        </picture>
+        <img class="process-card-frame" src="assets/images/decor/quy_trinh_thinh_tuong/frame-quy-trinh-thinh-tuong-an-vi.png" alt="" loading="lazy">
         <div class="process-card-content">
           <div class="process-card-icon"><img src="assets/icons/quy_trinh_thinh_tuong/icon-dong-hanh-cham-soc-lau-dai.png" alt="Đồng hành và chăm sóc lâu dài" loading="lazy"></div>
           <div class="process-mini-mark" aria-hidden="true"><span></span></div>
