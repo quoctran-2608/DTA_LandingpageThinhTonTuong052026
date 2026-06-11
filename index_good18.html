@@ -28010,21 +28010,12 @@ body{
 
 
 <style id="dta-bon-su-three-icons-tuning-20260611">
-/* DTA 2026-06-11: sửa cân đối 3 card Chuẩn tướng / Chuẩn mực chế tác / An vị trang nghiêm.
-   - Hạ nhẹ tiêu đề để nằm cân đối hơn giữa icon và phần mô tả.
-   - Căn tâm icon trên mobile trong vùng giữa viền trái card và đường divide.
-   - Khóa màu chữ tối trên nền sáng, kể cả khi trình duyệt/thiết bị bật dark theme. */
-.bon-su-meaning-section,
-.bon-su-meaning-section .bon-su-card{
-  color-scheme:light !important;
-}
-
+/* DTA 2026-06-11: tăng nhẹ 3 icon Chuẩn tướng / Chuẩn mực chế tác / An vị trang nghiêm
+   và đồng bộ khoảng cách giữa icon An vị trang nghiêm với tiêu đề bên dưới. */
 .bon-su-meaning-section .bon-su-card-icon-wrap{
   width:clamp(122px, 8.6vw, 152px) !important;
   height:clamp(100px, 7.15vw, 126px) !important;
   margin:0 auto clamp(11px, .82vw, 16px) !important;
-  justify-self:center !important;
-  align-self:center !important;
 }
 
 .bon-su-meaning-section .bon-su-card--an-vi .bon-su-card-icon-wrap{
@@ -28039,26 +28030,6 @@ body{
   transform:none !important;
 }
 
-.bon-su-meaning-section .bon-su-card h3,
-html.dark .bon-su-meaning-section .bon-su-card h3,
-html[data-theme="dark"] .bon-su-meaning-section .bon-su-card h3,
-body.dark .bon-su-meaning-section .bon-su-card h3,
-body[data-theme="dark"] .bon-su-meaning-section .bon-su-card h3{
-  color:#26170d !important;
-  -webkit-text-fill-color:#26170d !important;
-  text-shadow:0 1px 0 rgba(255,255,255,.48) !important;
-  transform:translateY(clamp(4px, .36vw, 7px)) !important;
-}
-
-.bon-su-meaning-section .bon-su-card p,
-html.dark .bon-su-meaning-section .bon-su-card p,
-html[data-theme="dark"] .bon-su-meaning-section .bon-su-card p,
-body.dark .bon-su-meaning-section .bon-su-card p,
-body[data-theme="dark"] .bon-su-meaning-section .bon-su-card p{
-  color:#30251d !important;
-  -webkit-text-fill-color:#30251d !important;
-}
-
 .bon-su-meaning-section .bon-su-card:hover .bon-su-card-icon,
 .bon-su-meaning-section .bon-su-card--an-vi:hover .bon-su-card-icon{
   transform:translateY(-4px) scale(1.045) !important;
@@ -28069,71 +28040,32 @@ body[data-theme="dark"] .bon-su-meaning-section .bon-su-card p{
     width:104px !important;
     height:90px !important;
     margin:0 !important;
-    justify-self:center !important;
-    align-self:center !important;
   }
 }
 
 @media (max-width:680px){
   .bon-su-meaning-section .bon-su-card{
-    grid-template-columns:clamp(82px, 23vw, 100px) minmax(0, 1fr) !important;
+    grid-template-columns:clamp(82px, 23vw, 100px) 1fr !important;
   }
 
   .bon-su-meaning-section .bon-su-card-icon-wrap,
   .bon-su-meaning-section .bon-su-card--an-vi .bon-su-card-icon-wrap{
     width:76px !important;
     height:70px !important;
-    margin:0 auto !important;
-    justify-self:center !important;
+    margin:0 !important;
     align-self:center !important;
-    place-self:center !important;
-    display:grid !important;
-    place-items:center !important;
-  }
-
-  .bon-su-meaning-section .bon-su-card-icon-wrap::after{
-    right:calc(-1 * clamp(5px, 1.6vw, 8px)) !important;
-  }
-
-  .bon-su-meaning-section .bon-su-card-icon{
-    width:100% !important;
-    height:100% !important;
-    object-fit:contain !important;
-    object-position:center center !important;
-  }
-
-  .bon-su-meaning-section .bon-su-card h3{
-    color:#26170d !important;
-    -webkit-text-fill-color:#26170d !important;
-    transform:translateY(3px) !important;
-  }
-
-  .bon-su-meaning-section .bon-su-card p{
-    color:#30251d !important;
-    -webkit-text-fill-color:#30251d !important;
   }
 }
 
 @media (max-width:420px){
   .bon-su-meaning-section .bon-su-card{
-    grid-template-columns:76px minmax(0, 1fr) !important;
+    grid-template-columns:76px 1fr !important;
   }
 
   .bon-su-meaning-section .bon-su-card-icon-wrap,
   .bon-su-meaning-section .bon-su-card--an-vi .bon-su-card-icon-wrap{
     width:66px !important;
     height:62px !important;
-    margin:0 auto !important;
-    justify-self:center !important;
-    place-self:center !important;
-  }
-
-  .bon-su-meaning-section .bon-su-card-icon-wrap::after{
-    right:-5px !important;
-  }
-
-  .bon-su-meaning-section .bon-su-card h3{
-    transform:translateY(2px) !important;
   }
 }
 </style>
