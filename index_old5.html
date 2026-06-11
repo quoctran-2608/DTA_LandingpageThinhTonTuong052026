@@ -214,10 +214,7 @@
       border-radius:50%;
       background:var(--gold-2);
       box-shadow:0 0 14px rgba(240,198,107,.8);
-      transform:translateX(-50%) scale(.72);
-      opacity:0;
-      transition:opacity .35s ease, transform .35s ease;
-      pointer-events:none;
+      transform:translateX(-50%);
     }
     .main-nav a::after{
       content:"";
@@ -227,24 +224,13 @@
       width:clamp(38px, 4vw, 62px);
       height:1px;
       background:linear-gradient(90deg, transparent, var(--gold), transparent);
-      transform:translateX(-50%) scaleX(.55);
-      transform-origin:center;
-      opacity:0;
-      transition:opacity .35s ease, transform .35s ease;
-      pointer-events:none;
+      transform:translateX(-50%);
+      opacity:.72;
     }
     .main-nav a:hover{
       color:#ffe9a8;
       transform:translateY(-2px);
       text-shadow:0 0 14px rgba(246,211,122,.38);
-    }
-    .main-nav a:hover::before{
-      opacity:1;
-      transform:translateX(-50%) scale(1);
-    }
-    .main-nav a:hover::after{
-      opacity:.72;
-      transform:translateX(-50%) scaleX(1);
     }
     .header-cta{
       display:inline-flex;
@@ -11693,14 +11679,9 @@ body{
       height:10px;
       background:url("assets/images/decor/hero/nav-active-underline-gold.png") center / contain no-repeat;
       opacity:0;
-      transform:translateX(-50%) scaleX(.7);
-      transition:opacity .35s ease, transform .35s ease;
-      pointer-events:none;
     }
-    .main-nav a:hover::after{
-      opacity:1;
-      transform:translateX(-50%) scaleX(1);
-    }
+    .main-nav a:hover::after,
+    .main-nav a.is-active::after{opacity:1}
     .main-nav a:hover{color:#fff2b8;text-shadow:0 0 16px rgba(246,211,122,.32)}
     .header-cta{
       min-width:clamp(184px, 14vw, 252px);
@@ -12984,10 +12965,8 @@ body{
       border-radius:50% !important;
       background:var(--gold-2) !important;
       box-shadow:0 0 14px rgba(240,198,107,.8) !important;
-      transform:translateX(-50%) scale(.72) !important;
-      opacity:0 !important;
-      transition:opacity .35s ease, transform .35s ease !important;
-      pointer-events:none !important;
+      transform:translateX(-50%) !important;
+      opacity:1 !important;
     }
     .main-nav a::after{
       content:"" !important;
@@ -12998,24 +12977,14 @@ body{
       width:clamp(38px, 4vw, 62px) !important;
       height:1px !important;
       background:linear-gradient(90deg, transparent, var(--gold), transparent) !important;
-      transform:translateX(-50%) scaleX(.55) !important;
-      transform-origin:center !important;
-      opacity:0 !important;
-      transition:opacity .35s ease, transform .35s ease !important;
-      pointer-events:none !important;
+      transform:translateX(-50%) !important;
+      opacity:.72 !important;
     }
-    .main-nav a:hover{
+    .main-nav a:hover,
+    .main-nav a.is-active{
       color:#ffe9a8 !important;
       transform:translateY(-2px) !important;
       text-shadow:0 0 14px rgba(246,211,122,.38) !important;
-    }
-    .main-nav a:hover::before{
-      opacity:1 !important;
-      transform:translateX(-50%) scale(1) !important;
-    }
-    .main-nav a:hover::after{
-      opacity:.72 !important;
-      transform:translateX(-50%) scaleX(1) !important;
     }
     .header-cta{
       display:inline-flex !important;
