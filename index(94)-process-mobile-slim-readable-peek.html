@@ -22542,180 +22542,366 @@ body{
 </style>
 
 
-<style id="dta-process-mobile-slim-peek-v16">
+<style id="dta-process-mobile-slim-readable-peek-v17">
 /* =========================================================
-   DTA PROCESS MOBILE SLIM CARD + NEXT PEEK FINAL V16 - 2026-06-11
-   Mục tiêu mobile:
-   - Card 5 bước ốm hơn để card kế tiếp nhú ra, gợi ý người xem vuốt ngang.
-   - Giữ icon/title/description vẫn đủ lớn, dễ đọc.
-   - Giữ khoảng thở dưới section sau khi đã làm card gọn lại.
-   - Chỉ tác động mobile, không ảnh hưởng desktop/tablet.
+   DTA PROCESS MOBILE SLIM + READABLE PEEK FINAL V17 - 2026-06-11
+   Mục tiêu riêng mobile cho 5 card “Quy Trình Thỉnh Tượng & An Vị”:
+   - Card ốm hơn để card kế tiếp nhú ra rõ, gợi ý người xem vuốt ngang.
+   - Dùng frame mobile đã resize, không kéo card quá rộng.
+   - Icon và chữ trong card lớn hơn, dễ đọc hơn.
+   - Giữ khoảng thở dưới carousel để tách vùng đẹp hơn.
    ========================================================= */
 @media (max-width:620px){
   #quy-trinh-thinh-tuong.process-section{
-    padding-bottom:clamp(58px, 15vw, 86px) !important;
+    padding-top:clamp(28px, 7.4vw, 38px) !important;
+    padding-bottom:clamp(64px, 17vw, 88px) !important;
+    overflow:hidden !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-inner{
+    width:100% !important;
+    max-width:none !important;
+    margin-inline:0 !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading,
+  #quy-trinh-thinh-tuong .process-mobile-hint{
+    width:var(--container) !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-heading{
+    margin-bottom:clamp(8px, 2.4vw, 14px) !important;
   }
 
   #quy-trinh-thinh-tuong .process-cards{
     width:100vw !important;
+    max-width:none !important;
+    position:relative !important;
     left:50% !important;
+    right:auto !important;
     transform:translateX(-50%) !important;
-    justify-content:flex-start !important;
+    display:flex !important;
+    grid-template-columns:none !important;
     align-items:flex-start !important;
-    gap:clamp(12px, 3.5vw, 16px) !important;
+    justify-content:flex-start !important;
+    gap:clamp(12px, 3.4vw, 16px) !important;
+    margin:clamp(10px, 2.8vw, 16px) 0 0 !important;
+    padding-top:2px !important;
+    padding-bottom:clamp(18px, 5vw, 28px) !important;
     padding-left:max(16px, calc((100vw - 430px) / 2 + 16px)) !important;
-    padding-right:max(72px, calc((100vw - 430px) / 2 + 92px)) !important;
-    padding-bottom:clamp(28px, 7vw, 40px) !important;
+    padding-right:clamp(96px, 25vw, 132px) !important;
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+    overscroll-behavior-x:contain !important;
+    -webkit-overflow-scrolling:touch !important;
+    scroll-snap-type:x mandatory !important;
     scroll-padding-left:max(16px, calc((100vw - 430px) / 2 + 16px)) !important;
-    scroll-padding-right:max(72px, calc((100vw - 430px) / 2 + 92px)) !important;
+    scroll-padding-right:clamp(96px, 25vw, 132px) !important;
+    scrollbar-width:thin !important;
   }
 
   #quy-trinh-thinh-tuong .process-card{
-    flex:0 0 clamp(276px, 78vw, 336px) !important;
-    width:clamp(276px, 78vw, 336px) !important;
-    height:clamp(438px, 106vw, 510px) !important;
+    position:relative !important;
+    flex:0 0 clamp(270px, 72vw, 318px) !important;
+    width:clamp(270px, 72vw, 318px) !important;
+    height:clamp(396px, 102vw, 432px) !important;
+    min-width:0 !important;
+    min-height:0 !important;
+    max-width:none !important;
+    max-height:none !important;
+    aspect-ratio:auto !important;
+    box-sizing:border-box !important;
     padding:
-      clamp(78px, 20.5vw, 96px)
-      clamp(18px, 4.8vw, 24px)
-      clamp(74px, 18.5vw, 94px) !important;
+      clamp(46px, 12vw, 56px)
+      clamp(16px, 4.2vw, 20px)
+      clamp(62px, 15.5vw, 72px) !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    overflow:hidden !important;
+    contain:paint !important;
+    transform:none !important;
     scroll-snap-align:start !important;
-    scroll-margin-left:max(16px, calc((100vw - 430px) / 2 + 16px)) !important;
+    scroll-snap-stop:always !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:hover{
+    transform:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-frame-picture{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    z-index:0 !important;
+    display:block !important;
+    pointer-events:none !important;
+    overflow:hidden !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-frame-picture .process-card-frame,
+  #quy-trinh-thinh-tuong .process-card-frame{
+    content:none !important;
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    max-width:none !important;
+    max-height:none !important;
+    object-fit:fill !important;
+    object-position:center center !important;
+    transform:none !important;
+    z-index:0 !important;
+    pointer-events:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-content{
+    position:relative !important;
+    z-index:2 !important;
+    inset:auto !important;
+    width:100% !important;
+    height:100% !important;
+    min-height:0 !important;
+    max-height:none !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    overflow:visible !important;
+    transform:none !important;
   }
 
   #quy-trinh-thinh-tuong .process-card-icon{
-    width:clamp(108px, 29vw, 128px) !important;
-    height:clamp(108px, 29vw, 128px) !important;
-    margin-bottom:clamp(7px, 1.8vw, 10px) !important;
+    position:relative !important;
+    z-index:3 !important;
+    width:clamp(120px, 33vw, 140px) !important;
+    height:clamp(120px, 33vw, 140px) !important;
+    aspect-ratio:1 / 1 !important;
+    flex:0 0 auto !important;
+    display:grid !important;
+    place-items:center !important;
+    margin:0 auto clamp(5px, 1.5vw, 8px) !important;
+    padding:0 !important;
+    transform:none !important;
+    translate:none !important;
+    overflow:visible !important;
+    filter:drop-shadow(0 7px 14px rgba(103,58,13,.16)) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon::before{
+    inset:17% !important;
+    opacity:.5 !important;
+    filter:blur(5px) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card-icon img{
+    width:100% !important;
+    height:100% !important;
+    max-width:100% !important;
+    max-height:100% !important;
+    object-fit:contain !important;
+    transform:none !important;
+    translate:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:hover .process-card-icon,
+  #quy-trinh-thinh-tuong .process-card:hover .process-card-icon img{
+    transform:none !important;
+    translate:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-mini-mark{
+    flex:0 0 auto !important;
+    width:18px !important;
+    height:18px !important;
+    margin:0 auto clamp(6px, 1.8vw, 9px) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-mini-mark::before,
+  #quy-trinh-thinh-tuong .process-mini-mark::after{
+    width:13px !important;
+    height:13px !important;
+    border-width:1.2px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-mini-mark span{
+    inset:6.5px !important;
   }
 
   #quy-trinh-thinh-tuong .process-card h3{
-    max-width:min(100%, 256px) !important;
-    font-size:clamp(19.4px, 5.05vw, 23.4px) !important;
-    line-height:1.11 !important;
-    margin-bottom:clamp(10px, 2.7vw, 14px) !important;
+    flex:0 0 auto !important;
+    width:100% !important;
+    max-width:calc(100% - 10px) !important;
+    min-height:0 !important;
+    margin:0 auto clamp(9px, 2.4vw, 13px) !important;
+    font-size:clamp(22px, 6vw, 26px) !important;
+    line-height:1.07 !important;
+    letter-spacing:.006em !important;
+    text-align:center !important;
+    text-wrap:balance !important;
   }
 
   #quy-trinh-thinh-tuong .process-card p{
-    width:min(100%, 238px) !important;
-    max-width:calc(100% - 4px) !important;
-    font-size:clamp(13.35px, 3.52vw, 15.1px) !important;
-    line-height:1.28 !important;
-    padding-inline:clamp(4px, 1.2vw, 8px) !important;
+    box-sizing:border-box !important;
+    flex:0 0 auto !important;
+    width:min(100%, 250px) !important;
+    max-width:calc(100% - 12px) !important;
+    min-height:0 !important;
+    max-height:none !important;
+    margin:0 auto !important;
+    padding:0 clamp(5px, 1.6vw, 9px) !important;
+    font-size:clamp(15.6px, 4.18vw, 17.2px) !important;
+    line-height:1.26 !important;
+    letter-spacing:0 !important;
+    text-align:center !important;
+    text-wrap:balance !important;
+    overflow:visible !important;
+    display:block !important;
+    -webkit-line-clamp:initial !important;
+    -webkit-box-orient:initial !important;
+    transform:none !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(2) .process-card-icon,
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-icon{
+    width:clamp(112px, 30vw, 128px) !important;
+    height:clamp(112px, 30vw, 128px) !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(2) h3,
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
+    max-width:calc(100% - 6px) !important;
+    margin-bottom:clamp(7px, 2vw, 10px) !important;
+    font-size:clamp(20.4px, 5.45vw, 23.4px) !important;
+    line-height:1.04 !important;
   }
 
   #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
   #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 232px) !important;
-    font-size:clamp(12.65px, 3.32vw, 14.25px) !important;
-    line-height:1.22 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:min(100%, 262px) !important;
-    font-size:clamp(17.6px, 4.62vw, 21.2px) !important;
-    line-height:1.06 !important;
-    margin-bottom:clamp(8px, 2.2vw, 11px) !important;
+    width:min(100%, 236px) !important;
+    font-size:clamp(14.4px, 3.86vw, 15.8px) !important;
+    line-height:1.18 !important;
   }
 }
 
 @media (max-width:390px){
   #quy-trinh-thinh-tuong .process-cards{
-    gap:13px !important;
-    padding-left:15px !important;
-    padding-right:76px !important;
-    scroll-padding-left:15px !important;
-    scroll-padding-right:76px !important;
+    padding-left:14px !important;
+    padding-right:104px !important;
+    gap:12px !important;
+    scroll-padding-left:14px !important;
+    scroll-padding-right:104px !important;
   }
 
   #quy-trinh-thinh-tuong .process-card{
-    flex-basis:78vw !important;
-    width:78vw !important;
-    height:444px !important;
-    padding:
-      80px
-      17px
-      78px !important;
-    scroll-margin-left:15px !important;
+    flex-basis:clamp(254px, 73vw, 284px) !important;
+    width:clamp(254px, 73vw, 284px) !important;
+    height:clamp(386px, 105vw, 414px) !important;
+    padding:44px 15px 62px !important;
   }
 
   #quy-trinh-thinh-tuong .process-card-icon{
-    width:110px !important;
-    height:110px !important;
+    width:122px !important;
+    height:122px !important;
+    margin-bottom:5px !important;
   }
 
   #quy-trinh-thinh-tuong .process-card h3{
-    max-width:236px !important;
-    font-size:19.6px !important;
-    line-height:1.09 !important;
+    margin-bottom:9px !important;
+    font-size:22.2px !important;
+    line-height:1.06 !important;
   }
 
   #quy-trinh-thinh-tuong .process-card p{
-    width:min(100%, 218px) !important;
-    font-size:12.95px !important;
-    line-height:1.24 !important;
+    width:min(100%, 224px) !important;
+    font-size:15.2px !important;
+    line-height:1.2 !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(2) .process-card-icon,
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-icon{
+    width:108px !important;
+    height:108px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(2) h3,
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
+    font-size:19.9px !important;
+    line-height:1.03 !important;
   }
 
   #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
   #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 212px) !important;
-    font-size:12.15px !important;
-    line-height:1.18 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:240px !important;
-    font-size:17.05px !important;
+    width:min(100%, 214px) !important;
+    font-size:13.8px !important;
+    line-height:1.13 !important;
   }
 }
 
 @media (max-width:340px){
+  #quy-trinh-thinh-tuong.process-section{
+    padding-bottom:62px !important;
+  }
+
   #quy-trinh-thinh-tuong .process-cards{
-    gap:12px !important;
     padding-left:12px !important;
-    padding-right:64px !important;
+    padding-right:94px !important;
+    gap:11px !important;
     scroll-padding-left:12px !important;
-    scroll-padding-right:64px !important;
+    scroll-padding-right:94px !important;
   }
 
   #quy-trinh-thinh-tuong .process-card{
-    flex-basis:80vw !important;
-    width:80vw !important;
-    height:424px !important;
-    padding:
-      76px
-      14px
-      74px !important;
-    scroll-margin-left:12px !important;
+    flex-basis:250px !important;
+    width:250px !important;
+    height:382px !important;
+    padding:40px 13px 58px !important;
   }
 
   #quy-trinh-thinh-tuong .process-card-icon{
-    width:98px !important;
-    height:98px !important;
+    width:108px !important;
+    height:108px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-mini-mark{
+    width:15px !important;
+    height:15px !important;
+    margin-bottom:6px !important;
   }
 
   #quy-trinh-thinh-tuong .process-card h3{
-    max-width:216px !important;
-    font-size:17.3px !important;
-    line-height:1.07 !important;
+    margin-bottom:7px !important;
+    font-size:20px !important;
+    line-height:1.04 !important;
   }
 
   #quy-trinh-thinh-tuong .process-card p{
-    width:min(100%, 198px) !important;
-    font-size:11.7px !important;
-    line-height:1.18 !important;
+    width:min(100%, 206px) !important;
+    font-size:13.8px !important;
+    line-height:1.14 !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(2) .process-card-icon,
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) .process-card-icon{
+    width:96px !important;
+    height:96px !important;
+  }
+
+  #quy-trinh-thinh-tuong .process-card:nth-child(2) h3,
+  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
+    font-size:17.8px !important;
+    line-height:1.02 !important;
   }
 
   #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
   #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 192px) !important;
-    font-size:11.05px !important;
-    line-height:1.13 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:218px !important;
-    font-size:15.9px !important;
-    line-height:1.03 !important;
+    width:min(100%, 196px) !important;
+    font-size:12.7px !important;
+    line-height:1.09 !important;
   }
 }
 </style>
@@ -25812,232 +25998,6 @@ body{
 }
 </style>
 
-<style id="dta-process-mobile-readable-size-breathing-v15">
-/* =========================================================
-   DTA PROCESS MOBILE READABLE SIZE + BREATHING FINAL V15 - 2026-06-11
-   Yêu cầu: mobile 5 card “Quy Trình Thỉnh Tượng & An Vị”
-   - Icon và text lớn hơn, dễ nhìn hơn.
-   - Giữ nội dung nằm gọn trong frame mobile.
-   - Tăng khoảng thở phía dưới ngoài frame / giữa các vùng.
-   - Không tác động desktop/tablet.
-   ========================================================= */
-@media (max-width:620px){
-  #quy-trinh-thinh-tuong.process-section{
-    padding-top:clamp(28px, 7.5vw, 38px) !important;
-    padding-bottom:clamp(52px, 14vw, 78px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-heading{
-    margin-bottom:clamp(10px, 2.8vw, 16px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-cards{
-    padding-top:2px !important;
-    padding-bottom:clamp(22px, 6.5vw, 34px) !important;
-    gap:16px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card{
-    flex-basis:clamp(304px, 89vw, 408px) !important;
-    width:clamp(304px, 89vw, 408px) !important;
-    height:clamp(462px, 112vw, 540px) !important;
-    padding:
-      clamp(82px, 21.5vw, 102px)
-      clamp(22px, 6vw, 31px)
-      clamp(78px, 19vw, 100px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-frame-picture,
-  #quy-trinh-thinh-tuong .process-card-frame-picture .process-card-frame{
-    pointer-events:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-content{
-    justify-content:flex-start !important;
-    gap:0 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{
-    width:clamp(112px, 31vw, 138px) !important;
-    height:clamp(112px, 31vw, 138px) !important;
-    margin:0 auto clamp(7px, 1.8vw, 10px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon::before{
-    inset:16% !important;
-    opacity:.54 !important;
-    filter:blur(6px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark{
-    width:18px !important;
-    height:18px !important;
-    margin:0 auto clamp(8px, 2.2vw, 12px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark::before,
-  #quy-trinh-thinh-tuong .process-mini-mark::after{
-    width:13.5px !important;
-    height:13.5px !important;
-    border-width:1.25px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark span{
-    inset:6.7px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card h3{
-    max-width:min(100%, 284px) !important;
-    margin:0 auto clamp(11px, 3vw, 15px) !important;
-    font-size:clamp(20px, 5.35vw, 25px) !important;
-    line-height:1.12 !important;
-    letter-spacing:.006em !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    width:min(100%, 272px) !important;
-    max-width:calc(100% - 6px) !important;
-    padding:0 clamp(6px, 1.8vw, 10px) !important;
-    font-size:clamp(14px, 3.75vw, 16px) !important;
-    line-height:1.30 !important;
-    letter-spacing:.002em !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 264px) !important;
-    font-size:clamp(13.2px, 3.5vw, 15.1px) !important;
-    line-height:1.24 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:min(100%, 292px) !important;
-    margin-bottom:clamp(9px, 2.4vw, 12px) !important;
-    font-size:clamp(18.2px, 4.9vw, 22.6px) !important;
-    line-height:1.08 !important;
-  }
-}
-
-@media (max-width:390px){
-  #quy-trinh-thinh-tuong.process-section{
-    padding-top:30px !important;
-    padding-bottom:58px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-cards{
-    padding-bottom:28px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card{
-    flex-basis:89vw !important;
-    width:89vw !important;
-    height:462px !important;
-    padding:
-      86px
-      18px
-      82px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{
-    width:116px !important;
-    height:116px !important;
-    margin-bottom:8px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark{
-    width:17px !important;
-    height:17px !important;
-    margin-bottom:9px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card h3{
-    max-width:262px !important;
-    margin-bottom:11px !important;
-    font-size:21.2px !important;
-    line-height:1.10 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    width:min(100%, 242px) !important;
-    font-size:13.7px !important;
-    line-height:1.27 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 235px) !important;
-    font-size:12.85px !important;
-    line-height:1.21 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:268px !important;
-    margin-bottom:9px !important;
-    font-size:18.4px !important;
-    line-height:1.06 !important;
-  }
-}
-
-@media (max-width:340px){
-  #quy-trinh-thinh-tuong.process-section{
-    padding-top:26px !important;
-    padding-bottom:50px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-cards{
-    padding-bottom:24px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card{
-    flex-basis:90vw !important;
-    width:90vw !important;
-    height:438px !important;
-    padding:
-      80px
-      15px
-      76px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{
-    width:102px !important;
-    height:102px !important;
-    margin-bottom:7px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark{
-    width:16px !important;
-    height:16px !important;
-    margin-bottom:8px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card h3{
-    max-width:234px !important;
-    margin-bottom:9px !important;
-    font-size:18.1px !important;
-    line-height:1.08 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    width:min(100%, 214px) !important;
-    font-size:12.15px !important;
-    line-height:1.20 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 208px) !important;
-    font-size:11.45px !important;
-    line-height:1.16 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:238px !important;
-    font-size:16.2px !important;
-    line-height:1.04 !important;
-  }
-}
-</style>
-
 <section class="process-section" id="quy-trinh-thinh-tuong" aria-labelledby="process-title">
 
   <div class="process-inner">
@@ -28070,268 +28030,4 @@ body{
 }
 </style>
 
-
-
-<style id="dta-process-mobile-slim-peek-readable-final-v17">
-/* =========================================================
-   DTA PROCESS MOBILE SLIM PEEK + READABLE CONTENT FINAL V17 - 2026-06-11
-   Yêu cầu:
-   - Mobile: card ốm hơn để card kế tiếp nhú ra, tạo tín hiệu vuốt ngang.
-   - Icon và chữ trong card lớn hơn, rõ hơn nhưng vẫn không đè hoa sen đáy khung.
-   - Đặt ở cuối file để override toàn bộ các block mobile cũ của section này.
-   ========================================================= */
-@media (max-width:620px){
-  #quy-trinh-thinh-tuong.process-section{
-    overflow:hidden !important;
-    padding-top:clamp(30px, 7.8vw, 40px) !important;
-    padding-bottom:clamp(56px, 14vw, 82px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-inner{
-    width:min(100% - 24px, 460px) !important;
-    max-width:none !important;
-    margin-inline:auto !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-cards{
-    position:relative !important;
-    left:50% !important;
-    right:auto !important;
-    width:100vw !important;
-    max-width:none !important;
-    margin-left:0 !important;
-    margin-right:0 !important;
-    transform:translateX(-50%) !important;
-    display:flex !important;
-    grid-template-columns:none !important;
-    justify-content:flex-start !important;
-    align-items:flex-start !important;
-    gap:clamp(12px, 3.2vw, 16px) !important;
-    padding-top:2px !important;
-    padding-left:max(16px, calc((100vw - 430px) / 2 + 18px)) !important;
-    padding-right:max(92px, calc((100vw - 430px) / 2 + 118px)) !important;
-    padding-bottom:clamp(30px, 7.6vw, 44px) !important;
-    overflow-x:auto !important;
-    overflow-y:hidden !important;
-    overscroll-behavior-x:contain !important;
-    -webkit-overflow-scrolling:touch !important;
-    scroll-snap-type:x mandatory !important;
-    scroll-padding-left:max(16px, calc((100vw - 430px) / 2 + 18px)) !important;
-    scroll-padding-right:max(92px, calc((100vw - 430px) / 2 + 118px)) !important;
-    scrollbar-width:thin !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card{
-    position:relative !important;
-    flex:0 0 clamp(250px, 76vw, 338px) !important;
-    width:clamp(250px, 76vw, 338px) !important;
-    min-width:clamp(250px, 76vw, 338px) !important;
-    max-width:338px !important;
-    height:clamp(452px, 116vw, 522px) !important;
-    min-height:0 !important;
-    max-height:none !important;
-    aspect-ratio:auto !important;
-    box-sizing:border-box !important;
-    padding:
-      clamp(40px, 10.4vw, 52px)
-      clamp(14px, 4vw, 20px)
-      clamp(132px, 34vw, 160px) !important;
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-    justify-content:flex-start !important;
-    overflow:hidden !important;
-    contain:paint !important;
-    scroll-snap-align:start !important;
-    scroll-snap-stop:always !important;
-    scroll-margin-left:max(16px, calc((100vw - 430px) / 2 + 18px)) !important;
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:hover{
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-frame-picture,
-  #quy-trinh-thinh-tuong .process-card-frame{
-    position:absolute !important;
-    inset:0 !important;
-    width:100% !important;
-    height:100% !important;
-    max-width:none !important;
-    max-height:none !important;
-    pointer-events:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-frame{
-    z-index:0 !important;
-    object-fit:fill !important;
-    object-position:center center !important;
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-content{
-    position:relative !important;
-    z-index:2 !important;
-    width:100% !important;
-    height:100% !important;
-    min-height:0 !important;
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-    justify-content:flex-start !important;
-    overflow:visible !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{
-    width:clamp(122px, 34vw, 148px) !important;
-    height:clamp(122px, 34vw, 148px) !important;
-    aspect-ratio:1/1 !important;
-    flex:0 0 auto !important;
-    margin:0 auto clamp(6px, 1.7vw, 9px) !important;
-    display:grid !important;
-    place-items:center !important;
-    overflow:visible !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon img{
-    width:100% !important;
-    height:100% !important;
-    max-width:100% !important;
-    max-height:100% !important;
-    object-fit:contain !important;
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark{
-    width:20px !important;
-    height:20px !important;
-    flex:0 0 auto !important;
-    margin:0 auto clamp(8px, 2.2vw, 12px) !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark::before,
-  #quy-trinh-thinh-tuong .process-mini-mark::after{
-    width:14px !important;
-    height:14px !important;
-    border-width:1.25px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark span{
-    inset:7px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card h3{
-    flex:0 0 auto !important;
-    width:100% !important;
-    max-width:min(100%, 258px) !important;
-    min-height:0 !important;
-    margin:0 auto clamp(10px, 2.7vw, 14px) !important;
-    color:#2d2015 !important;
-    font-size:clamp(20.6px, 5.55vw, 23.6px) !important;
-    line-height:1.09 !important;
-    letter-spacing:.008em !important;
-    text-align:center !important;
-    text-wrap:balance !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    box-sizing:border-box !important;
-    flex:0 0 auto !important;
-    width:min(100%, 238px) !important;
-    max-width:calc(100% - 4px) !important;
-    min-height:0 !important;
-    max-height:none !important;
-    margin:0 auto !important;
-    padding:0 clamp(5px, 1.5vw, 9px) !important;
-    color:#2d251e !important;
-    font-size:clamp(13.7px, 3.72vw, 15.2px) !important;
-    line-height:1.25 !important;
-    letter-spacing:.001em !important;
-    text-align:center !important;
-    text-wrap:balance !important;
-    overflow:visible !important;
-    display:block !important;
-    -webkit-line-clamp:initial !important;
-    -webkit-box-orient:initial !important;
-    transform:none !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 232px) !important;
-    font-size:clamp(13.05px, 3.55vw, 14.4px) !important;
-    line-height:1.20 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:min(100%, 270px) !important;
-    margin-bottom:clamp(8px, 2.1vw, 11px) !important;
-    font-size:clamp(19.4px, 5.1vw, 21.8px) !important;
-    line-height:1.05 !important;
-  }
-}
-
-@media (max-width:360px){
-  #quy-trinh-thinh-tuong .process-cards{
-    gap:11px !important;
-    padding-left:14px !important;
-    padding-right:76px !important;
-    scroll-padding-left:14px !important;
-    scroll-padding-right:76px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card{
-    flex-basis:clamp(250px, 76vw, 274px) !important;
-    width:clamp(250px, 76vw, 274px) !important;
-    min-width:clamp(250px, 76vw, 274px) !important;
-    height:448px !important;
-    padding:
-      38px
-      14px
-      128px !important;
-    scroll-margin-left:14px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card-icon{
-    width:116px !important;
-    height:116px !important;
-    margin-bottom:6px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-mini-mark{
-    width:18px !important;
-    height:18px !important;
-    margin-bottom:8px !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card h3{
-    max-width:224px !important;
-    margin-bottom:9px !important;
-    font-size:19.4px !important;
-    line-height:1.07 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card p{
-    width:min(100%, 216px) !important;
-    max-width:calc(100% - 2px) !important;
-    padding-inline:4px !important;
-    font-size:12.7px !important;
-    line-height:1.22 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(2) p,
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) p{
-    width:min(100%, 210px) !important;
-    font-size:12.15px !important;
-    line-height:1.17 !important;
-  }
-
-  #quy-trinh-thinh-tuong .process-card:nth-child(3) h3{
-    max-width:232px !important;
-    font-size:18px !important;
-    line-height:1.04 !important;
-  }
-}
-</style>
 </body></html>
