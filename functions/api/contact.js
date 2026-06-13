@@ -97,7 +97,7 @@ export async function onRequestPost(context) {
     // - HTML cực đơn giản, không banner, không nút CTA, không màu mè như email marketing.
     // - Subject cố định, không nhúng nội dung người dùng để tránh trigger spam.
     const textEmail = [
-      "Form tư vấn thỉnh tôn tượng mới - Diệu Tướng Am",
+      "${name} ĐK TƯ VẤN THỈNH TƯỢNG DIỆU TƯỚNG AM",
       "",
       `Mã hồ sơ: ${leadId}`,
       `Thời gian gửi: ${submittedAt}`,
