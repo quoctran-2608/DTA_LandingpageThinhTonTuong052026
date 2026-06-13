@@ -14,7 +14,28 @@
 <meta content="summary_large_image" name="twitter:card">
 <meta content="Thỉnh Tôn Tượng Phật Bổn Sư | Diệu Tướng Am" name="twitter:title">
 <meta content="Diệu Tướng Am tư vấn thỉnh tôn tượng Phật Bổn Sư chuẩn tướng, chế tác tinh xảo, chất liệu chọn lọc, an vị trang nghiêm và giao hàng toàn quốc." name="twitter:description">
-<!-- Google Analytics / Google Tag Manager scripts temporarily disabled. Re-enable by restoring GA/GTM script blocks and dtaTrackEvent hook when needed. -->
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VX47WFQS4C"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VX47WFQS4C', {
+      page_title: document.title,
+      page_location: window.location.href,
+      transport_type: 'beacon'
+    });
+
+    window.dtaTrackEvent = function(eventName, eventParams){
+      if(!eventName || typeof gtag !== 'function') return;
+      gtag('event', eventName, Object.assign({
+        send_to: 'G-VX47WFQS4C',
+        page_location: window.location.href,
+        page_title: document.title,
+        transport_type: 'beacon'
+      }, eventParams || {}));
+    };
+  </script>
 <script>
     document.documentElement.classList.add('dta-motion-js');
   </script>
@@ -21057,15 +21078,14 @@ body{
     /* DTA LOCAL TEST MODE
        Tạm thời vô hiệu hoá Cloudflare Turnstile/API submit khi chạy local.
        Khi đưa lên production: đổi DTA_LOCAL_MODE=false và khôi phục script Turnstile bên dưới. */
-    window.DTA_LOCAL_MODE = true;
+    window.DTA_LOCAL_MODE = false;
     window.dtaTurnstileReady = function(){
       window.dtaTurnstileLoaded = true;
       if(!window.DTA_LOCAL_MODE && typeof window.dtaRenderTurnstile === 'function') window.dtaRenderTurnstile();
     };
   </script>
-<!-- LOCAL TEST: Cloudflare Turnstile tạm tắt để không báo lỗi local.
+<!-- Cloudflare Turnstile -->
 <script async defer src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=dtaTurnstileReady"></script>
--->
 <style data-dta-turtle-scroll-style="DTA_TURTLE_SCROLL_54X_V9_2026_05_23">html, body { scroll-behavior: auto !important; }
 
     /* DTA UPDATE 2026-06-07: Chiêm ngưỡng gallery - ảnh phủ kín khung ở trạng thái thường, hover zoom tinh tế hơn */
@@ -26317,7 +26337,7 @@ body{
             </div>
 
             <div class="turnstile-field">
-              <div class="cf-turnstile" id="dta-turnstile" data-sitekey="0x4AAAAAADVWiAS3wnrrPpGt" data-theme="light"></div>
+              <div class="cf-turnstile" id="dta-turnstile" data-sitekey="0x4AAAAAADjLQ-u59KsPHw-f" data-theme="light"></div>
             </div>
  
             <button class="consult-submit" type="submit">
@@ -27099,6 +27119,14 @@ body{
         return;
       }
 
+      if(window.dtaTrackEvent){
+        window.dtaTrackEvent('submit_form_attempt', {
+          form_name: form.getAttribute('data-ga-form-name') || 'consultation_form',
+          form_id: form.id || 'tu-van',
+          cta_name: 'consultation_form_attempt'
+        });
+      }
+
       fetch(action, {
         method:'POST',
         headers:{'Content-Type':'application/json'},
@@ -27125,18 +27153,13 @@ body{
       })
       .then(function(data){
         setFeedback(data.message || 'Cảm ơn bạn. Diệu Tướng Am đã nhận được tâm nguyện và sẽ liên hệ lại sớm.', 'success');
-        /*
-          Google Analytics tracking is temporarily disabled.
-          Original submit_form_success tracking block kept here for easy re-enable later:
-
-          if(window.dtaTrackEvent){
-            window.dtaTrackEvent('submit_form_success', {
-              form_name: form.getAttribute('data-ga-form-name') || 'consultation_form',
-              form_id: form.id || 'tu-van',
-              cta_name: 'consultation_form_success'
-            });
-          }
-        */
+        if(window.dtaTrackEvent){
+          window.dtaTrackEvent('submit_form_success', {
+            form_name: form.getAttribute('data-ga-form-name') || 'consultation_form',
+            form_id: form.id || 'tu-van',
+            cta_name: 'consultation_form_success'
+          });
+        }
         form.reset();
         if(newProvinceInput) newProvinceInput.value = '';
         fields.forEach(function(field){ setFieldState(field, ''); });
@@ -27144,6 +27167,13 @@ body{
       })
       .catch(function(error){
         setFeedback(error.message || 'Có lỗi xảy ra. Vui lòng thử lại sau.', 'error');
+        if(window.dtaTrackEvent){
+          window.dtaTrackEvent('submit_form_error', {
+            form_name: form.getAttribute('data-ga-form-name') || 'consultation_form',
+            form_id: form.id || 'tu-van',
+            error_message: error && error.message ? String(error.message).slice(0, 120) : 'unknown_error'
+          });
+        }
         resetTurnstile();
       })
       .finally(function(){
@@ -29075,5 +29105,84 @@ body[data-theme="dark"] .bon-su-meaning-section .bon-su-card p{
   }
 }
 </style>
+
+<script>
+  (function(){
+    var formStartTracked = false;
+
+    function textOf(element){
+      return (element && (element.getAttribute('aria-label') || element.innerText || element.textContent || '') || '')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .slice(0, 120);
+    }
+
+    function track(eventName, params){
+      if(window.dtaTrackEvent){
+        window.dtaTrackEvent(eventName, params || {});
+      }
+    }
+
+    document.addEventListener('click', function(event){
+      var gaTarget = event.target.closest('[data-ga-event]');
+      if(gaTarget){
+        track(gaTarget.getAttribute('data-ga-event'), {
+          cta_name: gaTarget.getAttribute('data-ga-cta-name') || gaTarget.id || gaTarget.className || 'cta',
+          phone: gaTarget.getAttribute('data-ga-phone') || undefined,
+          link_url: gaTarget.href || undefined,
+          link_text: textOf(gaTarget)
+        });
+      }
+
+      var consultTrigger = event.target.closest('[data-consult-trigger]');
+      if(consultTrigger){
+        track('open_consult_form', {
+          cta_name: consultTrigger.getAttribute('data-ga-cta-name') || consultTrigger.id || 'consult_trigger',
+          link_text: textOf(consultTrigger)
+        });
+      }
+
+      var link = event.target.closest('a[href]');
+      if(!link) return;
+
+      var href = link.getAttribute('href') || '';
+
+      if(href.indexOf('tel:') === 0 && !link.hasAttribute('data-ga-event')){
+        track('click_phone', {
+          cta_name: link.id || 'phone_link',
+          phone: href.replace('tel:', ''),
+          link_text: textOf(link)
+        });
+      }
+
+      if(href.indexOf('zalo.me') !== -1){
+        track('click_zalo', {
+          cta_name: link.getAttribute('aria-label') || 'zalo_link',
+          link_url: link.href,
+          link_text: textOf(link)
+        });
+      }
+
+      if(/facebook\.com|youtube\.com|tiktok\.com/.test(href)){
+        track('click_social', {
+          cta_name: link.getAttribute('aria-label') || 'social_link',
+          link_url: link.href,
+          link_text: textOf(link)
+        });
+      }
+    }, true);
+
+    document.addEventListener('focusin', function(event){
+      if(formStartTracked) return;
+      var form = event.target.closest && event.target.closest('.dta-consult-form');
+      if(!form) return;
+      formStartTracked = true;
+      track('form_start', {
+        form_name: form.getAttribute('data-ga-form-name') || 'consultation_form',
+        form_id: form.id || 'tu-van'
+      });
+    });
+  })();
+</script>
 
 </body></html>
