@@ -95,9 +95,15 @@ export async function onRequestPost(context) {
     // Deliverability-friendly email:
     // - Có bản text thuần để Gmail hiểu đây là thông báo giao dịch/nội bộ.
     // - HTML cực đơn giản, không banner, không nút CTA, không màu mè như email marketing.
-    // - Subject cố định, không nhúng nội dung người dùng để tránh trigger spam.
+    // - Subject cố định, chuyên nghiệp, không nhúng nội dung người dùng để tránh trigger spam.
+    const emailSubject = "Yêu cầu tư vấn thỉnh tôn tượng | Diệu Tướng Am";
+    const emailHeading = "Yêu cầu tư vấn thỉnh tôn tượng";
+    const emailIntro = "Khách hàng vừa gửi thông tin tư vấn từ landing page Thỉnh Tôn Tượng.";
+
     const textEmail = [
-      "${name} ĐK TƯ VẤN THỈNH TƯỢNG DIỆU TƯỚNG AM",
+      emailSubject,
+      "",
+      emailIntro,
       "",
       `Mã hồ sơ: ${leadId}`,
       `Thời gian gửi: ${submittedAt}`,
@@ -107,7 +113,7 @@ export async function onRequestPost(context) {
       `Khu vực: ${province}`,
       `Tỉnh/thành theo mapping mới: ${newProvince || province}`,
       "",
-      "Nội dung:",
+      "Nội dung tâm nguyện:",
       message,
       "",
       `Hostname: ${pageUrl.hostname}`,
@@ -115,7 +121,8 @@ export async function onRequestPost(context) {
     ].join("\n");
 
     const html = `
-      <p>Form tư vấn thỉnh tôn tượng mới - Diệu Tướng Am</p>
+      <p><strong>${escapeHtml(emailHeading)}</strong></p>
+      <p>${escapeHtml(emailIntro)}</p>
       <p><strong>Mã hồ sơ:</strong> ${escapeHtml(leadId)}</p>
       <p><strong>Thời gian gửi:</strong> ${escapeHtml(submittedAt)}</p>
       <p><strong>Họ và tên:</strong> ${escapeHtml(name)}</p>
@@ -123,7 +130,7 @@ export async function onRequestPost(context) {
       <p><strong>Chất liệu tôn tượng:</strong> ${escapeHtml(statueMaterial)}</p>
       <p><strong>Khu vực:</strong> ${escapeHtml(province)}</p>
       <p><strong>Tỉnh/thành theo mapping mới:</strong> ${escapeHtml(newProvince || province)}</p>
-      <p><strong>Nội dung:</strong></p>
+      <p><strong>Nội dung tâm nguyện:</strong></p>
       <p>${escapeHtml(message).replaceAll("\n", "<br>")}</p>
       <p><strong>Hostname:</strong> ${escapeHtml(pageUrl.hostname)}</p>
       <p><strong>Nguồn:</strong> ${escapeHtml(sourceOrigin)}</p>
@@ -132,7 +139,7 @@ export async function onRequestPost(context) {
     const emailPayload = {
       from: fromEmail,
       to: parseEmailList(toEmail),
-      subject: "Form tư vấn thỉnh tôn tượng mới - Diệu Tướng Am",
+      subject: emailSubject,
       text: textEmail,
       html,
       reply_to: env.REPLY_TO_EMAIL || undefined,
