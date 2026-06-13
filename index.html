@@ -26217,19 +26217,28 @@ body{
               </label>
 
               <label class="form-field">
-                <span>Loại hình không gian <sup>*</sup></span>
-                <select id="consult-space-type" name="loai-hinh-khong-gian" required aria-describedby="consult-space-type-error">
-                  <option value="">Chọn loại hình</option>
-                  <option>Không gian thờ Phật</option>
-                  <option>Không gian thờ Gia tiên</option>
-                  <option>Không gian Thiền - Trà</option>
-                  <option>Tư viện / Nhà thờ họ</option>
+                <span>Chất liệu tôn tượng <sup>*</sup></span>
+                <select id="consult-statue-material" name="chat-lieu-ton-tuong" required aria-describedby="consult-statue-material-error">
+                  <option value="">Chọn chất liệu và kiểu hoàn thiện</option>
+                  <optgroup label="Ngọc Iran">
+                    <option value="Ngọc Iran - Vẽ màu">Ngọc Iran – Vẽ màu</option>
+                    <option value="Ngọc Iran - Trơn">Ngọc Iran – Trơn</option>
+                  </optgroup>
+                  <optgroup label="Hán Bạch Ngọc">
+                    <option value="Hán Bạch Ngọc - Vẽ màu">Hán Bạch Ngọc – Vẽ màu</option>
+                    <option value="Hán Bạch Ngọc - Trơn">Hán Bạch Ngọc – Trơn</option>
+                  </optgroup>
+                  <optgroup label="Đồng">
+                    <option value="Đồng - Vẽ màu">Đồng – Vẽ màu</option>
+                    <option value="Đồng - Trơn">Đồng – Trơn</option>
+                  </optgroup>
+                  <option value="Chất liệu khác">Chất liệu khác</option>
                 </select>
-                <small class="form-error" id="consult-space-type-error" aria-live="polite"></small>
+                <small class="form-error" id="consult-statue-material-error" aria-live="polite"></small>
               </label>
 
               <label class="form-field">
-                <span>Khu vực <sup>*</sup></span>
+                <span>Khu vực nhận tượng / an vị <sup>*</sup></span>
                 <select id="consult-province" name="khu-vuc" autocomplete="address-level1" required aria-describedby="consult-province-error">
                   <option value="">Chọn tỉnh/thành</option>
                   <option value="Thành phố Hà Nội" data-old-code="01" data-new-province="Thành phố Hà Nội" data-new-code="01">Hà Nội</option>
@@ -26301,8 +26310,8 @@ body{
               </label>
 
               <label class="form-field is-full">
-                <span>Nội dung tâm nguyện <sup>*</sup></span>
-                <textarea id="consult-message" name="noi-dung" placeholder="Chia sẻ mong muốn của bạn..." minlength="10" maxlength="600" required aria-describedby="consult-message-error"></textarea>
+                <span>Tâm nguyện &amp; nhu cầu thỉnh tượng <sup>*</sup></span>
+                <textarea id="consult-message" name="noi-dung" placeholder="Chia sẻ kích thước mong muốn, vị trí an vị hoặc ghi rõ chất liệu khác..." minlength="10" maxlength="600" required aria-describedby="consult-message-error"></textarea>
                 <small class="form-error" id="consult-message-error" aria-live="polite"></small>
               </label>
             </div>
@@ -26393,9 +26402,9 @@ body{
 <div aria-hidden="true" aria-labelledby="consult-modal-title" aria-modal="true" class="consult-modal" hidden="" id="consult-modal" role="dialog">
 <div class="consult-modal-panel" role="document">
 <button aria-label="Đóng form tư vấn" class="consult-modal-close" data-consult-modal-close="" type="button">×</button>
-<div class="consult-modal-kicker">Bắt đầu hành trình kiến tạo</div>
+<div class="consult-modal-kicker">Bắt đầu hành trình thỉnh tượng</div>
 <h2 class="consult-modal-title" id="consult-modal-title">HÃY ĐỂ DIỆU TƯỚNG AM LẮNG NGHE TÂM NGUYỆN CỦA QUÝ VỊ</h2>
-<p class="consult-modal-note">Chia sẻ mong muốn của bạn, Diệu Tướng Am sẽ lắng nghe và phản hồi với định hướng phù hợp nhất.</p>
+<p class="consult-modal-note">Chia sẻ chất liệu, kiểu hoàn thiện và tâm nguyện của quý vị; Diệu Tướng Am sẽ lắng nghe và tư vấn tôn tượng phù hợp.</p>
 <div class="consult-modal-form-slot" data-consult-modal-form=""></div>
 </div>
 </div>
@@ -27000,7 +27009,7 @@ body{
 
     function validateSelect(field){
       syncProvinceMapping(field);
-      if(!field.value) return setFieldState(field, 'Vui lòng chọn ' + (field.name === 'khu-vuc' ? 'tỉnh/thành phố.' : 'loại hình không gian.'));
+      if(!field.value) return setFieldState(field, 'Vui lòng chọn ' + (field.name === 'khu-vuc' ? 'tỉnh/thành phố.' : 'chất liệu và kiểu hoàn thiện của tôn tượng.'));
       return setFieldState(field, '');
     }
 
@@ -27016,7 +27025,7 @@ body{
     function validateField(field){
       if(field.name === 'ho-ten') return validateName(field);
       if(field.name === 'so-dien-thoai') return validatePhone(field);
-      if(field.name === 'loai-hinh-khong-gian' || field.name === 'khu-vuc') return validateSelect(field);
+      if(field.name === 'chat-lieu-ton-tuong' || field.name === 'khu-vuc') return validateSelect(field);
       if(field.name === 'noi-dung') return validateMessage(field);
       return field.checkValidity();
     }
