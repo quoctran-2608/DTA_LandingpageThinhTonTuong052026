@@ -3,8 +3,9 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <title>Thỉnh Tôn Tượng Phật Bổn Sư | Diệu Tướng Am</title>
-<link rel="icon" href="https://dieutuongam.com/catalog/view/images/favicon.ico" sizes="any">
-<link rel="shortcut icon" href="https://dieutuongam.com/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://dieutuongam.com/catalog/view/images/favicon.ico" type="image/x-icon" sizes="any">
+<link rel="shortcut icon" href="https://dieutuongam.com/catalog/view/images/favicon.ico" type="image/x-icon">
+<meta name="msapplication-TileImage" content="https://dieutuongam.com/catalog/view/images/favicon.ico">
 <meta content="Diệu Tướng Am tư vấn thỉnh tôn tượng Phật Bổn Sư chuẩn tướng, chế tác tinh xảo, chất liệu chọn lọc, an vị trang nghiêm và giao hàng toàn quốc." name="description">
 <meta content="thỉnh tôn tượng, tượng Phật Bổn Sư, tượng Phật đồng, tượng Phật ngọc, an vị tôn tượng, Diệu Tướng Am" name="keywords">
 <meta content="index, follow" name="robots">
@@ -26703,7 +26704,7 @@ body{
 </div>
 <p class="consult-success-kicker">Gửi thông tin thành công</p>
 <h2 class="consult-success-title" id="consult-success-title">Diệu Tướng Am đã tiếp nhận tâm nguyện</h2>
-<p class="consult-success-message" data-consult-success-message="">Cảm ơn quý vị. Diệu Tướng Am đã nhận được thông tin và sẽ liên hệ lại sớm để tư vấn tôn tượng phù hợp.</p>
+<p class="consult-success-message" data-consult-success-message="">Diệu Tướng Am đã nhận được tâm nguyện và sẽ liên hệ lại sớm.</p>
 <div class="consult-success-actions">
 <button class="consult-success-primary" data-consult-success-close="" type="button">Hoàn tất</button>
 <a class="consult-success-secondary" href="tel:0938959503">Gọi tư vấn ngay</a>
@@ -27444,7 +27445,7 @@ body{
         });
       })
       .then(function(data){
-        var successMessage = data.message || 'Cảm ơn quý vị. Diệu Tướng Am đã nhận được thông tin và sẽ liên hệ lại sớm để tư vấn tôn tượng phù hợp.';
+        var successMessage = data.message || 'Diệu Tướng Am đã nhận được tâm nguyện và sẽ liên hệ lại sớm.';
         setFeedback('', '');
         if(window.dtaTrackEvent){
           window.dtaTrackEvent('submit_form_success', {
@@ -27556,10 +27557,15 @@ body{
       if(closeTimer) window.clearTimeout(closeTimer);
       lastFocused = document.activeElement;
 
-      var message = options.message || 'Cảm ơn quý vị. Diệu Tướng Am đã nhận được thông tin và sẽ liên hệ lại sớm để tư vấn tôn tượng phù hợp.';
+      var message = options.message || 'Diệu Tướng Am đã nhận được tâm nguyện và sẽ liên hệ lại sớm.';
+      message = String(message)
+        .replace(/^Cảm\s+ơn\s+(quý\s+vị|anh\/?chị|anh\s+chị|bạn)\.?\s*/i, '')
+        .replace(/^Diệu Tướng Am đã nhận được thông tin/i, 'Diệu Tướng Am đã nhận được tâm nguyện')
+        .replace(/\s+/g, ' ')
+        .trim();
       var name = (options.name || '').replace(/\s+/g, ' ').trim();
       if(successMessage){
-        successMessage.textContent = name ? ('Cảm ơn ' + name + '. ' + message) : message;
+        successMessage.textContent = name ? ('Cảm ơn ' + name + '. ' + message) : ('Cảm ơn quý vị. ' + message);
       }
       if(successView) successView.setAttribute('aria-hidden', 'false');
 
