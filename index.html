@@ -3,6 +3,8 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <title>Thỉnh Tôn Tượng Phật Bổn Sư | Diệu Tướng Am</title>
+<link rel="icon" href="https://dieutuongam.com/favicon.ico" sizes="any">
+<link rel="shortcut icon" href="https://dieutuongam.com/favicon.ico" type="image/x-icon">
 <meta content="Diệu Tướng Am tư vấn thỉnh tôn tượng Phật Bổn Sư chuẩn tướng, chế tác tinh xảo, chất liệu chọn lọc, an vị trang nghiêm và giao hàng toàn quốc." name="description">
 <meta content="thỉnh tôn tượng, tượng Phật Bổn Sư, tượng Phật đồng, tượng Phật ngọc, an vị tôn tượng, Diệu Tướng Am" name="keywords">
 <meta content="index, follow" name="robots">
@@ -124,8 +126,16 @@
     a{text-decoration:none;color:inherit}
     button{font:inherit}
     section[id],
-    form[id]{
+    form[id],
+    .dta-scroll-anchor{
       scroll-margin-top:clamp(86px, 8vw, 126px);
+    }
+    .dta-scroll-anchor{
+      display:block;
+      position:relative;
+      width:100%;
+      height:0;
+      overflow:hidden;
     }
 
     .dta-page{
@@ -22740,23 +22750,276 @@ body{
 }
 </style>
 
+
+<style id="dta-menu-success-popup-upgrade-20260614">
+  /* DTA UPDATE 2026-06-14: Menu chỉ giữ các anchor quan trọng thật sự tồn tại trong landing page. */
+  .site-header .main-nav{
+    gap:clamp(14px, 1.65vw, 32px) !important;
+  }
+
+  .site-header .main-nav a{
+    font-size:clamp(11px, .78vw, 13px) !important;
+    letter-spacing:.035em !important;
+    white-space:nowrap !important;
+  }
+
+  @media (min-width:1181px) and (max-width:1320px){
+    .header-inner{
+      grid-template-columns:auto minmax(120px, 190px) 1fr auto !important;
+      gap:clamp(14px, 2vw, 26px) !important;
+    }
+
+    .brand-slogan{
+      font-size:13px !important;
+    }
+
+    .header-cta{
+      padding-inline:18px !important;
+      font-size:12px !important;
+    }
+  }
+
+  /* DTA UPDATE 2026-06-14: Lightbox thành công sang trọng, dùng chung khi form ở trang hoặc trong popup. */
+  .consult-modal.is-success .consult-modal-panel{
+    width:min(680px, 100%) !important;
+    padding:clamp(26px, 3vw, 48px) clamp(20px, 3vw, 44px) !important;
+    overflow:hidden !important;
+    text-align:center !important;
+  }
+
+  .consult-modal.is-success .consult-modal-kicker,
+  .consult-modal.is-success .consult-modal-title,
+  .consult-modal.is-success .consult-modal-note,
+  .consult-modal.is-success .consult-modal-form-slot{
+    display:none !important;
+  }
+
+  .consult-success{
+    display:none;
+    position:relative;
+    min-height:clamp(360px, 42vh, 480px);
+    place-items:center;
+    align-content:center;
+    padding:clamp(12px, 2vw, 20px) clamp(4px, 1vw, 10px);
+    isolation:isolate;
+  }
+
+  .consult-modal.is-success .consult-success{
+    display:grid;
+  }
+
+  .consult-success-aura{
+    position:absolute;
+    inset:-38% -22% auto;
+    height:72%;
+    z-index:-1;
+    background:
+      radial-gradient(ellipse at 50% 38%, rgba(255,239,176,.34) 0 18%, rgba(217,167,65,.16) 34%, transparent 66%),
+      radial-gradient(circle at 50% 50%, rgba(255,255,255,.16), transparent 55%);
+    filter:blur(8px);
+    pointer-events:none;
+  }
+
+  .consult-success-icon{
+    width:clamp(86px, 8vw, 116px);
+    height:clamp(86px, 8vw, 116px);
+    margin:0 auto clamp(16px, 1.8vw, 24px);
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    background:
+      radial-gradient(circle at 50% 28%, rgba(255,245,207,.28), rgba(217,167,65,.10) 44%, rgba(47,22,6,.12) 70%),
+      linear-gradient(145deg, rgba(255,235,168,.12), rgba(98,55,13,.16));
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.42),
+      0 0 0 1px rgba(242,212,126,.48),
+      0 20px 46px rgba(0,0,0,.28),
+      0 0 34px rgba(241,200,102,.20);
+  }
+
+  .consult-success-icon svg{
+    width:76%;
+    height:76%;
+    overflow:visible;
+  }
+
+  .consult-success-ring,
+  .consult-success-lotus,
+  .consult-success-check{
+    fill:none;
+    stroke:#f7d889;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    filter:drop-shadow(0 0 8px rgba(241,200,102,.28));
+  }
+
+  .consult-success-ring{
+    stroke-width:1.5;
+    opacity:.72;
+  }
+
+  .consult-success-lotus{
+    fill:rgba(247,216,137,.10);
+    stroke-width:1.6;
+  }
+
+  .consult-success-check{
+    stroke-width:4.1;
+    stroke:#fff0b8;
+  }
+
+  .consult-success-kicker{
+    margin:0 0 10px;
+    color:#f2c66a;
+    font-family:var(--sans);
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+  }
+
+  .consult-success-title{
+    max-width:560px;
+    margin:0 auto clamp(12px, 1.4vw, 18px);
+    color:#fff4cf;
+    font-family:var(--serif);
+    font-weight:400;
+    font-size:clamp(30px, 3.2vw, 48px);
+    line-height:1.14;
+    letter-spacing:.045em;
+    text-transform:uppercase;
+    text-shadow:0 8px 30px rgba(0,0,0,.48), 0 0 20px rgba(217,167,65,.22);
+  }
+
+  .consult-success-message{
+    max-width:560px;
+    margin:0 auto clamp(22px, 2.2vw, 32px);
+    color:rgba(255,247,227,.88);
+    font-family:var(--sans);
+    font-size:clamp(15.5px, 1.08vw, 18px);
+    line-height:1.72;
+  }
+
+  .consult-success-actions{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+
+  .consult-success-primary,
+  .consult-success-secondary{
+    min-height:48px;
+    padding:0 24px;
+    border-radius:999px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-family:var(--sans);
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.055em;
+    cursor:pointer;
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease, color .25s ease;
+  }
+
+  .consult-success-primary{
+    border:1px solid rgba(255,229,158,.72);
+    background:linear-gradient(135deg, #f7d27d 0%, #d79a34 50%, #f4c86f 100%);
+    color:#241205;
+    box-shadow:0 16px 34px rgba(0,0,0,.26), inset 0 1px 0 rgba(255,255,255,.55);
+  }
+
+  .consult-success-secondary{
+    border:1px solid rgba(242,212,126,.46);
+    background:rgba(39,19,6,.62);
+    color:#f8df91;
+  }
+
+  .consult-success-primary:hover,
+  .consult-success-primary:focus-visible,
+  .consult-success-secondary:hover,
+  .consult-success-secondary:focus-visible{
+    transform:translateY(-2px);
+    outline:none;
+    color:#fff1bd;
+    box-shadow:0 18px 38px rgba(0,0,0,.34), 0 0 24px rgba(241,200,102,.22);
+  }
+
+  @media (max-width:720px){
+    .consult-modal.is-success{
+      align-items:center !important;
+      padding:14px !important;
+    }
+
+    .consult-modal.is-success .consult-modal-panel{
+      max-height:calc(100vh - 28px) !important;
+      border-radius:22px !important;
+    }
+
+    .consult-success{
+      min-height:min(68vh, 500px);
+      padding-top:18px;
+    }
+
+    .consult-success-title{
+      font-size:clamp(27px, 7.2vw, 36px);
+      letter-spacing:.03em;
+    }
+
+    .consult-success-actions{
+      flex-direction:column;
+      width:100%;
+    }
+
+    .consult-success-primary,
+    .consult-success-secondary{
+      width:100%;
+    }
+  }
+</style>
+
+
+<style id="dta-menu-quy-trinh-anchor-favicon-20260614">
+  /* DTA UPDATE 2026-06-14: thêm menu Quy trình, cân lại khoảng cách để 6 item vẫn gọn trên desktop. */
+  .site-header .main-nav{
+    gap:clamp(12px, 1.35vw, 26px) !important;
+  }
+
+  .site-header .main-nav a{
+    font-size:clamp(10.8px, .74vw, 12.6px) !important;
+    letter-spacing:.028em !important;
+  }
+
+  @media (min-width:1181px) and (max-width:1360px){
+    .site-header .main-nav{
+      gap:clamp(10px, 1.15vw, 18px) !important;
+    }
+
+    .site-header .main-nav a{
+      font-size:clamp(10.4px, .72vw, 11.8px) !important;
+      letter-spacing:.02em !important;
+    }
+  }
+</style>
+
 </head>
 <body class="dta-motion-reduced dta-intro-started dta-intro-complete">
 <main class="dta-page">
-<section aria-label="Tôn tượng Phật Bổn Sư" class="hero-section">
+<section aria-label="Tôn tượng Phật Bổn Sư" class="hero-section" id="tong-quan">
 <header class="site-header">
 <div class="header-inner">
-<a aria-label="Diệu Tướng Am" class="brand" data-dta-original-href="#" data-dta-turtle-scroll="top" href="javascript:void(0)">
+<a aria-label="Diệu Tướng Am" class="brand" data-dta-original-href="#tong-quan" data-dta-turtle-scroll="tong-quan" href="#tong-quan">
 <img alt="Diệu Tướng Am" class="brand-logo" src="assets/logo/logo-dieu-tuong-am-gold.png">
 </a>
 <div class="brand-slogan">Nơi tôn trí đức tướng<br>vi diệu của chư Phật</div>
 <nav aria-label="Điều hướng chính" class="main-nav">
-<a class="is-active" data-dta-original-href="#" data-dta-turtle-scroll="top" href="javascript:void(0)">Trang chủ</a>
-<a data-dta-original-href="#gioi-thieu" data-dta-turtle-scroll="gioi-thieu" href="javascript:void(0)">Tôn tượng</a>
-<a data-dta-original-href="#phat-phap" data-dta-turtle-scroll="phat-phap" href="javascript:void(0)">Phật pháp</a>
-<a data-dta-original-href="#tin-tuc" data-dta-turtle-scroll="tin-tuc" href="javascript:void(0)">Tin tức</a>
-<a data-dta-original-href="#ve-dieu-tuong-am" data-dta-turtle-scroll="ve-dieu-tuong-am" href="javascript:void(0)">Về Diệu Tướng Am</a>
-<a data-dta-original-href="#lien-he" data-dta-turtle-scroll="lien-he" href="javascript:void(0)">Liên hệ</a>
+<a class="is-active" data-dta-original-href="#ton-tuong" data-dta-turtle-scroll="ton-tuong" href="#ton-tuong">Giới thiệu</a>
+<a data-dta-original-href="#chiem-nguong" data-dta-turtle-scroll="chiem-nguong" href="#chiem-nguong">Chiêm ngưỡng</a>
+<a data-dta-original-href="#thinh-ton-tuong" data-dta-turtle-scroll="thinh-ton-tuong" href="#thinh-ton-tuong">Thỉnh tôn tượng</a>
+<a data-dta-original-href="#quy-trinh-thinh-tuong" data-dta-turtle-scroll="quy-trinh-thinh-tuong" href="#quy-trinh-thinh-tuong">QUY TRÌNH THỈNH &amp; AN VỊ</a>
+<a data-dta-original-href="#du-an" data-dta-turtle-scroll="du-an" href="#du-an">Dự án</a>
+<a data-dta-original-href="#lien-he" data-dta-turtle-scroll="lien-he" href="#lien-he">Liên hệ</a>
 </nav>
 <a class="header-cta" data-consult-trigger="" data-ga-cta-name="header_cta" data-ga-event="click_header_cta" data-ga-tracking-bound="true" href="#tu-van" id="dta-header-cta">
 <span>NHẬN TƯ VẤN</span>
@@ -22780,12 +23043,12 @@ body{
 </div>
 <nav aria-label="Menu mobile" class="mobile-menu" id="mobile-menu">
 <div class="mobile-menu-panel">
-<a data-dta-original-href="#" data-dta-turtle-scroll="top" href="javascript:void(0)">Trang chủ</a>
-<a data-dta-original-href="#gioi-thieu" data-dta-turtle-scroll="gioi-thieu" href="javascript:void(0)">Tôn tượng</a>
-<a data-dta-original-href="#phat-phap" data-dta-turtle-scroll="phat-phap" href="javascript:void(0)">Phật pháp</a>
-<a data-dta-original-href="#tin-tuc" data-dta-turtle-scroll="tin-tuc" href="javascript:void(0)">Tin tức</a>
-<a data-dta-original-href="#ve-dieu-tuong-am" data-dta-turtle-scroll="ve-dieu-tuong-am" href="javascript:void(0)">Về Diệu Tướng Am</a>
-<a data-dta-original-href="#lien-he" data-dta-turtle-scroll="lien-he" href="javascript:void(0)">Liên hệ</a>
+<a data-dta-original-href="#ton-tuong" data-dta-turtle-scroll="ton-tuong" href="#ton-tuong">Giới thiệu</a>
+<a data-dta-original-href="#chiem-nguong" data-dta-turtle-scroll="chiem-nguong" href="#chiem-nguong">Chiêm ngưỡng</a>
+<a data-dta-original-href="#thinh-ton-tuong" data-dta-turtle-scroll="thinh-ton-tuong" href="#thinh-ton-tuong">Thỉnh tôn tượng</a>
+<a data-dta-original-href="#quy-trinh-thinh-tuong" data-dta-turtle-scroll="quy-trinh-thinh-tuong" href="#quy-trinh-thinh-tuong">QUY TRÌNH THỈNH &amp; AN VỊ</a>
+<a data-dta-original-href="#du-an" data-dta-turtle-scroll="du-an" href="#du-an">Dự án</a>
+<a data-dta-original-href="#lien-he" data-dta-turtle-scroll="lien-he" href="#lien-he">Liên hệ</a>
 <a class="mobile-menu-cta" data-consult-trigger="" data-ga-cta-name="mobile_header_cta" data-ga-event="click_header_cta" data-ga-tracking-bound="true" href="#tu-van">NHẬN TƯ VẤN</a>
 </div>
 </nav>
@@ -23007,6 +23270,7 @@ body{
 </section>
 
 <!-- === Section: Vì sao nên thỉnh tôn tượng tại Diệu Tướng Am === -->
+<span aria-hidden="true" class="dta-scroll-anchor" id="thinh-ton-tuong"></span>
 <section aria-label="Vì sao nên thỉnh tôn tượng tại Diệu Tướng Am" class="why-thinh-section" id="vi-sao-thinh-ton-tuong">
 <img alt="" aria-hidden="true" class="why-thinh-lotus why-thinh-lotus--left dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/lotus-left-gold-line.png" style="--reveal-delay: 80ms;">
 <img alt="" aria-hidden="true" class="why-thinh-lotus why-thinh-lotus--right dta-reveal is-visible has-revealed" data-reveal="soft" loading="lazy" src="assets/images/decor/why-thinh-ton-tuong/lotus-right-gold-line.png" style="--reveal-delay: 140ms;">
@@ -26421,11 +26685,30 @@ body{
 </div>
 <div aria-hidden="true" aria-labelledby="consult-modal-title" aria-modal="true" class="consult-modal" hidden="" id="consult-modal" role="dialog">
 <div class="consult-modal-panel" role="document">
-<button aria-label="Đóng form tư vấn" class="consult-modal-close" data-consult-modal-close="" type="button">×</button>
+<button aria-label="Đóng cửa sổ tư vấn" class="consult-modal-close" data-consult-modal-close="" type="button">×</button>
 <div class="consult-modal-kicker">Bắt đầu hành trình thỉnh tượng</div>
 <h2 class="consult-modal-title" id="consult-modal-title">HÃY ĐỂ DIỆU TƯỚNG AM LẮNG NGHE TÂM NGUYỆN CỦA QUÝ VỊ</h2>
 <p class="consult-modal-note">Chia sẻ chất liệu, kiểu hoàn thiện và tâm nguyện của quý vị; Diệu Tướng Am sẽ lắng nghe và tư vấn tôn tượng phù hợp.</p>
 <div class="consult-modal-form-slot" data-consult-modal-form=""></div>
+<div class="consult-success" data-consult-success="" aria-hidden="true">
+<div class="consult-success-aura" aria-hidden="true"></div>
+<div class="consult-success-icon" aria-hidden="true">
+<svg focusable="false" viewBox="0 0 72 72" role="img">
+<circle class="consult-success-ring" cx="36" cy="36" r="31"></circle>
+<path class="consult-success-lotus" d="M36 15.5C31.9 20.2 31.4 26.1 36 32.1C40.6 26.1 40.1 20.2 36 15.5Z"></path>
+<path class="consult-success-lotus" d="M24.8 24.4C24.7 30.7 28 35 34.4 37C33.8 31.5 30.5 27.3 24.8 24.4Z"></path>
+<path class="consult-success-lotus" d="M47.2 24.4C47.3 30.7 44 35 37.6 37C38.2 31.5 41.5 27.3 47.2 24.4Z"></path>
+<path class="consult-success-check" d="M25.2 42.5L32.4 49.5L47.4 31.8"></path>
+</svg>
+</div>
+<p class="consult-success-kicker">Gửi thông tin thành công</p>
+<h2 class="consult-success-title" id="consult-success-title">Diệu Tướng Am đã tiếp nhận tâm nguyện</h2>
+<p class="consult-success-message" data-consult-success-message="">Cảm ơn quý vị. Diệu Tướng Am đã nhận được thông tin và sẽ liên hệ lại sớm để tư vấn tôn tượng phù hợp.</p>
+<div class="consult-success-actions">
+<button class="consult-success-primary" data-consult-success-close="" type="button">Hoàn tất</button>
+<a class="consult-success-secondary" href="tel:0938959503">Gọi tư vấn ngay</a>
+</div>
+</div>
 </div>
 </div>
 <a aria-label="Gọi tư vấn Diệu Tướng Am qua số 0938959503" class="sticky-call" data-ga-cta-name="sticky_call" data-ga-event="click_call_sticky" data-ga-phone="0938959503" data-ga-tracking-bound="true" href="tel:0938959503" id="dta-call-sticky">
@@ -27107,10 +27390,19 @@ body{
 
       if(window.DTA_LOCAL_MODE){
         window.setTimeout(function(){
-          setFeedback('Chế độ local: đã mô phỏng gửi thành công. Khi deploy thật, hãy tắt DTA_LOCAL_MODE để gửi về Cloudflare/API.', 'success');
+          var localSuccessMessage = 'Chế độ local: đã mô phỏng gửi thành công. Khi deploy thật, hãy tắt DTA_LOCAL_MODE để gửi về Cloudflare/API.';
+          setFeedback('', '');
           form.reset();
           if(newProvinceInput) newProvinceInput.value = '';
           fields.forEach(function(field){ setFieldState(field, ''); });
+          if(window.dtaShowConsultSuccess){
+            window.dtaShowConsultSuccess({
+              name: payload['ho-ten'] || '',
+              message: localSuccessMessage
+            });
+          }else{
+            setFeedback(localSuccessMessage, 'success');
+          }
           if(submitButton){
             submitButton.disabled = false;
             submitButton.removeAttribute('aria-busy');
@@ -27152,7 +27444,8 @@ body{
         });
       })
       .then(function(data){
-        setFeedback(data.message || 'Cảm ơn bạn. Diệu Tướng Am đã nhận được tâm nguyện và sẽ liên hệ lại sớm.', 'success');
+        var successMessage = data.message || 'Cảm ơn quý vị. Diệu Tướng Am đã nhận được thông tin và sẽ liên hệ lại sớm để tư vấn tôn tượng phù hợp.';
+        setFeedback('', '');
         if(window.dtaTrackEvent){
           window.dtaTrackEvent('submit_form_success', {
             form_name: form.getAttribute('data-ga-form-name') || 'consultation_form',
@@ -27164,6 +27457,14 @@ body{
         if(newProvinceInput) newProvinceInput.value = '';
         fields.forEach(function(field){ setFieldState(field, ''); });
         resetTurnstile();
+        if(window.dtaShowConsultSuccess){
+          window.dtaShowConsultSuccess({
+            name: payload['ho-ten'] || '',
+            message: successMessage
+          });
+        }else{
+          setFeedback(successMessage, 'success');
+        }
       })
       .catch(function(error){
         setFeedback(error.message || 'Có lỗi xảy ra. Vui lòng thử lại sau.', 'error');
@@ -27192,7 +27493,9 @@ body{
     if(!modal || !form || !triggers.length) return;
 
     var slot = modal.querySelector('[data-consult-modal-form]');
-    var closeButtons = Array.prototype.slice.call(modal.querySelectorAll('[data-consult-modal-close]'));
+    var successView = modal.querySelector('[data-consult-success]');
+    var successMessage = modal.querySelector('[data-consult-success-message]');
+    var closeButtons = Array.prototype.slice.call(modal.querySelectorAll('[data-consult-modal-close], [data-consult-success-close]'));
     if(!slot) return;
 
     var homeMarker = document.createComment('consult-form-home');
@@ -27206,6 +27509,12 @@ body{
         .filter(function(item){
           return !!(item.offsetWidth || item.offsetHeight || item.getClientRects().length);
         });
+    }
+
+    function clearSuccessState(){
+      modal.classList.remove('is-success');
+      modal.setAttribute('aria-labelledby', 'consult-modal-title');
+      if(successView) successView.setAttribute('aria-hidden', 'true');
     }
 
     function moveFormToModal(){
@@ -27228,6 +27537,7 @@ body{
     function openModal(trigger){
       if(closeTimer) window.clearTimeout(closeTimer);
       lastFocused = trigger || document.activeElement;
+      clearSuccessState();
       moveFormToModal();
 
       modal.hidden = false;
@@ -27241,6 +27551,32 @@ body{
       });
     }
 
+    function openSuccessModal(options){
+      options = options || {};
+      if(closeTimer) window.clearTimeout(closeTimer);
+      lastFocused = document.activeElement;
+
+      var message = options.message || 'Cảm ơn quý vị. Diệu Tướng Am đã nhận được thông tin và sẽ liên hệ lại sớm để tư vấn tôn tượng phù hợp.';
+      var name = (options.name || '').replace(/\s+/g, ' ').trim();
+      if(successMessage){
+        successMessage.textContent = name ? ('Cảm ơn ' + name + '. ' + message) : message;
+      }
+      if(successView) successView.setAttribute('aria-hidden', 'false');
+
+      modal.hidden = false;
+      modal.setAttribute('aria-hidden', 'false');
+      modal.setAttribute('aria-labelledby', 'consult-success-title');
+      document.body.classList.add('consult-modal-open');
+
+      window.requestAnimationFrame(function(){
+        modal.classList.add('is-open', 'is-success');
+        var focusTarget = modal.querySelector('[data-consult-success-close]') || modal.querySelector('[data-consult-modal-close]');
+        if(focusTarget) focusTarget.focus({preventScroll:true});
+      });
+    }
+
+    window.dtaShowConsultSuccess = openSuccessModal;
+
     function closeModal(){
       if(modal.getAttribute('aria-hidden') === 'true') return;
 
@@ -27252,6 +27588,7 @@ body{
         if(modal.getAttribute('aria-hidden') === 'true'){
           modal.hidden = true;
           restoreForm();
+          clearSuccessState();
         }
       }, 360);
 
