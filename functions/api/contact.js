@@ -112,7 +112,7 @@ export async function onRequestPost(context) {
       `Số điện thoại: ${phone}`,
       `Chất liệu tôn tượng: ${statueMaterial}`,
       `Khu vực: ${province}`,
-      `Tỉnh/thành theo mapping mới: ${newProvince || province}`,
+      `Tỉnh/Thành phố: ${newProvince || province}`,
       "",
       "Nội dung tâm nguyện:",
       message,
@@ -130,7 +130,7 @@ export async function onRequestPost(context) {
       <p><strong>Số điện thoại:</strong> ${escapeHtml(phone)}</p>
       <p><strong>Chất liệu tôn tượng:</strong> ${escapeHtml(statueMaterial)}</p>
       <p><strong>Khu vực:</strong> ${escapeHtml(province)}</p>
-      <p><strong>Tỉnh/thành theo mapping mới:</strong> ${escapeHtml(newProvince || province)}</p>
+      <p><strong>Tỉnh/Thành phố:</strong> ${escapeHtml(newProvince || province)}</p>
       <p><strong>Nội dung tâm nguyện:</strong></p>
       <p>${escapeHtml(message).replaceAll("\n", "<br>")}</p>
       <p><strong>Hostname:</strong> ${escapeHtml(pageUrl.hostname)}</p>
