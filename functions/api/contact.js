@@ -96,9 +96,10 @@ export async function onRequestPost(context) {
     // - Có bản text thuần để Gmail hiểu đây là thông báo giao dịch/nội bộ.
     // - HTML cực đơn giản, không banner, không nút CTA, không màu mè như email marketing.
     // - Subject cố định, chuyên nghiệp, không nhúng nội dung người dùng để tránh trigger spam.
-    const emailSubject = "Yêu cầu tư vấn thỉnh tôn tượng | Diệu Tướng Am";
+    const subjectName = safeSubjectPart(name, "Khách hàng");
+    const emailSubject = `${subjectName} - Yêu cầu tư vấn thỉnh tôn tượng`;
     const emailHeading = "Yêu cầu tư vấn thỉnh tôn tượng";
-    const emailIntro = "Khách hàng vừa gửi thông tin tư vấn từ landing page Thỉnh Tôn Tượng.";
+    const emailIntro = `${subjectName} vừa gửi thông tin tư vấn từ landing page Thỉnh Tôn Tượng.`;
 
     const textEmail = [
       emailSubject,
@@ -212,6 +213,16 @@ function parseEmailList(value) {
     .split(",")
     .map((email) => email.trim())
     .filter(Boolean);
+}
+
+function safeSubjectPart(value, fallback = "Khách hàng") {
+  const cleaned = clean(value)
+    .replace(/[\r\n]+/g, " ")
+    .replace(/[^\p{L}\p{N}\s'.-]/gu, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  return cleaned ? cleaned.slice(0, 60) : fallback;
 }
 
 function escapeHtml(value) {
